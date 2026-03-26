@@ -1,0 +1,4908 @@
+{
+  "page_number": 3,
+  "width": 2493,
+  "height": 3258,
+  "text_blocks": [
+    {
+      "block_id": 1,
+      "text": "I[Y",
+      "confidence": 0.8747,
+      "bbox": {
+        "top_left": [
+          335.0,
+          360.0
+        ],
+        "top_right": [
+          400.0,
+          360.0
+        ],
+        "bottom_right": [
+          400.0,
+          400.0
+        ],
+        "bottom_left": [
+          335.0,
+          400.0
+        ]
+      },
+      "line_number": 1
+    },
+    {
+      "block_id": 2,
+      "text": "종류로",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          383.0,
+          356.0
+        ],
+        "top_right": [
+          518.0,
+          356.0
+        ],
+        "bottom_right": [
+          518.0,
+          404.0
+        ],
+        "bottom_left": [
+          383.0,
+          404.0
+        ]
+      },
+      "line_number": 2
+    },
+    {
+      "block_id": 3,
+      "text": "나뉘게",
+      "confidence": 0.9997,
+      "bbox": {
+        "top_left": [
+          515.0,
+          360.0
+        ],
+        "top_right": [
+          657.0,
+          360.0
+        ],
+        "bottom_right": [
+          657.0,
+          397.0
+        ],
+        "bottom_left": [
+          515.0,
+          397.0
+        ]
+      },
+      "line_number": 3
+    },
+    {
+      "block_id": 4,
+      "text": "필요한",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          979.0,
+          360.0
+        ],
+        "top_right": [
+          1111.0,
+          360.0
+        ],
+        "bottom_right": [
+          1111.0,
+          397.0
+        ],
+        "bottom_left": [
+          979.0,
+          397.0
+        ]
+      },
+      "line_number": 4
+    },
+    {
+      "block_id": 5,
+      "text": "것은解",
+      "confidence": 0.998,
+      "bbox": {
+        "top_left": [
+          1114.0,
+          356.0
+        ],
+        "top_right": [
+          1263.0,
+          356.0
+        ],
+        "bottom_right": [
+          1263.0,
+          404.0
+        ],
+        "bottom_left": [
+          1114.0,
+          404.0
+        ]
+      },
+      "line_number": 5
+    },
+    {
+      "block_id": 6,
+      "text": "이희고",
+      "confidence": 0.9998,
+      "bbox": {
+        "top_left": [
+          1341.0,
+          360.0
+        ],
+        "top_right": [
+          1477.0,
+          360.0
+        ],
+        "bottom_right": [
+          1477.0,
+          397.0
+        ],
+        "bottom_left": [
+          1341.0,
+          397.0
+        ]
+      },
+      "line_number": 6
+    },
+    {
+      "block_id": 7,
+      "text": "등을볼수있다",
+      "confidence": 0.9996,
+      "bbox": {
+        "top_left": [
+          1578.0,
+          360.0
+        ],
+        "top_right": [
+          1870.0,
+          360.0
+        ],
+        "bottom_right": [
+          1870.0,
+          404.0
+        ],
+        "bottom_left": [
+          1578.0,
+          404.0
+        ]
+      },
+      "line_number": 7
+    },
+    {
+      "block_id": 8,
+      "text": "그러므로본方濟趙는",
+      "confidence": 0.841,
+      "bbox": {
+        "top_left": [
+          1880.0,
+          360.0
+        ],
+        "top_right": [
+          2256.0,
+          360.0
+        ],
+        "bottom_right": [
+          2256.0,
+          404.0
+        ],
+        "bottom_left": [
+          1880.0,
+          404.0
+        ]
+      },
+      "line_number": 8
+    },
+    {
+      "block_id": 9,
+      "text": "秦濟는天設의",
+      "confidence": 0.5844,
+      "bbox": {
+        "top_left": [
+          335.0,
+          428.0
+        ],
+        "top_right": [
+          606.0,
+          428.0
+        ],
+        "bottom_right": [
+          606.0,
+          472.0
+        ],
+        "bottom_left": [
+          335.0,
+          472.0
+        ]
+      },
+      "line_number": 9
+    },
+    {
+      "block_id": 10,
+      "text": "外面가秦에침습하여생긴靴樓을조",
+      "confidence": 0.7691,
+      "bbox": {
+        "top_left": [
+          589.0,
+          428.0
+        ],
+        "top_right": [
+          1260.0,
+          428.0
+        ],
+        "bottom_right": [
+          1260.0,
+          472.0
+        ],
+        "bottom_left": [
+          589.0,
+          472.0
+        ]
+      },
+      "line_number": 10
+    },
+    {
+      "block_id": 11,
+      "text": "또한대부분",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          1341.0,
+          431.0
+        ],
+        "top_right": [
+          1562.0,
+          431.0
+        ],
+        "bottom_right": [
+          1562.0,
+          468.0
+        ],
+        "bottom_left": [
+          1341.0,
+          468.0
+        ]
+      },
+      "line_number": 11
+    },
+    {
+      "block_id": 12,
+      "text": "橄面하여阪치료도",
+      "confidence": 0.7194,
+      "bbox": {
+        "top_left": [
+          1819.0,
+          428.0
+        ],
+        "top_right": [
+          2188.0,
+          428.0
+        ],
+        "bottom_right": [
+          2188.0,
+          472.0
+        ],
+        "bottom_left": [
+          1819.0,
+          472.0
+        ]
+      },
+      "line_number": 12
+    },
+    {
+      "block_id": 13,
+      "text": "겸히",
+      "confidence": 0.9997,
+      "bbox": {
+        "top_left": [
+          2175.0,
+          434.0
+        ],
+        "top_right": [
+          2253.0,
+          434.0
+        ],
+        "bottom_right": [
+          2253.0,
+          472.0
+        ],
+        "bottom_left": [
+          2175.0,
+          472.0
+        ]
+      },
+      "line_number": 13
+    },
+    {
+      "block_id": 14,
+      "text": "준하여설정한것이므로本書에있는法賢解秦統談",
+      "confidence": 0.8619,
+      "bbox": {
+        "top_left": [
+          335.0,
+          495.0
+        ],
+        "top_right": [
+          1253.0,
+          495.0
+        ],
+        "bottom_right": [
+          1253.0,
+          543.0
+        ],
+        "bottom_left": [
+          335.0,
+          543.0
+        ]
+      },
+      "line_number": 14
+    },
+    {
+      "block_id": 15,
+      "text": "견서轉城의",
+      "confidence": 0.8039,
+      "bbox": {
+        "top_left": [
+          1355.0,
+          502.0
+        ],
+        "top_right": [
+          1562.0,
+          502.0
+        ],
+        "bottom_right": [
+          1562.0,
+          540.0
+        ],
+        "bottom_left": [
+          1355.0,
+          540.0
+        ]
+      },
+      "line_number": 15
+    },
+    {
+      "block_id": 16,
+      "text": "鐘用도돕는다",
+      "confidence": 0.7612,
+      "bbox": {
+        "top_left": [
+          1568.0,
+          502.0
+        ],
+        "top_right": [
+          1843.0,
+          502.0
+        ],
+        "bottom_right": [
+          1843.0,
+          546.0
+        ],
+        "bottom_left": [
+          1568.0,
+          546.0
+        ]
+      },
+      "line_number": 16
+    },
+    {
+      "block_id": 17,
+      "text": "이밖에",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          1856.0,
+          499.0
+        ],
+        "top_right": [
+          1988.0,
+          499.0
+        ],
+        "bottom_right": [
+          1988.0,
+          546.0
+        ],
+        "bottom_left": [
+          1856.0,
+          546.0
+        ]
+      },
+      "line_number": 17
+    },
+    {
+      "block_id": 18,
+      "text": "만약",
+      "confidence": 0.9999,
+      "bbox": {
+        "top_left": [
+          1992.0,
+          502.0
+        ],
+        "top_right": [
+          2093.0,
+          502.0
+        ],
+        "bottom_right": [
+          2093.0,
+          540.0
+        ],
+        "bottom_left": [
+          1992.0,
+          540.0
+        ]
+      },
+      "line_number": 18
+    },
+    {
+      "block_id": 19,
+      "text": "集都을겸",
+      "confidence": 0.7428,
+      "bbox": {
+        "top_left": [
+          2074.0,
+          495.0
+        ],
+        "top_right": [
+          2260.0,
+          503.0
+        ],
+        "bottom_right": [
+          2258.0,
+          550.0
+        ],
+        "bottom_left": [
+          2072.0,
+          542.0
+        ]
+      },
+      "line_number": 19
+    },
+    {
+      "block_id": 20,
+      "text": "法異來根및",
+      "confidence": 0.5832,
+      "bbox": {
+        "top_left": [
+          434.0,
+          574.0
+        ],
+        "top_right": [
+          684.0,
+          574.0
+        ],
+        "bottom_right": [
+          684.0,
+          611.0
+        ],
+        "bottom_left": [
+          434.0,
+          611.0
+        ]
+      },
+      "line_number": 20
+    },
+    {
+      "block_id": 21,
+      "text": "道節에나오는",
+      "confidence": 0.8095,
+      "bbox": {
+        "top_left": [
+          942.0,
+          577.0
+        ],
+        "top_right": [
+          1246.0,
+          577.0
+        ],
+        "bottom_right": [
+          1246.0,
+          611.0
+        ],
+        "bottom_left": [
+          942.0,
+          611.0
+        ]
+      },
+      "line_number": 21
+    },
+    {
+      "block_id": 22,
+      "text": "한자는",
+      "confidence": 0.9998,
+      "bbox": {
+        "top_left": [
+          1355.0,
+          577.0
+        ],
+        "top_right": [
+          1497.0,
+          577.0
+        ],
+        "bottom_right": [
+          1497.0,
+          611.0
+        ],
+        "bottom_left": [
+          1355.0,
+          611.0
+        ]
+      },
+      "line_number": 22
+    },
+    {
+      "block_id": 23,
+      "text": "諸秋稷과諸五한다",
+      "confidence": 0.7723,
+      "bbox": {
+        "top_left": [
+          1487.0,
+          577.0
+        ],
+        "top_right": [
+          1856.0,
+          577.0
+        ],
+        "bottom_right": [
+          1856.0,
+          611.0
+        ],
+        "bottom_left": [
+          1487.0,
+          611.0
+        ]
+      },
+      "line_number": 23
+    },
+    {
+      "block_id": 24,
+      "text": "예를들면大書龍揚의",
+      "confidence": 0.8788,
+      "bbox": {
+        "top_left": [
+          1856.0,
+          574.0
+        ],
+        "top_right": [
+          2256.0,
+          574.0
+        ],
+        "bottom_right": [
+          2256.0,
+          618.0
+        ],
+        "bottom_left": [
+          1856.0,
+          618.0
+        ]
+      },
+      "line_number": 24
+    },
+    {
+      "block_id": 25,
+      "text": "등옥",
+      "confidence": 0.6766,
+      "bbox": {
+        "top_left": [
+          847.0,
+          584.0
+        ],
+        "top_right": [
+          945.0,
+          584.0
+        ],
+        "bottom_right": [
+          945.0,
+          607.0
+        ],
+        "bottom_left": [
+          847.0,
+          607.0
+        ]
+      },
+      "line_number": 25
+    },
+    {
+      "block_id": 26,
+      "text": "濟또한解秦盤의",
+      "confidence": 0.8466,
+      "bbox": {
+        "top_left": [
+          339.0,
+          641.0
+        ],
+        "top_right": [
+          671.0,
+          641.0
+        ],
+        "bottom_right": [
+          671.0,
+          686.0
+        ],
+        "bottom_left": [
+          339.0,
+          686.0
+        ]
+      },
+      "line_number": 26
+    },
+    {
+      "block_id": 27,
+      "text": "범주에",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          654.0,
+          648.0
+        ],
+        "top_right": [
+          789.0,
+          648.0
+        ],
+        "bottom_right": [
+          789.0,
+          686.0
+        ],
+        "bottom_left": [
+          654.0,
+          686.0
+        ]
+      },
+      "line_number": 27
+    },
+    {
+      "block_id": 28,
+      "text": "해당되기때문에배우는사",
+      "confidence": 0.9998,
+      "bbox": {
+        "top_left": [
+          772.0,
+          645.0
+        ],
+        "top_right": [
+          1267.0,
+          645.0
+        ],
+        "bottom_right": [
+          1267.0,
+          689.0
+        ],
+        "bottom_left": [
+          772.0,
+          689.0
+        ]
+      },
+      "line_number": 28
+    },
+    {
+      "block_id": 29,
+      "text": "石흡와石朱秦帝揚의黃칙과같은것이다",
+      "confidence": 0.7309,
+      "bbox": {
+        "top_left": [
+          1348.0,
+          641.0
+        ],
+        "top_right": [
+          2137.0,
+          641.0
+        ],
+        "bottom_right": [
+          2137.0,
+          689.0
+        ],
+        "bottom_left": [
+          1348.0,
+          689.0
+        ]
+      },
+      "line_number": 29
+    },
+    {
+      "block_id": 30,
+      "text": "精儒를",
+      "confidence": 0.6584,
+      "bbox": {
+        "top_left": [
+          2120.0,
+          648.0
+        ],
+        "top_right": [
+          2253.0,
+          648.0
+        ],
+        "bottom_right": [
+          2253.0,
+          686.0
+        ],
+        "bottom_left": [
+          2120.0,
+          686.0
+        ]
+      },
+      "line_number": 30
+    },
+    {
+      "block_id": 31,
+      "text": "룸o之I0플곱긍를短",
+      "confidence": 0.6539,
+      "bbox": {
+        "top_left": [
+          339.0,
+          713.0
+        ],
+        "top_right": [
+          803.0,
+          713.0
+        ],
+        "bottom_right": [
+          803.0,
+          760.0
+        ],
+        "bottom_left": [
+          339.0,
+          760.0
+        ]
+      },
+      "line_number": 31
+    },
+    {
+      "block_id": 32,
+      "text": "化흉lo평륜",
+      "confidence": 0.5244,
+      "bbox": {
+        "top_left": [
+          813.0,
+          716.0
+        ],
+        "top_right": [
+          1260.0,
+          716.0
+        ],
+        "bottom_right": [
+          1260.0,
+          760.0
+        ],
+        "bottom_left": [
+          813.0,
+          760.0
+        ]
+      },
+      "line_number": 32
+    },
+    {
+      "block_id": 33,
+      "text": "겸한자는뽀氣原을",
+      "confidence": 0.7323,
+      "bbox": {
+        "top_left": [
+          1348.0,
+          716.0
+        ],
+        "top_right": [
+          1707.0,
+          716.0
+        ],
+        "bottom_right": [
+          1707.0,
+          760.0
+        ],
+        "bottom_left": [
+          1348.0,
+          760.0
+        ]
+      },
+      "line_number": 33
+    },
+    {
+      "block_id": 34,
+      "text": "前用한다",
+      "confidence": 0.6358,
+      "bbox": {
+        "top_left": [
+          1714.0,
+          719.0
+        ],
+        "top_right": [
+          1893.0,
+          719.0
+        ],
+        "bottom_right": [
+          1893.0,
+          757.0
+        ],
+        "bottom_left": [
+          1714.0,
+          757.0
+        ]
+      },
+      "line_number": 34
+    },
+    {
+      "block_id": 35,
+      "text": "를Io",
+      "confidence": 0.9239,
+      "bbox": {
+        "top_left": [
+          1910.0,
+          719.0
+        ],
+        "top_right": [
+          2005.0,
+          719.0
+        ],
+        "bottom_right": [
+          2005.0,
+          757.0
+        ],
+        "bottom_left": [
+          1910.0,
+          757.0
+        ]
+      },
+      "line_number": 35
+    },
+    {
+      "block_id": 36,
+      "text": "들면",
+      "confidence": 0.9999,
+      "bbox": {
+        "top_left": [
+          1998.0,
+          719.0
+        ],
+        "top_right": [
+          2090.0,
+          719.0
+        ],
+        "bottom_right": [
+          2090.0,
+          757.0
+        ],
+        "bottom_left": [
+          1998.0,
+          757.0
+        ]
+      },
+      "line_number": 36
+    },
+    {
+      "block_id": 37,
+      "text": "審朱設의",
+      "confidence": 0.6052,
+      "bbox": {
+        "top_left": [
+          2093.0,
+          713.0
+        ],
+        "top_right": [
+          2259.0,
+          713.0
+        ],
+        "bottom_right": [
+          2259.0,
+          760.0
+        ],
+        "bottom_left": [
+          2093.0,
+          760.0
+        ]
+      },
+      "line_number": 37
+    },
+    {
+      "block_id": 38,
+      "text": "는것들을함께참작하여야그전체적인모습을엿볼",
+      "confidence": 0.9987,
+      "bbox": {
+        "top_left": [
+          335.0,
+          784.0
+        ],
+        "top_right": [
+          1250.0,
+          784.0
+        ],
+        "bottom_right": [
+          1250.0,
+          831.0
+        ],
+        "bottom_left": [
+          335.0,
+          831.0
+        ]
+      },
+      "line_number": 38
+    },
+    {
+      "block_id": 39,
+      "text": "諸脫子와原我와같은",
+      "confidence": 0.7032,
+      "bbox": {
+        "top_left": [
+          1352.0,
+          784.0
+        ],
+        "top_right": [
+          1734.0,
+          784.0
+        ],
+        "bottom_right": [
+          1734.0,
+          828.0
+        ],
+        "bottom_left": [
+          1352.0,
+          828.0
+        ]
+      },
+      "line_number": 39
+    },
+    {
+      "block_id": 40,
+      "text": "것이다",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          1738.0,
+          787.0
+        ],
+        "top_right": [
+          1863.0,
+          787.0
+        ],
+        "bottom_right": [
+          1863.0,
+          825.0
+        ],
+        "bottom_left": [
+          1738.0,
+          825.0
+        ]
+      },
+      "line_number": 40
+    },
+    {
+      "block_id": 41,
+      "text": "子最華老學의",
+      "confidence": 0.5418,
+      "bbox": {
+        "top_left": [
+          1887.0,
+          787.0
+        ],
+        "top_right": [
+          2131.0,
+          787.0
+        ],
+        "bottom_right": [
+          2131.0,
+          825.0
+        ],
+        "bottom_left": [
+          1887.0,
+          825.0
+        ]
+      },
+      "line_number": 41
+    },
+    {
+      "block_id": 42,
+      "text": "先秦方",
+      "confidence": 0.9065,
+      "bbox": {
+        "top_left": [
+          2132.0,
+          780.0
+        ],
+        "top_right": [
+          2257.0,
+          788.0
+        ],
+        "bottom_right": [
+          2254.0,
+          832.0
+        ],
+        "bottom_left": [
+          2129.0,
+          824.0
+        ]
+      },
+      "line_number": 42
+    },
+    {
+      "block_id": 43,
+      "text": "수있을것이다",
+      "confidence": 0.9999,
+      "bbox": {
+        "top_left": [
+          335.0,
+          855.0
+        ],
+        "top_right": [
+          606.0,
+          855.0
+        ],
+        "bottom_right": [
+          606.0,
+          903.0
+        ],
+        "bottom_left": [
+          335.0,
+          903.0
+        ]
+      },
+      "line_number": 43
+    },
+    {
+      "block_id": 44,
+      "text": "에는解黃揚",
+      "confidence": 0.7951,
+      "bbox": {
+        "top_left": [
+          1352.0,
+          855.0
+        ],
+        "top_right": [
+          1575.0,
+          855.0
+        ],
+        "bottom_right": [
+          1575.0,
+          903.0
+        ],
+        "bottom_left": [
+          1352.0,
+          903.0
+        ]
+      },
+      "line_number": 44
+    },
+    {
+      "block_id": 45,
+      "text": "華萊揚一狀華古揚이있다",
+      "confidence": 0.7259,
+      "bbox": {
+        "top_left": [
+          1568.0,
+          852.0
+        ],
+        "top_right": [
+          2107.0,
+          855.0
+        ],
+        "bottom_right": [
+          2107.0,
+          903.0
+        ],
+        "bottom_left": [
+          1568.0,
+          899.0
+        ]
+      },
+      "line_number": 45
+    },
+    {
+      "block_id": 46,
+      "text": "南陽解春諸는",
+      "confidence": 0.6309,
+      "bbox": {
+        "top_left": [
+          403.0,
+          1001.0
+        ],
+        "top_right": [
+          637.0,
+          1001.0
+        ],
+        "bottom_right": [
+          637.0,
+          1038.0
+        ],
+        "bottom_left": [
+          403.0,
+          1038.0
+        ]
+      },
+      "line_number": 46
+    },
+    {
+      "block_id": 47,
+      "text": "四其秦華에",
+      "confidence": 0.5975,
+      "bbox": {
+        "top_left": [
+          657.0,
+          1001.0
+        ],
+        "top_right": [
+          857.0,
+          1001.0
+        ],
+        "bottom_right": [
+          857.0,
+          1038.0
+        ],
+        "bottom_left": [
+          657.0,
+          1038.0
+        ]
+      },
+      "line_number": 47
+    },
+    {
+      "block_id": 48,
+      "text": "적용된다",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          874.0,
+          1001.0
+        ],
+        "top_right": [
+          1043.0,
+          1001.0
+        ],
+        "bottom_right": [
+          1043.0,
+          1038.0
+        ],
+        "bottom_left": [
+          874.0,
+          1038.0
+        ]
+      },
+      "line_number": 48
+    },
+    {
+      "block_id": 49,
+      "text": "仲秦美設은",
+      "confidence": 0.5338,
+      "bbox": {
+        "top_left": [
+          1053.0,
+          1001.0
+        ],
+        "top_right": [
+          1250.0,
+          1001.0
+        ],
+        "bottom_right": [
+          1250.0,
+          1038.0
+        ],
+        "bottom_left": [
+          1053.0,
+          1038.0
+        ]
+      },
+      "line_number": 49
+    },
+    {
+      "block_id": 50,
+      "text": "南京解春解는",
+      "confidence": 0.6854,
+      "bbox": {
+        "top_left": [
+          1412.0,
+          1001.0
+        ],
+        "top_right": [
+          1646.0,
+          1001.0
+        ],
+        "bottom_right": [
+          1646.0,
+          1038.0
+        ],
+        "bottom_left": [
+          1412.0,
+          1038.0
+        ]
+      },
+      "line_number": 50
+    },
+    {
+      "block_id": 51,
+      "text": "車我老華에",
+      "confidence": 0.5609,
+      "bbox": {
+        "top_left": [
+          1667.0,
+          1001.0
+        ],
+        "top_right": [
+          1863.0,
+          1001.0
+        ],
+        "bottom_right": [
+          1863.0,
+          1038.0
+        ],
+        "bottom_left": [
+          1667.0,
+          1038.0
+        ]
+      },
+      "line_number": 51
+    },
+    {
+      "block_id": 52,
+      "text": "적용된다",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          1883.0,
+          1001.0
+        ],
+        "top_right": [
+          2039.0,
+          1001.0
+        ],
+        "bottom_right": [
+          2039.0,
+          1038.0
+        ],
+        "bottom_left": [
+          1883.0,
+          1038.0
+        ]
+      },
+      "line_number": 52
+    },
+    {
+      "block_id": 53,
+      "text": "風我美設은",
+      "confidence": 0.7098,
+      "bbox": {
+        "top_left": [
+          2070.0,
+          1001.0
+        ],
+        "top_right": [
+          2253.0,
+          1001.0
+        ],
+        "bottom_right": [
+          2253.0,
+          1038.0
+        ],
+        "bottom_left": [
+          2070.0,
+          1038.0
+        ]
+      },
+      "line_number": 53
+    },
+    {
+      "block_id": 54,
+      "text": "바깥에서",
+      "confidence": 0.9992,
+      "bbox": {
+        "top_left": [
+          474.0,
+          1072.0
+        ],
+        "top_right": [
+          630.0,
+          1072.0
+        ],
+        "bottom_right": [
+          630.0,
+          1110.0
+        ],
+        "bottom_left": [
+          474.0,
+          1110.0
+        ]
+      },
+      "line_number": 54
+    },
+    {
+      "block_id": 55,
+      "text": "침습한것과",
+      "confidence": 0.9998,
+      "bbox": {
+        "top_left": [
+          640.0,
+          1069.0
+        ],
+        "top_right": [
+          867.0,
+          1069.0
+        ],
+        "bottom_right": [
+          867.0,
+          1117.0
+        ],
+        "bottom_left": [
+          640.0,
+          1117.0
+        ]
+      },
+      "line_number": 55
+    },
+    {
+      "block_id": 56,
+      "text": "연계된",
+      "confidence": 0.9993,
+      "bbox": {
+        "top_left": [
+          867.0,
+          1072.0
+        ],
+        "top_right": [
+          1009.0,
+          1072.0
+        ],
+        "bottom_right": [
+          1009.0,
+          1110.0
+        ],
+        "bottom_left": [
+          867.0,
+          1110.0
+        ]
+      },
+      "line_number": 56
+    },
+    {
+      "block_id": 57,
+      "text": "것으로批夷의",
+      "confidence": 0.8174,
+      "bbox": {
+        "top_left": [
+          996.0,
+          1072.0
+        ],
+        "top_right": [
+          1250.0,
+          1072.0
+        ],
+        "bottom_right": [
+          1250.0,
+          1110.0
+        ],
+        "bottom_left": [
+          996.0,
+          1110.0
+        ]
+      },
+      "line_number": 57
+    },
+    {
+      "block_id": 58,
+      "text": "時川와연계된",
+      "confidence": 0.7705,
+      "bbox": {
+        "top_left": [
+          1477.0,
+          1069.0
+        ],
+        "top_right": [
+          1758.0,
+          1069.0
+        ],
+        "bottom_right": [
+          1758.0,
+          1113.0
+        ],
+        "bottom_left": [
+          1477.0,
+          1113.0
+        ]
+      },
+      "line_number": 58
+    },
+    {
+      "block_id": 59,
+      "text": "것으로",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          1741.0,
+          1072.0
+        ],
+        "top_right": [
+          1866.0,
+          1072.0
+        ],
+        "bottom_right": [
+          1866.0,
+          1110.0
+        ],
+        "bottom_left": [
+          1741.0,
+          1110.0
+        ]
+      },
+      "line_number": 59
+    },
+    {
+      "block_id": 60,
+      "text": "理軍혹은",
+      "confidence": 0.6284,
+      "bbox": {
+        "top_left": [
+          1877.0,
+          1072.0
+        ],
+        "top_right": [
+          2059.0,
+          1072.0
+        ],
+        "bottom_right": [
+          2059.0,
+          1110.0
+        ],
+        "bottom_left": [
+          1877.0,
+          1110.0
+        ]
+      },
+      "line_number": 60
+    },
+    {
+      "block_id": 61,
+      "text": "假評로부터",
+      "confidence": 0.7188,
+      "bbox": {
+        "top_left": [
+          2059.0,
+          1072.0
+        ],
+        "top_right": [
+          2256.0,
+          1072.0
+        ],
+        "bottom_right": [
+          2256.0,
+          1110.0
+        ],
+        "bottom_left": [
+          2059.0,
+          1110.0
+        ]
+      },
+      "line_number": 61
+    },
+    {
+      "block_id": 62,
+      "text": "道我과",
+      "confidence": 0.646,
+      "bbox": {
+        "top_left": [
+          335.0,
+          1137.0
+        ],
+        "top_right": [
+          467.0,
+          1137.0
+        ],
+        "bottom_right": [
+          467.0,
+          1184.0
+        ],
+        "bottom_left": [
+          335.0,
+          1184.0
+        ]
+      },
+      "line_number": 62
+    },
+    {
+      "block_id": 63,
+      "text": "華盤이조절되지않고學盤이",
+      "confidence": 0.8342,
+      "bbox": {
+        "top_left": [
+          468.0,
+          1133.0
+        ],
+        "top_right": [
+          996.0,
+          1137.0
+        ],
+        "bottom_right": [
+          996.0,
+          1185.0
+        ],
+        "bottom_left": [
+          467.0,
+          1181.0
+        ]
+      },
+      "line_number": 63
+    },
+    {
+      "block_id": 64,
+      "text": "펼쳐지지못하",
+      "confidence": 0.9996,
+      "bbox": {
+        "top_left": [
+          996.0,
+          1137.0
+        ],
+        "top_right": [
+          1254.0,
+          1141.0
+        ],
+        "bottom_right": [
+          1253.0,
+          1188.0
+        ],
+        "bottom_left": [
+          996.0,
+          1184.0
+        ]
+      },
+      "line_number": 64
+    },
+    {
+      "block_id": 65,
+      "text": "들어와서神解를침습하면",
+      "confidence": 0.944,
+      "bbox": {
+        "top_left": [
+          1352.0,
+          1137.0
+        ],
+        "top_right": [
+          1812.0,
+          1137.0
+        ],
+        "bottom_right": [
+          1812.0,
+          1184.0
+        ],
+        "bottom_left": [
+          1352.0,
+          1184.0
+        ]
+      },
+      "line_number": 65
+    },
+    {
+      "block_id": 66,
+      "text": "天面기능은조절되지않고",
+      "confidence": 0.9155,
+      "bbox": {
+        "top_left": [
+          1802.0,
+          1137.0
+        ],
+        "top_right": [
+          2263.0,
+          1144.0
+        ],
+        "bottom_right": [
+          2262.0,
+          1188.0
+        ],
+        "bottom_left": [
+          1802.0,
+          1181.0
+        ]
+      },
+      "line_number": 66
+    },
+    {
+      "block_id": 67,
+      "text": "고",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          339.0,
+          1215.0
+        ],
+        "top_right": [
+          400.0,
+          1215.0
+        ],
+        "bottom_right": [
+          400.0,
+          1252.0
+        ],
+        "bottom_left": [
+          339.0,
+          1252.0
+        ]
+      },
+      "line_number": 67
+    },
+    {
+      "block_id": 68,
+      "text": "治靴의",
+      "confidence": 0.8832,
+      "bbox": {
+        "top_left": [
+          386.0,
+          1215.0
+        ],
+        "top_right": [
+          522.0,
+          1215.0
+        ],
+        "bottom_right": [
+          522.0,
+          1252.0
+        ],
+        "bottom_left": [
+          386.0,
+          1252.0
+        ]
+      },
+      "line_number": 68
+    },
+    {
+      "block_id": 69,
+      "text": "받아서생긴것이다",
+      "confidence": 0.9999,
+      "bbox": {
+        "top_left": [
+          766.0,
+          1208.0
+        ],
+        "top_right": [
+          1138.0,
+          1208.0
+        ],
+        "bottom_right": [
+          1138.0,
+          1252.0
+        ],
+        "bottom_left": [
+          766.0,
+          1252.0
+        ]
+      },
+      "line_number": 69
+    },
+    {
+      "block_id": 70,
+      "text": "운행이지장을",
+      "confidence": 0.9962,
+      "bbox": {
+        "top_left": [
+          511.0,
+          1218.0
+        ],
+        "top_right": [
+          772.0,
+          1218.0
+        ],
+        "bottom_right": [
+          772.0,
+          1252.0
+        ],
+        "bottom_left": [
+          511.0,
+          1252.0
+        ]
+      },
+      "line_number": 70
+    },
+    {
+      "block_id": 71,
+      "text": "I어망",
+      "confidence": 0.6589,
+      "bbox": {
+        "top_left": [
+          1131.0,
+          1215.0
+        ],
+        "top_right": [
+          1257.0,
+          1215.0
+        ],
+        "bottom_right": [
+          1257.0,
+          1252.0
+        ],
+        "bottom_left": [
+          1131.0,
+          1252.0
+        ]
+      },
+      "line_number": 71
+    },
+    {
+      "block_id": 72,
+      "text": "地氣의道我과南路은정상을",
+      "confidence": 0.6423,
+      "bbox": {
+        "top_left": [
+          1348.0,
+          1212.0
+        ],
+        "top_right": [
+          1877.0,
+          1212.0
+        ],
+        "bottom_right": [
+          1877.0,
+          1256.0
+        ],
+        "bottom_left": [
+          1348.0,
+          1256.0
+        ]
+      },
+      "line_number": 72
+    },
+    {
+      "block_id": 73,
+      "text": "잃고凌盤이약간의손",
+      "confidence": 0.8611,
+      "bbox": {
+        "top_left": [
+          1853.0,
+          1212.0
+        ],
+        "top_right": [
+          2266.0,
+          1208.0
+        ],
+        "bottom_right": [
+          2266.0,
+          1256.0
+        ],
+        "bottom_left": [
+          1853.0,
+          1259.0
+        ]
+      },
+      "line_number": 73
+    },
+    {
+      "block_id": 74,
+      "text": "서는",
+      "confidence": 0.9999,
+      "bbox": {
+        "top_left": [
+          349.0,
+          1286.0
+        ],
+        "top_right": [
+          440.0,
+          1286.0
+        ],
+        "bottom_right": [
+          440.0,
+          1324.0
+        ],
+        "bottom_left": [
+          349.0,
+          1324.0
+        ]
+      },
+      "line_number": 74
+    },
+    {
+      "block_id": 75,
+      "text": "대부분",
+      "confidence": 0.9999,
+      "bbox": {
+        "top_left": [
+          427.0,
+          1286.0
+        ],
+        "top_right": [
+          562.0,
+          1286.0
+        ],
+        "bottom_right": [
+          562.0,
+          1324.0
+        ],
+        "bottom_left": [
+          427.0,
+          1324.0
+        ]
+      },
+      "line_number": 75
+    },
+    {
+      "block_id": 76,
+      "text": "無라",
+      "confidence": 0.5851,
+      "bbox": {
+        "top_left": [
+          955.0,
+          1290.0
+        ],
+        "top_right": [
+          1064.0,
+          1290.0
+        ],
+        "bottom_right": [
+          1064.0,
+          1324.0
+        ],
+        "bottom_left": [
+          955.0,
+          1324.0
+        ]
+      },
+      "line_number": 76
+    },
+    {
+      "block_id": 77,
+      "text": "혹은諸字",
+      "confidence": 0.8244,
+      "bbox": {
+        "top_left": [
+          1057.0,
+          1286.0
+        ],
+        "top_right": [
+          1250.0,
+          1286.0
+        ],
+        "bottom_right": [
+          1250.0,
+          1324.0
+        ],
+        "bottom_left": [
+          1057.0,
+          1324.0
+        ]
+      },
+      "line_number": 77
+    },
+    {
+      "block_id": 78,
+      "text": "상을",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          1352.0,
+          1286.0
+        ],
+        "top_right": [
+          1436.0,
+          1286.0
+        ],
+        "bottom_right": [
+          1436.0,
+          1324.0
+        ],
+        "bottom_left": [
+          1352.0,
+          1324.0
+        ]
+      },
+      "line_number": 78
+    },
+    {
+      "block_id": 79,
+      "text": "받아서형성된다",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          1433.0,
+          1283.0
+        ],
+        "top_right": [
+          1755.0,
+          1283.0
+        ],
+        "bottom_right": [
+          1755.0,
+          1327.0
+        ],
+        "bottom_left": [
+          1433.0,
+          1327.0
+        ]
+      },
+      "line_number": 79
+    },
+    {
+      "block_id": 80,
+      "text": "임상에서는대부분發楚版",
+      "confidence": 0.7881,
+      "bbox": {
+        "top_left": [
+          1761.0,
+          1283.0
+        ],
+        "top_right": [
+          2266.0,
+          1283.0
+        ],
+        "bottom_right": [
+          2266.0,
+          1327.0
+        ],
+        "bottom_left": [
+          1761.0,
+          1327.0
+        ]
+      },
+      "line_number": 80
+    },
+    {
+      "block_id": 81,
+      "text": "吉韓自",
+      "confidence": 0.5366,
+      "bbox": {
+        "top_left": [
+          516.0,
+          1343.0
+        ],
+        "top_right": [
+          685.0,
+          1351.0
+        ],
+        "bottom_right": [
+          683.0,
+          1399.0
+        ],
+        "bottom_left": [
+          514.0,
+          1391.0
+        ]
+      },
+      "line_number": 81
+    },
+    {
+      "block_id": 82,
+      "text": "脫平策혹은脫濟犧등이나타난",
+      "confidence": 0.7404,
+      "bbox": {
+        "top_left": [
+          677.0,
+          1351.0
+        ],
+        "top_right": [
+          1260.0,
+          1351.0
+        ],
+        "bottom_right": [
+          1260.0,
+          1395.0
+        ],
+        "bottom_left": [
+          677.0,
+          1395.0
+        ]
+      },
+      "line_number": 82
+    },
+    {
+      "block_id": 83,
+      "text": "無理葉",
+      "confidence": 0.5745,
+      "bbox": {
+        "top_left": [
+          1352.0,
+          1358.0
+        ],
+        "top_right": [
+          1494.0,
+          1358.0
+        ],
+        "bottom_right": [
+          1494.0,
+          1395.0
+        ],
+        "bottom_left": [
+          1352.0,
+          1395.0
+        ]
+      },
+      "line_number": 83
+    },
+    {
+      "block_id": 84,
+      "text": "明曜",
+      "confidence": 0.5889,
+      "bbox": {
+        "top_left": [
+          1501.0,
+          1358.0
+        ],
+        "top_right": [
+          1606.0,
+          1358.0
+        ],
+        "bottom_right": [
+          1606.0,
+          1391.0
+        ],
+        "bottom_left": [
+          1501.0,
+          1391.0
+        ]
+      },
+      "line_number": 84
+    },
+    {
+      "block_id": 85,
+      "text": "華廬解春面는매번",
+      "confidence": 0.674,
+      "bbox": {
+        "top_left": [
+          403.0,
+          1425.0
+        ],
+        "top_right": [
+          762.0,
+          1429.0
+        ],
+        "bottom_right": [
+          762.0,
+          1466.0
+        ],
+        "bottom_left": [
+          403.0,
+          1463.0
+        ]
+      },
+      "line_number": 85
+    },
+    {
+      "block_id": 86,
+      "text": "華最華秦紫을위주로조성되",
+      "confidence": 0.7463,
+      "bbox": {
+        "top_left": [
+          742.0,
+          1422.0
+        ],
+        "top_right": [
+          1250.0,
+          1425.0
+        ],
+        "bottom_right": [
+          1250.0,
+          1470.0
+        ],
+        "bottom_left": [
+          742.0,
+          1466.0
+        ]
+      },
+      "line_number": 86
+    },
+    {
+      "block_id": 87,
+      "text": "脫平數",
+      "confidence": 0.7598,
+      "bbox": {
+        "top_left": [
+          1347.0,
+          1418.0
+        ],
+        "top_right": [
+          1488.0,
+          1426.0
+        ],
+        "bottom_right": [
+          1485.0,
+          1474.0
+        ],
+        "bottom_left": [
+          1344.0,
+          1465.0
+        ]
+      },
+      "line_number": 87
+    },
+    {
+      "block_id": 88,
+      "text": "등이나타난다",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          1478.0,
+          1418.0
+        ],
+        "top_right": [
+          1748.0,
+          1426.0
+        ],
+        "bottom_right": [
+          1747.0,
+          1470.0
+        ],
+        "bottom_left": [
+          1476.0,
+          1462.0
+        ]
+      },
+      "line_number": 88
+    },
+    {
+      "block_id": 89,
+      "text": "華京脫春鄕는매번主京華春",
+      "confidence": 0.5775,
+      "bbox": {
+        "top_left": [
+          1748.0,
+          1422.0
+        ],
+        "top_right": [
+          2259.0,
+          1418.0
+        ],
+        "bottom_right": [
+          2259.0,
+          1466.0
+        ],
+        "bottom_left": [
+          1748.0,
+          1470.0
+        ]
+      },
+      "line_number": 89
+    },
+    {
+      "block_id": 90,
+      "text": "다",
+      "confidence": 0.8282,
+      "bbox": {
+        "top_left": [
+          345.0,
+          1432.0
+        ],
+        "top_right": [
+          393.0,
+          1432.0
+        ],
+        "bottom_right": [
+          393.0,
+          1459.0
+        ],
+        "bottom_left": [
+          345.0,
+          1459.0
+        ]
+      },
+      "line_number": 90
+    },
+    {
+      "block_id": 91,
+      "text": "고城黃在華敎老帝萊葉光異統年및類自등의",
+      "confidence": 0.5993,
+      "bbox": {
+        "top_left": [
+          342.0,
+          1493.0
+        ],
+        "top_right": [
+          1250.0,
+          1493.0
+        ],
+        "bottom_right": [
+          1250.0,
+          1537.0
+        ],
+        "bottom_left": [
+          342.0,
+          1537.0
+        ]
+      },
+      "line_number": 91
+    },
+    {
+      "block_id": 92,
+      "text": "樣을",
+      "confidence": 0.7474,
+      "bbox": {
+        "top_left": [
+          1348.0,
+          1493.0
+        ],
+        "top_right": [
+          1443.0,
+          1493.0
+        ],
+        "bottom_right": [
+          1443.0,
+          1537.0
+        ],
+        "bottom_left": [
+          1348.0,
+          1537.0
+        ]
+      },
+      "line_number": 92
+    },
+    {
+      "block_id": 93,
+      "text": "위주로조성되고",
+      "confidence": 0.9999,
+      "bbox": {
+        "top_left": [
+          1443.0,
+          1493.0
+        ],
+        "top_right": [
+          1755.0,
+          1493.0
+        ],
+        "bottom_right": [
+          1755.0,
+          1537.0
+        ],
+        "bottom_left": [
+          1443.0,
+          1537.0
+        ]
+      },
+      "line_number": 93
+    },
+    {
+      "block_id": 94,
+      "text": "歸寄仲華子春葉如紀",
+      "confidence": 0.5153,
+      "bbox": {
+        "top_left": [
+          1765.0,
+          1490.0
+        ],
+        "top_right": [
+          2263.0,
+          1490.0
+        ],
+        "bottom_right": [
+          2263.0,
+          1537.0
+        ],
+        "bottom_left": [
+          1765.0,
+          1537.0
+        ]
+      },
+      "line_number": 94
+    },
+    {
+      "block_id": 95,
+      "text": "등의道를",
+      "confidence": 0.9155,
+      "bbox": {
+        "top_left": [
+          1352.0,
+          1568.0
+        ],
+        "top_right": [
+          1534.0,
+          1568.0
+        ],
+        "bottom_right": [
+          1534.0,
+          1605.0
+        ],
+        "bottom_left": [
+          1352.0,
+          1605.0
+        ]
+      },
+      "line_number": 95
+    },
+    {
+      "block_id": 96,
+      "text": "帝用한다",
+      "confidence": 0.9842,
+      "bbox": {
+        "top_left": [
+          1524.0,
+          1568.0
+        ],
+        "top_right": [
+          1714.0,
+          1568.0
+        ],
+        "bottom_right": [
+          1714.0,
+          1605.0
+        ],
+        "bottom_left": [
+          1524.0,
+          1605.0
+        ]
+      },
+      "line_number": 96
+    },
+    {
+      "block_id": 97,
+      "text": "면에서는",
+      "confidence": 0.9997,
+      "bbox": {
+        "top_left": [
+          1829.0,
+          1568.0
+        ],
+        "top_right": [
+          1995.0,
+          1568.0
+        ],
+        "bottom_right": [
+          1995.0,
+          1605.0
+        ],
+        "bottom_left": [
+          1829.0,
+          1605.0
+        ]
+      },
+      "line_number": 97
+    },
+    {
+      "block_id": 98,
+      "text": "가있다:0君而强脫葉과",
+      "confidence": 0.6374,
+      "bbox": {
+        "top_left": [
+          339.0,
+          1636.0
+        ],
+        "top_right": [
+          810.0,
+          1636.0
+        ],
+        "bottom_right": [
+          810.0,
+          1680.0
+        ],
+        "bottom_left": [
+          339.0,
+          1680.0
+        ]
+      },
+      "line_number": 98
+    },
+    {
+      "block_id": 99,
+      "text": "最周하는것으로柑家와",
+      "confidence": 0.8294,
+      "bbox": {
+        "top_left": [
+          820.0,
+          1636.0
+        ],
+        "top_right": [
+          1253.0,
+          1636.0
+        ],
+        "bottom_right": [
+          1253.0,
+          1683.0
+        ],
+        "bottom_left": [
+          820.0,
+          1683.0
+        ]
+      },
+      "line_number": 99
+    },
+    {
+      "block_id": 100,
+      "text": "가지가있다:0書萊强과",
+      "confidence": 0.7946,
+      "bbox": {
+        "top_left": [
+          1352.0,
+          1636.0
+        ],
+        "top_right": [
+          1805.0,
+          1636.0
+        ],
+        "bottom_right": [
+          1805.0,
+          1683.0
+        ],
+        "bottom_left": [
+          1352.0,
+          1683.0
+        ]
+      },
+      "line_number": 100
+    },
+    {
+      "block_id": 101,
+      "text": "前記用하는",
+      "confidence": 0.7718,
+      "bbox": {
+        "top_left": [
+          1816.0,
+          1639.0
+        ],
+        "top_right": [
+          1982.0,
+          1639.0
+        ],
+        "bottom_right": [
+          1982.0,
+          1677.0
+        ],
+        "bottom_left": [
+          1816.0,
+          1677.0
+        ]
+      },
+      "line_number": 101
+    },
+    {
+      "block_id": 102,
+      "text": "것으로",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          1985.0,
+          1643.0
+        ],
+        "top_right": [
+          2120.0,
+          1643.0
+        ],
+        "bottom_right": [
+          2120.0,
+          1677.0
+        ],
+        "bottom_left": [
+          1985.0,
+          1677.0
+        ]
+      },
+      "line_number": 102
+    },
+    {
+      "block_id": 103,
+      "text": "金敎志",
+      "confidence": 0.5719,
+      "bbox": {
+        "top_left": [
+          2107.0,
+          1639.0
+        ],
+        "top_right": [
+          2249.0,
+          1639.0
+        ],
+        "bottom_right": [
+          2249.0,
+          1677.0
+        ],
+        "bottom_left": [
+          2107.0,
+          1677.0
+        ]
+      },
+      "line_number": 103
+    },
+    {
+      "block_id": 104,
+      "text": "川발과같은趙이다",
+      "confidence": 0.8042,
+      "bbox": {
+        "top_left": [
+          342.0,
+          1707.0
+        ],
+        "top_right": [
+          691.0,
+          1707.0
+        ],
+        "bottom_right": [
+          691.0,
+          1751.0
+        ],
+        "bottom_left": [
+          342.0,
+          1751.0
+        ]
+      },
+      "line_number": 104
+    },
+    {
+      "block_id": 105,
+      "text": "孫刑는쌌리하고",
+      "confidence": 0.6368,
+      "bbox": {
+        "top_left": [
+          705.0,
+          1707.0
+        ],
+        "top_right": [
+          1003.0,
+          1707.0
+        ],
+        "bottom_right": [
+          1003.0,
+          1751.0
+        ],
+        "bottom_left": [
+          705.0,
+          1751.0
+        ]
+      },
+      "line_number": 105
+    },
+    {
+      "block_id": 106,
+      "text": "橄敎으로",
+      "confidence": 0.8649,
+      "bbox": {
+        "top_left": [
+          1006.0,
+          1710.0
+        ],
+        "top_right": [
+          1182.0,
+          1710.0
+        ],
+        "bottom_right": [
+          1182.0,
+          1744.0
+        ],
+        "bottom_left": [
+          1006.0,
+          1744.0
+        ]
+      },
+      "line_number": 106
+    },
+    {
+      "block_id": 107,
+      "text": "南廷및分葉과",
+      "confidence": 0.6588,
+      "bbox": {
+        "top_left": [
+          1348.0,
+          1707.0
+        ],
+        "top_right": [
+          1626.0,
+          1707.0
+        ],
+        "bottom_right": [
+          1626.0,
+          1751.0
+        ],
+        "bottom_left": [
+          1348.0,
+          1751.0
+        ]
+      },
+      "line_number": 107
+    },
+    {
+      "block_id": 108,
+      "text": "같은趙이다",
+      "confidence": 0.8691,
+      "bbox": {
+        "top_left": [
+          1629.0,
+          1710.0
+        ],
+        "top_right": [
+          1849.0,
+          1710.0
+        ],
+        "bottom_right": [
+          1849.0,
+          1748.0
+        ],
+        "bottom_left": [
+          1629.0,
+          1748.0
+        ]
+      },
+      "line_number": 108
+    },
+    {
+      "block_id": 109,
+      "text": "대개記川가",
+      "confidence": 0.7399,
+      "bbox": {
+        "top_left": [
+          1873.0,
+          1710.0
+        ],
+        "top_right": [
+          2090.0,
+          1710.0
+        ],
+        "bottom_right": [
+          2090.0,
+          1748.0
+        ],
+        "bottom_left": [
+          1873.0,
+          1748.0
+        ]
+      },
+      "line_number": 109
+    },
+    {
+      "block_id": 110,
+      "text": "인체에침",
+      "confidence": 0.9999,
+      "bbox": {
+        "top_left": [
+          2093.0,
+          1710.0
+        ],
+        "top_right": [
+          2263.0,
+          1710.0
+        ],
+        "bottom_right": [
+          2263.0,
+          1748.0
+        ],
+        "bottom_left": [
+          2093.0,
+          1748.0
+        ]
+      },
+      "line_number": 110
+    },
+    {
+      "block_id": 111,
+      "text": "매번",
+      "confidence": 0.9993,
+      "bbox": {
+        "top_left": [
+          342.0,
+          1775.0
+        ],
+        "top_right": [
+          444.0,
+          1775.0
+        ],
+        "bottom_right": [
+          444.0,
+          1822.0
+        ],
+        "bottom_left": [
+          342.0,
+          1822.0
+        ]
+      },
+      "line_number": 111
+    },
+    {
+      "block_id": 112,
+      "text": "治靴의鬱儒를",
+      "confidence": 0.7776,
+      "bbox": {
+        "top_left": [
+          423.0,
+          1778.0
+        ],
+        "top_right": [
+          694.0,
+          1778.0
+        ],
+        "bottom_right": [
+          694.0,
+          1826.0
+        ],
+        "bottom_left": [
+          423.0,
+          1826.0
+        ]
+      },
+      "line_number": 112
+    },
+    {
+      "block_id": 113,
+      "text": "일으켜學顚來角이",
+      "confidence": 0.773,
+      "bbox": {
+        "top_left": [
+          684.0,
+          1775.0
+        ],
+        "top_right": [
+          1033.0,
+          1775.0
+        ],
+        "bottom_right": [
+          1033.0,
+          1819.0
+        ],
+        "bottom_left": [
+          684.0,
+          1819.0
+        ]
+      },
+      "line_number": 113
+    },
+    {
+      "block_id": 114,
+      "text": "나타난다그",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          1033.0,
+          1782.0
+        ],
+        "top_right": [
+          1257.0,
+          1782.0
+        ],
+        "bottom_right": [
+          1257.0,
+          1819.0
+        ],
+        "bottom_left": [
+          1033.0,
+          1819.0
+        ]
+      },
+      "line_number": 114
+    },
+    {
+      "block_id": 115,
+      "text": "습하면발병이급하고'",
+      "confidence": 0.9796,
+      "bbox": {
+        "top_left": [
+          1352.0,
+          1778.0
+        ],
+        "top_right": [
+          1744.0,
+          1778.0
+        ],
+        "bottom_right": [
+          1744.0,
+          1822.0
+        ],
+        "bottom_left": [
+          1352.0,
+          1822.0
+        ]
+      },
+      "line_number": 115
+    },
+    {
+      "block_id": 116,
+      "text": "個盤이빨라서쉽게斜禮을치",
+      "confidence": 0.7434,
+      "bbox": {
+        "top_left": [
+          1731.0,
+          1775.0
+        ],
+        "top_right": [
+          2262.0,
+          1771.0
+        ],
+        "bottom_right": [
+          2263.0,
+          1819.0
+        ],
+        "bottom_left": [
+          1731.0,
+          1823.0
+        ]
+      },
+      "line_number": 116
+    },
+    {
+      "block_id": 117,
+      "text": "러므로",
+      "confidence": 0.9996,
+      "bbox": {
+        "top_left": [
+          342.0,
+          1835.0
+        ],
+        "top_right": [
+          469.0,
+          1848.0
+        ],
+        "bottom_right": [
+          464.0,
+          1898.0
+        ],
+        "bottom_left": [
+          337.0,
+          1885.0
+        ]
+      },
+      "line_number": 117
+    },
+    {
+      "block_id": 118,
+      "text": "華廬華秦盤에",
+      "confidence": 0.6191,
+      "bbox": {
+        "top_left": [
+          471.0,
+          1850.0
+        ],
+        "top_right": [
+          738.0,
+          1850.0
+        ],
+        "bottom_right": [
+          738.0,
+          1894.0
+        ],
+        "bottom_left": [
+          471.0,
+          1894.0
+        ]
+      },
+      "line_number": 118
+    },
+    {
+      "block_id": 119,
+      "text": "항상古顚明脫葉을",
+      "confidence": 0.6629,
+      "bbox": {
+        "top_left": [
+          725.0,
+          1850.0
+        ],
+        "top_right": [
+          1091.0,
+          1850.0
+        ],
+        "bottom_right": [
+          1091.0,
+          1894.0
+        ],
+        "bottom_left": [
+          725.0,
+          1894.0
+        ]
+      },
+      "line_number": 119
+    },
+    {
+      "block_id": 120,
+      "text": "고가슴에맺혀이되고",
+      "confidence": 0.9996,
+      "bbox": {
+        "top_left": [
+          1348.0,
+          1843.0
+        ],
+        "top_right": [
+          1822.0,
+          1843.0
+        ],
+        "bottom_right": [
+          1822.0,
+          1890.0
+        ],
+        "bottom_left": [
+          1348.0,
+          1890.0
+        ]
+      },
+      "line_number": 120
+    },
+    {
+      "block_id": 121,
+      "text": "橄周하여",
+      "confidence": 0.618,
+      "bbox": {
+        "top_left": [
+          1094.0,
+          1853.0
+        ],
+        "top_right": [
+          1253.0,
+          1853.0
+        ],
+        "bottom_right": [
+          1253.0,
+          1890.0
+        ],
+        "bottom_left": [
+          1094.0,
+          1890.0
+        ]
+      },
+      "line_number": 121
+    },
+    {
+      "block_id": 122,
+      "text": "또한",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          1809.0,
+          1853.0
+        ],
+        "top_right": [
+          1917.0,
+          1853.0
+        ],
+        "bottom_right": [
+          1917.0,
+          1890.0
+        ],
+        "bottom_left": [
+          1809.0,
+          1890.0
+        ]
+      },
+      "line_number": 122
+    },
+    {
+      "block_id": 123,
+      "text": "대부분城靴의",
+      "confidence": 0.7531,
+      "bbox": {
+        "top_left": [
+          1917.0,
+          1846.0
+        ],
+        "top_right": [
+          2192.0,
+          1846.0
+        ],
+        "bottom_right": [
+          2192.0,
+          1890.0
+        ],
+        "bottom_left": [
+          1917.0,
+          1890.0
+        ]
+      },
+      "line_number": 123
+    },
+    {
+      "block_id": 124,
+      "text": "李기",
+      "confidence": 0.694,
+      "bbox": {
+        "top_left": [
+          2181.0,
+          1850.0
+        ],
+        "top_right": [
+          2259.0,
+          1850.0
+        ],
+        "bottom_right": [
+          2259.0,
+          1890.0
+        ],
+        "bottom_left": [
+          2181.0,
+          1890.0
+        ]
+      },
+      "line_number": 124
+    },
+    {
+      "block_id": 125,
+      "text": "乾實을",
+      "confidence": 0.5437,
+      "bbox": {
+        "top_left": [
+          342.0,
+          1917.0
+        ],
+        "top_right": [
+          484.0,
+          1917.0
+        ],
+        "bottom_right": [
+          484.0,
+          1965.0
+        ],
+        "bottom_left": [
+          342.0,
+          1965.0
+        ]
+      },
+      "line_number": 125
+    },
+    {
+      "block_id": 126,
+      "text": "유통시킨다",
+      "confidence": 0.9999,
+      "bbox": {
+        "top_left": [
+          464.0,
+          1924.0
+        ],
+        "top_right": [
+          677.0,
+          1921.0
+        ],
+        "bottom_right": [
+          678.0,
+          1958.0
+        ],
+        "bottom_left": [
+          464.0,
+          1962.0
+        ]
+      },
+      "line_number": 126
+    },
+    {
+      "block_id": 127,
+      "text": "2",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          694.0,
+          1928.0
+        ],
+        "top_right": [
+          745.0,
+          1928.0
+        ],
+        "bottom_right": [
+          745.0,
+          1955.0
+        ],
+        "bottom_left": [
+          694.0,
+          1955.0
+        ]
+      },
+      "line_number": 127
+    },
+    {
+      "block_id": 128,
+      "text": "地來地如葉과記思하는것으",
+      "confidence": 0.5581,
+      "bbox": {
+        "top_left": [
+          735.0,
+          1921.0
+        ],
+        "top_right": [
+          1253.0,
+          1921.0
+        ],
+        "bottom_right": [
+          1253.0,
+          1965.0
+        ],
+        "bottom_left": [
+          735.0,
+          1965.0
+        ]
+      },
+      "line_number": 128
+    },
+    {
+      "block_id": 129,
+      "text": "끼어",
+      "confidence": 0.9993,
+      "bbox": {
+        "top_left": [
+          1352.0,
+          1924.0
+        ],
+        "top_right": [
+          1443.0,
+          1924.0
+        ],
+        "bottom_right": [
+          1443.0,
+          1958.0
+        ],
+        "bottom_left": [
+          1352.0,
+          1958.0
+        ]
+      },
+      "line_number": 129
+    },
+    {
+      "block_id": 130,
+      "text": "있는등의특징을가지고있다",
+      "confidence": 0.9994,
+      "bbox": {
+        "top_left": [
+          1426.0,
+          1921.0
+        ],
+        "top_right": [
+          1965.0,
+          1921.0
+        ],
+        "bottom_right": [
+          1965.0,
+          1965.0
+        ],
+        "bottom_left": [
+          1426.0,
+          1965.0
+        ]
+      },
+      "line_number": 130
+    },
+    {
+      "block_id": 131,
+      "text": "그러므로",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          1982.0,
+          1924.0
+        ],
+        "top_right": [
+          2137.0,
+          1924.0
+        ],
+        "bottom_right": [
+          2137.0,
+          1958.0
+        ],
+        "bottom_left": [
+          1982.0,
+          1958.0
+        ]
+      },
+      "line_number": 131
+    },
+    {
+      "block_id": 132,
+      "text": "空京解",
+      "confidence": 0.5863,
+      "bbox": {
+        "top_left": [
+          2141.0,
+          1924.0
+        ],
+        "top_right": [
+          2259.0,
+          1924.0
+        ],
+        "bottom_right": [
+          2259.0,
+          1958.0
+        ],
+        "bottom_left": [
+          2141.0,
+          1958.0
+        ]
+      },
+      "line_number": 132
+    },
+    {
+      "block_id": 133,
+      "text": "로客仁治想및類敬과같은趙이다",
+      "confidence": 0.6695,
+      "bbox": {
+        "top_left": [
+          342.0,
+          1985.0
+        ],
+        "top_right": [
+          1037.0,
+          1989.0
+        ],
+        "bottom_right": [
+          1036.0,
+          2036.0
+        ],
+        "bottom_left": [
+          342.0,
+          2033.0
+        ]
+      },
+      "line_number": 133
+    },
+    {
+      "block_id": 134,
+      "text": "地는日敍고",
+      "confidence": 0.6052,
+      "bbox": {
+        "top_left": [
+          1030.0,
+          1996.0
+        ],
+        "top_right": [
+          1250.0,
+          1996.0
+        ],
+        "bottom_right": [
+          1250.0,
+          2029.0
+        ],
+        "bottom_left": [
+          1030.0,
+          2029.0
+        ]
+      },
+      "line_number": 134
+    },
+    {
+      "block_id": 135,
+      "text": "秦폄로",
+      "confidence": 0.5193,
+      "bbox": {
+        "top_left": [
+          1352.0,
+          1996.0
+        ],
+        "top_right": [
+          1480.0,
+          1996.0
+        ],
+        "bottom_right": [
+          1480.0,
+          2029.0
+        ],
+        "bottom_left": [
+          1352.0,
+          2029.0
+        ]
+      },
+      "line_number": 135
+    },
+    {
+      "block_id": 136,
+      "text": "華我思烈하는동시에",
+      "confidence": 0.7401,
+      "bbox": {
+        "top_left": [
+          1480.0,
+          1989.0
+        ],
+        "top_right": [
+          1866.0,
+          1989.0
+        ],
+        "bottom_right": [
+          1866.0,
+          2033.0
+        ],
+        "bottom_left": [
+          1480.0,
+          2033.0
+        ]
+      },
+      "line_number": 136
+    },
+    {
+      "block_id": 137,
+      "text": "반드시承川가",
+      "confidence": 0.7426,
+      "bbox": {
+        "top_left": [
+          1870.0,
+          1989.0
+        ],
+        "top_right": [
+          2137.0,
+          1989.0
+        ],
+        "bottom_right": [
+          2137.0,
+          2033.0
+        ],
+        "bottom_left": [
+          1870.0,
+          2033.0
+        ]
+      },
+      "line_number": 137
+    },
+    {
+      "block_id": 138,
+      "text": "병을일",
+      "confidence": 0.9998,
+      "bbox": {
+        "top_left": [
+          2127.0,
+          1989.0
+        ],
+        "top_right": [
+          2266.0,
+          1989.0
+        ],
+        "bottom_right": [
+          2266.0,
+          2036.0
+        ],
+        "bottom_left": [
+          2127.0,
+          2036.0
+        ]
+      },
+      "line_number": 138
+    },
+    {
+      "block_id": 139,
+      "text": "南橘을주관하고까로는夷돈와슴하면서秦를주핀",
+      "confidence": 0.7938,
+      "bbox": {
+        "top_left": [
+          345.0,
+          2060.0
+        ],
+        "top_right": [
+          1250.0,
+          2060.0
+        ],
+        "bottom_right": [
+          1250.0,
+          2108.0
+        ],
+        "bottom_left": [
+          345.0,
+          2108.0
+        ]
+      },
+      "line_number": 139
+    },
+    {
+      "block_id": 140,
+      "text": "으키는특징을함께고려하여",
+      "confidence": 0.9992,
+      "bbox": {
+        "top_left": [
+          1348.0,
+          2060.0
+        ],
+        "top_right": [
+          1866.0,
+          2060.0
+        ],
+        "bottom_right": [
+          1866.0,
+          2104.0
+        ],
+        "bottom_left": [
+          1348.0,
+          2104.0
+        ]
+      },
+      "line_number": 140
+    },
+    {
+      "block_id": 141,
+      "text": "骨秋華靑來을最年히",
+      "confidence": 0.5124,
+      "bbox": {
+        "top_left": [
+          1880.0,
+          2057.0
+        ],
+        "top_right": [
+          2259.0,
+          2057.0
+        ],
+        "bottom_right": [
+          2259.0,
+          2101.0
+        ],
+        "bottom_left": [
+          1880.0,
+          2101.0
+        ]
+      },
+      "line_number": 141
+    },
+    {
+      "block_id": 142,
+      "text": "한다",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          349.0,
+          2135.0
+        ],
+        "top_right": [
+          444.0,
+          2135.0
+        ],
+        "bottom_right": [
+          444.0,
+          2179.0
+        ],
+        "bottom_left": [
+          349.0,
+          2179.0
+        ]
+      },
+      "line_number": 142
+    },
+    {
+      "block_id": 143,
+      "text": "鐘樓의M喆가夷評로부터",
+      "confidence": 0.6987,
+      "bbox": {
+        "top_left": [
+          437.0,
+          2135.0
+        ],
+        "top_right": [
+          931.0,
+          2135.0
+        ],
+        "bottom_right": [
+          931.0,
+          2179.0
+        ],
+        "bottom_left": [
+          437.0,
+          2179.0
+        ]
+      },
+      "line_number": 143
+    },
+    {
+      "block_id": 144,
+      "text": "들어오면안으로聃",
+      "confidence": 0.9193,
+      "bbox": {
+        "top_left": [
+          911.0,
+          2135.0
+        ],
+        "top_right": [
+          1260.0,
+          2135.0
+        ],
+        "bottom_right": [
+          1260.0,
+          2179.0
+        ],
+        "bottom_left": [
+          911.0,
+          2179.0
+        ]
+      },
+      "line_number": 144
+    },
+    {
+      "block_id": 145,
+      "text": "여넣음으로써禪盤하여",
+      "confidence": 0.8377,
+      "bbox": {
+        "top_left": [
+          1352.0,
+          2131.0
+        ],
+        "top_right": [
+          1778.0,
+          2131.0
+        ],
+        "bottom_right": [
+          1778.0,
+          2175.0
+        ],
+        "bottom_left": [
+          1352.0,
+          2175.0
+        ]
+      },
+      "line_number": 145
+    },
+    {
+      "block_id": 146,
+      "text": "棟로들어가는",
+      "confidence": 0.8911,
+      "bbox": {
+        "top_left": [
+          1785.0,
+          2135.0
+        ],
+        "top_right": [
+          2053.0,
+          2135.0
+        ],
+        "bottom_right": [
+          2053.0,
+          2179.0
+        ],
+        "bottom_left": [
+          1785.0,
+          2179.0
+        ]
+      },
+      "line_number": 146
+    },
+    {
+      "block_id": 147,
+      "text": "병세를중단",
+      "confidence": 0.959,
+      "bbox": {
+        "top_left": [
+          2056.0,
+          2138.0
+        ],
+        "top_right": [
+          2259.0,
+          2138.0
+        ],
+        "bottom_right": [
+          2259.0,
+          2175.0
+        ],
+        "bottom_left": [
+          2056.0,
+          2175.0
+        ]
+      },
+      "line_number": 147
+    },
+    {
+      "block_id": 148,
+      "text": "에머물러抽의",
+      "confidence": 0.8643,
+      "bbox": {
+        "top_left": [
+          342.0,
+          2203.0
+        ],
+        "top_right": [
+          620.0,
+          2203.0
+        ],
+        "bottom_right": [
+          620.0,
+          2247.0
+        ],
+        "bottom_left": [
+          342.0,
+          2247.0
+        ]
+      },
+      "line_number": 148
+    },
+    {
+      "block_id": 149,
+      "text": "道我과第盤이정상을잃게되고批來",
+      "confidence": 0.7165,
+      "bbox": {
+        "top_left": [
+          603.0,
+          2206.0
+        ],
+        "top_right": [
+          1263.0,
+          2206.0
+        ],
+        "bottom_right": [
+          1263.0,
+          2250.0
+        ],
+        "bottom_left": [
+          603.0,
+          2250.0
+        ]
+      },
+      "line_number": 149
+    },
+    {
+      "block_id": 150,
+      "text": "시킨다0記來地萊夷과",
+      "confidence": 0.6037,
+      "bbox": {
+        "top_left": [
+          1358.0,
+          2209.0
+        ],
+        "top_right": [
+          1805.0,
+          2209.0
+        ],
+        "bottom_right": [
+          1805.0,
+          2243.0
+        ],
+        "bottom_left": [
+          1358.0,
+          2243.0
+        ]
+      },
+      "line_number": 150
+    },
+    {
+      "block_id": 151,
+      "text": "審廷하는",
+      "confidence": 0.6068,
+      "bbox": {
+        "top_left": [
+          1809.0,
+          2206.0
+        ],
+        "top_right": [
+          1992.0,
+          2206.0
+        ],
+        "bottom_right": [
+          1992.0,
+          2243.0
+        ],
+        "bottom_left": [
+          1809.0,
+          2243.0
+        ]
+      },
+      "line_number": 151
+    },
+    {
+      "block_id": 152,
+      "text": "것으로橋想및",
+      "confidence": 0.9005,
+      "bbox": {
+        "top_left": [
+          1988.0,
+          2203.0
+        ],
+        "top_right": [
+          2266.0,
+          2203.0
+        ],
+        "bottom_right": [
+          2266.0,
+          2247.0
+        ],
+        "bottom_left": [
+          1988.0,
+          2247.0
+        ]
+      },
+      "line_number": 152
+    },
+    {
+      "block_id": 153,
+      "text": "가不치해지면서",
+      "confidence": 0.8833,
+      "bbox": {
+        "top_left": [
+          342.0,
+          2274.0
+        ],
+        "top_right": [
+          647.0,
+          2274.0
+        ],
+        "bottom_right": [
+          647.0,
+          2318.0
+        ],
+        "bottom_left": [
+          342.0,
+          2318.0
+        ]
+      },
+      "line_number": 153
+    },
+    {
+      "block_id": 154,
+      "text": "숫쁨과툼護등의증상이나타난다",
+      "confidence": 0.7754,
+      "bbox": {
+        "top_left": [
+          627.0,
+          2270.0
+        ],
+        "top_right": [
+          1253.0,
+          2274.0
+        ],
+        "bottom_right": [
+          1253.0,
+          2318.0
+        ],
+        "bottom_left": [
+          627.0,
+          2314.0
+        ]
+      },
+      "line_number": 154
+    },
+    {
+      "block_id": 155,
+      "text": "君山과같은趙이다",
+      "confidence": 0.8264,
+      "bbox": {
+        "top_left": [
+          1352.0,
+          2274.0
+        ],
+        "top_right": [
+          1738.0,
+          2274.0
+        ],
+        "bottom_right": [
+          1738.0,
+          2318.0
+        ],
+        "bottom_left": [
+          1352.0,
+          2318.0
+        ]
+      },
+      "line_number": 155
+    },
+    {
+      "block_id": 156,
+      "text": "道惠四法\"陽春",
+      "confidence": 0.5825,
+      "bbox": {
+        "top_left": [
+          1961.0,
+          2277.0
+        ],
+        "top_right": [
+          2259.0,
+          2277.0
+        ],
+        "bottom_right": [
+          2259.0,
+          2311.0
+        ],
+        "bottom_left": [
+          1961.0,
+          2311.0
+        ]
+      },
+      "line_number": 156
+    },
+    {
+      "block_id": 157,
+      "text": "그러므로",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          345.0,
+          2342.0
+        ],
+        "top_right": [
+          505.0,
+          2342.0
+        ],
+        "bottom_right": [
+          505.0,
+          2389.0
+        ],
+        "bottom_left": [
+          345.0,
+          2389.0
+        ]
+      },
+      "line_number": 157
+    },
+    {
+      "block_id": 158,
+      "text": "華承解秦盤에반드시소량의",
+      "confidence": 0.822,
+      "bbox": {
+        "top_left": [
+          508.0,
+          2345.0
+        ],
+        "top_right": [
+          1016.0,
+          2345.0
+        ],
+        "bottom_right": [
+          1016.0,
+          2389.0
+        ],
+        "bottom_left": [
+          508.0,
+          2389.0
+        ]
+      },
+      "line_number": 158
+    },
+    {
+      "block_id": 159,
+      "text": "自華儒如葉을",
+      "confidence": 0.7134,
+      "bbox": {
+        "top_left": [
+          1006.0,
+          2345.0
+        ],
+        "top_right": [
+          1253.0,
+          2345.0
+        ],
+        "bottom_right": [
+          1253.0,
+          2379.0
+        ],
+        "bottom_left": [
+          1006.0,
+          2379.0
+        ]
+      },
+      "line_number": 159
+    },
+    {
+      "block_id": 160,
+      "text": "짊라고하였다",
+      "confidence": 0.8613,
+      "bbox": {
+        "top_left": [
+          1348.0,
+          2345.0
+        ],
+        "top_right": [
+          1656.0,
+          2345.0
+        ],
+        "bottom_right": [
+          1656.0,
+          2389.0
+        ],
+        "bottom_left": [
+          1348.0,
+          2389.0
+        ]
+      },
+      "line_number": 160
+    },
+    {
+      "block_id": 161,
+      "text": "承川가인체를",
+      "confidence": 0.7672,
+      "bbox": {
+        "top_left": [
+          1650.0,
+          2345.0
+        ],
+        "top_right": [
+          1927.0,
+          2345.0
+        ],
+        "bottom_right": [
+          1927.0,
+          2389.0
+        ],
+        "bottom_left": [
+          1650.0,
+          2389.0
+        ]
+      },
+      "line_number": 161
+    },
+    {
+      "block_id": 162,
+      "text": "침입하면",
+      "confidence": 0.9999,
+      "bbox": {
+        "top_left": [
+          1924.0,
+          2348.0
+        ],
+        "top_right": [
+          2090.0,
+          2348.0
+        ],
+        "bottom_right": [
+          2090.0,
+          2386.0
+        ],
+        "bottom_left": [
+          1924.0,
+          2386.0
+        ]
+      },
+      "line_number": 162
+    },
+    {
+      "block_id": 163,
+      "text": "가장",
+      "confidence": 0.9999,
+      "bbox": {
+        "top_left": [
+          2076.0,
+          2348.0
+        ],
+        "top_right": [
+          2185.0,
+          2348.0
+        ],
+        "bottom_right": [
+          2185.0,
+          2386.0
+        ],
+        "bottom_left": [
+          2076.0,
+          2386.0
+        ]
+      },
+      "line_number": 163
+    },
+    {
+      "block_id": 164,
+      "text": "쉽거",
+      "confidence": 0.9997,
+      "bbox": {
+        "top_left": [
+          2171.0,
+          2348.0
+        ],
+        "top_right": [
+          2259.0,
+          2348.0
+        ],
+        "bottom_right": [
+          2259.0,
+          2386.0
+        ],
+        "bottom_left": [
+          2171.0,
+          2386.0
+        ]
+      },
+      "line_number": 164
+    },
+    {
+      "block_id": 165,
+      "text": "作敎으로",
+      "confidence": 0.6881,
+      "bbox": {
+        "top_left": [
+          345.0,
+          2413.0
+        ],
+        "top_right": [
+          511.0,
+          2413.0
+        ],
+        "bottom_right": [
+          511.0,
+          2450.0
+        ],
+        "bottom_left": [
+          345.0,
+          2450.0
+        ]
+      },
+      "line_number": 165
+    },
+    {
+      "block_id": 166,
+      "text": "最五하여",
+      "confidence": 0.6777,
+      "bbox": {
+        "top_left": [
+          515.0,
+          2416.0
+        ],
+        "top_right": [
+          681.0,
+          2416.0
+        ],
+        "bottom_right": [
+          681.0,
+          2450.0
+        ],
+        "bottom_left": [
+          515.0,
+          2450.0
+        ]
+      },
+      "line_number": 166
+    },
+    {
+      "block_id": 167,
+      "text": "地廳의",
+      "confidence": 0.5919,
+      "bbox": {
+        "top_left": [
+          694.0,
+          2416.0
+        ],
+        "top_right": [
+          820.0,
+          2416.0
+        ],
+        "bottom_right": [
+          820.0,
+          2454.0
+        ],
+        "bottom_left": [
+          694.0,
+          2454.0
+        ]
+      },
+      "line_number": 167
+    },
+    {
+      "block_id": 168,
+      "text": "기능을周理한다",
+      "confidence": 0.9218,
+      "bbox": {
+        "top_left": [
+          837.0,
+          2416.0
+        ],
+        "top_right": [
+          1158.0,
+          2416.0
+        ],
+        "bottom_right": [
+          1158.0,
+          2460.0
+        ],
+        "bottom_left": [
+          837.0,
+          2460.0
+        ]
+      },
+      "line_number": 168
+    },
+    {
+      "block_id": 169,
+      "text": "3",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          1141.0,
+          2416.0
+        ],
+        "top_right": [
+          1250.0,
+          2416.0
+        ],
+        "bottom_right": [
+          1250.0,
+          2454.0
+        ],
+        "bottom_left": [
+          1141.0,
+          2454.0
+        ]
+      },
+      "line_number": 169
+    },
+    {
+      "block_id": 170,
+      "text": "批脚에누를끼쳐脫喆가道我을잃고臨喆가不肉",
+      "confidence": 0.6609,
+      "bbox": {
+        "top_left": [
+          1352.0,
+          2413.0
+        ],
+        "top_right": [
+          2256.0,
+          2413.0
+        ],
+        "bottom_right": [
+          2256.0,
+          2460.0
+        ],
+        "bottom_left": [
+          1352.0,
+          2460.0
+        ]
+      },
+      "line_number": 170
+    },
+    {
+      "block_id": 171,
+      "text": "極面하는것으로牛夏橄子및侯原와",
+      "confidence": 0.6863,
+      "bbox": {
+        "top_left": [
+          556.0,
+          2488.0
+        ],
+        "top_right": [
+          1267.0,
+          2488.0
+        ],
+        "bottom_right": [
+          1267.0,
+          2532.0
+        ],
+        "bottom_left": [
+          556.0,
+          2532.0
+        ]
+      },
+      "line_number": 171
+    },
+    {
+      "block_id": 172,
+      "text": "해져서",
+      "confidence": 0.9999,
+      "bbox": {
+        "top_left": [
+          1345.0,
+          2484.0
+        ],
+        "top_right": [
+          1487.0,
+          2484.0
+        ],
+        "bottom_right": [
+          1487.0,
+          2532.0
+        ],
+        "bottom_left": [
+          1345.0,
+          2532.0
+        ]
+      },
+      "line_number": 172
+    },
+    {
+      "block_id": 173,
+      "text": "橄數와盤樓등이나타난다그러므로本方",
+      "confidence": 0.7702,
+      "bbox": {
+        "top_left": [
+          1463.0,
+          2484.0
+        ],
+        "top_right": [
+          2266.0,
+          2481.0
+        ],
+        "bottom_right": [
+          2266.0,
+          2528.0
+        ],
+        "bottom_left": [
+          1463.0,
+          2532.0
+        ]
+      },
+      "line_number": 173
+    },
+    {
+      "block_id": 174,
+      "text": "성질은룹韓하는",
+      "confidence": 0.7944,
+      "bbox": {
+        "top_left": [
+          661.0,
+          2559.0
+        ],
+        "top_right": [
+          965.0,
+          2559.0
+        ],
+        "bottom_right": [
+          965.0,
+          2603.0
+        ],
+        "bottom_left": [
+          661.0,
+          2603.0
+        ]
+      },
+      "line_number": 174
+    },
+    {
+      "block_id": 175,
+      "text": "것이기때문에쉽",
+      "confidence": 0.9935,
+      "bbox": {
+        "top_left": [
+          952.0,
+          2559.0
+        ],
+        "top_right": [
+          1263.0,
+          2559.0
+        ],
+        "bottom_right": [
+          1263.0,
+          2603.0
+        ],
+        "bottom_left": [
+          952.0,
+          2603.0
+        ]
+      },
+      "line_number": 175
+    },
+    {
+      "block_id": 176,
+      "text": "道華韓如하는",
+      "confidence": 0.6372,
+      "bbox": {
+        "top_left": [
+          1579.0,
+          2552.0
+        ],
+        "top_right": [
+          1853.0,
+          2556.0
+        ],
+        "bottom_right": [
+          1852.0,
+          2603.0
+        ],
+        "bottom_left": [
+          1578.0,
+          2599.0
+        ]
+      },
+      "line_number": 176
+    },
+    {
+      "block_id": 177,
+      "text": "같은趙이다",
+      "confidence": 0.8018,
+      "bbox": {
+        "top_left": [
+          349.0,
+          2562.0
+        ],
+        "top_right": [
+          569.0,
+          2562.0
+        ],
+        "bottom_right": [
+          569.0,
+          2600.0
+        ],
+        "bottom_left": [
+          349.0,
+          2600.0
+        ]
+      },
+      "line_number": 177
+    },
+    {
+      "block_id": 178,
+      "text": "'犬의'",
+      "confidence": 0.6495,
+      "bbox": {
+        "top_left": [
+          559.0,
+          2562.0
+        ],
+        "top_right": [
+          671.0,
+          2562.0
+        ],
+        "bottom_right": [
+          671.0,
+          2600.0
+        ],
+        "bottom_left": [
+          559.0,
+          2600.0
+        ]
+      },
+      "line_number": 178
+    },
+    {
+      "block_id": 179,
+      "text": "濟趙는",
+      "confidence": 0.7124,
+      "bbox": {
+        "top_left": [
+          1355.0,
+          2562.0
+        ],
+        "top_right": [
+          1497.0,
+          2562.0
+        ],
+        "bottom_right": [
+          1497.0,
+          2600.0
+        ],
+        "bottom_left": [
+          1355.0,
+          2600.0
+        ]
+      },
+      "line_number": 179
+    },
+    {
+      "block_id": 180,
+      "text": "매번",
+      "confidence": 0.9997,
+      "bbox": {
+        "top_left": [
+          1490.0,
+          2562.0
+        ],
+        "top_right": [
+          1585.0,
+          2562.0
+        ],
+        "bottom_right": [
+          1585.0,
+          2600.0
+        ],
+        "bottom_left": [
+          1490.0,
+          2600.0
+        ]
+      },
+      "line_number": 180
+    },
+    {
+      "block_id": 181,
+      "text": "吉典및高一과같은것",
+      "confidence": 0.6565,
+      "bbox": {
+        "top_left": [
+          1832.0,
+          2559.0
+        ],
+        "top_right": [
+          2269.0,
+          2559.0
+        ],
+        "bottom_right": [
+          2269.0,
+          2603.0
+        ],
+        "bottom_left": [
+          1832.0,
+          2603.0
+        ]
+      },
+      "line_number": 181
+    },
+    {
+      "block_id": 182,
+      "text": "게",
+      "confidence": 0.9887,
+      "bbox": {
+        "top_left": [
+          349.0,
+          2637.0
+        ],
+        "top_right": [
+          396.0,
+          2637.0
+        ],
+        "bottom_right": [
+          396.0,
+          2664.0
+        ],
+        "bottom_left": [
+          349.0,
+          2664.0
+        ]
+      },
+      "line_number": 182
+    },
+    {
+      "block_id": 183,
+      "text": "轉盤이응집하여",
+      "confidence": 0.8439,
+      "bbox": {
+        "top_left": [
+          383.0,
+          2630.0
+        ],
+        "top_right": [
+          701.0,
+          2630.0
+        ],
+        "bottom_right": [
+          701.0,
+          2674.0
+        ],
+        "bottom_left": [
+          383.0,
+          2674.0
+        ]
+      },
+      "line_number": 183
+    },
+    {
+      "block_id": 184,
+      "text": "펼쳐지지못하고",
+      "confidence": 0.9999,
+      "bbox": {
+        "top_left": [
+          705.0,
+          2630.0
+        ],
+        "top_right": [
+          1023.0,
+          2630.0
+        ],
+        "bottom_right": [
+          1023.0,
+          2674.0
+        ],
+        "bottom_left": [
+          705.0,
+          2674.0
+        ]
+      },
+      "line_number": 184
+    },
+    {
+      "block_id": 185,
+      "text": "地는水의",
+      "confidence": 0.6958,
+      "bbox": {
+        "top_left": [
+          1006.0,
+          2634.0
+        ],
+        "top_right": [
+          1209.0,
+          2634.0
+        ],
+        "bottom_right": [
+          1209.0,
+          2671.0
+        ],
+        "bottom_left": [
+          1006.0,
+          2671.0
+        ]
+      },
+      "line_number": 185
+    },
+    {
+      "block_id": 186,
+      "text": "明으로주로轉秋을我光하고水道를渾周하는데",
+      "confidence": 0.7409,
+      "bbox": {
+        "top_left": [
+          342.0,
+          2701.0
+        ],
+        "top_right": [
+          1260.0,
+          2701.0
+        ],
+        "bottom_right": [
+          1260.0,
+          2746.0
+        ],
+        "bottom_left": [
+          342.0,
+          2746.0
+        ]
+      },
+      "line_number": 186
+    },
+    {
+      "block_id": 187,
+      "text": "로회복시킨다3납綠生葉葉과盤面하는것으로歸",
+      "confidence": 0.773,
+      "bbox": {
+        "top_left": [
+          1348.0,
+          2698.0
+        ],
+        "top_right": [
+          2269.0,
+          2695.0
+        ],
+        "bottom_right": [
+          2270.0,
+          2742.0
+        ],
+        "bottom_left": [
+          1348.0,
+          2746.0
+        ]
+      },
+      "line_number": 187
+    },
+    {
+      "block_id": 188,
+      "text": "地가自我과南圖을잃고鹿我의贍方에장애가생기",
+      "confidence": 0.727,
+      "bbox": {
+        "top_left": [
+          342.0,
+          2769.0
+        ],
+        "top_right": [
+          1267.0,
+          2762.0
+        ],
+        "bottom_right": [
+          1267.0,
+          2810.0
+        ],
+        "bottom_left": [
+          342.0,
+          2817.0
+        ]
+      },
+      "line_number": 188
+    },
+    {
+      "block_id": 189,
+      "text": "橄및天九水과같은趙이다이들은生第도하고또",
+      "confidence": 0.8264,
+      "bbox": {
+        "top_left": [
+          1345.0,
+          2769.0
+        ],
+        "top_right": [
+          2266.0,
+          2766.0
+        ],
+        "bottom_right": [
+          2266.0,
+          2813.0
+        ],
+        "bottom_left": [
+          1345.0,
+          2817.0
+        ]
+      },
+      "line_number": 189
+    },
+    {
+      "block_id": 190,
+      "text": "면쉽게悖城이뭉쳐서",
+      "confidence": 0.8691,
+      "bbox": {
+        "top_left": [
+          345.0,
+          2844.0
+        ],
+        "top_right": [
+          755.0,
+          2844.0
+        ],
+        "bottom_right": [
+          755.0,
+          2888.0
+        ],
+        "bottom_left": [
+          345.0,
+          2888.0
+        ]
+      },
+      "line_number": 190
+    },
+    {
+      "block_id": 191,
+      "text": "질환이된다建이모이면線",
+      "confidence": 0.8407,
+      "bbox": {
+        "top_left": [
+          748.0,
+          2841.0
+        ],
+        "top_right": [
+          1270.0,
+          2837.0
+        ],
+        "bottom_right": [
+          1270.0,
+          2885.0
+        ],
+        "bottom_left": [
+          749.0,
+          2888.0
+        ]
+      },
+      "line_number": 191
+    },
+    {
+      "block_id": 192,
+      "text": "한書렀을겸한다",
+      "confidence": 0.827,
+      "bbox": {
+        "top_left": [
+          1352.0,
+          2841.0
+        ],
+        "top_right": [
+          1680.0,
+          2841.0
+        ],
+        "bottom_right": [
+          1680.0,
+          2885.0
+        ],
+        "bottom_left": [
+          1352.0,
+          2885.0
+        ]
+      },
+      "line_number": 192
+    },
+    {
+      "block_id": 193,
+      "text": "承川가병을",
+      "confidence": 0.7902,
+      "bbox": {
+        "top_left": [
+          1677.0,
+          2837.0
+        ],
+        "top_right": [
+          1934.0,
+          2841.0
+        ],
+        "bottom_right": [
+          1934.0,
+          2888.0
+        ],
+        "bottom_left": [
+          1676.0,
+          2884.0
+        ]
+      },
+      "line_number": 193
+    },
+    {
+      "block_id": 194,
+      "text": "일으키면",
+      "confidence": 0.9999,
+      "bbox": {
+        "top_left": [
+          1917.0,
+          2847.0
+        ],
+        "top_right": [
+          2093.0,
+          2847.0
+        ],
+        "bottom_right": [
+          2093.0,
+          2885.0
+        ],
+        "bottom_left": [
+          1917.0,
+          2885.0
+        ]
+      },
+      "line_number": 194
+    },
+    {
+      "block_id": 195,
+      "text": "쉽게轉秋",
+      "confidence": 0.7088,
+      "bbox": {
+        "top_left": [
+          2072.0,
+          2845.0
+        ],
+        "top_right": [
+          2265.0,
+          2837.0
+        ],
+        "bottom_right": [
+          2267.0,
+          2881.0
+        ],
+        "bottom_left": [
+          2074.0,
+          2889.0
+        ]
+      },
+      "line_number": 195
+    },
+    {
+      "block_id": 196,
+      "text": "이되고盤이",
+      "confidence": 0.8382,
+      "bbox": {
+        "top_left": [
+          342.0,
+          2908.0
+        ],
+        "top_right": [
+          579.0,
+          2908.0
+        ],
+        "bottom_right": [
+          579.0,
+          2956.0
+        ],
+        "bottom_left": [
+          342.0,
+          2956.0
+        ]
+      },
+      "line_number": 196
+    },
+    {
+      "block_id": 197,
+      "text": "되는데",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          569.0,
+          2908.0
+        ],
+        "top_right": [
+          711.0,
+          2908.0
+        ],
+        "bottom_right": [
+          711.0,
+          2956.0
+        ],
+        "bottom_left": [
+          569.0,
+          2956.0
+        ]
+      },
+      "line_number": 197
+    },
+    {
+      "block_id": 198,
+      "text": "張原이",
+      "confidence": 0.5945,
+      "bbox": {
+        "top_left": [
+          715.0,
+          2908.0
+        ],
+        "top_right": [
+          860.0,
+          2908.0
+        ],
+        "bottom_right": [
+          860.0,
+          2956.0
+        ],
+        "bottom_left": [
+          715.0,
+          2956.0
+        ]
+      },
+      "line_number": 198
+    },
+    {
+      "block_id": 199,
+      "text": "地를",
+      "confidence": 0.8478,
+      "bbox": {
+        "top_left": [
+          840.0,
+          2908.0
+        ],
+        "top_right": [
+          945.0,
+          2908.0
+        ],
+        "bottom_right": [
+          945.0,
+          2956.0
+        ],
+        "bottom_left": [
+          840.0,
+          2956.0
+        ]
+      },
+      "line_number": 199
+    },
+    {
+      "block_id": 200,
+      "text": "막으면",
+      "confidence": 0.9999,
+      "bbox": {
+        "top_left": [
+          943.0,
+          2901.0
+        ],
+        "top_right": [
+          1095.0,
+          2909.0
+        ],
+        "bottom_right": [
+          1092.0,
+          2957.0
+        ],
+        "bottom_left": [
+          941.0,
+          2948.0
+        ]
+      },
+      "line_number": 200
+    },
+    {
+      "block_id": 201,
+      "text": "治侯의道",
+      "confidence": 0.7189,
+      "bbox": {
+        "top_left": [
+          1077.0,
+          2908.0
+        ],
+        "top_right": [
+          1267.0,
+          2908.0
+        ],
+        "bottom_right": [
+          1267.0,
+          2956.0
+        ],
+        "bottom_left": [
+          1077.0,
+          2956.0
+        ]
+      },
+      "line_number": 201
+    },
+    {
+      "block_id": 202,
+      "text": "을손상시킨다",
+      "confidence": 0.9979,
+      "bbox": {
+        "top_left": [
+          1352.0,
+          2908.0
+        ],
+        "top_right": [
+          1626.0,
+          2908.0
+        ],
+        "bottom_right": [
+          1626.0,
+          2956.0
+        ],
+        "bottom_left": [
+          1352.0,
+          2956.0
+        ]
+      },
+      "line_number": 202
+    },
+    {
+      "block_id": 203,
+      "text": "承靴의",
+      "confidence": 0.5396,
+      "bbox": {
+        "top_left": [
+          1628.0,
+          2909.0
+        ],
+        "top_right": [
+          1770.0,
+          2901.0
+        ],
+        "bottom_right": [
+          1772.0,
+          2948.0
+        ],
+        "bottom_left": [
+          1631.0,
+          2957.0
+        ]
+      },
+      "line_number": 203
+    },
+    {
+      "block_id": 204,
+      "text": "假0客ㄷ의4개단계는",
+      "confidence": 0.7536,
+      "bbox": {
+        "top_left": [
+          1765.0,
+          2908.0
+        ],
+        "top_right": [
+          2269.0,
+          2908.0
+        ],
+        "bottom_right": [
+          2269.0,
+          2956.0
+        ],
+        "bottom_left": [
+          1765.0,
+          2956.0
+        ]
+      },
+      "line_number": 204
+    }
+  ],
+  "full_text": "I[Y\n종류로\n나뉘게\n필요한\n것은解\n이희고\n등을볼수있다\n그러므로본方濟趙는\n秦濟는天設의\n外面가秦에침습하여생긴靴樓을조\n또한대부분\n橄面하여阪치료도\n겸히\n준하여설정한것이므로本書에있는法賢解秦統談\n견서轉城의\n鐘用도돕는다\n이밖에\n만약\n集都을겸\n法異來根및\n道節에나오는\n한자는\n諸秋稷과諸五한다\n예를들면大書龍揚의\n등옥\n濟또한解秦盤의\n범주에\n해당되기때문에배우는사\n石흡와石朱秦帝揚의黃칙과같은것이다\n精儒를\n룸o之I0플곱긍를短\n化흉lo평륜\n겸한자는뽀氣原을\n前用한다\n를Io\n들면\n審朱設의\n는것들을함께참작하여야그전체적인모습을엿볼\n諸脫子와原我와같은\n것이다\n子最華老學의\n先秦方\n수있을것이다\n에는解黃揚\n華萊揚一狀華古揚이있다\n南陽解春諸는\n四其秦華에\n적용된다\n仲秦美設은\n南京解春解는\n車我老華에\n적용된다\n風我美設은\n바깥에서\n침습한것과\n연계된\n것으로批夷의\n時川와연계된\n것으로\n理軍혹은\n假評로부터\n道我과\n華盤이조절되지않고學盤이\n펼쳐지지못하\n들어와서神解를침습하면\n天面기능은조절되지않고\n고\n治靴의\n받아서생긴것이다\n운행이지장을\nI어망\n地氣의道我과南路은정상을\n잃고凌盤이약간의손\n서는\n대부분\n無라\n혹은諸字\n상을\n받아서형성된다\n임상에서는대부분發楚版\n吉韓自\n脫平策혹은脫濟犧등이나타난\n無理葉\n明曜\n華廬解春面는매번\n華最華秦紫을위주로조성되\n脫平數\n등이나타난다\n華京脫春鄕는매번主京華春\n다\n고城黃在華敎老帝萊葉光異統年및類自등의\n樣을\n위주로조성되고\n歸寄仲華子春葉如紀\n등의道를\n帝用한다\n면에서는\n가있다:0君而强脫葉과\n最周하는것으로柑家와\n가지가있다:0書萊强과\n前記用하는\n것으로\n金敎志\n川발과같은趙이다\n孫刑는쌌리하고\n橄敎으로\n南廷및分葉과\n같은趙이다\n대개記川가\n인체에침\n매번\n治靴의鬱儒를\n일으켜學顚來角이\n나타난다그\n습하면발병이급하고'\n個盤이빨라서쉽게斜禮을치\n러므로\n華廬華秦盤에\n항상古顚明脫葉을\n고가슴에맺혀이되고\n橄周하여\n또한\n대부분城靴의\n李기\n乾實을\n유통시킨다\n2\n地來地如葉과記思하는것으\n끼어\n있는등의특징을가지고있다\n그러므로\n空京解\n로客仁治想및類敬과같은趙이다\n地는日敍고\n秦폄로\n華我思烈하는동시에\n반드시承川가\n병을일\n南橘을주관하고까로는夷돈와슴하면서秦를주핀\n으키는특징을함께고려하여\n骨秋華靑來을最年히\n한다\n鐘樓의M喆가夷評로부터\n들어오면안으로聃\n여넣음으로써禪盤하여\n棟로들어가는\n병세를중단\n에머물러抽의\n道我과第盤이정상을잃게되고批來\n시킨다0記來地萊夷과\n審廷하는\n것으로橋想및\n가不치해지면서\n숫쁨과툼護등의증상이나타난다\n君山과같은趙이다\n道惠四法\"陽春\n그러므로\n華承解秦盤에반드시소량의\n自華儒如葉을\n짊라고하였다\n承川가인체를\n침입하면\n가장\n쉽거\n作敎으로\n最五하여\n地廳의\n기능을周理한다\n3\n批脚에누를끼쳐脫喆가道我을잃고臨喆가不肉\n極面하는것으로牛夏橄子및侯原와\n해져서\n橄數와盤樓등이나타난다그러므로本方\n성질은룹韓하는\n것이기때문에쉽\n道華韓如하는\n같은趙이다\n'犬의'\n濟趙는\n매번\n吉典및高一과같은것\n게\n轉盤이응집하여\n펼쳐지지못하고\n地는水의\n明으로주로轉秋을我光하고水道를渾周하는데\n로회복시킨다3납綠生葉葉과盤面하는것으로歸\n地가自我과南圖을잃고鹿我의贍方에장애가생기\n橄및天九水과같은趙이다이들은生第도하고또\n면쉽게悖城이뭉쳐서\n질환이된다建이모이면線\n한書렀을겸한다\n承川가병을\n일으키면\n쉽게轉秋\n이되고盤이\n되는데\n張原이\n地를\n막으면\n治侯의道\n을손상시킨다\n承靴의\n假0客ㄷ의4개단계는",
+  "block_count": 204,
+  "avg_confidence": 0.8144,
+  "status": "completed",
+  "error": null
+}

@@ -1,0 +1,372 @@
+{
+  "page_number": 1,
+  "width": 2493,
+  "height": 3258,
+  "text_blocks": [
+    {
+      "block_id": 1,
+      "text": "```plaintext",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 1
+    },
+    {
+      "block_id": 2,
+      "text": "第一章",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 2
+    },
+    {
+      "block_id": 3,
+      "text": "解表劑",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 3
+    },
+    {
+      "block_id": 5,
+      "text": "辛亥年",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 5
+    },
+    {
+      "block_id": 7,
+      "text": "• 解表藥은 위로로 사용해서 조성된 것이므로, 發汗•",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 7
+    },
+    {
+      "block_id": 8,
+      "text": "解肌·透疹 등의 작용을 갖추고 있으면서 주로 表證",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 8
+    },
+    {
+      "block_id": 9,
+      "text": "을 치료하는 方劑를 解表劑라고 부르는데, ‘八法’중",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 9
+    },
+    {
+      "block_id": 10,
+      "text": "汗法에 속한다.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 10
+    },
+    {
+      "block_id": 12,
+      "text": "신순식",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 12
+    },
+    {
+      "block_id": 14,
+      "text": "解表劑의 응용은 대략 위로 僅 表까지 거슬러 온",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 14
+    },
+    {
+      "block_id": 15,
+      "text": "것이라고 하였는데, 그 구성방제도 물론 현재까지 계수하는 方劑이 결합된다 . 결국 이로부터",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 15
+    },
+    {
+      "block_id": 16,
+      "text": "解表劑은 더욱 세분군가 갈린다. 해표제에 대하",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 16
+    },
+    {
+      "block_id": 17,
+      "text": "여 큰大한 구 分을 만든다면 純祖, 제행으로서 解",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 17
+    },
+    {
+      "block_id": 18,
+      "text": "표의 효과를 행사한다.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 18
+    },
+    {
+      "block_id": 19,
+      "text": "```",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 19
+    }
+  ],
+  "full_text": "```plaintext\n第一章 \n解表劑\n\n辛亥年\n\n• 解表藥은 위로로 사용해서 조성된 것이므로, 發汗• \n解肌·透疹 등의 작용을 갖추고 있으면서 주로 表證 \n을 치료하는 方劑를 解表劑라고 부르는데, ‘八法’중 \n汗法에 속한다.\n\n신순식\n\n解表劑의 응용은 대략 위로 僅 表까지 거슬러 온\n것이라고 하였는데, 그 구성방제도 물론 현재까지 계수하는 方劑이 결합된다 . 결국 이로부터\n解表劑은 더욱 세분군가 갈린다. 해표제에 대하\n여 큰大한 구 分을 만든다면 純祖, 제행으로서 解\n표의 효과를 행사한다. \n```\n",
+  "block_count": 15,
+  "avg_confidence": 1.0,
+  "status": "completed",
+  "error": null
+}

@@ -1,0 +1,11 @@
+{
+  "document_id": "4698133b-25c7-4582-85df-6831591566dc",
+  "filename": "방제학-상_1_to_4.pdf",
+  "total_pages": 0,
+  "status": "failed",
+  "processed_pages": 0,
+  "progress_percent": 0.0,
+  "created_at": "2026-03-23T01:06:25.229167Z",
+  "completed_at": null,
+  "error": "module 'cv2' has no attribute 'cvtColor'"
+}

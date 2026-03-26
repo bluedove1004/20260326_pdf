@@ -1,0 +1,3179 @@
+{
+  "document_id": "72532cb2-6db3-436d-8f48-5f42a0a05fe9",
+  "filename": "방제학-상_1_to_2.pdf",
+  "total_pages": 2,
+  "ocr_engine": "paddleocr",
+  "language": "korean",
+  "created_at": "2026-03-23T08:30:19.118258Z",
+  "processing_time_seconds": 149.21,
+  "pages": [
+    {
+      "page_number": 1,
+      "width": 2493,
+      "height": 3258,
+      "text_blocks": [
+        {
+          "block_id": 4,
+          "text": "#꾸##올 위주로 사용해서 조성된 것으로,  잘기:T .",
+          "confidence": 0.0298,
+          "bbox": {
+            "top_left": [
+              392.0,
+              1201.0
+            ],
+            "top_right": [
+              1249.0,
+              1201.0
+            ],
+            "bottom_right": [
+              1249.0,
+              1265.0
+            ],
+            "bottom_left": [
+              392.0,
+              1265.0
+            ]
+          },
+          "line_number": 1
+        },
+        {
+          "block_id": 6,
+          "text": "#PEL . 표y초 등의 작용올 갖추고 있으면서 주로 #규",
+          "confidence": 0.0236,
+          "bbox": {
+            "top_left": [
+              333.0,
+              1273.0
+            ],
+            "top_right": [
+              1262.0,
+              1273.0
+            ],
+            "bottom_right": [
+              1262.0,
+              1338.0
+            ],
+            "bottom_left": [
+              333.0,
+              1338.0
+            ]
+          },
+          "line_number": 2
+        },
+        {
+          "block_id": 8,
+          "text": "올 치료하는 )스틀 #국춧페라고 부르는데 , 'j1 #국' 중",
+          "confidence": 0.0217,
+          "bbox": {
+            "top_left": [
+              339.0,
+              1347.0
+            ],
+            "top_right": [
+              1261.0,
+              1347.0
+            ],
+            "bottom_right": [
+              1261.0,
+              1403.0
+            ],
+            "bottom_left": [
+              339.0,
+              1403.0
+            ]
+          },
+          "line_number": 3
+        },
+        {
+          "block_id": 10,
+          "text": "{#국에 속한다.",
+          "confidence": 0.0847,
+          "bbox": {
+            "top_left": [
+              334.0,
+              1418.0
+            ],
+            "top_right": [
+              604.0,
+              1418.0
+            ],
+            "bottom_right": [
+              604.0,
+              1475.0
+            ],
+            "bottom_left": [
+              334.0,
+              1475.0
+            ]
+          },
+          "line_number": 4
+        },
+        {
+          "block_id": 13,
+          "text": "#꾸옷페의 응용은 마땅히 위로 #m복까지 거슬러 올",
+          "confidence": 0.123,
+          "bbox": {
+            "top_left": [
+              394.0,
+              1557.0
+            ],
+            "top_right": [
+              1262.0,
+              1557.0
+            ],
+            "bottom_right": [
+              1262.0,
+              1618.0
+            ],
+            "bottom_left": [
+              394.0,
+              1618.0
+            ]
+          },
+          "line_number": 5
+        },
+        {
+          "block_id": 15,
+          "text": "라가머 아래로는 굽#에까지 이르다 . 일찍이 r {지#포]",
+          "confidence": 0.1125,
+          "bbox": {
+            "top_left": [
+              336.0,
+              1624.0
+            ],
+            "top_right": [
+              1266.0,
+              1624.0
+            ],
+            "bottom_right": [
+              1266.0,
+              1689.0
+            ],
+            "bottom_left": [
+              336.0,
+              1689.0
+            ]
+          },
+          "line_number": 6
+        },
+        {
+          "block_id": 17,
+          "text": "중에서 이미 명화하게 짚놈{[ {국의 사용원칙올 제시하여",
+          "confidence": 0.0715,
+          "bbox": {
+            "top_left": [
+              338.0,
+              1700.0
+            ],
+            "top_right": [
+              1262.0,
+              1700.0
+            ],
+            "bottom_right": [
+              1262.0,
+              1761.0
+            ],
+            "bottom_left": [
+              338.0,
+              1761.0
+            ]
+          },
+          "line_number": 7
+        },
+        {
+          "block_id": 20,
+          "text": "다: 예름 들면 \"B##규{류<\"라고 하여고",
+          "confidence": 0.0289,
+          "bbox": {
+            "top_left": [
+              338.0,
+              1768.0
+            ],
+            "top_right": [
+              1105.0,
+              1768.0
+            ],
+            "bottom_right": [
+              1105.0,
+              1834.0
+            ],
+            "bottom_left": [
+              338.0,
+              1834.0
+            ]
+          },
+          "line_number": 8
+        },
+        {
+          "block_id": 23,
+          "text": "꿀, #출가스다 위, #소잠양, fTifj표*스\" (축__ 다p숲p류",
+          "confidence": 0.0026,
+          "bbox": {
+            "top_left": [
+              338.0,
+              1839.0
+            ],
+            "top_right": [
+              1262.0,
+              1839.0
+            ],
+            "bottom_right": [
+              1262.0,
+              1901.0
+            ],
+            "bottom_left": [
+              338.0,
+              1901.0
+            ]
+          },
+          "line_number": 9
+        },
+        {
+          "block_id": 25,
+          "text": "a#퀴 X름속_라고 하여으며   \"{7#증]춤\" (묶_} r줄",
+          "confidence": 0.0003,
+          "bbox": {
+            "top_left": [
+              338.0,
+              1911.0
+            ],
+            "top_right": [
+              1262.0,
+              1911.0
+            ],
+            "bottom_right": [
+              1262.0,
+              1975.0
+            ],
+            "bottom_left": [
+              338.0,
+              1975.0
+            ]
+          },
+          "line_number": 10
+        },
+        {
+          "block_id": 27,
+          "text": "(불패다##_라고 하여고   \"잘#증_숲햇 \"(큼f} 'Xz",
+          "confidence": 0.0004,
+          "bbox": {
+            "top_left": [
+              341.0,
+              1980.0
+            ],
+            "top_right": [
+              1264.0,
+              1980.0
+            ],
+            "bottom_right": [
+              1264.0,
+              2048.0
+            ],
+            "bottom_left": [
+              341.0,
+              2048.0
+            ]
+          },
+          "line_number": 11
+        },
+        {
+          "block_id": 29,
+          "text": "E#X##_이라는 등의 논술이 있다. 이것으로부터",
+          "confidence": 0.295,
+          "bbox": {
+            "top_left": [
+              341.0,
+              2052.0
+            ],
+            "top_right": [
+              1262.0,
+              2052.0
+            ],
+            "bottom_right": [
+              1262.0,
+              2115.0
+            ],
+            "bottom_left": [
+              341.0,
+              2115.0
+            ]
+          },
+          "line_number": 12
+        },
+        {
+          "block_id": 31,
+          "text": "#주#가폐의 이론올 세운 근거가 된다. 해표제에 대하",
+          "confidence": 0.1312,
+          "bbox": {
+            "top_left": [
+              336.0,
+              2125.0
+            ],
+            "top_right": [
+              1264.0,
+              2125.0
+            ],
+            "bottom_right": [
+              1264.0,
+              2186.0
+            ],
+            "bottom_left": [
+              336.0,
+              2186.0
+            ]
+          },
+          "line_number": 13
+        },
+        {
+          "block_id": 33,
+          "text": "여 트x한 공현올 만들어번 것은 햇탈*소에 딴/볶",
+          "confidence": 0.0157,
+          "bbox": {
+            "top_left": [
+              341.0,
+              2194.0
+            ],
+            "top_right": [
+              1262.0,
+              2194.0
+            ],
+            "bottom_right": [
+              1262.0,
+              2255.0
+            ],
+            "bottom_left": [
+              341.0,
+              2255.0
+            ]
+          },
+          "line_number": 14
+        },
+        {
+          "block_id": 35,
+          "text": "이 지은 T {특춧#다{숙음속y으로 추론할 수 있다. 본서에 R#",
+          "confidence": 0.0023,
+          "bbox": {
+            "top_left": [
+              341.0,
+              2264.0
+            ],
+            "top_right": [
+              1264.0,
+              2264.0
+            ],
+            "bottom_right": [
+              1264.0,
+              2328.0
+            ],
+            "bottom_left": [
+              341.0,
+              2328.0
+            ]
+          },
+          "line_number": 15
+        },
+        {
+          "block_id": 37,
+          "text": "쓸기 . ## {류 . {귀품등스류 . 기 출속등류 : R#시7청[류 및",
+          "confidence": 0.0003,
+          "bbox": {
+            "top_left": [
+              338.0,
+              2336.0
+            ],
+            "top_right": [
+              1264.0,
+              2336.0
+            ],
+            "bottom_right": [
+              1264.0,
+              2397.0
+            ],
+            "bottom_left": [
+              338.0,
+              2397.0
+            ]
+          },
+          "line_number": 16
+        },
+        {
+          "block_id": 39,
+          "text": "Jma#?p국-j류 등 거의 30여 개의 #꾸추와 관련된",
+          "confidence": 0.0116,
+          "bbox": {
+            "top_left": [
+              338.0,
+              2407.0
+            ],
+            "top_right": [
+              1264.0,
+              2407.0
+            ],
+            "bottom_right": [
+              1264.0,
+              2468.0
+            ],
+            "bottom_left": [
+              338.0,
+              2468.0
+            ]
+          },
+          "line_number": 17
+        },
+        {
+          "block_id": 41,
+          "text": "J폐가 수재되어 있다 수재된 방제는 방제의 조합이",
+          "confidence": 0.2034,
+          "bbox": {
+            "top_left": [
+              338.0,
+              2479.0
+            ],
+            "top_right": [
+              1264.0,
+              2479.0
+            ],
+            "bottom_right": [
+              1264.0,
+              2540.0
+            ],
+            "bottom_left": [
+              338.0,
+              2540.0
+            ]
+          },
+          "line_number": 18
+        },
+        {
+          "block_id": 43,
+          "text": "간결하면서 약물의  로시가 엄밀하고 치료효과가 탁월",
+          "confidence": 0.2251,
+          "bbox": {
+            "top_left": [
+              341.0,
+              2548.0
+            ],
+            "top_right": [
+              1264.0,
+              2548.0
+            ],
+            "bottom_right": [
+              1264.0,
+              2611.0
+            ],
+            "bottom_left": [
+              341.0,
+              2611.0
+            ]
+          },
+          "line_number": 19
+        },
+        {
+          "block_id": 45,
+          "text": "하기 때문에 지금까지 계속 사용하고 있다. 그것이 구",
+          "confidence": 0.7703,
+          "bbox": {
+            "top_left": [
+              341.0,
+              2619.0
+            ],
+            "top_right": [
+              1267.0,
+              2619.0
+            ],
+            "bottom_right": [
+              1267.0,
+              2681.0
+            ],
+            "bottom_left": [
+              341.0,
+              2681.0
+            ]
+          },
+          "line_number": 20
+        },
+        {
+          "block_id": 47,
+          "text": "현하고 있는 #꾸축슬Rf . 틈f카쓸 혹j . #꾸#|톱률 . #주#다L",
+          "confidence": 0.0002,
+          "bbox": {
+            "top_left": [
+              343.0,
+              2688.0
+            ],
+            "top_right": [
+              1270.0,
+              2688.0
+            ],
+            "bottom_right": [
+              1270.0,
+              2753.0
+            ],
+            "bottom_left": [
+              343.0,
+              2753.0
+            ]
+          },
+          "line_number": 21
+        },
+        {
+          "block_id": 49,
+          "text": "삶 : 꾸 규다. 및 묘jp류#꾸칼 등의 {숨 국은 이미 억대 의",
+          "confidence": 0.0041,
+          "bbox": {
+            "top_left": [
+              340.0,
+              2761.0
+            ],
+            "top_right": [
+              1267.0,
+              2761.0
+            ],
+            "bottom_right": [
+              1267.0,
+              2824.0
+            ],
+            "bottom_left": [
+              340.0,
+              2824.0
+            ]
+          },
+          "line_number": 22
+        },
+        {
+          "block_id": 51,
+          "text": "학자들이 규범으로 받들엇으며  또한 현대에 나온 여",
+          "confidence": 0.584,
+          "bbox": {
+            "top_left": [
+              341.0,
+              2833.0
+            ],
+            "top_right": [
+              1267.0,
+              2833.0
+            ],
+            "bottom_right": [
+              1267.0,
+              2893.0
+            ],
+            "bottom_left": [
+              341.0,
+              2893.0
+            ]
+          },
+          "line_number": 23
+        },
+        {
+          "block_id": 53,
+          "text": "러 판의 r방제학} 교재도 표준으로 보고 있다. ###책",
+          "confidence": 0.1967,
+          "bbox": {
+            "top_left": [
+              346.0,
+              2901.0
+            ],
+            "top_right": [
+              1270.0,
+              2901.0
+            ],
+            "bottom_right": [
+              1270.0,
+              2962.0
+            ],
+            "bottom_left": [
+              346.0,
+              2962.0
+            ]
+          },
+          "line_number": 24
+        },
+        {
+          "block_id": 1,
+          "text": "숲-풀",
+          "confidence": 0.1689,
+          "bbox": {
+            "top_left": [
+              1207.0,
+              451.0
+            ],
+            "top_right": [
+              1394.0,
+              451.0
+            ],
+            "bottom_right": [
+              1394.0,
+              528.0
+            ],
+            "bottom_left": [
+              1207.0,
+              528.0
+            ]
+          },
+          "line_number": 25
+        },
+        {
+          "block_id": 2,
+          "text": "##뼈",
+          "confidence": 0.2945,
+          "bbox": {
+            "top_left": [
+              1101.0,
+              610.0
+            ],
+            "top_right": [
+              1492.0,
+              610.0
+            ],
+            "bottom_right": [
+              1492.0,
+              751.0
+            ],
+            "bottom_left": [
+              1101.0,
+              751.0
+            ]
+          },
+          "line_number": 26
+        },
+        {
+          "block_id": 3,
+          "text": "신순식",
+          "confidence": 0.9774,
+          "bbox": {
+            "top_left": [
+              2141.0,
+              919.0
+            ],
+            "top_right": [
+              2266.0,
+              919.0
+            ],
+            "bottom_right": [
+              2266.0,
+              973.0
+            ],
+            "bottom_left": [
+              2141.0,
+              973.0
+            ]
+          },
+          "line_number": 27
+        },
+        {
+          "block_id": 5,
+          "text": "가 불%다에 이미 비교적 높은 수준에 있없음올 충분히",
+          "confidence": 0.1315,
+          "bbox": {
+            "top_left": [
+              1344.0,
+              1201.0
+            ],
+            "top_right": [
+              2265.0,
+              1201.0
+            ],
+            "bottom_right": [
+              2265.0,
+              1262.0
+            ],
+            "bottom_left": [
+              1344.0,
+              1262.0
+            ]
+          },
+          "line_number": 28
+        },
+        {
+          "block_id": 7,
+          "text": "알 수 있다. 채 . 좀 이후로 의학계에서는 종래의 규칙",
+          "confidence": 0.1209,
+          "bbox": {
+            "top_left": [
+              1344.0,
+              1272.0
+            ],
+            "top_right": [
+              2269.0,
+              1272.0
+            ],
+            "bottom_right": [
+              2269.0,
+              1337.0
+            ],
+            "bottom_left": [
+              1344.0,
+              1337.0
+            ]
+          },
+          "line_number": 29
+        },
+        {
+          "block_id": 9,
+          "text": "이나 관례 따위틀 묵수하는 것이 비록 이미 하나의 풍",
+          "confidence": 0.3108,
+          "bbox": {
+            "top_left": [
+              1344.0,
+              1344.0
+            ],
+            "top_right": [
+              2270.0,
+              1344.0
+            ],
+            "bottom_right": [
+              2270.0,
+              1404.0
+            ],
+            "bottom_left": [
+              1344.0,
+              1404.0
+            ]
+          },
+          "line_number": 30
+        },
+        {
+          "block_id": 11,
+          "text": "조가 되없지만  아직도 일부 의학자들은 과감하게 구",
+          "confidence": 0.4823,
+          "bbox": {
+            "top_left": [
+              1349.0,
+              1415.0
+            ],
+            "top_right": [
+              2270.0,
+              1415.0
+            ],
+            "bottom_right": [
+              2270.0,
+              1476.0
+            ],
+            "bottom_left": [
+              1349.0,
+              1476.0
+            ]
+          },
+          "line_number": 31
+        },
+        {
+          "block_id": 12,
+          "text": "상하고 연구하고 #포) 올 활용하엿으다 , 적지 양게 실",
+          "confidence": 0.1794,
+          "bbox": {
+            "top_left": [
+              1344.0,
+              1484.0
+            ],
+            "top_right": [
+              2270.0,
+              1484.0
+            ],
+            "bottom_right": [
+              2270.0,
+              1544.0
+            ],
+            "bottom_left": [
+              1344.0,
+              1544.0
+            ]
+          },
+          "line_number": 32
+        },
+        {
+          "block_id": 14,
+          "text": "행하여 유호한 방제가 거듭해서 차례로 출현하게 되엇",
+          "confidence": 0.4874,
+          "bbox": {
+            "top_left": [
+              1347.0,
+              1558.0
+            ],
+            "top_right": [
+              2269.0,
+              1558.0
+            ],
+            "bottom_right": [
+              2269.0,
+              1615.0
+            ],
+            "bottom_left": [
+              1347.0,
+              1615.0
+            ]
+          },
+          "line_number": 33
+        },
+        {
+          "block_id": 16,
+          "text": "다. 예틀 들면 좁수 붉 ;의 5y옷 ##숨- _에서 \" 특못",
+          "confidence": 0.0042,
+          "bbox": {
+            "top_left": [
+              1346.0,
+              1624.0
+            ],
+            "top_right": [
+              2270.0,
+              1624.0
+            ],
+            "bottom_right": [
+              2270.0,
+              1687.0
+            ],
+            "bottom_left": [
+              1346.0,
+              1687.0
+            ]
+          },
+          "line_number": 34
+        },
+        {
+          "block_id": 18,
+          "text": "#철주 , 스주#O세\" 틀 감안하여",
+          "confidence": 0.0265,
+          "bbox": {
+            "top_left": [
+              1345.0,
+              1696.0
+            ],
+            "top_right": [
+              1906.0,
+              1696.0
+            ],
+            "bottom_right": [
+              1906.0,
+              1759.0
+            ],
+            "bottom_left": [
+              1345.0,
+              1759.0
+            ]
+          },
+          "line_number": 35
+        },
+        {
+          "block_id": 19,
+          "text": "'#B{류\"과 \"하나의",
+          "confidence": 0.1017,
+          "bbox": {
+            "top_left": [
+              1926.0,
+              1696.0
+            ],
+            "top_right": [
+              2270.0,
+              1696.0
+            ],
+            "bottom_right": [
+              2270.0,
+              1759.0
+            ],
+            "bottom_left": [
+              1926.0,
+              1759.0
+            ]
+          },
+          "line_number": 36
+        },
+        {
+          "block_id": 21,
+          "text": "'#시대}",
+          "confidence": 0.0435,
+          "bbox": {
+            "top_left": [
+              1125.0,
+              1769.0
+            ],
+            "top_right": [
+              1264.0,
+              1769.0
+            ],
+            "bottom_right": [
+              1264.0,
+              1829.0
+            ],
+            "bottom_left": [
+              1125.0,
+              1829.0
+            ]
+          },
+          "line_number": 37
+        },
+        {
+          "block_id": 22,
+          "text": "약으로 모두 치료한다 (-탤.{숨)\" (:y옷(#%) _u2)",
+          "confidence": 0.0042,
+          "bbox": {
+            "top_left": [
+              1346.0,
+              1769.0
+            ],
+            "top_right": [
+              2270.0,
+              1769.0
+            ],
+            "bottom_right": [
+              2270.0,
+              1829.0
+            ],
+            "bottom_left": [
+              1346.0,
+              1829.0
+            ]
+          },
+          "line_number": 38
+        },
+        {
+          "block_id": 24,
+          "text": "틀 만들없다 .  똑ft 국둘전의 F (#'구 숲뜻- s에서는",
+          "confidence": 0.0036,
+          "bbox": {
+            "top_left": [
+              1346.0,
+              1836.0
+            ],
+            "top_right": [
+              2273.0,
+              1836.0
+            ],
+            "bottom_right": [
+              2273.0,
+              1903.0
+            ],
+            "bottom_left": [
+              1346.0,
+              1903.0
+            ]
+          },
+          "line_number": 39
+        },
+        {
+          "block_id": 26,
+          "text": "#볶#국올 따르면서 #볶가올 고수하지 않은 것이 특",
+          "confidence": 0.0815,
+          "bbox": {
+            "top_left": [
+              1348.0,
+              1910.0
+            ],
+            "top_right": [
+              2272.0,
+              1910.0
+            ],
+            "bottom_right": [
+              2272.0,
+              1972.0
+            ],
+            "bottom_left": [
+              1348.0,
+              1972.0
+            ]
+          },
+          "line_number": 40
+        },
+        {
+          "block_id": 28,
+          "text": "징으로 그가 입안한 __ 표올 치료하는 ## |류은 jm속",
+          "confidence": 0.0118,
+          "bbox": {
+            "top_left": [
+              1346.0,
+              1978.0
+            ],
+            "top_right": [
+              2270.0,
+              1978.0
+            ],
+            "bottom_right": [
+              2270.0,
+              2041.0
+            ],
+            "bottom_left": [
+              1346.0,
+              2041.0
+            ]
+          },
+          "line_number": 41
+        },
+        {
+          "block_id": 30,
+          "text": "#꾸k페의 효시름 제일 처음 열엇으며 후세 [숙_가 휴",
+          "confidence": 0.0265,
+          "bbox": {
+            "top_left": [
+              1346.0,
+              2051.0
+            ],
+            "top_right": [
+              2270.0,
+              2051.0
+            ],
+            "bottom_right": [
+              2270.0,
+              2112.0
+            ],
+            "bottom_left": [
+              1346.0,
+              2112.0
+            ]
+          },
+          "line_number": 42
+        },
+        {
+          "block_id": 32,
+          "text": "올 치료하는 {축J이 되없다.  jin컷#축{류은 곧 이것",
+          "confidence": 0.0186,
+          "bbox": {
+            "top_left": [
+              1351.0,
+              2122.0
+            ],
+            "top_right": [
+              2270.0,
+              2122.0
+            ],
+            "bottom_right": [
+              2270.0,
+              2183.0
+            ],
+            "bottom_left": [
+              1351.0,
+              2183.0
+            ]
+          },
+          "line_number": 43
+        },
+        {
+          "block_id": 34,
+          "text": "올 재단하여 나온 것이다. */t Fr꾸튜로지음]- _",
+          "confidence": 0.0113,
+          "bbox": {
+            "top_left": [
+              1349.0,
+              2194.0
+            ],
+            "top_right": [
+              2275.0,
+              2194.0
+            ],
+            "bottom_right": [
+              2275.0,
+              2255.0
+            ],
+            "bottom_left": [
+              1349.0,
+              2255.0
+            ]
+          },
+          "line_number": 44
+        },
+        {
+          "block_id": 36,
+          "text": "중에 수록된 뒷:출- . ##*속은 그 #숙의 시#이 #",
+          "confidence": 0.0124,
+          "bbox": {
+            "top_left": [
+              1346.0,
+              2262.0
+            ],
+            "top_right": [
+              2270.0,
+              2262.0
+            ],
+            "bottom_right": [
+              2270.0,
+              2323.0
+            ],
+            "bottom_left": [
+              1346.0,
+              2323.0
+            ]
+          },
+          "line_number": 45
+        },
+        {
+          "block_id": 38,
+          "text": "초의 #품  B j퇴 및 ## 등과 섭{규하는 약물올 선별",
+          "confidence": 0.0164,
+          "bbox": {
+            "top_left": [
+              1346.0,
+              2334.0
+            ],
+            "top_right": [
+              2270.0,
+              2334.0
+            ],
+            "bottom_right": [
+              2270.0,
+              2395.0
+            ],
+            "bottom_left": [
+              1346.0,
+              2395.0
+            ]
+          },
+          "line_number": 46
+        },
+        {
+          "block_id": 40,
+          "text": "하는 사고의 방향은 후세 숲%속국#페의 기원이 되엇",
+          "confidence": 0.0753,
+          "bbox": {
+            "top_left": [
+              1349.0,
+              2404.0
+            ],
+            "top_right": [
+              2272.0,
+              2404.0
+            ],
+            "bottom_right": [
+              2272.0,
+              2468.0
+            ],
+            "bottom_left": [
+              1349.0,
+              2468.0
+            ]
+          },
+          "line_number": 47
+        },
+        {
+          "block_id": 42,
+          "text": "으펴, 또한 #|품 . [; )퇴*적의 )폐가 세상에 알려지는",
+          "confidence": 0.0119,
+          "bbox": {
+            "top_left": [
+              1351.0,
+              2476.0
+            ],
+            "top_right": [
+              2275.0,
+              2476.0
+            ],
+            "bottom_right": [
+              2275.0,
+              2537.0
+            ],
+            "bottom_left": [
+              1351.0,
+              2537.0
+            ]
+          },
+          "line_number": 48
+        },
+        {
+          "block_id": 44,
+          "text": "데 기초v 닦아주없다 . 숲 . tAt 이후로 학술적 논쟁",
+          "confidence": 0.2361,
+          "bbox": {
+            "top_left": [
+              1354.0,
+              2547.0
+            ],
+            "top_right": [
+              2272.0,
+              2547.0
+            ],
+            "bottom_right": [
+              2272.0,
+              2608.0
+            ],
+            "bottom_left": [
+              1354.0,
+              2608.0
+            ]
+          },
+          "line_number": 49
+        },
+        {
+          "block_id": 46,
+          "text": "올 하면서 여러 유파가 잇달아 드러나고 이름난 의학",
+          "confidence": 0.7867,
+          "bbox": {
+            "top_left": [
+              1349.0,
+              2616.0
+            ],
+            "top_right": [
+              2275.0,
+              2616.0
+            ],
+            "bottom_right": [
+              2275.0,
+              2681.0
+            ],
+            "bottom_left": [
+              1349.0,
+              2681.0
+            ]
+          },
+          "line_number": 50
+        },
+        {
+          "block_id": 48,
+          "text": "자들이 배출되면서 #주옷/테의 운용은 하나의 새로운",
+          "confidence": 0.1798,
+          "bbox": {
+            "top_left": [
+              1349.0,
+              2687.0
+            ],
+            "top_right": [
+              2275.0,
+              2687.0
+            ],
+            "bottom_right": [
+              2275.0,
+              2751.0
+            ],
+            "bottom_left": [
+              1349.0,
+              2751.0
+            ]
+          },
+          "line_number": 51
+        },
+        {
+          "block_id": 50,
+          "text": "단계로 진입하게 되없다. 때발록는 { 함록음의 가르",
+          "confidence": 0.0166,
+          "bbox": {
+            "top_left": [
+              1351.0,
+              2759.0
+            ],
+            "top_right": [
+              2272.0,
+              2759.0
+            ],
+            "bottom_right": [
+              2272.0,
+              2820.0
+            ],
+            "bottom_left": [
+              1351.0,
+              2820.0
+            ]
+          },
+          "line_number": 52
+        },
+        {
+          "block_id": 52,
+          "text": "침 하에 '상북습#X/i속' 올 힘껏 제창하엿다 . 따라서",
+          "confidence": 0.0265,
+          "bbox": {
+            "top_left": [
+              1351.0,
+              2830.0
+            ],
+            "top_right": [
+              2275.0,
+              2830.0
+            ],
+            "bottom_right": [
+              2275.0,
+              2891.0
+            ],
+            "bottom_left": [
+              1351.0,
+              2891.0
+            ]
+          },
+          "line_number": 53
+        },
+        {
+          "block_id": 54,
+          "text": "##표 특히 [묶춧이 숫에서 촬#히하고 막혀 생긴 #뜻",
+          "confidence": 0.024,
+          "bbox": {
+            "top_left": [
+              1349.0,
+              2899.0
+            ],
+            "top_right": [
+              2275.0,
+              2899.0
+            ],
+            "bottom_right": [
+              2275.0,
+              2963.0
+            ],
+            "bottom_left": [
+              1349.0,
+              2963.0
+            ]
+          },
+          "line_number": 54
+        }
+      ],
+      "full_text": "#꾸##올 위주로 사용해서 조성된 것으로,  잘기:T .\n#PEL . 표y초 등의 작용올 갖추고 있으면서 주로 #규\n올 치료하는 )스틀 #국춧페라고 부르는데 , 'j1 #국' 중\n{#국에 속한다.\n#꾸옷페의 응용은 마땅히 위로 #m복까지 거슬러 올\n라가머 아래로는 굽#에까지 이르다 . 일찍이 r {지#포]\n중에서 이미 명화하게 짚놈{[ {국의 사용원칙올 제시하여\n다: 예름 들면 \"B##규{류<\"라고 하여고\n꿀, #출가스다 위, #소잠양, fTifj표*스\" (축__ 다p숲p류\na#퀴 X름속_라고 하여으며   \"{7#증]춤\" (묶_} r줄\n(불패다##_라고 하여고   \"잘#증_숲햇 \"(큼f} 'Xz\nE#X##_이라는 등의 논술이 있다. 이것으로부터\n#주#가폐의 이론올 세운 근거가 된다. 해표제에 대하\n여 트x한 공현올 만들어번 것은 햇탈*소에 딴/볶\n이 지은 T {특춧#다{숙음속y으로 추론할 수 있다. 본서에 R#\n쓸기 . ## {류 . {귀품등스류 . 기 출속등류 : R#시7청[류 및\nJma#?p국-j류 등 거의 30여 개의 #꾸추와 관련된\nJ폐가 수재되어 있다 수재된 방제는 방제의 조합이\n간결하면서 약물의  로시가 엄밀하고 치료효과가 탁월\n하기 때문에 지금까지 계속 사용하고 있다. 그것이 구\n현하고 있는 #꾸축슬Rf . 틈f카쓸 혹j . #꾸#|톱률 . #주#다L\n삶 : 꾸 규다. 및 묘jp류#꾸칼 등의 {숨 국은 이미 억대 의\n학자들이 규범으로 받들엇으며  또한 현대에 나온 여\n러 판의 r방제학} 교재도 표준으로 보고 있다. ###책\n숲-풀\n##뼈\n신순식\n가 불%다에 이미 비교적 높은 수준에 있없음올 충분히\n알 수 있다. 채 . 좀 이후로 의학계에서는 종래의 규칙\n이나 관례 따위틀 묵수하는 것이 비록 이미 하나의 풍\n조가 되없지만  아직도 일부 의학자들은 과감하게 구\n상하고 연구하고 #포) 올 활용하엿으다 , 적지 양게 실\n행하여 유호한 방제가 거듭해서 차례로 출현하게 되엇\n다. 예틀 들면 좁수 붉 ;의 5y옷 ##숨- _에서 \" 특못\n#철주 , 스주#O세\" 틀 감안하여\n'#B{류\"과 \"하나의\n'#시대}\n약으로 모두 치료한다 (-탤.{숨)\" (:y옷(#%) _u2)\n틀 만들없다 .  똑ft 국둘전의 F (#'구 숲뜻- s에서는\n#볶#국올 따르면서 #볶가올 고수하지 않은 것이 특\n징으로 그가 입안한 __ 표올 치료하는 ## |류은 jm속\n#꾸k페의 효시름 제일 처음 열엇으며 후세 [숙_가 휴\n올 치료하는 {축J이 되없다.  jin컷#축{류은 곧 이것\n올 재단하여 나온 것이다. */t Fr꾸튜로지음]- _\n중에 수록된 뒷:출- . ##*속은 그 #숙의 시#이 #\n초의 #품  B j퇴 및 ## 등과 섭{규하는 약물올 선별\n하는 사고의 방향은 후세 숲%속국#페의 기원이 되엇\n으펴, 또한 #|품 . [; )퇴*적의 )폐가 세상에 알려지는\n데 기초v 닦아주없다 . 숲 . tAt 이후로 학술적 논쟁\n올 하면서 여러 유파가 잇달아 드러나고 이름난 의학\n자들이 배출되면서 #주옷/테의 운용은 하나의 새로운\n단계로 진입하게 되없다. 때발록는 { 함록음의 가르\n침 하에 '상북습#X/i속' 올 힘껏 제창하엿다 . 따라서\n##표 특히 [묶춧이 숫에서 촬#히하고 막혀 생긴 #뜻",
+      "block_count": 54,
+      "avg_confidence": 0.1447,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "page_number": 2,
+      "width": 2480,
+      "height": 3248,
+      "text_blocks": [
+        {
+          "block_id": 1,
+          "text": "부} 뜰 - a록 솜#",
+          "confidence": 0.0141,
+          "bbox": {
+            "top_left": [
+              220.0,
+              121.0
+            ],
+            "top_right": [
+              550.0,
+              121.0
+            ],
+            "bottom_right": [
+              550.0,
+              182.0
+            ],
+            "bottom_left": [
+              220.0,
+              182.0
+            ]
+          },
+          "line_number": 1
+        },
+        {
+          "block_id": 2,
+          "text": "표#렉에 대해서는 F! . ## 등 꾸_품 #꾸#쪽의 사용",
+          "confidence": 0.0101,
+          "bbox": {
+            "top_left": [
+              223.0,
+              355.0
+            ],
+            "top_right": [
+              1154.0,
+              355.0
+            ],
+            "bottom_right": [
+              1154.0,
+              417.0
+            ],
+            "bottom_left": [
+              223.0,
+              417.0
+            ]
+          },
+          "line_number": 2
+        },
+        {
+          "block_id": 3,
+          "text": "이논 ## 치료에 하나의 커다란 법문올 열엇고 폭숲",
+          "confidence": 0.1169,
+          "bbox": {
+            "top_left": [
+              1230.0,
+              355.0
+            ],
+            "top_right": [
+              2159.0,
+              355.0
+            ],
+            "bottom_right": [
+              2159.0,
+              418.0
+            ],
+            "bottom_left": [
+              1230.0,
+              418.0
+            ]
+          },
+          "line_number": 3
+        },
+        {
+          "block_id": 5,
+          "text": "#꾸#책의 공백올 메꾸엇으떠 후세에 모범올 보인 것",
+          "confidence": 0.1319,
+          "bbox": {
+            "top_left": [
+              1230.0,
+              426.0
+            ],
+            "top_right": [
+              2159.0,
+              426.0
+            ],
+            "bottom_right": [
+              2159.0,
+              487.0
+            ],
+            "bottom_left": [
+              1230.0,
+              487.0
+            ]
+          },
+          "line_number": 4
+        },
+        {
+          "block_id": 4,
+          "text": "올 반대하고 꾸|끗하거나 밥못한 약물로 #꾸춧할 것올",
+          "confidence": 0.0396,
+          "bbox": {
+            "top_left": [
+              225.0,
+              428.0
+            ],
+            "top_right": [
+              1151.0,
+              428.0
+            ],
+            "bottom_right": [
+              1151.0,
+              489.0
+            ],
+            "bottom_left": [
+              225.0,
+              489.0
+            ]
+          },
+          "line_number": 5
+        },
+        {
+          "block_id": 6,
+          "text": "주장하엿다 . 그러므로 \"붐#렉#주 .  쪽 {규스하, 7",
+          "confidence": 0.0102,
+          "bbox": {
+            "top_left": [
+              223.0,
+              495.0
+            ],
+            "top_right": [
+              1149.0,
+              495.0
+            ],
+            "bottom_right": [
+              1149.0,
+              560.0
+            ],
+            "bottom_left": [
+              223.0,
+              560.0
+            ]
+          },
+          "line_number": 6
+        },
+        {
+          "block_id": 7,
+          "text": "이다. 최근 S0년 동안 한의학의 교육과 과학기술의 발",
+          "confidence": 0.7184,
+          "bbox": {
+            "top_left": [
+              1234.0,
+              500.0
+            ],
+            "top_right": [
+              2158.0,
+              500.0
+            ],
+            "bottom_right": [
+              2158.0,
+              557.0
+            ],
+            "bottom_left": [
+              1234.0,
+              557.0
+            ]
+          },
+          "line_number": 7
+        },
+        {
+          "block_id": 8,
+          "text": "J 성 볶 {-## . lm#표표렉 스청.\"(r#_터;# 북듭 {못습",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              223.0,
+              568.0
+            ],
+            "top_right": [
+              1149.0,
+              568.0
+            ],
+            "bottom_right": [
+              1149.0,
+              629.0
+            ],
+            "bottom_left": [
+              223.0,
+              629.0
+            ]
+          },
+          "line_number": 8
+        },
+        {
+          "block_id": 9,
+          "text": "전에 뒤이어 #꾸*가 폐의 임상 응용경험이 누적되에",
+          "confidence": 0.2853,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              568.0
+            ],
+            "top_right": [
+              2159.0,
+              568.0
+            ],
+            "bottom_right": [
+              2159.0,
+              629.0
+            ],
+            "bottom_left": [
+              1233.0,
+              629.0
+            ]
+          },
+          "line_number": 9
+        },
+        {
+          "block_id": 10,
+          "text": "듯밟숲소)이라고 하여다 . 떼발향는 쫓기료소올 사용하",
+          "confidence": 0.0013,
+          "bbox": {
+            "top_left": [
+              223.0,
+              639.0
+            ],
+            "top_right": [
+              1151.0,
+              639.0
+            ],
+            "bottom_right": [
+              1151.0,
+              702.0
+            ],
+            "bottom_left": [
+              223.0,
+              702.0
+            ]
+          },
+          "line_number": 10
+        },
+        {
+          "block_id": 11,
+          "text": "따라 #꾸m빠가 이론상으로 더욱 계통적으로 심화되엇",
+          "confidence": 0.1656,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              639.0
+            ],
+            "top_right": [
+              2159.0,
+              639.0
+            ],
+            "bottom_right": [
+              2159.0,
+              700.0
+            ],
+            "bottom_left": [
+              1233.0,
+              700.0
+            ]
+          },
+          "line_number": 11
+        },
+        {
+          "block_id": 12,
+          "text": "눈 것에 주력하엿고  m표표올 치료함에 있어 꾸 l퍼올",
+          "confidence": 0.0311,
+          "bbox": {
+            "top_left": [
+              225.0,
+              710.0
+            ],
+            "top_right": [
+              1151.0,
+              710.0
+            ],
+            "bottom_right": [
+              1151.0,
+              773.0
+            ],
+            "bottom_left": [
+              225.0,
+              773.0
+            ]
+          },
+          "line_number": 12
+        },
+        {
+          "block_id": 13,
+          "text": "으펴, 가하 조성의 표{에서도 더욱 완전하게 되엇",
+          "confidence": 0.0789,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              708.0
+            ],
+            "top_right": [
+              2159.0,
+              708.0
+            ],
+            "bottom_right": [
+              2159.0,
+              773.0
+            ],
+            "bottom_left": [
+              1233.0,
+              773.0
+            ]
+          },
+          "line_number": 13
+        },
+        {
+          "block_id": 14,
+          "text": "잘 사용하는 학술적인 사고방식은 후세 #표퍼-의 치",
+          "confidence": 0.2721,
+          "bbox": {
+            "top_left": [
+              223.0,
+              781.0
+            ],
+            "top_right": [
+              1149.0,
+              781.0
+            ],
+            "bottom_right": [
+              1149.0,
+              846.0
+            ],
+            "bottom_left": [
+              223.0,
+              846.0
+            ]
+          },
+          "line_number": 14
+        },
+        {
+          "block_id": 15,
+          "text": "다. 특별히 #꾸춧) 책에 대한 작용기전 연구틀 통하여",
+          "confidence": 0.1313,
+          "bbox": {
+            "top_left": [
+              1235.0,
+              781.0
+            ],
+            "top_right": [
+              2156.0,
+              781.0
+            ],
+            "bottom_right": [
+              2156.0,
+              842.0
+            ],
+            "bottom_left": [
+              1235.0,
+              842.0
+            ]
+          },
+          "line_number": 15
+        },
+        {
+          "block_id": 16,
+          "text": "코에 매우 탈표올 하여다.  {표-하당렉인 모f이 솜-",
+          "confidence": 0.0215,
+          "bbox": {
+            "top_left": [
+              225.0,
+              855.0
+            ],
+            "top_right": [
+              1149.0,
+              855.0
+            ],
+            "bottom_right": [
+              1149.0,
+              915.0
+            ],
+            "bottom_left": [
+              225.0,
+              915.0
+            ]
+          },
+          "line_number": 16
+        },
+        {
+          "block_id": 17,
+          "text": "#국춧가하에는 품표{ . #꾸퍼  . #분기움 . ##앗 ' Y치류-소#",
+          "confidence": 0.0004,
+          "bbox": {
+            "top_left": [
+              1230.0,
+              852.0
+            ],
+            "top_right": [
+              2159.0,
+              852.0
+            ],
+            "bottom_right": [
+              2159.0,
+              913.0
+            ],
+            "bottom_left": [
+              1230.0,
+              913.0
+            ]
+          },
+          "line_number": 17
+        },
+        {
+          "block_id": 18,
+          "text": "한 저명한 방제인 쇼책다은 그 근본올 거슬러 올라가",
+          "confidence": 0.1785,
+          "bbox": {
+            "top_left": [
+              226.0,
+              927.0
+            ],
+            "top_right": [
+              1150.0,
+              927.0
+            ],
+            "bottom_right": [
+              1150.0,
+              983.0
+            ],
+            "bottom_left": [
+              226.0,
+              983.0
+            ]
+          },
+          "line_number": 18
+        },
+        {
+          "block_id": 19,
+          "text": "억제 . #불다 . 꾸퓨 및 ##% 등의 약리작용이 잇고, 또",
+          "confidence": 0.0501,
+          "bbox": {
+            "top_left": [
+              1235.0,
+              926.0
+            ],
+            "top_right": [
+              2159.0,
+              926.0
+            ],
+            "bottom_right": [
+              2159.0,
+              989.0
+            ],
+            "bottom_left": [
+              1235.0,
+              989.0
+            ]
+          },
+          "line_number": 19
+        },
+        {
+          "block_id": 20,
+          "text": "보면 실제로 {미#의 {듯#륙쓸올 모방하여 다시 만든 것",
+          "confidence": 0.0763,
+          "bbox": {
+            "top_left": [
+              225.0,
+              992.0
+            ],
+            "top_right": [
+              1149.0,
+              992.0
+            ],
+            "bottom_right": [
+              1149.0,
+              1056.0
+            ],
+            "bottom_left": [
+              225.0,
+              1056.0
+            ]
+          },
+          "line_number": 20
+        },
+        {
+          "block_id": 21,
+          "text": "한 면역기능올 조절하고 별#옮기능올 조정하다 항알러",
+          "confidence": 0.1401,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              994.0
+            ],
+            "top_right": [
+              2159.0,
+              994.0
+            ],
+            "bottom_right": [
+              2159.0,
+              1055.0
+            ],
+            "bottom_left": [
+              1233.0,
+              1055.0
+            ]
+          },
+          "line_number": 21
+        },
+        {
+          "block_id": 22,
+          "text": "이다. 모기 상기의 탁i인 료뻗t는 출름에 읽매이지",
+          "confidence": 0.0009,
+          "bbox": {
+            "top_left": [
+              223.0,
+              1065.0
+            ],
+            "top_right": [
+              1146.0,
+              1065.0
+            ],
+            "bottom_right": [
+              1146.0,
+              1126.0
+            ],
+            "bottom_left": [
+              223.0,
+              1126.0
+            ]
+          },
+          "line_number": 22
+        },
+        {
+          "block_id": 23,
+          "text": "지 Rlf 등의 면에도 적극적인 의의가 있다. 따라서",
+          "confidence": 0.2073,
+          "bbox": {
+            "top_left": [
+              1234.0,
+              1069.0
+            ],
+            "top_right": [
+              2158.0,
+              1069.0
+            ],
+            "bottom_right": [
+              2158.0,
+              1125.0
+            ],
+            "bottom_left": [
+              1234.0,
+              1125.0
+            ]
+          },
+          "line_number": 23
+        },
+        {
+          "block_id": 24,
+          "text": "않고 과감하게 창의성올 발휘하엿다.  _최국-#표표의 치",
+          "confidence": 0.0545,
+          "bbox": {
+            "top_left": [
+              225.0,
+              1136.0
+            ],
+            "top_right": [
+              1149.0,
+              1136.0
+            ],
+            "bottom_right": [
+              1149.0,
+              1197.0
+            ],
+            "bottom_left": [
+              225.0,
+              1197.0
+            ]
+          },
+          "line_number": 24
+        },
+        {
+          "block_id": 25,
+          "text": "#꾸묶-하의 용용범위틀 진일보하게 확대하여 광활한",
+          "confidence": 0.1277,
+          "bbox": {
+            "top_left": [
+              1230.0,
+              1134.0
+            ],
+            "top_right": [
+              2161.0,
+              1134.0
+            ],
+            "bottom_right": [
+              2161.0,
+              1199.0
+            ],
+            "bottom_left": [
+              1230.0,
+              1199.0
+            ]
+          },
+          "line_number": 25
+        },
+        {
+          "block_id": 27,
+          "text": "'#구주스록뷰R R선a , #{구주록#R## \"(i운",
+          "confidence": 0.0001,
+          "bbox": {
+            "top_left": [
+              373.0,
+              1204.0
+            ],
+            "top_right": [
+              1149.0,
+              1204.0
+            ],
+            "bottom_right": [
+              1149.0,
+              1268.0
+            ],
+            "bottom_left": [
+              373.0,
+              1268.0
+            ]
+          },
+          "line_number": 26
+        },
+        {
+          "block_id": 26,
+          "text": "로에서",
+          "confidence": 0.261,
+          "bbox": {
+            "top_left": [
+              226.0,
+              1211.0
+            ],
+            "top_right": [
+              354.0,
+              1211.0
+            ],
+            "bottom_right": [
+              354.0,
+              1267.0
+            ],
+            "bottom_left": [
+              226.0,
+              1267.0
+            ]
+          },
+          "line_number": 27
+        },
+        {
+          "block_id": 28,
+          "text": "전망올 드러내 보엿다.",
+          "confidence": 0.6244,
+          "bbox": {
+            "top_left": [
+              1236.0,
+              1211.0
+            ],
+            "top_right": [
+              1622.0,
+              1211.0
+            ],
+            "bottom_right": [
+              1622.0,
+              1267.0
+            ],
+            "bottom_left": [
+              1236.0,
+              1267.0
+            ]
+          },
+          "line_number": 28
+        },
+        {
+          "block_id": 29,
+          "text": "청#솟 J쓸소)의 여러 가지 훌(에 근거하여 그는 별도",
+          "confidence": 0.0405,
+          "bbox": {
+            "top_left": [
+              223.0,
+              1278.0
+            ],
+            "top_right": [
+              1149.0,
+              1278.0
+            ],
+            "bottom_right": [
+              1149.0,
+              1339.0
+            ],
+            "bottom_left": [
+              223.0,
+              1339.0
+            ]
+          },
+          "line_number": 29
+        },
+        {
+          "block_id": 30,
+          "text": "의 방책올 만들어 꾸_표촌 [못흘 위주로 하는 , 떼*처품",
+          "confidence": 0.0148,
+          "bbox": {
+            "top_left": [
+              228.0,
+              1350.0
+            ],
+            "top_right": [
+              1149.0,
+              1350.0
+            ],
+            "bottom_right": [
+              1149.0,
+              1410.0
+            ],
+            "bottom_left": [
+              228.0,
+              1410.0
+            ]
+          },
+          "line_number": 30
+        },
+        {
+          "block_id": 32,
+          "text": "{묶올 실)하여다 . 그 #꾸# # {유의 R쪽 사고방식은",
+          "confidence": 0.0239,
+          "bbox": {
+            "top_left": [
+              223.0,
+              1418.0
+            ],
+            "top_right": [
+              1152.0,
+              1418.0
+            ],
+            "bottom_right": [
+              1152.0,
+              1484.0
+            ],
+            "bottom_left": [
+              223.0,
+              1484.0
+            ]
+          },
+          "line_number": 31
+        },
+        {
+          "block_id": 33,
+          "text": "초표표은 서포의 까덤가 인체의 WL#와 Fi 록j에 침습하",
+          "confidence": 0.0045,
+          "bbox": {
+            "top_left": [
+              1230.0,
+              1421.0
+            ],
+            "top_right": [
+              2159.0,
+              1421.0
+            ],
+            "bottom_right": [
+              2159.0,
+              1481.0
+            ],
+            "bottom_left": [
+              1230.0,
+              1481.0
+            ]
+          },
+          "line_number": 32
+        },
+        {
+          "block_id": 34,
+          "text": "#꾸춧의 모든 방제 중에서 독자적으로 한 파름 형성한",
+          "confidence": 0.2128,
+          "bbox": {
+            "top_left": [
+              223.0,
+              1490.0
+            ],
+            "top_right": [
+              1150.0,
+              1490.0
+            ],
+            "bottom_right": [
+              1150.0,
+              1555.0
+            ],
+            "bottom_left": [
+              223.0,
+              1555.0
+            ]
+          },
+          "line_number": 33
+        },
+        {
+          "block_id": 35,
+          "text": "여 생긴  품끓이다. #후 u는 \"표f [치 , #벼 l출, @야출또,",
+          "confidence": 0.0006,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              1489.0
+            ],
+            "top_right": [
+              2151.0,
+              1489.0
+            ],
+            "bottom_right": [
+              2151.0,
+              1552.0
+            ],
+            "bottom_left": [
+              1233.0,
+              1552.0
+            ]
+          },
+          "line_number": 34
+        },
+        {
+          "block_id": 36,
+          "text": "것이다. '스#포유속{숨'하여 방제 조합 구조는 후세에 #",
+          "confidence": 0.0406,
+          "bbox": {
+            "top_left": [
+              225.0,
+              1563.0
+            ],
+            "top_right": [
+              1149.0,
+              1563.0
+            ],
+            "bottom_right": [
+              1149.0,
+              1623.0
+            ],
+            "bottom_left": [
+              225.0,
+              1623.0
+            ]
+          },
+          "line_number": 35
+        },
+        {
+          "block_id": 37,
+          "text": "금끗_\" (탤부표_ '#Ra_)라고 하여는데 , 그 기능은 주로",
+          "confidence": 0.0052,
+          "bbox": {
+            "top_left": [
+              1235.0,
+              1560.0
+            ],
+            "top_right": [
+              2159.0,
+              1560.0
+            ],
+            "bottom_right": [
+              2159.0,
+              1623.0
+            ],
+            "bottom_left": [
+              1235.0,
+              1623.0
+            ]
+          },
+          "line_number": 36
+        },
+        {
+          "block_id": 38,
+          "text": "품 . uux 및 j#양콤올 치료하는데 모두 거대한 영향올",
+          "confidence": 0.0094,
+          "bbox": {
+            "top_left": [
+              223.0,
+              1634.0
+            ],
+            "top_right": [
+              1149.0,
+              1634.0
+            ],
+            "bottom_right": [
+              1149.0,
+              1694.0
+            ],
+            "bottom_left": [
+              223.0,
+              1694.0
+            ]
+          },
+          "line_number": 37
+        },
+        {
+          "block_id": 39,
+          "text": "까맣틀 방어하고, 땀울 배설하여 체온올 조절하는 등",
+          "confidence": 0.119,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              1634.0
+            ],
+            "top_right": [
+              2161.0,
+              1634.0
+            ],
+            "bottom_right": [
+              2161.0,
+              1694.0
+            ],
+            "bottom_left": [
+              1233.0,
+              1694.0
+            ]
+          },
+          "line_number": 38
+        },
+        {
+          "block_id": 40,
+          "text": "주없다 . EA [a#는 출휴올 고치지 양고 또한 새로",
+          "confidence": 0.0461,
+          "bbox": {
+            "top_left": [
+              223.0,
+              1700.0
+            ],
+            "top_right": [
+              1149.0,
+              1700.0
+            ],
+            "bottom_right": [
+              1149.0,
+              1764.0
+            ],
+            "bottom_left": [
+              223.0,
+              1764.0
+            ]
+          },
+          "line_number": 39
+        },
+        {
+          "block_id": 41,
+          "text": "에서 표현된다 . 패 논 'R올 맡고 슬얼못과 뛰@올 주",
+          "confidence": 0.0067,
+          "bbox": {
+            "top_left": [
+              1234.0,
+              1706.0
+            ],
+            "top_right": [
+              2160.0,
+              1706.0
+            ],
+            "bottom_right": [
+              2160.0,
+              1762.0
+            ],
+            "bottom_left": [
+              1234.0,
+              1762.0
+            ]
+          },
+          "line_number": 40
+        },
+        {
+          "block_id": 42,
+          "text": "운 학설올 정립하여고 ##*꾸틀 잘 채집하엿는데 , 그는",
+          "confidence": 0.1449,
+          "bbox": {
+            "top_left": [
+              225.0,
+              1776.0
+            ],
+            "top_right": [
+              1149.0,
+              1776.0
+            ],
+            "bottom_right": [
+              1149.0,
+              1837.0
+            ],
+            "bottom_left": [
+              225.0,
+              1837.0
+            ]
+          },
+          "line_number": 41
+        },
+        {
+          "block_id": 43,
+          "text": "로하다 볶에 끗렇하고 바로는 임중와 습한다. 그러므",
+          "confidence": 0.0258,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              1771.0
+            ],
+            "top_right": [
+              2159.0,
+              1771.0
+            ],
+            "bottom_right": [
+              2159.0,
+              1836.0
+            ],
+            "bottom_left": [
+              1233.0,
+              1836.0
+            ]
+          },
+          "line_number": 42
+        },
+        {
+          "block_id": 44,
+          "text": "##클의 X#포##흉의 취지름 따르면서 뒷방의 소위품",
+          "confidence": 0.0024,
+          "bbox": {
+            "top_left": [
+              224.0,
+              1842.0
+            ],
+            "top_right": [
+              1134.0,
+              1842.0
+            ],
+            "bottom_right": [
+              1134.0,
+              1907.0
+            ],
+            "bottom_left": [
+              224.0,
+              1907.0
+            ]
+          },
+          "line_number": 43
+        },
+        {
+          "block_id": 45,
+          "text": "로 X포의 # 하가 혹은 탓굶름 따라 들어오고,  혹은",
+          "confidence": 0.0266,
+          "bbox": {
+            "top_left": [
+              1235.0,
+              1844.0
+            ],
+            "top_right": [
+              2161.0,
+              1844.0
+            ],
+            "bottom_right": [
+              2161.0,
+              1905.0
+            ],
+            "bottom_left": [
+              1235.0,
+              1905.0
+            ]
+          },
+          "line_number": 44
+        },
+        {
+          "block_id": 46,
+          "text": "나소로 #꾸축하는 뜻올 취하여 뜻규속주EI 슬묶올 실)하",
+          "confidence": 0.0058,
+          "bbox": {
+            "top_left": [
+              228.0,
+              1913.0
+            ],
+            "top_right": [
+              1151.0,
+              1913.0
+            ],
+            "bottom_right": [
+              1151.0,
+              1978.0
+            ],
+            "bottom_left": [
+              228.0,
+              1978.0
+            ]
+          },
+          "line_number": 45
+        },
+        {
+          "block_id": 47,
+          "text": "[특릎 따라서 들어오면 반드시 E  -j에 침습하여 *",
+          "confidence": 0.0324,
+          "bbox": {
+            "top_left": [
+              1235.0,
+              1915.0
+            ],
+            "top_right": [
+              2159.0,
+              1915.0
+            ],
+            "bottom_right": [
+              2159.0,
+              1977.0
+            ],
+            "bottom_left": [
+              1235.0,
+              1977.0
+            ]
+          },
+          "line_number": 46
+        },
+        {
+          "block_id": 48,
+          "text": "엿는데 후인들에게 #포가올 활용하는 모범올 보여짓다",
+          "confidence": 0.1975,
+          "bbox": {
+            "top_left": [
+              225.0,
+              1984.0
+            ],
+            "top_right": [
+              1151.0,
+              1984.0
+            ],
+            "bottom_right": [
+              1151.0,
+              2049.0
+            ],
+            "bottom_left": [
+              225.0,
+              2049.0
+            ]
+          },
+          "line_number": 47
+        },
+        {
+          "block_id": 49,
+          "text": "#;의 품[ 기능이 정상을 잃고 Rfi 숲의 '슬표 기전에",
+          "confidence": 0.0295,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              1984.0
+            ],
+            "top_right": [
+              2159.0,
+              1984.0
+            ],
+            "bottom_right": [
+              2159.0,
+              2048.0
+            ],
+            "bottom_left": [
+              1233.0,
+              2048.0
+            ]
+          },
+          "line_number": 48
+        },
+        {
+          "block_id": 50,
+          "text": "고 할 만하다 . 그는 #물의 R쓸#?p} 머류의 B류",
+          "confidence": 0.0096,
+          "bbox": {
+            "top_left": [
+              228.0,
+              2057.0
+            ],
+            "top_right": [
+              1146.0,
+              2057.0
+            ],
+            "bottom_right": [
+              1146.0,
+              2118.0
+            ],
+            "bottom_left": [
+              228.0,
+              2118.0
+            ]
+          },
+          "line_number": 49
+        },
+        {
+          "block_id": 51,
+          "text": "지장울 받으면 표퍼잘Y% , 퇴특)초|품 , 속{규똑 #f, 좀",
+          "confidence": 0.0002,
+          "bbox": {
+            "top_left": [
+              1231.0,
+              2056.0
+            ],
+            "top_right": [
+              2159.0,
+              2056.0
+            ],
+            "bottom_right": [
+              2159.0,
+              2122.0
+            ],
+            "bottom_left": [
+              1231.0,
+              2122.0
+            ]
+          },
+          "line_number": 50
+        },
+        {
+          "block_id": 52,
+          "text": "#꾸##국올 본반고 볶모의 / 다#품류에서 #품 . [# )퇴",
+          "confidence": 0.0031,
+          "bbox": {
+            "top_left": [
+              223.0,
+              2126.0
+            ],
+            "top_right": [
+              1151.0,
+              2126.0
+            ],
+            "bottom_right": [
+              1151.0,
+              2190.0
+            ],
+            "bottom_left": [
+              223.0,
+              2190.0
+            ]
+          },
+          "line_number": 51
+        },
+        {
+          "block_id": 53,
+          "text": "출출다, Biy독 등의 증상이 생거 #표표올 형성한다 . 서도",
+          "confidence": 0.0211,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              2129.0
+            ],
+            "top_right": [
+              2159.0,
+              2129.0
+            ],
+            "bottom_right": [
+              2159.0,
+              2189.0
+            ],
+            "bottom_left": [
+              1233.0,
+              2189.0
+            ]
+          },
+          "line_number": 52
+        },
+        {
+          "block_id": 54,
+          "text": "및 )|t의 #꾸초 # 유하는 뜻올 본받아서 탈옷하 특껑",
+          "confidence": 0.0163,
+          "bbox": {
+            "top_left": [
+              225.0,
+              2198.0
+            ],
+            "top_right": [
+              1149.0,
+              2198.0
+            ],
+            "bottom_right": [
+              1149.0,
+              2262.0
+            ],
+            "bottom_left": [
+              225.0,
+              2262.0
+            ]
+          },
+          "line_number": 53
+        },
+        {
+          "block_id": 55,
+          "text": "의 # 다에는 )떼 . 못 . 물 . {묶 . 못 및 X의 차이가 있고,",
+          "confidence": 0.0401,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              2200.0
+            ],
+            "top_right": [
+              2155.0,
+              2200.0
+            ],
+            "bottom_right": [
+              2155.0,
+              2265.0
+            ],
+            "bottom_left": [
+              1233.0,
+              2265.0
+            ]
+          },
+          "line_number": 54
+        },
+        {
+          "block_id": 56,
+          "text": "쏟도 지금의 사람들에게 널리 전수되어 사용하고 잎",
+          "confidence": 0.3692,
+          "bbox": {
+            "top_left": [
+              223.0,
+              2271.0
+            ],
+            "top_right": [
+              1149.0,
+              2271.0
+            ],
+            "bottom_right": [
+              1149.0,
+              2331.0
+            ],
+            "bottom_left": [
+              223.0,
+              2331.0
+            ]
+          },
+          "line_number": 55
+        },
+        {
+          "block_id": 57,
+          "text": "또한 Ry초 .  슬기록 . 7KA로 및 *Y 등의 *]#되에도 대부분",
+          "confidence": 0.0027,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              2268.0
+            ],
+            "top_right": [
+              2159.0,
+              2268.0
+            ],
+            "bottom_right": [
+              2159.0,
+              2329.0
+            ],
+            "bottom_left": [
+              1233.0,
+              2329.0
+            ]
+          },
+          "line_number": 56
+        },
+        {
+          "block_id": 58,
+          "text": "다  #출서 #표-지록:인 표국은 'Y표료-' 올 강조하면",
+          "confidence": 0.0028,
+          "bbox": {
+            "top_left": [
+              225.0,
+              2338.0
+            ],
+            "top_right": [
+              1149.0,
+              2338.0
+            ],
+            "bottom_right": [
+              1149.0,
+              2401.0
+            ],
+            "bottom_left": [
+              225.0,
+              2401.0
+            ]
+          },
+          "line_number": 57
+        },
+        {
+          "block_id": 59,
+          "text": "#류또올 검하기 때문에 훌표이 미치는 범위 또한 비교",
+          "confidence": 0.106,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              2342.0
+            ],
+            "top_right": [
+              2159.0,
+              2342.0
+            ],
+            "bottom_right": [
+              2159.0,
+              2402.0
+            ],
+            "bottom_left": [
+              1233.0,
+              2402.0
+            ]
+          },
+          "line_number": 58
+        },
+        {
+          "block_id": 60,
+          "text": "서 \"옛날부터 전해 내려오는 ;륙m-국올 사용하여 #표등",
+          "confidence": 0.0553,
+          "bbox": {
+            "top_left": [
+              225.0,
+              2413.0
+            ],
+            "top_right": [
+              1149.0,
+              2413.0
+            ],
+            "bottom_right": [
+              1149.0,
+              2473.0
+            ],
+            "bottom_left": [
+              225.0,
+              2473.0
+            ]
+          },
+          "line_number": 59
+        },
+        {
+          "block_id": 61,
+          "text": "적 광범위하다.  질병의 성질에는 못춧의 차이가 잇고",
+          "confidence": 0.1723,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              2413.0
+            ],
+            "top_right": [
+              2161.0,
+              2413.0
+            ],
+            "bottom_right": [
+              2161.0,
+              2473.0
+            ],
+            "bottom_left": [
+              1233.0,
+              2473.0
+            ]
+          },
+          "line_number": 60
+        },
+        {
+          "block_id": 62,
+          "text": "올 치료하는 것은 크게 잘못는 젓이다(숨짓다 릎최-#",
+          "confidence": 0.0077,
+          "bbox": {
+            "top_left": [
+              225.0,
+              2478.0
+            ],
+            "top_right": [
+              1149.0,
+              2478.0
+            ],
+            "bottom_right": [
+              1149.0,
+              2546.0
+            ],
+            "bottom_left": [
+              225.0,
+              2546.0
+            ]
+          },
+          "line_number": 61
+        },
+        {
+          "block_id": 63,
+          "text": "체질에는 국국국국의 구별이 있다. #픔표 중에서 질병의 성",
+          "confidence": 0.0737,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              2482.0
+            ],
+            "top_right": [
+              2159.0,
+              2482.0
+            ],
+            "bottom_right": [
+              2159.0,
+              2545.0
+            ],
+            "bottom_left": [
+              1233.0,
+              2545.0
+            ]
+          },
+          "line_number": 62
+        },
+        {
+          "block_id": 64,
+          "text": "{문 품기숲 ,",
+          "confidence": 0.032,
+          "bbox": {
+            "top_left": [
+              226.0,
+              2556.0
+            ],
+            "top_right": [
+              366.0,
+              2556.0
+            ],
+            "bottom_right": [
+              366.0,
+              2610.0
+            ],
+            "bottom_left": [
+              226.0,
+              2610.0
+            ]
+          },
+          "line_number": 63
+        },
+        {
+          "block_id": 65,
+          "text": "#nt.) \"(표j-{뜻-다_숲1)고 지적하옆",
+          "confidence": 0.0052,
+          "bbox": {
+            "top_left": [
+              472.0,
+              2552.0
+            ],
+            "top_right": [
+              1151.0,
+              2552.0
+            ],
+            "bottom_right": [
+              1151.0,
+              2613.0
+            ],
+            "bottom_left": [
+              472.0,
+              2613.0
+            ]
+          },
+          "line_number": 64
+        },
+        {
+          "block_id": 66,
+          "text": "짙이 뜻에 해당하는 자능 반드시 꾸 품#꾸묶해야 하고,",
+          "confidence": 0.1731,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              2555.0
+            ],
+            "top_right": [
+              2154.0,
+              2555.0
+            ],
+            "bottom_right": [
+              2154.0,
+              2616.0
+            ],
+            "bottom_left": [
+              1233.0,
+              2616.0
+            ]
+          },
+          "line_number": 65
+        },
+        {
+          "block_id": 67,
+          "text": "다. {표;;의 *]#름 치료함에 있어서 r [치#표{의",
+          "confidence": 0.0249,
+          "bbox": {
+            "top_left": [
+              225.0,
+              2623.0
+            ],
+            "top_right": [
+              1035.0,
+              2623.0
+            ],
+            "bottom_right": [
+              1035.0,
+              2684.0
+            ],
+            "bottom_left": [
+              225.0,
+              2684.0
+            ]
+          },
+          "line_number": 66
+        },
+        {
+          "block_id": 68,
+          "text": "\"_{도",
+          "confidence": 0.0268,
+          "bbox": {
+            "top_left": [
+              1051.0,
+              2627.0
+            ],
+            "top_right": [
+              1150.0,
+              2627.0
+            ],
+            "bottom_right": [
+              1150.0,
+              2678.0
+            ],
+            "bottom_left": [
+              1051.0,
+              2678.0
+            ]
+          },
+          "line_number": 67
+        },
+        {
+          "block_id": 69,
+          "text": "질병의 성질이 %에 해당하는 자는 반드시 후_워#꾸숲",
+          "confidence": 0.0097,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              2623.0
+            ],
+            "top_right": [
+              2159.0,
+              2623.0
+            ],
+            "bottom_right": [
+              2159.0,
+              2687.0
+            ],
+            "bottom_left": [
+              1233.0,
+              2687.0
+            ]
+          },
+          "line_number": 68
+        },
+        {
+          "block_id": 70,
+          "text": "I, {숨C꾸 |차, {마a다; 햇포j치 , {숨뇌옮a못 ,  1",
+          "confidence": 0.001,
+          "bbox": {
+            "top_left": [
+              224.0,
+              2695.0
+            ],
+            "top_right": [
+              1148.0,
+              2695.0
+            ],
+            "bottom_right": [
+              1148.0,
+              2752.0
+            ],
+            "bottom_left": [
+              224.0,
+              2752.0
+            ]
+          },
+          "line_number": 69
+        },
+        {
+          "block_id": 71,
+          "text": "해야 하여  여기에 검하여 숲 . ffil : [숲 . [류의 모든 부족",
+          "confidence": 0.0845,
+          "bbox": {
+            "top_left": [
+              1231.0,
+              2695.0
+            ],
+            "top_right": [
+              2159.0,
+              2695.0
+            ],
+            "bottom_right": [
+              2159.0,
+              2757.0
+            ],
+            "bottom_left": [
+              1231.0,
+              2757.0
+            ]
+          },
+          "line_number": 70
+        },
+        {
+          "block_id": 72,
+          "text": "C분숨\" 의 영향과 때뷰%의 포기주#쪽축의 계발올 깊게",
+          "confidence": 0.0038,
+          "bbox": {
+            "top_left": [
+              225.0,
+              2765.0
+            ],
+            "top_right": [
+              1149.0,
+              2765.0
+            ],
+            "bottom_right": [
+              1149.0,
+              2826.0
+            ],
+            "bottom_left": [
+              225.0,
+              2826.0
+            ]
+          },
+          "line_number": 71
+        },
+        {
+          "block_id": 73,
+          "text": "한 증상이 나타나는 자는 또한 모름지기 #속{국과 곁",
+          "confidence": 0.2187,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              2764.0
+            ],
+            "top_right": [
+              2160.0,
+              2764.0
+            ],
+            "bottom_right": [
+              2160.0,
+              2829.0
+            ],
+            "bottom_left": [
+              1233.0,
+              2829.0
+            ]
+          },
+          "line_number": 72
+        },
+        {
+          "block_id": 74,
+          "text": "받앗으며, '푸분a다' ({표- 시c-# _돼1) #국올 주장하여",
+          "confidence": 0.0004,
+          "bbox": {
+            "top_left": [
+              225.0,
+              2837.0
+            ],
+            "top_right": [
+              1149.0,
+              2837.0
+            ],
+            "bottom_right": [
+              1149.0,
+              2897.0
+            ],
+            "bottom_left": [
+              225.0,
+              2897.0
+            ]
+          },
+          "line_number": 73
+        },
+        {
+          "block_id": 75,
+          "text": "합하여 {*소츠국뜨하여야 한다 . 때문에 #꾸#) 빠는 여",
+          "confidence": 0.0398,
+          "bbox": {
+            "top_left": [
+              1234.0,
+              2840.0
+            ],
+            "top_right": [
+              2158.0,
+              2840.0
+            ],
+            "bottom_right": [
+              2158.0,
+              2896.0
+            ],
+            "bottom_left": [
+              1234.0,
+              2896.0
+            ]
+          },
+          "line_number": 74
+        },
+        {
+          "block_id": 76,
+          "text": "쇼책-과 출찢삶 등 #_R#꾸숫의 싶/올 만들없다 .",
+          "confidence": 0.0022,
+          "bbox": {
+            "top_left": [
+              222.0,
+              2905.0
+            ],
+            "top_right": [
+              1146.0,
+              2905.0
+            ],
+            "bottom_right": [
+              1146.0,
+              2969.0
+            ],
+            "bottom_left": [
+              222.0,
+              2969.0
+            ]
+          },
+          "line_number": 75
+        },
+        {
+          "block_id": 77,
+          "text": "기에 상응하여 꾸 _표#꾸시 . 포 |규#꾸묶 및 #*도#주축의",
+          "confidence": 0.0067,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              2908.0
+            ],
+            "top_right": [
+              2159.0,
+              2908.0
+            ],
+            "bottom_right": [
+              2159.0,
+              2968.0
+            ],
+            "bottom_left": [
+              1233.0,
+              2968.0
+            ]
+          },
+          "line_number": 76
+        },
+        {
+          "block_id": 31,
+          "text": "#국k질는 #표올 치료하기 위하여 설정된 젓이다.",
+          "confidence": 0.0726,
+          "bbox": {
+            "top_left": [
+              1291.0,
+              1347.0
+            ],
+            "top_right": [
+              2156.0,
+              1347.0
+            ],
+            "bottom_right": [
+              2156.0,
+              1410.0
+            ],
+            "bottom_left": [
+              1291.0,
+              1410.0
+            ]
+          },
+          "line_number": 77
+        }
+      ],
+      "full_text": "부} 뜰 - a록 솜#\n표#렉에 대해서는 F! . ## 등 꾸_품 #꾸#쪽의 사용\n이논 ## 치료에 하나의 커다란 법문올 열엇고 폭숲\n#꾸#책의 공백올 메꾸엇으떠 후세에 모범올 보인 것\n올 반대하고 꾸|끗하거나 밥못한 약물로 #꾸춧할 것올\n주장하엿다 . 그러므로 \"붐#렉#주 .  쪽 {규스하, 7\n이다. 최근 S0년 동안 한의학의 교육과 과학기술의 발\nJ 성 볶 {-## . lm#표표렉 스청.\"(r#_터;# 북듭 {못습\n전에 뒤이어 #꾸*가 폐의 임상 응용경험이 누적되에\n듯밟숲소)이라고 하여다 . 떼발향는 쫓기료소올 사용하\n따라 #꾸m빠가 이론상으로 더욱 계통적으로 심화되엇\n눈 것에 주력하엿고  m표표올 치료함에 있어 꾸 l퍼올\n으펴, 가하 조성의 표{에서도 더욱 완전하게 되엇\n잘 사용하는 학술적인 사고방식은 후세 #표퍼-의 치\n다. 특별히 #꾸춧) 책에 대한 작용기전 연구틀 통하여\n코에 매우 탈표올 하여다.  {표-하당렉인 모f이 솜-\n#국춧가하에는 품표{ . #꾸퍼  . #분기움 . ##앗 ' Y치류-소#\n한 저명한 방제인 쇼책다은 그 근본올 거슬러 올라가\n억제 . #불다 . 꾸퓨 및 ##% 등의 약리작용이 잇고, 또\n보면 실제로 {미#의 {듯#륙쓸올 모방하여 다시 만든 것\n한 면역기능올 조절하고 별#옮기능올 조정하다 항알러\n이다. 모기 상기의 탁i인 료뻗t는 출름에 읽매이지\n지 Rlf 등의 면에도 적극적인 의의가 있다. 따라서\n않고 과감하게 창의성올 발휘하엿다.  _최국-#표표의 치\n#꾸묶-하의 용용범위틀 진일보하게 확대하여 광활한\n'#구주스록뷰R R선a , #{구주록#R## \"(i운\n로에서\n전망올 드러내 보엿다.\n청#솟 J쓸소)의 여러 가지 훌(에 근거하여 그는 별도\n의 방책올 만들어 꾸_표촌 [못흘 위주로 하는 , 떼*처품\n{묶올 실)하여다 . 그 #꾸# # {유의 R쪽 사고방식은\n초표표은 서포의 까덤가 인체의 WL#와 Fi 록j에 침습하\n#꾸춧의 모든 방제 중에서 독자적으로 한 파름 형성한\n여 생긴  품끓이다. #후 u는 \"표f [치 , #벼 l출, @야출또,\n것이다. '스#포유속{숨'하여 방제 조합 구조는 후세에 #\n금끗_\" (탤부표_ '#Ra_)라고 하여는데 , 그 기능은 주로\n품 . uux 및 j#양콤올 치료하는데 모두 거대한 영향올\n까맣틀 방어하고, 땀울 배설하여 체온올 조절하는 등\n주없다 . EA [a#는 출휴올 고치지 양고 또한 새로\n에서 표현된다 . 패 논 'R올 맡고 슬얼못과 뛰@올 주\n운 학설올 정립하여고 ##*꾸틀 잘 채집하엿는데 , 그는\n로하다 볶에 끗렇하고 바로는 임중와 습한다. 그러므\n##클의 X#포##흉의 취지름 따르면서 뒷방의 소위품\n로 X포의 # 하가 혹은 탓굶름 따라 들어오고,  혹은\n나소로 #꾸축하는 뜻올 취하여 뜻규속주EI 슬묶올 실)하\n[특릎 따라서 들어오면 반드시 E  -j에 침습하여 *\n엿는데 후인들에게 #포가올 활용하는 모범올 보여짓다\n#;의 품[ 기능이 정상을 잃고 Rfi 숲의 '슬표 기전에\n고 할 만하다 . 그는 #물의 R쓸#?p} 머류의 B류\n지장울 받으면 표퍼잘Y% , 퇴특)초|품 , 속{규똑 #f, 좀\n#꾸##국올 본반고 볶모의 / 다#품류에서 #품 . [# )퇴\n출출다, Biy독 등의 증상이 생거 #표표올 형성한다 . 서도\n및 )|t의 #꾸초 # 유하는 뜻올 본받아서 탈옷하 특껑\n의 # 다에는 )떼 . 못 . 물 . {묶 . 못 및 X의 차이가 있고,\n쏟도 지금의 사람들에게 널리 전수되어 사용하고 잎\n또한 Ry초 .  슬기록 . 7KA로 및 *Y 등의 *]#되에도 대부분\n다  #출서 #표-지록:인 표국은 'Y표료-' 올 강조하면\n#류또올 검하기 때문에 훌표이 미치는 범위 또한 비교\n서 \"옛날부터 전해 내려오는 ;륙m-국올 사용하여 #표등\n적 광범위하다.  질병의 성질에는 못춧의 차이가 잇고\n올 치료하는 것은 크게 잘못는 젓이다(숨짓다 릎최-#\n체질에는 국국국국의 구별이 있다. #픔표 중에서 질병의 성\n{문 품기숲 ,\n#nt.) \"(표j-{뜻-다_숲1)고 지적하옆\n짙이 뜻에 해당하는 자능 반드시 꾸 품#꾸묶해야 하고,\n다. {표;;의 *]#름 치료함에 있어서 r [치#표{의\n\"_{도\n질병의 성질이 %에 해당하는 자는 반드시 후_워#꾸숲\nI, {숨C꾸 |차, {마a다; 햇포j치 , {숨뇌옮a못 ,  1\n해야 하여  여기에 검하여 숲 . ffil : [숲 . [류의 모든 부족\nC분숨\" 의 영향과 때뷰%의 포기주#쪽축의 계발올 깊게\n한 증상이 나타나는 자는 또한 모름지기 #속{국과 곁\n받앗으며, '푸분a다' ({표- 시c-# _돼1) #국올 주장하여\n합하여 {*소츠국뜨하여야 한다 . 때문에 #꾸#) 빠는 여\n쇼책-과 출찢삶 등 #_R#꾸숫의 싶/올 만들없다 .\n기에 상응하여 꾸 _표#꾸시 . 포 |규#꾸묶 및 #*도#주축의\n#국k질는 #표올 치료하기 위하여 설정된 젓이다.",
+      "block_count": 77,
+      "avg_confidence": 0.0821,
+      "status": "completed",
+      "error": null
+    }
+  ]
+}

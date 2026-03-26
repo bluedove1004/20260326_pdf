@@ -1,0 +1,11 @@
+{
+  "ocr_provider": "google_vision",
+  "api_key": null,
+  "dpi": 300,
+  "preprocessing": {
+    "grayscale": true,
+    "binarization": false,
+    "denoise": false,
+    "deskew": false
+  }
+}

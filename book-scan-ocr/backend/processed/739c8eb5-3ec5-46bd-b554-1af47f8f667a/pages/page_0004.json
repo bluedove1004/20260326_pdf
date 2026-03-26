@@ -1,0 +1,11 @@
+{
+  "page_number": 4,
+  "width": 0,
+  "height": 0,
+  "text_blocks": [],
+  "full_text": "",
+  "block_count": 0,
+  "avg_confidence": 0.0,
+  "status": "failed",
+  "error": "PaddleOCR not initialized"
+}

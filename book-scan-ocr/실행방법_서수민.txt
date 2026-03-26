@@ -1,0 +1,20 @@
+1. 백앤드 실행
+
+cd book-scan-ocr/backend
+source venv/bin/activate       # macOS/Linux
+uvicorn main:app --reload --port 8000
+
+
+2. 프론트 실행
+cd book-scan-ocr/frontend
+
+npm run dev
+
+
+3. 접속 방법 
+
+
+http://localhost:5173/
+
+
+

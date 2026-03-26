@@ -1,0 +1,3179 @@
+{
+  "document_id": "81dce396-eecb-41d0-a6ec-0e39b7b422a9",
+  "filename": "방제학-상_1_to_2.pdf",
+  "total_pages": 2,
+  "ocr_engine": "paddleocr",
+  "language": "korean",
+  "created_at": "2026-03-23T08:13:36.264122Z",
+  "processing_time_seconds": 147.82,
+  "pages": [
+    {
+      "page_number": 1,
+      "width": 2493,
+      "height": 3258,
+      "text_blocks": [
+        {
+          "block_id": 1,
+          "text": "第一章",
+          "confidence": 0.6542,
+          "bbox": {
+            "top_left": [
+              1207.0,
+              451.0
+            ],
+            "top_right": [
+              1394.0,
+              451.0
+            ],
+            "bottom_right": [
+              1394.0,
+              528.0
+            ],
+            "bottom_left": [
+              1207.0,
+              528.0
+            ]
+          },
+          "line_number": 1
+        },
+        {
+          "block_id": 2,
+          "text": "解表劑",
+          "confidence": 0.991,
+          "bbox": {
+            "top_left": [
+              1101.0,
+              610.0
+            ],
+            "top_right": [
+              1492.0,
+              610.0
+            ],
+            "bottom_right": [
+              1492.0,
+              751.0
+            ],
+            "bottom_left": [
+              1101.0,
+              751.0
+            ]
+          },
+          "line_number": 2
+        },
+        {
+          "block_id": 3,
+          "text": "4谷4",
+          "confidence": 0.0004,
+          "bbox": {
+            "top_left": [
+              2141.0,
+              919.0
+            ],
+            "top_right": [
+              2266.0,
+              919.0
+            ],
+            "bottom_right": [
+              2266.0,
+              973.0
+            ],
+            "bottom_left": [
+              2141.0,
+              973.0
+            ]
+          },
+          "line_number": 3
+        },
+        {
+          "block_id": 4,
+          "text": "解表藥嘗9子三4g訓4聖]皂芡9三,發汗.",
+          "confidence": 0.0002,
+          "bbox": {
+            "top_left": [
+              392.0,
+              1201.0
+            ],
+            "top_right": [
+              1249.0,
+              1201.0
+            ],
+            "bottom_right": [
+              1249.0,
+              1265.0
+            ],
+            "bottom_left": [
+              392.0,
+              1265.0
+            ]
+          },
+          "line_number": 4
+        },
+        {
+          "block_id": 5,
+          "text": "小漢代叫o]u日虱4ng=歪o%%亭吝皂5",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              1344.0,
+              1201.0
+            ],
+            "top_right": [
+              2265.0,
+              1201.0
+            ],
+            "bottom_right": [
+              2265.0,
+              1262.0
+            ],
+            "bottom_left": [
+              1344.0,
+              1262.0
+            ]
+          },
+          "line_number": 5
+        },
+        {
+          "block_id": 6,
+          "text": "解肌-透疹言94%嘗尖字1%_里八子三表證",
+          "confidence": 0.0001,
+          "bbox": {
+            "top_left": [
+              333.0,
+              1273.0
+            ],
+            "top_right": [
+              1262.0,
+              1273.0
+            ],
+            "bottom_right": [
+              1262.0,
+              1338.0
+            ],
+            "bottom_left": [
+              333.0,
+              1338.0
+            ]
+          },
+          "line_number": 6
+        },
+        {
+          "block_id": 7,
+          "text": "當=%斗.魏.晉0亨三9斗7|04蘭吾39千4",
+          "confidence": 0.0001,
+          "bbox": {
+            "top_left": [
+              1344.0,
+              1272.0
+            ],
+            "top_right": [
+              2269.0,
+              1272.0
+            ],
+            "bottom_right": [
+              2269.0,
+              1337.0
+            ],
+            "bottom_left": [
+              1344.0,
+              1337.0
+            ]
+          },
+          "line_number": 7
+        },
+        {
+          "block_id": 8,
+          "text": "獸刁昱可芒方劑嘗解表劑斗1早三芒引,`八法子",
+          "confidence": 0.0001,
+          "bbox": {
+            "top_left": [
+              339.0,
+              1347.0
+            ],
+            "top_right": [
+              1261.0,
+              1347.0
+            ],
+            "bottom_right": [
+              1261.0,
+              1403.0
+            ],
+            "bottom_left": [
+              339.0,
+              1403.0
+            ]
+          },
+          "line_number": 8
+        },
+        {
+          "block_id": 9,
+          "text": "o]廿習叫嘗罟3蘭又`日旱oiu]引u9晉",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              1344.0,
+              1344.0
+            ],
+            "top_right": [
+              2270.0,
+              1344.0
+            ],
+            "bottom_right": [
+              2270.0,
+              1404.0
+            ],
+            "bottom_left": [
+              1344.0,
+              1404.0
+            ]
+          },
+          "line_number": 9
+        },
+        {
+          "block_id": 11,
+          "text": "聖7F%7|巴,oi4f=9=7ig邛召67=",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              1349.0,
+              1415.0
+            ],
+            "top_right": [
+              2270.0,
+              1415.0
+            ],
+            "bottom_right": [
+              2270.0,
+              1476.0
+            ],
+            "bottom_left": [
+              1349.0,
+              1476.0
+            ]
+          },
+          "line_number": 10
+        },
+        {
+          "block_id": 10,
+          "text": "汗法 夸士斗.",
+          "confidence": 0.0067,
+          "bbox": {
+            "top_left": [
+              334.0,
+              1418.0
+            ],
+            "top_right": [
+              604.0,
+              1418.0
+            ],
+            "bottom_right": [
+              604.0,
+              1475.0
+            ],
+            "bottom_left": [
+              334.0,
+              1475.0
+            ]
+          },
+          "line_number": 11
+        },
+        {
+          "block_id": 12,
+          "text": "心訃1 %+司1經方嘗亶g-}%_叫,47] a7 鬯",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              1344.0,
+              1484.0
+            ],
+            "top_right": [
+              2270.0,
+              1484.0
+            ],
+            "bottom_right": [
+              2270.0,
+              1544.0
+            ],
+            "bottom_left": [
+              1344.0,
+              1544.0
+            ]
+          },
+          "line_number": 12
+        },
+        {
+          "block_id": 13,
+          "text": "解表劑988g叫89三岐黃777含3嘗",
+          "confidence": 0.0016,
+          "bbox": {
+            "top_left": [
+              394.0,
+              1557.0
+            ],
+            "top_right": [
+              1262.0,
+              1557.0
+            ],
+            "bottom_right": [
+              1262.0,
+              1618.0
+            ],
+            "bottom_left": [
+              394.0,
+              1618.0
+            ]
+          },
+          "line_number": 13
+        },
+        {
+          "block_id": 14,
+          "text": "叫6op互4日刈77斐訓3刁司三蚤己87=%",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              1347.0,
+              1558.0
+            ],
+            "top_right": [
+              2269.0,
+              1558.0
+            ],
+            "bottom_right": [
+              2269.0,
+              1615.0
+            ],
+            "bottom_left": [
+              1347.0,
+              1615.0
+            ]
+          },
+          "line_number": 14
+        },
+        {
+          "block_id": 15,
+          "text": "斗7叫 o}i|呈芒百世I小7o|g斗.鬯4o]T內經_",
+          "confidence": 0.0012,
+          "bbox": {
+            "top_left": [
+              336.0,
+              1624.0
+            ],
+            "top_right": [
+              1266.0,
+              1624.0
+            ],
+            "bottom_right": [
+              1266.0,
+              1689.0
+            ],
+            "bottom_left": [
+              336.0,
+              1689.0
+            ]
+          },
+          "line_number": 15
+        },
+        {
+          "block_id": 16,
+          "text": "斗.叫嘗i巴晉代葛洪9]T肘後備急方_o4*傷寒",
+          "confidence": 0.0037,
+          "bbox": {
+            "top_left": [
+              1346.0,
+              1624.0
+            ],
+            "top_right": [
+              2270.0,
+              1624.0
+            ],
+            "bottom_right": [
+              2270.0,
+              1687.0
+            ],
+            "bottom_left": [
+              1346.0,
+              1687.0
+            ]
+          },
+          "line_number": 16
+        },
+        {
+          "block_id": 17,
+          "text": "吾o4o]uv斗訃7|發汗法9小g皂4嘗7iA]3%",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              338.0,
+              1700.0
+            ],
+            "top_right": [
+              1262.0,
+              1700.0
+            ],
+            "bottom_right": [
+              1262.0,
+              1761.0
+            ],
+            "bottom_left": [
+              338.0,
+              1761.0
+            ]
+          },
+          "line_number": 17
+        },
+        {
+          "block_id": 18,
+          "text": "有數種, 人不能別\"嘗 3%6}-o",
+          "confidence": 0.0709,
+          "bbox": {
+            "top_left": [
+              1345.0,
+              1696.0
+            ],
+            "top_right": [
+              1906.0,
+              1696.0
+            ],
+            "bottom_right": [
+              1906.0,
+              1759.0
+            ],
+            "bottom_left": [
+              1345.0,
+              1759.0
+            ]
+          },
+          "line_number": 18
+        },
+        {
+          "block_id": 19,
+          "text": "`蔥豉湯\"1*=}u9",
+          "confidence": 0.0069,
+          "bbox": {
+            "top_left": [
+              1926.0,
+              1696.0
+            ],
+            "top_right": [
+              2270.0,
+              1696.0
+            ],
+            "bottom_right": [
+              2270.0,
+              1759.0
+            ],
+            "bottom_left": [
+              1926.0,
+              1759.0
+            ]
+          },
+          "line_number": 19
+        },
+        {
+          "block_id": 20,
+          "text": "斗.d嘗i旦\"因其輕而揚之\"斗1司%工,",
+          "confidence": 0.0034,
+          "bbox": {
+            "top_left": [
+              338.0,
+              1768.0
+            ],
+            "top_right": [
+              1105.0,
+              1768.0
+            ],
+            "bottom_right": [
+              1105.0,
+              1834.0
+            ],
+            "bottom_left": [
+              338.0,
+              1834.0
+            ]
+          },
+          "line_number": 20
+        },
+        {
+          "block_id": 21,
+          "text": "其有邪",
+          "confidence": 0.987,
+          "bbox": {
+            "top_left": [
+              1125.0,
+              1769.0
+            ],
+            "top_right": [
+              1264.0,
+              1769.0
+            ],
+            "bottom_right": [
+              1264.0,
+              1829.0
+            ],
+            "bottom_left": [
+              1125.0,
+              1829.0
+            ]
+          },
+          "line_number": 21
+        },
+        {
+          "block_id": 22,
+          "text": "葉9三旦=刁v斗一藥盡治)\"{肘後備急方_卷2)",
+          "confidence": 0.004,
+          "bbox": {
+            "top_left": [
+              1346.0,
+              1769.0
+            ],
+            "top_right": [
+              2270.0,
+              1769.0
+            ],
+            "bottom_right": [
+              2270.0,
+              1829.0
+            ],
+            "bottom_left": [
+              1346.0,
+              1829.0
+            ]
+          },
+          "line_number": 22
+        },
+        {
+          "block_id": 24,
+          "text": "嘗ui%斗.唐代孫思邈9]T備急千金要方,o4芒",
+          "confidence": 0.0068,
+          "bbox": {
+            "top_left": [
+              1346.0,
+              1836.0
+            ],
+            "top_right": [
+              2273.0,
+              1836.0
+            ],
+            "bottom_right": [
+              2273.0,
+              1903.0
+            ],
+            "bottom_left": [
+              1346.0,
+              1903.0
+            ]
+          },
+          "line_number": 23
+        },
+        {
+          "block_id": 23,
+          "text": "者,漬形以為汗,其在皮者,汗而發之\"{素問_`陰陽",
+          "confidence": 0.6208,
+          "bbox": {
+            "top_left": [
+              338.0,
+              1839.0
+            ],
+            "top_right": [
+              1262.0,
+              1839.0
+            ],
+            "bottom_right": [
+              1262.0,
+              1901.0
+            ],
+            "bottom_left": [
+              338.0,
+              1901.0
+            ]
+          },
+          "line_number": 24
+        },
+        {
+          "block_id": 25,
+          "text": "應象大論_斗1訃%_叫\"汗者下以奇\"{素問_`至",
+          "confidence": 0.0496,
+          "bbox": {
+            "top_left": [
+              338.0,
+              1911.0
+            ],
+            "top_right": [
+              1262.0,
+              1911.0
+            ],
+            "bottom_right": [
+              1262.0,
+              1975.0
+            ],
+            "bottom_left": [
+              338.0,
+              1975.0
+            ]
+          },
+          "line_number": 25
+        },
+        {
+          "block_id": 26,
+          "text": "仲景法嘗叫三u小仲景方嘗1+87&g\"`亭",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              1348.0,
+              1910.0
+            ],
+            "top_right": [
+              2272.0,
+              1910.0
+            ],
+            "bottom_right": [
+              2272.0,
+              1972.0
+            ],
+            "bottom_left": [
+              1348.0,
+              1972.0
+            ]
+          },
+          "line_number": 26
+        },
+        {
+          "block_id": 27,
+          "text": "真耍大論_斗1訃%二,\"發表不遠熱\"{素問_`六元",
+          "confidence": 0.0767,
+          "bbox": {
+            "top_left": [
+              341.0,
+              1980.0
+            ],
+            "top_right": [
+              1264.0,
+              1980.0
+            ],
+            "bottom_right": [
+              1264.0,
+              2048.0
+            ],
+            "bottom_left": [
+              341.0,
+              2048.0
+            ]
+          },
+          "line_number": 27
+        },
+        {
+          "block_id": 28,
+          "text": "召9呈 17}%%+風溫嘗刁昱可芒葳'湯蘭滋陰",
+          "confidence": 0.0003,
+          "bbox": {
+            "top_left": [
+              1346.0,
+              1978.0
+            ],
+            "top_right": [
+              2270.0,
+              1978.0
+            ],
+            "bottom_right": [
+              2270.0,
+              2041.0
+            ],
+            "bottom_left": [
+              1346.0,
+              2041.0
+            ]
+          },
+          "line_number": 28
+        },
+        {
+          "block_id": 29,
+          "text": "王紀大論_o斗蘭言9芒舍%%r.o9呈早曰",
+          "confidence": 0.0004,
+          "bbox": {
+            "top_left": [
+              341.0,
+              2052.0
+            ],
+            "top_right": [
+              1262.0,
+              2052.0
+            ],
+            "bottom_right": [
+              1262.0,
+              2115.0
+            ],
+            "bottom_left": [
+              341.0,
+              2115.0
+            ]
+          },
+          "line_number": 29
+        },
+        {
+          "block_id": 30,
+          "text": "解表劑9 立^嘗刁鬯刁暠鬯%_叫=刈陰虛外感",
+          "confidence": 0.0004,
+          "bbox": {
+            "top_left": [
+              1346.0,
+              2051.0
+            ],
+            "top_right": [
+              2270.0,
+              2051.0
+            ],
+            "bottom_right": [
+              2270.0,
+              2112.0
+            ],
+            "bottom_left": [
+              1346.0,
+              2112.0
+            ]
+          },
+          "line_number": 30
+        },
+        {
+          "block_id": 32,
+          "text": "嘗刁昱司蘭代表方0`H%斗. 加減葳莢湯蘭三o芡",
+          "confidence": 0.0001,
+          "bbox": {
+            "top_left": [
+              1351.0,
+              2122.0
+            ],
+            "top_right": [
+              2270.0,
+              2122.0
+            ],
+            "bottom_right": [
+              2270.0,
+              2183.0
+            ],
+            "bottom_left": [
+              1351.0,
+              2183.0
+            ]
+          },
+          "line_number": 31
+        },
+        {
+          "block_id": 31,
+          "text": "解表方劑9o]t嘗 蘭三7小昱口.引王7|o]|ulo",
+          "confidence": 0.0001,
+          "bbox": {
+            "top_left": [
+              336.0,
+              2125.0
+            ],
+            "top_right": [
+              1264.0,
+              2125.0
+            ],
+            "bottom_right": [
+              1264.0,
+              2186.0
+            ],
+            "bottom_left": [
+              336.0,
+              2186.0
+            ]
+          },
+          "line_number": 32
+        },
+        {
+          "block_id": 33,
+          "text": "d巨六士舌嘗砦_%也7東漢末年叫張仲景",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              341.0,
+              2194.0
+            ],
+            "top_right": [
+              1262.0,
+              2194.0
+            ],
+            "bottom_right": [
+              1262.0,
+              2255.0
+            ],
+            "bottom_left": [
+              341.0,
+              2255.0
+            ]
+          },
+          "line_number": 33
+        },
+        {
+          "block_id": 34,
+          "text": "嘗 鄧Eooue口.宋代T士平惠民和劑局方_",
+          "confidence": 0.0015,
+          "bbox": {
+            "top_left": [
+              1349.0,
+              2194.0
+            ],
+            "top_right": [
+              2275.0,
+              2194.0
+            ],
+            "bottom_right": [
+              2275.0,
+              2255.0
+            ],
+            "bottom_left": [
+              1349.0,
+              2255.0
+            ]
+          },
+          "line_number": 34
+        },
+        {
+          "block_id": 35,
+          "text": "ol 7]='傷寒雜病論_9三齊呈鬯+%斗.呈1o]麻",
+          "confidence": 0.0004,
+          "bbox": {
+            "top_left": [
+              341.0,
+              2264.0
+            ],
+            "top_right": [
+              1264.0,
+              2264.0
+            ],
+            "bottom_right": [
+              1264.0,
+              2328.0
+            ],
+            "bottom_left": [
+              341.0,
+              2328.0
+            ]
+          },
+          "line_number": 35
+        },
+        {
+          "block_id": 36,
+          "text": "各叫今號皂 敗毒散.蓼蘇飲蘭1補氣9人蓼6`解",
+          "confidence": 0.0051,
+          "bbox": {
+            "top_left": [
+              1346.0,
+              2262.0
+            ],
+            "top_right": [
+              2270.0,
+              2262.0
+            ],
+            "bottom_right": [
+              2270.0,
+              2323.0
+            ],
+            "bottom_left": [
+              1346.0,
+              2323.0
+            ]
+          },
+          "line_number": 36
+        },
+        {
+          "block_id": 37,
+          "text": "黃湯:桂枝湯:六青龍湯:小青龍湯:麻杏石甘湯 吳",
+          "confidence": 0.0722,
+          "bbox": {
+            "top_left": [
+              338.0,
+              2336.0
+            ],
+            "top_right": [
+              1264.0,
+              2336.0
+            ],
+            "bottom_right": [
+              1264.0,
+              2397.0
+            ],
+            "bottom_left": [
+              338.0,
+              2397.0
+            ]
+          },
+          "line_number": 37
+        },
+        {
+          "block_id": 38,
+          "text": "表9羌活-防風 吳蘇葉言斗配伍司蘭斗罟獸乞鬯",
+          "confidence": 0.0002,
+          "bbox": {
+            "top_left": [
+              1346.0,
+              2334.0
+            ],
+            "top_right": [
+              2270.0,
+              2334.0
+            ],
+            "bottom_right": [
+              2270.0,
+              2395.0
+            ],
+            "bottom_left": [
+              1346.0,
+              2395.0
+            ]
+          },
+          "line_number": 38
+        },
+        {
+          "block_id": 39,
+          "text": "麻黃細辛附子湯;7]9 3oo il9 解表斗型己三",
+          "confidence": 0.0076,
+          "bbox": {
+            "top_left": [
+              338.0,
+              2407.0
+            ],
+            "top_right": [
+              1264.0,
+              2407.0
+            ],
+            "bottom_right": [
+              1264.0,
+              2468.0
+            ],
+            "bottom_left": [
+              338.0,
+              2468.0
+            ]
+          },
+          "line_number": 39
+        },
+        {
+          "block_id": 40,
+          "text": "司蘭419日d蘭=益氣解表劑97]鬯oH9",
+          "confidence": 0.0002,
+          "bbox": {
+            "top_left": [
+              1349.0,
+              2404.0
+            ],
+            "top_right": [
+              2272.0,
+              2404.0
+            ],
+            "bottom_right": [
+              2272.0,
+              2468.0
+            ],
+            "bottom_left": [
+              1349.0,
+              2468.0
+            ]
+          },
+          "line_number": 40
+        },
+        {
+          "block_id": 41,
+          "text": "方劑7} =7]5o|%斗.=4皂日4]蘭#7|9 聖no`",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              338.0,
+              2479.0
+            ],
+            "top_right": [
+              1264.0,
+              2479.0
+            ],
+            "bottom_right": [
+              1264.0,
+              2540.0
+            ],
+            "bottom_left": [
+              338.0,
+              2540.0
+            ]
+          },
+          "line_number": 41
+        },
+        {
+          "block_id": 42,
+          "text": "_叫,王芭羌活.防風類9 方劑7}8心o鬯37蘭",
+          "confidence": 0.0001,
+          "bbox": {
+            "top_left": [
+              1351.0,
+              2476.0
+            ],
+            "top_right": [
+              2275.0,
+              2476.0
+            ],
+            "bottom_right": [
+              2275.0,
+              2537.0
+            ],
+            "bottom_left": [
+              1351.0,
+              2537.0
+            ]
+          },
+          "line_number": 42
+        },
+        {
+          "block_id": 43,
+          "text": "丑23巴小斗罟9配伍7呂巳司1刁昱宜邛7身鬯",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              341.0,
+              2548.0
+            ],
+            "top_right": [
+              1264.0,
+              2548.0
+            ],
+            "bottom_right": [
+              1264.0,
+              2611.0
+            ],
+            "bottom_left": [
+              341.0,
+              2611.0
+            ]
+          },
+          "line_number": 43
+        },
+        {
+          "block_id": 44,
+          "text": "引7]聖嘗 斗o}子%斗.金:元代o戶三斗舍4芒?",
+          "confidence": 0.0007,
+          "bbox": {
+            "top_left": [
+              1354.0,
+              2547.0
+            ],
+            "top_right": [
+              2272.0,
+              2547.0
+            ],
+            "bottom_right": [
+              2272.0,
+              2608.0
+            ],
+            "bottom_left": [
+              1354.0,
+              2608.0
+            ]
+          },
+          "line_number": 44
+        },
+        {
+          "block_id": 46,
+          "text": "獸司u4o舌吊斗7}9ro二舌廿1o言9斗",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              1349.0,
+              2616.0
+            ],
+            "top_right": [
+              2275.0,
+              2616.0
+            ],
+            "bottom_right": [
+              2275.0,
+              2681.0
+            ],
+            "bottom_left": [
+              1349.0,
+              2681.0
+            ]
+          },
+          "line_number": 45
+        },
+        {
+          "block_id": 45,
+          "text": "37]叫g7]言7|7] 7今^|g6|1 9*. 17|+",
+          "confidence": 0.0004,
+          "bbox": {
+            "top_left": [
+              341.0,
+              2619.0
+            ],
+            "top_right": [
+              1267.0,
+              2619.0
+            ],
+            "bottom_right": [
+              1267.0,
+              2681.0
+            ],
+            "bottom_left": [
+              341.0,
+              2681.0
+            ]
+          },
+          "line_number": 46
+        },
+        {
+          "block_id": 47,
+          "text": "己可1 %芒解表宣肺.調和營衛.解表清裹:解表化",
+          "confidence": 0.0262,
+          "bbox": {
+            "top_left": [
+              343.0,
+              2688.0
+            ],
+            "top_right": [
+              1270.0,
+              2688.0
+            ],
+            "bottom_right": [
+              1270.0,
+              2753.0
+            ],
+            "bottom_left": [
+              343.0,
+              2753.0
+            ]
+          },
+          "line_number": 47
+        },
+        {
+          "block_id": 48,
+          "text": "7]嘗%|H蚤巴八解表方劑98{3u9刈三蘭",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              1349.0,
+              2687.0
+            ],
+            "top_right": [
+              2275.0,
+              2687.0
+            ],
+            "bottom_right": [
+              2275.0,
+              2751.0
+            ],
+            "bottom_left": [
+              1349.0,
+              2751.0
+            ]
+          },
+          "line_number": 48
+        },
+        {
+          "block_id": 49,
+          "text": "飲:辛涼疏表 吳助陽解表言9治法go口9ul9",
+          "confidence": 0.005,
+          "bbox": {
+            "top_left": [
+              340.0,
+              2761.0
+            ],
+            "top_right": [
+              1267.0,
+              2761.0
+            ],
+            "bottom_right": [
+              1267.0,
+              2824.0
+            ],
+            "bottom_left": [
+              340.0,
+              2824.0
+            ]
+          },
+          "line_number": 49
+        },
+        {
+          "block_id": 50,
+          "text": "丑引三 2習87H%斗.劉完素芒運氣學說9 7三",
+          "confidence": 0.0004,
+          "bbox": {
+            "top_left": [
+              1351.0,
+              2759.0
+            ],
+            "top_right": [
+              2272.0,
+              2759.0
+            ],
+            "bottom_right": [
+              2272.0,
+              2820.0
+            ],
+            "bottom_left": [
+              1351.0,
+              2820.0
+            ]
+          },
+          "line_number": 50
+        },
+        {
+          "block_id": 51,
+          "text": "斗7|i%`千出_三鬯_%_叫,王.雖u0u蘭o",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              341.0,
+              2833.0
+            ],
+            "top_right": [
+              1267.0,
+              2833.0
+            ],
+            "bottom_right": [
+              1267.0,
+              2893.0
+            ],
+            "bottom_left": [
+              341.0,
+              2893.0
+            ]
+          },
+          "line_number": 51
+        },
+        {
+          "block_id": 52,
+          "text": "召訂o]`六氣皆從火化論嘗鬯妥刁33%斗. T己)",
+          "confidence": 0.0001,
+          "bbox": {
+            "top_left": [
+              1351.0,
+              2830.0
+            ],
+            "top_right": [
+              2275.0,
+              2830.0
+            ],
+            "bottom_right": [
+              2275.0,
+              2891.0
+            ],
+            "bottom_left": [
+              1351.0,
+              2891.0
+            ]
+          },
+          "line_number": 52
+        },
+        {
+          "block_id": 53,
+          "text": "舌u9I7可_虱7三王9三旦1%斗.解表劑",
+          "confidence": 0.0001,
+          "bbox": {
+            "top_left": [
+              346.0,
+              2901.0
+            ],
+            "top_right": [
+              1270.0,
+              2901.0
+            ],
+            "bottom_right": [
+              1270.0,
+              2962.0
+            ],
+            "bottom_left": [
+              346.0,
+              2962.0
+            ]
+          },
+          "line_number": 53
+        },
+        {
+          "block_id": 54,
+          "text": "表證粵訂陽熱0表叫八鬱結訃1斗司8乙惡寒",
+          "confidence": 0.0002,
+          "bbox": {
+            "top_left": [
+              1349.0,
+              2899.0
+            ],
+            "top_right": [
+              2275.0,
+              2899.0
+            ],
+            "bottom_right": [
+              2275.0,
+              2963.0
+            ],
+            "bottom_left": [
+              1349.0,
+              2963.0
+            ]
+          },
+          "line_number": 54
+        }
+      ],
+      "full_text": "第一章\n解表劑\n4谷4\n解表藥嘗9子三4g訓4聖]皂芡9三,發汗.\n小漢代叫o]u日虱4ng=歪o%%亭吝皂5\n解肌-透疹言94%嘗尖字1%_里八子三表證\n當=%斗.魏.晉0亨三9斗7|04蘭吾39千4\n獸刁昱可芒方劑嘗解表劑斗1早三芒引,`八法子\no]廿習叫嘗罟3蘭又`日旱oiu]引u9晉\n聖7F%7|巴,oi4f=9=7ig邛召67=\n汗法 夸士斗.\n心訃1 %+司1經方嘗亶g-}%_叫,47] a7 鬯\n解表劑988g叫89三岐黃777含3嘗\n叫6op互4日刈77斐訓3刁司三蚤己87=%\n斗7叫 o}i|呈芒百世I小7o|g斗.鬯4o]T內經_\n斗.叫嘗i巴晉代葛洪9]T肘後備急方_o4*傷寒\n吾o4o]uv斗訃7|發汗法9小g皂4嘗7iA]3%\n有數種, 人不能別\"嘗 3%6}-o\n`蔥豉湯\"1*=}u9\n斗.d嘗i旦\"因其輕而揚之\"斗1司%工,\n其有邪\n葉9三旦=刁v斗一藥盡治)\"{肘後備急方_卷2)\n嘗ui%斗.唐代孫思邈9]T備急千金要方,o4芒\n者,漬形以為汗,其在皮者,汗而發之\"{素問_`陰陽\n應象大論_斗1訃%_叫\"汗者下以奇\"{素問_`至\n仲景法嘗叫三u小仲景方嘗1+87&g\"`亭\n真耍大論_斗1訃%二,\"發表不遠熱\"{素問_`六元\n召9呈 17}%%+風溫嘗刁昱可芒葳'湯蘭滋陰\n王紀大論_o斗蘭言9芒舍%%r.o9呈早曰\n解表劑9 立^嘗刁鬯刁暠鬯%_叫=刈陰虛外感\n嘗刁昱司蘭代表方0`H%斗. 加減葳莢湯蘭三o芡\n解表方劑9o]t嘗 蘭三7小昱口.引王7|o]|ulo\nd巨六士舌嘗砦_%也7東漢末年叫張仲景\n嘗 鄧Eooue口.宋代T士平惠民和劑局方_\nol 7]='傷寒雜病論_9三齊呈鬯+%斗.呈1o]麻\n各叫今號皂 敗毒散.蓼蘇飲蘭1補氣9人蓼6`解\n黃湯:桂枝湯:六青龍湯:小青龍湯:麻杏石甘湯 吳\n表9羌活-防風 吳蘇葉言斗配伍司蘭斗罟獸乞鬯\n麻黃細辛附子湯;7]9 3oo il9 解表斗型己三\n司蘭419日d蘭=益氣解表劑97]鬯oH9\n方劑7} =7]5o|%斗.=4皂日4]蘭#7|9 聖no`\n_叫,王芭羌活.防風類9 方劑7}8心o鬯37蘭\n丑23巴小斗罟9配伍7呂巳司1刁昱宜邛7身鬯\n引7]聖嘗 斗o}子%斗.金:元代o戶三斗舍4芒?\n獸司u4o舌吊斗7}9ro二舌廿1o言9斗\n37]叫g7]言7|7] 7今^|g6|1 9*. 17|+\n己可1 %芒解表宣肺.調和營衛.解表清裹:解表化\n7]嘗%|H蚤巴八解表方劑98{3u9刈三蘭\n飲:辛涼疏表 吳助陽解表言9治法go口9ul9\n丑引三 2習87H%斗.劉完素芒運氣學說9 7三\n斗7|i%`千出_三鬯_%_叫,王.雖u0u蘭o\n召訂o]`六氣皆從火化論嘗鬯妥刁33%斗. T己)\n舌u9I7可_虱7三王9三旦1%斗.解表劑\n表證粵訂陽熱0表叫八鬱結訃1斗司8乙惡寒",
+      "block_count": 54,
+      "avg_confidence": 0.0668,
+      "status": "completed",
+      "error": null
+    },
+    {
+      "page_number": 2,
+      "width": 2480,
+      "height": 3248,
+      "text_blocks": [
+        {
+          "block_id": 1,
+          "text": "韓醫方劑學 各論",
+          "confidence": 0.9498,
+          "bbox": {
+            "top_left": [
+              220.0,
+              121.0
+            ],
+            "top_right": [
+              550.0,
+              121.0
+            ],
+            "bottom_right": [
+              550.0,
+              182.0
+            ],
+            "bottom_left": [
+              220.0,
+              182.0
+            ]
+          },
+          "line_number": 1
+        },
+        {
+          "block_id": 2,
+          "text": "發熱oUlal4芒麻黃.桂枝吾辛溫解表藥9 Ag",
+          "confidence": 0.0013,
+          "bbox": {
+            "top_left": [
+              223.0,
+              355.0
+            ],
+            "top_right": [
+              1154.0,
+              355.0
+            ],
+            "bottom_right": [
+              1154.0,
+              417.0
+            ],
+            "bottom_left": [
+              223.0,
+              417.0
+            ]
+          },
+          "line_number": 2
+        },
+        {
+          "block_id": 4,
+          "text": "嘗uu司二,辛涼訂7廿甘寒吐斗罟呈 解表鬯列嘗",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              225.0,
+              428.0
+            ],
+            "top_right": [
+              1151.0,
+              428.0
+            ],
+            "bottom_right": [
+              1151.0,
+              489.0
+            ],
+            "bottom_left": [
+              225.0,
+              489.0
+            ]
+          },
+          "line_number": 3
+        },
+        {
+          "block_id": 6,
+          "text": "子召訃%斗. 二舌旦三*自制雙解-通聖辛涼之劑,不",
+          "confidence": 0.0075,
+          "bbox": {
+            "top_left": [
+              223.0,
+              495.0
+            ],
+            "top_right": [
+              1149.0,
+              495.0
+            ],
+            "bottom_right": [
+              1149.0,
+              560.0
+            ],
+            "bottom_left": [
+              223.0,
+              560.0
+            ]
+          },
+          "line_number": 4
+        },
+        {
+          "block_id": 8,
+          "text": "遵仲景法桂枝:麻黃發表之藥.\"(素問病機氣宜保命",
+          "confidence": 0.4956,
+          "bbox": {
+            "top_left": [
+              223.0,
+              568.0
+            ],
+            "top_right": [
+              1149.0,
+              568.0
+            ],
+            "bottom_right": [
+              1149.0,
+              629.0
+            ],
+            "bottom_left": [
+              223.0,
+              629.0
+            ]
+          },
+          "line_number": 5
+        },
+        {
+          "block_id": 10,
+          "text": "集_卷二)0斗1司%斗. 劉完素芒 寒涼藥嘗4g3",
+          "confidence": 0.0031,
+          "bbox": {
+            "top_left": [
+              223.0,
+              639.0
+            ],
+            "top_right": [
+              1151.0,
+              639.0
+            ],
+            "bottom_right": [
+              1151.0,
+              702.0
+            ],
+            "bottom_left": [
+              223.0,
+              702.0
+            ]
+          },
+          "line_number": 6
+        },
+        {
+          "block_id": 12,
+          "text": "蘭列叫子斗司%二,表證嘗刁昱習0%o辛涼藥嘗",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              225.0,
+              710.0
+            ],
+            "top_right": [
+              1151.0,
+              710.0
+            ],
+            "bottom_right": [
+              1151.0,
+              773.0
+            ],
+            "bottom_left": [
+              225.0,
+              773.0
+            ]
+          },
+          "line_number": 7
+        },
+        {
+          "block_id": 14,
+          "text": "u4g引蘭斗舍49414g= 溫熱病9 刁",
+          "confidence": 0.0001,
+          "bbox": {
+            "top_left": [
+              223.0,
+              781.0
+            ],
+            "top_right": [
+              1149.0,
+              781.0
+            ],
+            "bottom_right": [
+              1149.0,
+              846.0
+            ],
+            "bottom_left": [
+              223.0,
+              846.0
+            ]
+          },
+          "line_number": 8
+        },
+        {
+          "block_id": 16,
+          "text": "昱叫叫=啟發嘗3%斗.溫病醫家% 吳瑭0`創方",
+          "confidence": 0.0016,
+          "bbox": {
+            "top_left": [
+              225.0,
+              855.0
+            ],
+            "top_right": [
+              1149.0,
+              855.0
+            ],
+            "bottom_right": [
+              1149.0,
+              915.0
+            ],
+            "bottom_left": [
+              225.0,
+              915.0
+            ]
+          },
+          "line_number": 9
+        },
+        {
+          "block_id": 18,
+          "text": "芭7\"己日72銀懃散蘭1己呈嘗7合3獸斗7",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              226.0,
+              927.0
+            ],
+            "top_right": [
+              1150.0,
+              927.0
+            ],
+            "bottom_right": [
+              1150.0,
+              983.0
+            ],
+            "bottom_left": [
+              226.0,
+              983.0
+            ]
+          },
+          "line_number": 10
+        },
+        {
+          "block_id": 20,
+          "text": "旦旦 鬯刁]三河間9 涼膈散嘗旦只3o 口A旦三又",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              225.0,
+              992.0
+            ],
+            "top_right": [
+              1149.0,
+              992.0
+            ],
+            "bottom_right": [
+              1149.0,
+              1056.0
+            ],
+            "bottom_left": [
+              225.0,
+              1056.0
+            ]
+          },
+          "line_number": 11
+        },
+        {
+          "block_id": 22,
+          "text": "o]r.易水學派9 元祖% 張元素芒舊說% %uo]7",
+          "confidence": 0.0088,
+          "bbox": {
+            "top_left": [
+              223.0,
+              1065.0
+            ],
+            "top_right": [
+              1146.0,
+              1065.0
+            ],
+            "bottom_right": [
+              1146.0,
+              1126.0
+            ],
+            "bottom_left": [
+              223.0,
+              1126.0
+            ]
+          },
+          "line_number": 12
+        },
+        {
+          "block_id": 24,
+          "text": "出二邛召3739^嘗 鬯-%斗.風寒表證9 刁",
+          "confidence": 0.0002,
+          "bbox": {
+            "top_left": [
+              225.0,
+              1136.0
+            ],
+            "top_right": [
+              1149.0,
+              1136.0
+            ],
+            "bottom_right": [
+              1149.0,
+              1197.0
+            ],
+            "bottom_left": [
+              225.0,
+              1197.0
+            ]
+          },
+          "line_number": 13
+        },
+        {
+          "block_id": 27,
+          "text": "有汗不得服麻黃,無汗不得服桂枝.\"{此事",
+          "confidence": 0.5535,
+          "bbox": {
+            "top_left": [
+              373.0,
+              1204.0
+            ],
+            "top_right": [
+              1149.0,
+              1204.0
+            ],
+            "bottom_right": [
+              1149.0,
+              1268.0
+            ],
+            "bottom_left": [
+              373.0,
+              1268.0
+            ]
+          },
+          "line_number": 14
+        },
+        {
+          "block_id": 26,
+          "text": "昱0)",
+          "confidence": 0.1573,
+          "bbox": {
+            "top_left": [
+              226.0,
+              1211.0
+            ],
+            "top_right": [
+              354.0,
+              1211.0
+            ],
+            "bottom_right": [
+              354.0,
+              1267.0
+            ],
+            "bottom_left": [
+              226.0,
+              1267.0
+            ]
+          },
+          "line_number": 15
+        },
+        {
+          "block_id": 29,
+          "text": "難知_卷二)9 o舌77|禁忌0 Z7訃o1蘭鬯三",
+          "confidence": 0.0011,
+          "bbox": {
+            "top_left": [
+              223.0,
+              1278.0
+            ],
+            "top_right": [
+              1149.0,
+              1278.0
+            ],
+            "bottom_right": [
+              1149.0,
+              1339.0
+            ],
+            "bottom_left": [
+              223.0,
+              1339.0
+            ]
+          },
+          "line_number": 16
+        },
+        {
+          "block_id": 30,
+          "text": "9斗4u豈0辛溫香燥嘗9子呈引蘭九味羌活",
+          "confidence": 0.0001,
+          "bbox": {
+            "top_left": [
+              228.0,
+              1350.0
+            ],
+            "top_right": [
+              1149.0,
+              1350.0
+            ],
+            "bottom_right": [
+              1149.0,
+              1410.0
+            ],
+            "bottom_left": [
+              228.0,
+              1410.0
+            ]
+          },
+          "line_number": 17
+        },
+        {
+          "block_id": 32,
+          "text": "湯嘗 創方3%斗. 1解表祛濕9 用藥 414g",
+          "confidence": 0.0245,
+          "bbox": {
+            "top_left": [
+              223.0,
+              1418.0
+            ],
+            "top_right": [
+              1152.0,
+              1418.0
+            ],
+            "bottom_right": [
+              1152.0,
+              1484.0
+            ],
+            "bottom_left": [
+              223.0,
+              1484.0
+            ]
+          },
+          "line_number": 18
+        },
+        {
+          "block_id": 34,
+          "text": "解表9旦三日外|I4三44_三甦-引芭",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              223.0,
+              1490.0
+            ],
+            "top_right": [
+              1150.0,
+              1490.0
+            ],
+            "bottom_right": [
+              1150.0,
+              1555.0
+            ],
+            "bottom_left": [
+              223.0,
+              1555.0
+            ]
+          },
+          "line_number": 19
+        },
+        {
+          "block_id": 36,
+          "text": "又o]口.`分經論治'80日4聖酋+聖蘭=89表",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              225.0,
+              1563.0
+            ],
+            "top_right": [
+              1149.0,
+              1563.0
+            ],
+            "bottom_right": [
+              1149.0,
+              1623.0
+            ],
+            "bottom_left": [
+              225.0,
+              1623.0
+            ]
+          },
+          "line_number": 20
+        },
+        {
+          "block_id": 38,
+          "text": "證:痺證吳痛證嘗刁昱訃蘭引2=7u]己%d嘗",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              223.0,
+              1634.0
+            ],
+            "top_right": [
+              1149.0,
+              1634.0
+            ],
+            "bottom_right": [
+              1149.0,
+              1694.0
+            ],
+            "bottom_left": [
+              223.0,
+              1694.0
+            ]
+          },
+          "line_number": 21
+        },
+        {
+          "block_id": 40,
+          "text": "子%斗.明代陶華蘭舊論獸1刁7就1王芭",
+          "confidence": 0.0006,
+          "bbox": {
+            "top_left": [
+              223.0,
+              1700.0
+            ],
+            "top_right": [
+              1149.0,
+              1700.0
+            ],
+            "bottom_right": [
+              1149.0,
+              1764.0
+            ],
+            "bottom_left": [
+              223.0,
+              1764.0
+            ]
+          },
+          "line_number": 22
+        },
+        {
+          "block_id": 42,
+          "text": "蘭斗竺嘗召習3.1精粹嘗沓 召3.芒引, 1",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              225.0,
+              1776.0
+            ],
+            "top_right": [
+              1149.0,
+              1776.0
+            ],
+            "bottom_right": [
+              1149.0,
+              1837.0
+            ],
+            "bottom_left": [
+              225.0,
+              1837.0
+            ]
+          },
+          "line_number": 23
+        },
+        {
+          "block_id": 44,
+          "text": "仲景9 六經辨證9 *7]嘗叫三里小易老9羌活",
+          "confidence": 0.0084,
+          "bbox": {
+            "top_left": [
+              224.0,
+              1842.0
+            ],
+            "top_right": [
+              1134.0,
+              1842.0
+            ],
+            "bottom_right": [
+              1134.0,
+              1907.0
+            ],
+            "bottom_left": [
+              224.0,
+              1907.0
+            ]
+          },
+          "line_number": 24
+        },
+        {
+          "block_id": 46,
+          "text": "白芷三 解表司蘭受豊脅司0柴葛解肌湯嘗 創方司",
+          "confidence": 0.0003,
+          "bbox": {
+            "top_left": [
+              228.0,
+              1913.0
+            ],
+            "top_right": [
+              1151.0,
+              1913.0
+            ],
+            "bottom_right": [
+              1151.0,
+              1978.0
+            ],
+            "bottom_left": [
+              228.0,
+              1978.0
+            ]
+          },
+          "line_number": 25
+        },
+        {
+          "block_id": 48,
+          "text": "#斗=%言叫7經方嘗亶言3蘭旦\"嘗旦0l",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              225.0,
+              1984.0
+            ],
+            "top_right": [
+              1151.0,
+              1984.0
+            ],
+            "bottom_right": [
+              1151.0,
+              2049.0
+            ],
+            "bottom_left": [
+              225.0,
+              2049.0
+            ]
+          },
+          "line_number": 26
+        },
+        {
+          "block_id": 50,
+          "text": "1鬯u3廿.1蘭仲景9 麻黃細辛附子湯9 助陽",
+          "confidence": 0.0126,
+          "bbox": {
+            "top_left": [
+              228.0,
+              2057.0
+            ],
+            "top_right": [
+              1146.0,
+              2057.0
+            ],
+            "bottom_right": [
+              1146.0,
+              2118.0
+            ],
+            "bottom_left": [
+              228.0,
+              2118.0
+            ]
+          },
+          "line_number": 27
+        },
+        {
+          "block_id": 52,
+          "text": "解表法嘗皂鬯1易老9 九味羌活湯9!羌活.防風",
+          "confidence": 0.0104,
+          "bbox": {
+            "top_left": [
+              223.0,
+              2126.0
+            ],
+            "top_right": [
+              1151.0,
+              2126.0
+            ],
+            "bottom_right": [
+              1151.0,
+              2190.0
+            ],
+            "bottom_left": [
+              223.0,
+              2190.0
+            ]
+          },
+          "line_number": 28
+        },
+        {
+          "block_id": 54,
+          "text": "昊川芎9 解表祛濕司蘭受嘗皂些o)草案吐再造",
+          "confidence": 0.0006,
+          "bbox": {
+            "top_left": [
+              225.0,
+              2198.0
+            ],
+            "top_right": [
+              1149.0,
+              2198.0
+            ],
+            "bottom_right": [
+              1149.0,
+              2262.0
+            ],
+            "bottom_left": [
+              225.0,
+              2262.0
+            ]
+          },
+          "line_number": 29
+        },
+        {
+          "block_id": 56,
+          "text": "散f7言9小呂豈-7鬯曰 a==o])g訃1%",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              223.0,
+              2271.0
+            ],
+            "top_right": [
+              1149.0,
+              2271.0
+            ],
+            "bottom_right": [
+              1149.0,
+              2331.0
+            ],
+            "bottom_left": [
+              223.0,
+              2331.0
+            ]
+          },
+          "line_number": 30
+        },
+        {
+          "block_id": 58,
+          "text": "口.清代溫病學家%吳瑭g`溫病忌汗'豊3聖訃巴",
+          "confidence": 0.0017,
+          "bbox": {
+            "top_left": [
+              225.0,
+              2338.0
+            ],
+            "top_right": [
+              1149.0,
+              2338.0
+            ],
+            "bottom_right": [
+              1149.0,
+              2401.0
+            ],
+            "bottom_left": [
+              225.0,
+              2401.0
+            ]
+          },
+          "line_number": 31
+        },
+        {
+          "block_id": 60,
+          "text": "3`!早曰2]u]2蘭傷寒法嘗 ^golo溫病",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              225.0,
+              2413.0
+            ],
+            "top_right": [
+              1149.0,
+              2413.0
+            ],
+            "bottom_right": [
+              1149.0,
+              2473.0
+            ],
+            "bottom_left": [
+              225.0,
+              2473.0
+            ]
+          },
+          "line_number": 32
+        },
+        {
+          "block_id": 62,
+          "text": "嘗刁昱司蘭列17鬯吳刃0]斗(古來用傷寒法",
+          "confidence": 0.0001,
+          "bbox": {
+            "top_left": [
+              225.0,
+              2478.0
+            ],
+            "top_right": [
+              1149.0,
+              2478.0
+            ],
+            "bottom_right": [
+              1149.0,
+              2546.0
+            ],
+            "bottom_left": [
+              225.0,
+              2546.0
+            ]
+          },
+          "line_number": 33
+        },
+        {
+          "block_id": 64,
+          "text": "治溫病,",
+          "confidence": 0.997,
+          "bbox": {
+            "top_left": [
+              226.0,
+              2556.0
+            ],
+            "top_right": [
+              366.0,
+              2556.0
+            ],
+            "bottom_right": [
+              366.0,
+              2610.0
+            ],
+            "bottom_left": [
+              226.0,
+              2610.0
+            ]
+          },
+          "line_number": 34
+        },
+        {
+          "block_id": 65,
+          "text": "大錯也.)\"{溫病條辨_卷1)174司%",
+          "confidence": 0.0524,
+          "bbox": {
+            "top_left": [
+              472.0,
+              2552.0
+            ],
+            "top_right": [
+              1151.0,
+              2552.0
+            ],
+            "bottom_right": [
+              1151.0,
+              2613.0
+            ],
+            "bottom_left": [
+              472.0,
+              2613.0
+            ]
+          },
+          "line_number": 35
+        },
+        {
+          "block_id": 67,
+          "text": "斗.溫病9] 初期嘗刁昱習o %olxT內經.9",
+          "confidence": 0.0082,
+          "bbox": {
+            "top_left": [
+              225.0,
+              2623.0
+            ],
+            "top_right": [
+              1035.0,
+              2623.0
+            ],
+            "bottom_right": [
+              1035.0,
+              2684.0
+            ],
+            "bottom_left": [
+              225.0,
+              2684.0
+            ]
+          },
+          "line_number": 36
+        },
+        {
+          "block_id": 68,
+          "text": "風淫",
+          "confidence": 0.9888,
+          "bbox": {
+            "top_left": [
+              1051.0,
+              2627.0
+            ],
+            "top_right": [
+              1150.0,
+              2627.0
+            ],
+            "bottom_right": [
+              1150.0,
+              2678.0
+            ],
+            "bottom_left": [
+              1051.0,
+              2678.0
+            ]
+          },
+          "line_number": 37
+        },
+        {
+          "block_id": 70,
+          "text": "於內,治以辛涼,佐以苦甘;熱淫於內,治以鹹寒,佐",
+          "confidence": 0.6031,
+          "bbox": {
+            "top_left": [
+              224.0,
+              2695.0
+            ],
+            "top_right": [
+              1148.0,
+              2695.0
+            ],
+            "bottom_right": [
+              1148.0,
+              2752.0
+            ],
+            "bottom_left": [
+              224.0,
+              2752.0
+            ]
+          },
+          "line_number": 38
+        },
+        {
+          "block_id": 72,
+          "text": "以甘苦\"9 %d邛劉完素9] 辛涼解表9 刁鬯嘗37",
+          "confidence": 0.0084,
+          "bbox": {
+            "top_left": [
+              225.0,
+              2765.0
+            ],
+            "top_right": [
+              1149.0,
+              2765.0
+            ],
+            "bottom_right": [
+              1149.0,
+              2826.0
+            ],
+            "bottom_left": [
+              225.0,
+              2826.0
+            ]
+          },
+          "line_number": 39
+        },
+        {
+          "block_id": 74,
+          "text": "些%_叫,`辛涼苦甘'{溫病條辨_卷1)法豊李350",
+          "confidence": 0.0089,
+          "bbox": {
+            "top_left": [
+              225.0,
+              2837.0
+            ],
+            "top_right": [
+              1149.0,
+              2837.0
+            ],
+            "bottom_right": [
+              1149.0,
+              2897.0
+            ],
+            "bottom_left": [
+              225.0,
+              2897.0
+            ]
+          },
+          "line_number": 40
+        },
+        {
+          "block_id": 76,
+          "text": "銀麴散斗桑菊飲吾辛涼解表9 名方獸巳_%斗.",
+          "confidence": 0.0016,
+          "bbox": {
+            "top_left": [
+              222.0,
+              2905.0
+            ],
+            "top_right": [
+              1146.0,
+              2905.0
+            ],
+            "bottom_right": [
+              1146.0,
+              2969.0
+            ],
+            "bottom_left": [
+              222.0,
+              2969.0
+            ]
+          },
+          "line_number": 41
+        },
+        {
+          "block_id": 3,
+          "text": "o]蘭表證刁叫司u9引rr弔呈嘗鬯%1辛涼",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              1230.0,
+              355.0
+            ],
+            "top_right": [
+              2159.0,
+              355.0
+            ],
+            "bottom_right": [
+              2159.0,
+              418.0
+            ],
+            "bottom_left": [
+              1230.0,
+              418.0
+            ]
+          },
+          "line_number": 42
+        },
+        {
+          "block_id": 5,
+          "text": "解表劑9] 罟叫嘗叫%_叫=8叫旦7獸旦2孕",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              1230.0,
+              426.0
+            ],
+            "top_right": [
+              2159.0,
+              426.0
+            ],
+            "bottom_right": [
+              2159.0,
+              487.0
+            ],
+            "bottom_left": [
+              1230.0,
+              487.0
+            ]
+          },
+          "line_number": 43
+        },
+        {
+          "block_id": 7,
+          "text": "ol廿.4己50n己9]9丑昱斗u7舍9鬯",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              1234.0,
+              500.0
+            ],
+            "top_right": [
+              2158.0,
+              500.0
+            ],
+            "bottom_right": [
+              2158.0,
+              557.0
+            ],
+            "bottom_left": [
+              1234.0,
+              557.0
+            ]
+          },
+          "line_number": 44
+        },
+        {
+          "block_id": 9,
+          "text": "己o引lolol解表方劑9%d;gd習o`+4昌o",
+          "confidence": 0.0002,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              568.0
+            ],
+            "top_right": [
+              2159.0,
+              568.0
+            ],
+            "bottom_right": [
+              2159.0,
+              629.0
+            ],
+            "bottom_left": [
+              1233.0,
+              629.0
+            ]
+          },
+          "line_number": 45
+        },
+        {
+          "block_id": 11,
+          "text": "叫斗解表劑7}o]呈}9呈口粵7吾4_呈召可旦%",
+          "confidence": 0.0002,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              639.0
+            ],
+            "top_right": [
+              2159.0,
+              639.0
+            ],
+            "bottom_right": [
+              2159.0,
+              700.0
+            ],
+            "bottom_left": [
+              1233.0,
+              700.0
+            ]
+          },
+          "line_number": 46
+        },
+        {
+          "block_id": 13,
+          "text": "_叫,方劑聖9配伍04f口號h召司7H9",
+          "confidence": 0.0001,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              708.0
+            ],
+            "top_right": [
+              2159.0,
+              708.0
+            ],
+            "bottom_right": [
+              2159.0,
+              773.0
+            ],
+            "bottom_left": [
+              1233.0,
+              773.0
+            ]
+          },
+          "line_number": 47
+        },
+        {
+          "block_id": 15,
+          "text": "斗.亭些5解表方劑 ul孫4g7]己d7嘗+60",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              1235.0,
+              781.0
+            ],
+            "top_right": [
+              2156.0,
+              781.0
+            ],
+            "bottom_right": [
+              2156.0,
+              842.0
+            ],
+            "bottom_left": [
+              1235.0,
+              842.0
+            ]
+          },
+          "line_number": 48
+        },
+        {
+          "block_id": 17,
+          "text": "解表方劑0芒發汗.解熱-鎮痛:抗炎:病原微生物",
+          "confidence": 0.1615,
+          "bbox": {
+            "top_left": [
+              1230.0,
+              852.0
+            ],
+            "top_right": [
+              2159.0,
+              852.0
+            ],
+            "bottom_right": [
+              2159.0,
+              913.0
+            ],
+            "bottom_left": [
+              1230.0,
+              913.0
+            ]
+          },
+          "line_number": 49
+        },
+        {
+          "block_id": 19,
+          "text": "口7|-鎮咳.平喘叟祛痰;9o4o%%1,王",
+          "confidence": 0.0004,
+          "bbox": {
+            "top_left": [
+              1235.0,
+              926.0
+            ],
+            "top_right": [
+              2159.0,
+              926.0
+            ],
+            "bottom_right": [
+              2159.0,
+              989.0
+            ],
+            "bottom_left": [
+              1235.0,
+              989.0
+            ]
+          },
+          "line_number": 50
+        },
+        {
+          "block_id": 21,
+          "text": "芭u97]岩獸聖231胃腸7]豊聖召6口33",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              994.0
+            ],
+            "top_right": [
+              2159.0,
+              994.0
+            ],
+            "bottom_right": [
+              2159.0,
+              1055.0
+            ],
+            "bottom_left": [
+              1233.0,
+              1055.0
+            ]
+          },
+          "line_number": 51
+        },
+        {
+          "block_id": 23,
+          "text": "入反應歎9uo三4=49 9]9]7%r.r斗)",
+          "confidence": 0.0002,
+          "bbox": {
+            "top_left": [
+              1234.0,
+              1069.0
+            ],
+            "top_right": [
+              2158.0,
+              1069.0
+            ],
+            "bottom_right": [
+              2158.0,
+              1125.0
+            ],
+            "bottom_left": [
+              1234.0,
+              1125.0
+            ]
+          },
+          "line_number": 52
+        },
+        {
+          "block_id": 25,
+          "text": "解表方劑98g出9嘗丑鬯旦訃外斗-]6o祇獸+",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              1230.0,
+              1134.0
+            ],
+            "top_right": [
+              2161.0,
+              1134.0
+            ],
+            "bottom_right": [
+              2161.0,
+              1199.0
+            ],
+            "bottom_left": [
+              1230.0,
+              1199.0
+            ]
+          },
+          "line_number": 53
+        },
+        {
+          "block_id": 28,
+          "text": "a嘗三舌3旦災斗.",
+          "confidence": 0.0003,
+          "bbox": {
+            "top_left": [
+              1236.0,
+              1211.0
+            ],
+            "top_right": [
+              1622.0,
+              1211.0
+            ],
+            "bottom_right": [
+              1622.0,
+              1267.0
+            ],
+            "bottom_left": [
+              1236.0,
+              1267.0
+            ]
+          },
+          "line_number": 54
+        },
+        {
+          "block_id": 31,
+          "text": "解表劑蘭 表證豊刁昱6}7] 9o-ol竺7皂又o]口.",
+          "confidence": 0.0003,
+          "bbox": {
+            "top_left": [
+              1291.0,
+              1347.0
+            ],
+            "top_right": [
+              2156.0,
+              1347.0
+            ],
+            "bottom_right": [
+              2156.0,
+              1410.0
+            ],
+            "bottom_left": [
+              1291.0,
+              1410.0
+            ]
+          },
+          "line_number": 55
+        },
+        {
+          "block_id": 33,
+          "text": "表證蘭六淫9外邪7a刁9肌表斗肺衛 召合3",
+          "confidence": 0.0039,
+          "bbox": {
+            "top_left": [
+              1230.0,
+              1421.0
+            ],
+            "top_right": [
+              2159.0,
+              1421.0
+            ],
+            "bottom_right": [
+              2159.0,
+              1481.0
+            ],
+            "bottom_left": [
+              1230.0,
+              1481.0
+            ]
+          },
+          "line_number": 56
+        },
+        {
+          "block_id": 35,
+          "text": "o82病證0斗.衛氣芒`溫分肉,充皮膚,肥滕理,",
+          "confidence": 0.0235,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              1489.0
+            ],
+            "top_right": [
+              2151.0,
+              1489.0
+            ],
+            "bottom_right": [
+              2151.0,
+              1552.0
+            ],
+            "bottom_left": [
+              1233.0,
+              1552.0
+            ]
+          },
+          "line_number": 57
+        },
+        {
+          "block_id": 37,
+          "text": "司開闔\"{靈樞_'本臟_)斗1司%芒=, 17]g子三",
+          "confidence": 0.0006,
+          "bbox": {
+            "top_left": [
+              1235.0,
+              1560.0
+            ],
+            "top_right": [
+              2159.0,
+              1560.0
+            ],
+            "bottom_right": [
+              2159.0,
+              1623.0
+            ],
+            "bottom_left": [
+              1235.0,
+              1623.0
+            ]
+          },
+          "line_number": 58
+        },
+        {
+          "block_id": 39,
+          "text": "外邪嘗日o訃1,日邕明鬯司叫忍2獸聖2司蘭言",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              1634.0
+            ],
+            "top_right": [
+              2161.0,
+              1634.0
+            ],
+            "bottom_right": [
+              2161.0,
+              1694.0
+            ],
+            "bottom_left": [
+              1233.0,
+              1694.0
+            ]
+          },
+          "line_number": 59
+        },
+        {
+          "block_id": 41,
+          "text": "o小王己豈斗.肺蘭呼吸嘗鬯1宣發邛肅降嘗子",
+          "confidence": 0.0001,
+          "bbox": {
+            "top_left": [
+              1234.0,
+              1706.0
+            ],
+            "top_right": [
+              2160.0,
+              1706.0
+            ],
+            "bottom_right": [
+              2160.0,
+              1762.0
+            ],
+            "bottom_left": [
+              1234.0,
+              1762.0
+            ]
+          },
+          "line_number": 60
+        },
+        {
+          "block_id": 43,
+          "text": "三訃叫鼻叫開竅司1外呈芒皮毛9合舺斗. 1舌旦",
+          "confidence": 0.0001,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              1771.0
+            ],
+            "top_right": [
+              2159.0,
+              1771.0
+            ],
+            "bottom_right": [
+              2159.0,
+              1836.0
+            ],
+            "bottom_left": [
+              1233.0,
+              1836.0
+            ]
+          },
+          "line_number": 61
+        },
+        {
+          "block_id": 45,
+          "text": "三六淫9病邪7孛蘭皮毛嘗叫斗i021,亭",
+          "confidence": 0.0036,
+          "bbox": {
+            "top_left": [
+              1235.0,
+              1844.0
+            ],
+            "top_right": [
+              2161.0,
+              1844.0
+            ],
+            "bottom_right": [
+              2161.0,
+              1905.0
+            ],
+            "bottom_left": [
+              1235.0,
+              1905.0
+            ]
+          },
+          "line_number": 62
+        },
+        {
+          "block_id": 47,
+          "text": "口鼻嘗叫斗)言2u三小肺衛 召合3o表",
+          "confidence": 0.0005,
+          "bbox": {
+            "top_left": [
+              1235.0,
+              1915.0
+            ],
+            "top_right": [
+              2159.0,
+              1915.0
+            ],
+            "bottom_right": [
+              2159.0,
+              1977.0
+            ],
+            "bottom_left": [
+              1235.0,
+              1977.0
+            ]
+          },
+          "line_number": 63
+        },
+        {
+          "block_id": 49,
+          "text": "衛9 調節 7]i%召嘗%1肺氣9 宣發 7]2o",
+          "confidence": 0.0019,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              1984.0
+            ],
+            "top_right": [
+              2159.0,
+              1984.0
+            ],
+            "bottom_right": [
+              2159.0,
+              2048.0
+            ],
+            "bottom_left": [
+              1233.0,
+              2048.0
+            ]
+          },
+          "line_number": 64
+        },
+        {
+          "block_id": 51,
+          "text": "刃3嘗些9里惡寒發熱,頭身疼痛,無汗或有汗,苔",
+          "confidence": 0.0634,
+          "bbox": {
+            "top_left": [
+              1231.0,
+              2056.0
+            ],
+            "top_right": [
+              2159.0,
+              2056.0
+            ],
+            "bottom_right": [
+              2159.0,
+              2122.0
+            ],
+            "bottom_left": [
+              1231.0,
+              2122.0
+            ]
+          },
+          "line_number": 65
+        },
+        {
+          "block_id": 53,
+          "text": "薄白,脈浮棄9吝;87表證嘗竄'赴斗. 六淫",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              2129.0
+            ],
+            "top_right": [
+              2159.0,
+              2129.0
+            ],
+            "bottom_right": [
+              2159.0,
+              2189.0
+            ],
+            "bottom_left": [
+              1233.0,
+              2189.0
+            ]
+          },
+          "line_number": 66
+        },
+        {
+          "block_id": 55,
+          "text": "9病邪0蘭風.寒.暑:濕.燥昊火9 7|0]7%1,",
+          "confidence": 0.0151,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              2200.0
+            ],
+            "top_right": [
+              2155.0,
+              2200.0
+            ],
+            "bottom_right": [
+              2155.0,
+              2265.0
+            ],
+            "bottom_left": [
+              1233.0,
+              2265.0
+            ]
+          },
+          "line_number": 67
+        },
+        {
+          "block_id": 57,
+          "text": "王士麻疹:瘡瘍-水腫昊痢疾吾9 初期0f口9皂",
+          "confidence": 0.0002,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              2268.0
+            ],
+            "top_right": [
+              2159.0,
+              2268.0
+            ],
+            "bottom_right": [
+              2159.0,
+              2329.0
+            ],
+            "bottom_left": [
+              1233.0,
+              2329.0
+            ]
+          },
+          "line_number": 68
+        },
+        {
+          "block_id": 59,
+          "text": "表證嘗召訃7]叫g叫表證0`口刁蘭49王.日1",
+          "confidence": 0.0001,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              2342.0
+            ],
+            "top_right": [
+              2159.0,
+              2342.0
+            ],
+            "bottom_right": [
+              2159.0,
+              2402.0
+            ],
+            "bottom_left": [
+              1233.0,
+              2402.0
+            ]
+          },
+          "line_number": 69
+        },
+        {
+          "block_id": 61,
+          "text": "3凸出93斗.翌出9 2o攔寒熱9 7]}o]7}%1",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              2413.0
+            ],
+            "top_right": [
+              2161.0,
+              2413.0
+            ],
+            "bottom_right": [
+              2161.0,
+              2473.0
+            ],
+            "bottom_left": [
+              1233.0,
+              2473.0
+            ]
+          },
+          "line_number": 70
+        },
+        {
+          "block_id": 63,
+          "text": "足2 蘭彊弱9干豊o]%斗.表證子o42#9^",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              2482.0
+            ],
+            "top_right": [
+              2159.0,
+              2482.0
+            ],
+            "bottom_right": [
+              2159.0,
+              2545.0
+            ],
+            "bottom_left": [
+              1233.0,
+              2545.0
+            ]
+          },
+          "line_number": 71
+        },
+        {
+          "block_id": 66,
+          "text": "鬯%寒 訓a蘭4蘭世三小辛溫解表司0訃1,",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              2555.0
+            ],
+            "top_right": [
+              2154.0,
+              2555.0
+            ],
+            "bottom_right": [
+              2154.0,
+              2616.0
+            ],
+            "bottom_left": [
+              1233.0,
+              2616.0
+            ]
+          },
+          "line_number": 72
+        },
+        {
+          "block_id": 69,
+          "text": "鬯出9 I2o]熱 ]司4里三小辛涼解表",
+          "confidence": 0.0001,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              2623.0
+            ],
+            "top_right": [
+              2159.0,
+              2623.0
+            ],
+            "bottom_right": [
+              2159.0,
+              2687.0
+            ],
+            "bottom_left": [
+              1233.0,
+              2687.0
+            ]
+          },
+          "line_number": 73
+        },
+        {
+          "block_id": 71,
+          "text": "訓o司u, d7io] 召olol氣:血:陰:陽9旦三=窖",
+          "confidence": 0.0004,
+          "bbox": {
+            "top_left": [
+              1231.0,
+              2695.0
+            ],
+            "top_right": [
+              2159.0,
+              2695.0
+            ],
+            "bottom_right": [
+              2159.0,
+              2757.0
+            ],
+            "bottom_left": [
+              1231.0,
+              2757.0
+            ]
+          },
+          "line_number": 74
+        },
+        {
+          "block_id": 73,
+          "text": "己各9Hl=4蘭王欄旦言7]7]補益法斗2",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              2764.0
+            ],
+            "top_right": [
+              2160.0,
+              2764.0
+            ],
+            "bottom_right": [
+              2160.0,
+              2829.0
+            ],
+            "bottom_left": [
+              1233.0,
+              2829.0
+            ]
+          },
+          "line_number": 75
+        },
+        {
+          "block_id": 75,
+          "text": "凸6o| 扶正祛邪o-oio+芭斗.叫呈叫解表方劑蘭 o",
+          "confidence": 0.0,
+          "bbox": {
+            "top_left": [
+              1234.0,
+              2840.0
+            ],
+            "top_right": [
+              2158.0,
+              2840.0
+            ],
+            "bottom_right": [
+              2158.0,
+              2896.0
+            ],
+            "bottom_left": [
+              1234.0,
+              2896.0
+            ]
+          },
+          "line_number": 76
+        },
+        {
+          "block_id": 77,
+          "text": "7]o] 心g;o 辛溫解表.辛涼解表 叟扶正解表9",
+          "confidence": 0.0062,
+          "bbox": {
+            "top_left": [
+              1233.0,
+              2908.0
+            ],
+            "top_right": [
+              2159.0,
+              2908.0
+            ],
+            "bottom_right": [
+              2159.0,
+              2968.0
+            ],
+            "bottom_left": [
+              1233.0,
+              2968.0
+            ]
+          },
+          "line_number": 77
+        }
+      ],
+      "full_text": "韓醫方劑學 各論\n發熱oUlal4芒麻黃.桂枝吾辛溫解表藥9 Ag\n嘗uu司二,辛涼訂7廿甘寒吐斗罟呈 解表鬯列嘗\n子召訃%斗. 二舌旦三*自制雙解-通聖辛涼之劑,不\n遵仲景法桂枝:麻黃發表之藥.\"(素問病機氣宜保命\n集_卷二)0斗1司%斗. 劉完素芒 寒涼藥嘗4g3\n蘭列叫子斗司%二,表證嘗刁昱習0%o辛涼藥嘗\nu4g引蘭斗舍49414g= 溫熱病9 刁\n昱叫叫=啟發嘗3%斗.溫病醫家% 吳瑭0`創方\n芭7\"己日72銀懃散蘭1己呈嘗7合3獸斗7\n旦旦 鬯刁]三河間9 涼膈散嘗旦只3o 口A旦三又\no]r.易水學派9 元祖% 張元素芒舊說% %uo]7\n出二邛召3739^嘗 鬯-%斗.風寒表證9 刁\n有汗不得服麻黃,無汗不得服桂枝.\"{此事\n昱0)\n難知_卷二)9 o舌77|禁忌0 Z7訃o1蘭鬯三\n9斗4u豈0辛溫香燥嘗9子呈引蘭九味羌活\n湯嘗 創方3%斗. 1解表祛濕9 用藥 414g\n解表9旦三日外|I4三44_三甦-引芭\n又o]口.`分經論治'80日4聖酋+聖蘭=89表\n證:痺證吳痛證嘗刁昱訃蘭引2=7u]己%d嘗\n子%斗.明代陶華蘭舊論獸1刁7就1王芭\n蘭斗竺嘗召習3.1精粹嘗沓 召3.芒引, 1\n仲景9 六經辨證9 *7]嘗叫三里小易老9羌活\n白芷三 解表司蘭受豊脅司0柴葛解肌湯嘗 創方司\n#斗=%言叫7經方嘗亶言3蘭旦\"嘗旦0l\n1鬯u3廿.1蘭仲景9 麻黃細辛附子湯9 助陽\n解表法嘗皂鬯1易老9 九味羌活湯9!羌活.防風\n昊川芎9 解表祛濕司蘭受嘗皂些o)草案吐再造\n散f7言9小呂豈-7鬯曰 a==o])g訃1%\n口.清代溫病學家%吳瑭g`溫病忌汗'豊3聖訃巴\n3`!早曰2]u]2蘭傷寒法嘗 ^golo溫病\n嘗刁昱司蘭列17鬯吳刃0]斗(古來用傷寒法\n治溫病,\n大錯也.)\"{溫病條辨_卷1)174司%\n斗.溫病9] 初期嘗刁昱習o %olxT內經.9\n風淫\n於內,治以辛涼,佐以苦甘;熱淫於內,治以鹹寒,佐\n以甘苦\"9 %d邛劉完素9] 辛涼解表9 刁鬯嘗37\n些%_叫,`辛涼苦甘'{溫病條辨_卷1)法豊李350\n銀麴散斗桑菊飲吾辛涼解表9 名方獸巳_%斗.\no]蘭表證刁叫司u9引rr弔呈嘗鬯%1辛涼\n解表劑9] 罟叫嘗叫%_叫=8叫旦7獸旦2孕\nol廿.4己50n己9]9丑昱斗u7舍9鬯\n己o引lolol解表方劑9%d;gd習o`+4昌o\n叫斗解表劑7}o]呈}9呈口粵7吾4_呈召可旦%\n_叫,方劑聖9配伍04f口號h召司7H9\n斗.亭些5解表方劑 ul孫4g7]己d7嘗+60\n解表方劑0芒發汗.解熱-鎮痛:抗炎:病原微生物\n口7|-鎮咳.平喘叟祛痰;9o4o%%1,王\n芭u97]岩獸聖231胃腸7]豊聖召6口33\n入反應歎9uo三4=49 9]9]7%r.r斗)\n解表方劑98g出9嘗丑鬯旦訃外斗-]6o祇獸+\na嘗三舌3旦災斗.\n解表劑蘭 表證豊刁昱6}7] 9o-ol竺7皂又o]口.\n表證蘭六淫9外邪7a刁9肌表斗肺衛 召合3\no82病證0斗.衛氣芒`溫分肉,充皮膚,肥滕理,\n司開闔\"{靈樞_'本臟_)斗1司%芒=, 17]g子三\n外邪嘗日o訃1,日邕明鬯司叫忍2獸聖2司蘭言\no小王己豈斗.肺蘭呼吸嘗鬯1宣發邛肅降嘗子\n三訃叫鼻叫開竅司1外呈芒皮毛9合舺斗. 1舌旦\n三六淫9病邪7孛蘭皮毛嘗叫斗i021,亭\n口鼻嘗叫斗)言2u三小肺衛 召合3o表\n衛9 調節 7]i%召嘗%1肺氣9 宣發 7]2o\n刃3嘗些9里惡寒發熱,頭身疼痛,無汗或有汗,苔\n薄白,脈浮棄9吝;87表證嘗竄'赴斗. 六淫\n9病邪0蘭風.寒.暑:濕.燥昊火9 7|0]7%1,\n王士麻疹:瘡瘍-水腫昊痢疾吾9 初期0f口9皂\n表證嘗召訃7]叫g叫表證0`口刁蘭49王.日1\n3凸出93斗.翌出9 2o攔寒熱9 7]}o]7}%1\n足2 蘭彊弱9干豊o]%斗.表證子o42#9^\n鬯%寒 訓a蘭4蘭世三小辛溫解表司0訃1,\n鬯出9 I2o]熱 ]司4里三小辛涼解表\n訓o司u, d7io] 召olol氣:血:陰:陽9旦三=窖\n己各9Hl=4蘭王欄旦言7]7]補益法斗2\n凸6o| 扶正祛邪o-oio+芭斗.叫呈叫解表方劑蘭 o\n7]o] 心g;o 辛溫解表.辛涼解表 叟扶正解表9",
+      "block_count": 77,
+      "avg_confidence": 0.0674,
+      "status": "completed",
+      "error": null
+    }
+  ]
+}
