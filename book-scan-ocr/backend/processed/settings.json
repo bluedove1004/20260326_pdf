@@ -1,5 +1,5 @@
 {
-  "ocr_provider": "google_vision",
+  "ocr_provider": "chatgpt",
   "api_key": null,
   "dpi": 300,
   "preprocessing": {

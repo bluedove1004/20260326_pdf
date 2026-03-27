@@ -46,16 +46,24 @@ class LLMService:
                 messages=[
                     {
                         "role": "system",
-                        "content": "You are a specialized OCR engine. Extract all text from the provided image exactly as it appears. Maintain the reading order (typically top-to-bottom, left-to-right). Do not add any commentary. Output ONLY the extracted text."
+                        "content": (
+                            "You are a specialized OCR engine. Your task is to extract EVERY SINGLE WORD from the provided image. "
+                            "STRICT RULE: Only extract what you VISUALLY see. Do not use your internal knowledge to 'fix', 'complete', or 'predict' the text. "
+                            "This is especially critical for classic or famous texts (like medical classics or literature); "
+                            "do not substitute the text with a version from your memory. Extract the exact characters as they are printed on this page. "
+                            "Do not summarize or skip any lines. Maintain the original reading order. "
+                            "Output ONLY the raw extracted text without any commentary."
+                        )
                     },
                     {
                         "role": "user",
                         "content": [
-                            {"type": "text", "text": "Extract all text from this image."},
+                            {"type": "text", "text": "Extract all text from this image. Be extremely literal and do not hallucinate text that isn't there."},
                             {
                                 "type": "image_url",
                                 "image_url": {
-                                    "url": f"data:image/png;base64,{base64_image}"
+                                    "url": f"data:image/png;base64,{base64_image}",
+                                    "detail": "high"
                                 }
                             }
                         ]
@@ -97,7 +105,13 @@ class LLMService:
             response = await client.messages.create(
                 model=model,
                 max_tokens=4096,
-                system="You are a specialized OCR engine. Extract all text from the provided image exactly as it appears. Maintain the reading order. Output ONLY the extracted text.",
+                system=(
+                    "You are a specialized OCR engine. Your task is to extract EVERY SINGLE WORD from the provided image. "
+                    "Do not summarize. Do not skip any lines, even if they seem unimportant. "
+                    "Extract text from the very top to the very bottom of the page. "
+                    "Maintain the original reading order. "
+                    "Output ONLY the raw extracted text without any additional commentary."
+                ),
                 messages=[
                     {
                         "role": "user",
@@ -110,7 +124,7 @@ class LLMService:
                                     "data": base64_image,
                                 },
                             },
-                            {"type": "text", "text": "Extract all text from this image."}
+                            {"type": "text", "text": "Extract all text from this image. Ensure absolutely nothing is skipped."}
                         ],
                     }
                 ],

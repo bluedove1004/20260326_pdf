@@ -255,3 +255,26 @@ AttributeError: module 'cv2' has no attribute 'cvtColor'
 2026-03-25 18:10:36,836 [INFO] main: OCR and LLM services ready
 2026-03-25 18:12:26,920 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2026-03-25 18:12:26,930 [INFO] services.storage_service: Saved result for document a9427835-3230-4273-94e2-ec9079748aee
+2026-03-27 10:57:48,799 [INFO] main: Shutting down
+2026-03-27 10:57:49,768 [INFO] main: Starting up — initialising OCR service...
+2026-03-27 10:57:49,768 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-27 10:57:54,378 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-27 10:57:55,792 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-27 10:57:55,793 [INFO] main: OCR and LLM services ready
+2026-03-27 10:57:56,905 [INFO] main: Shutting down
+2026-03-27 10:57:57,796 [INFO] main: Starting up — initialising OCR service...
+2026-03-27 10:57:57,797 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-27 10:58:02,294 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-27 10:58:03,719 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-27 10:58:03,719 [INFO] main: OCR and LLM services ready
+2026-03-27 11:00:58,598 [INFO] routers.settings: Settings saved: provider=chatgpt
+2026-03-27 11:01:37,209 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-27 11:01:37,224 [INFO] services.storage_service: Saved result for document a9427835-3230-4273-94e2-ec9079748aee
+2026-03-27 11:16:20,492 [INFO] main: Shutting down
+2026-03-27 11:16:21,424 [INFO] main: Starting up — initialising OCR service...
+2026-03-27 11:16:21,424 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-27 11:16:26,012 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-27 11:16:27,448 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-27 11:16:27,448 [INFO] main: OCR and LLM services ready
+2026-03-27 11:17:55,818 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-27 11:17:55,830 [INFO] services.storage_service: Saved result for document a9427835-3230-4273-94e2-ec9079748aee
