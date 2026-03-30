@@ -48,31 +48,31 @@ const Dashboard: React.FC = () => {
   return (
     <div className="h-full overflow-y-auto py-8 px-4 animate-fade-in">
       <div className="max-w-4xl mx-auto space-y-8">
-      {/* Hero */}
-      <div className="text-center">
-        <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-900/40 border border-brand-800/50 rounded-full text-xs text-brand-300 mb-4">
-          <span className="w-1.5 h-1.5 bg-brand-400 rounded-full animate-pulse" />
-          PaddleOCR 한국어 지원
+        {/* Hero */}
+        <div className="text-center">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-900/40 border border-brand-800/50 rounded-full text-xs text-brand-300 mb-4">
+            <span className="w-1.5 h-1.5 bg-brand-400 rounded-full animate-pulse" />
+            PaddleOCR 한국어 지원
+          </div>
+          <h1 className="text-4xl font-bold text-gray-100 tracking-tight">
+            Book Scan <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-purple-400">OCR</span>
+          </h1>
+          <p className="text-gray-400 mt-2 text-base">2스캔된 책 PDF를 업로드하면 AI가 텍스트를 추출합니다</p>
         </div>
-        <h1 className="text-4xl font-bold text-gray-100 tracking-tight">
-          Book Scan <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-purple-400">OCR</span>
-        </h1>
-        <p className="text-gray-400 mt-2 text-base">스캔된 책 PDF를 업로드하면 AI가 텍스트를 추출합니다</p>
-      </div>
 
-      {/* Upload */}
-      <div className="glass-card p-6">
-        <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">PDF 업로드</h2>
-        <FileUploader onUploaded={handleUploaded} />
-      </div>
+        {/* Upload */}
+        <div className="glass-card p-6">
+          <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">PDF 업로드</h2>
+          <FileUploader onUploaded={handleUploaded} />
+        </div>
 
-      {/* Progress (while processing) */}
-      {processingId && pollStatus && (
-        <ProgressBar status={pollStatus} filename={processingFilename} />
-      )}
+        {/* Progress (while processing) */}
+        {processingId && pollStatus && (
+          <ProgressBar status={pollStatus} filename={processingFilename} />
+        )}
 
-      {/* Document list */}
-      <DocumentList documents={documents} onRefresh={refreshDocuments} />
+        {/* Document list */}
+        <DocumentList documents={documents} onRefresh={refreshDocuments} />
       </div>
     </div>
   );
