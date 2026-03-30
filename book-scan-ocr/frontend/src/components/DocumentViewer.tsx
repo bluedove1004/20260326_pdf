@@ -26,7 +26,8 @@ const DocumentViewer: React.FC = () => {
   const [activeTab, setActiveTab] = useState<Tab>('text');
   const [zoom, setZoom] = useState(0.3);
   const [imgError, setImgError] = useState(false);
-  
+
+
   // Resizable split state
   const [rightPanelWidth, setRightPanelWidth] = useState(50); // percentage
   const [isResizing, setIsResizing] = useState(false);
@@ -182,7 +183,7 @@ const DocumentViewer: React.FC = () => {
         </div>
 
         {/* Center: scanned image (Resizable) */}
-        <div 
+        <div
           className="flex flex-col border-r border-gray-800 bg-gray-950/50 min-w-0"
           style={{ width: `${100 - rightPanelWidth}%` }}
         >
@@ -226,14 +227,14 @@ const DocumentViewer: React.FC = () => {
         </div>
 
         {/* Resizer Divider */}
-        <div 
+        <div
           className={`w-1 cursor-col-resize hover:bg-brand-500 active:bg-brand-600 transition-colors z-20 shrink-0
             ${isResizing ? 'bg-brand-500' : 'bg-gray-800'}`}
           onMouseDown={() => setIsResizing(true)}
         />
 
         {/* Right: OCR result tabs (Resizable Width) */}
-        <div 
+        <div
           className="flex-shrink-0 flex flex-col bg-gray-900/40 relative min-w-0"
           style={{ width: `${rightPanelWidth}%` }}
         >
@@ -250,17 +251,17 @@ const DocumentViewer: React.FC = () => {
                     {currentPageData.extracted_at ? (
                       (() => {
                         try {
-                          return new Date(currentPageData.extracted_at).toLocaleString('ko-KR', { 
-                            month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' 
+                          return new Date(currentPageData.extracted_at).toLocaleString('ko-KR', {
+                            month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'
                           });
-                        } catch(e) { return '시간 정보 없음'; }
+                        } catch (e) { return '시간 정보 없음'; }
                       })()
                     ) : '시간 정보 없음'}
                   </span>
                 </div>
               )}
             </div>
-            
+
             <div className="flex gap-2">
               <button
                 onClick={() => handleLLMExtract('chatgpt')}
