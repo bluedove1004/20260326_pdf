@@ -397,3 +397,25 @@ AttributeError: module 'cv2' has no attribute 'cvtColor'
 2026-03-30 17:30:30,250 [INFO] main: OCR and LLM services ready
 2026-03-30 17:32:33,920 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
 2026-03-30 17:32:33,982 [INFO] services.storage_service: Saved result for document 2f6b2ac4-8f53-4761-96ce-3ca983b5d20d
+2026-03-31 05:31:13,956 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 05:31:13,956 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 05:31:23,244 [WARNING] easyocr.easyocr: Downloading detection model, please wait. This may take several minutes depending upon your network connection.
+2026-03-31 05:31:46,377 [INFO] easyocr.easyocr: Download complete
+2026-03-31 05:31:46,377 [WARNING] easyocr.easyocr: Downloading recognition model, please wait. This may take several minutes depending upon your network connection.
+2026-03-31 05:32:45,814 [INFO] easyocr.easyocr: Download complete.
+2026-03-31 05:32:47,763 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 05:32:47,925 [WARNING] easyocr.easyocr: Downloading recognition model, please wait. This may take several minutes depending upon your network connection.
+2026-03-31 05:32:51,932 [INFO] easyocr.easyocr: Download complete.
+2026-03-31 05:32:53,632 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 05:32:53,633 [INFO] main: OCR and LLM services ready
+2026-03-31 05:41:00,578 [INFO] routers.settings: Settings saved: provider=claude
+2026-03-31 05:41:19,273 [INFO] services.storage_service: Created directories for document 0843efb1-b481-408f-8c26-e2338ee31ee7
+2026-03-31 05:41:19,274 [INFO] routers.documents: [0843efb1-b481-408f-8c26-e2338ee31ee7] Converting PDF to images (dpi=300)
+2026-03-31 05:41:19,274 [INFO] services.pdf_service: Converting PDF '0843efb1-b481-408f-8c26-e2338ee31ee7_방제학-상_1_to_2.pdf' at 300 DPI
+2026-03-31 05:41:25,733 [INFO] services.pdf_service: PDF has 2 pages
+2026-03-31 05:41:26,873 [INFO] routers.documents: [0843efb1-b481-408f-8c26-e2338ee31ee7] OCR page 1/2
+2026-03-31 05:42:09,691 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 05:42:09,738 [INFO] routers.documents: [0843efb1-b481-408f-8c26-e2338ee31ee7] OCR page 2/2
+2026-03-31 05:43:09,312 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 05:43:09,319 [INFO] services.storage_service: Saved result for document 0843efb1-b481-408f-8c26-e2338ee31ee7
+2026-03-31 05:43:09,321 [INFO] routers.documents: [0843efb1-b481-408f-8c26-e2338ee31ee7] Completed in 110.0s

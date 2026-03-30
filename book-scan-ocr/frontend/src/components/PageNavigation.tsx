@@ -27,7 +27,7 @@ const PageNavigation: React.FC<PageNavigationProps> = ({
   };
 
   return (
-    <div className="flex items-center justify-between px-4 py-3 border-t border-gray-800 bg-gray-900/50">
+    <div className="flex items-center justify-between px-4 py-2 border-t border-gray-800 bg-gray-900/50">
       <button
         onClick={onGoPrev}
         disabled={!canGoPrev}

@@ -64,7 +64,8 @@ const SettingsPanel: React.FC = () => {
   }
 
   return (
-    <div className="max-w-2xl mx-auto space-y-6 animate-fade-in">
+    <div className="h-full overflow-y-auto p-6 animate-fade-in">
+      <div className="max-w-2xl mx-auto space-y-6">
       <h1 className="text-2xl font-bold text-gray-100">설정</h1>
 
       {/* OCR Provider */}
@@ -243,6 +244,7 @@ const SettingsPanel: React.FC = () => {
             저장되었습니다
           </span>
         )}
+      </div>
       </div>
     </div>
   );

@@ -52,17 +52,13 @@ const NavBar: React.FC = () => {
 
 const App: React.FC = () => (
   <BrowserRouter>
-    <div className="min-h-screen bg-gray-950 hero-bg flex flex-col">
+    <div className="h-screen bg-gray-950 hero-bg flex flex-col">
       <NavBar />
       <main className="flex-1 overflow-hidden">
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/documents/:id" element={<DocumentViewer />} />
-          <Route path="/settings" element={
-            <div className="p-6">
-              <SettingsPanel />
-            </div>
-          } />
+          <Route path="/settings" element={<SettingsPanel />} />
         </Routes>
       </main>
     </div>

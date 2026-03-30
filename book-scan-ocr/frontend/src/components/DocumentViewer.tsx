@@ -131,10 +131,10 @@ const DocumentViewer: React.FC = () => {
       )}
 
       {/* Header */}
-      <div className="flex items-center justify-between px-6 py-4 border-b border-gray-800 bg-gray-900/60 backdrop-blur shrink-0">
+      <div className="flex items-center justify-between px-6 py-2.5 border-b border-gray-800 bg-gray-900/60 backdrop-blur shrink-0">
         <div className="flex items-center gap-4">
-          <Link to="/" className="btn-ghost text-sm" id="back-to-dashboard">
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <Link to="/" className="btn-ghost text-xs px-2 py-1" id="back-to-dashboard">
+            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
             목록
@@ -238,12 +238,12 @@ const DocumentViewer: React.FC = () => {
           style={{ width: `${rightPanelWidth}%` }}
         >
           {/* LLM Extract Buttons and Metadata */}
-          <div className="px-4 py-3 border-b border-gray-800 bg-brand-950/20 flex flex-col gap-3">
+          <div className="px-4 py-2 border-b border-gray-800 bg-brand-950/20 flex flex-col gap-2">
             <div className="flex items-center justify-between">
-              <span className="text-[10px] uppercase tracking-wider text-brand-400 font-bold">AI 고성능 추출 정보</span>
+              <span className="text-[9px] uppercase tracking-wider text-brand-400 font-bold">AI 고성능 추출 정보</span>
               {currentPageData?.extracted_by && (
-                <div className="flex items-center gap-1.5 text-[10px] text-gray-300 bg-gray-800 px-2.5 py-1 rounded-md border border-gray-700 shadow-inner">
-                  <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
+                <div className="flex items-center gap-1.5 text-[9px] text-gray-300 bg-gray-800 px-2 py-0.5 rounded-md border border-gray-700 shadow-inner">
+                  <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
                   <span className="font-bold text-blue-400">{currentPageData.extracted_by}</span>
                   <span className="text-gray-600">|</span>
                   <span className="tabular-nums">
@@ -265,14 +265,14 @@ const DocumentViewer: React.FC = () => {
               <button
                 onClick={() => handleLLMExtract('chatgpt')}
                 disabled={extractingLLM || loadingPage}
-                className="flex-1 btn-primary py-2 text-[11px] h-auto bg-emerald-700 hover:bg-emerald-600 border-emerald-500 shadow-sm"
+                className="flex-1 btn-primary py-1.5 text-[10px] h-auto bg-emerald-700 hover:bg-emerald-600 border-emerald-500 shadow-sm"
               >
                 ChatGPT 4o
               </button>
               <button
                 onClick={() => handleLLMExtract('claude')}
                 disabled={extractingLLM || loadingPage}
-                className="flex-1 btn-primary py-2 text-[11px] h-auto bg-amber-700 hover:bg-amber-600 border-amber-600 shadow-sm"
+                className="flex-1 btn-primary py-1.5 text-[10px] h-auto bg-amber-700 hover:bg-amber-600 border-amber-600 shadow-sm"
               >
                 Claude 3.5
               </button>

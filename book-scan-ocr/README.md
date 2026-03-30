@@ -57,8 +57,6 @@ uvicorn main:app --reload --port 8000
 ### 2. 프론트엔드
 
 ```bash
-cd book-scan-ocr/frontend
-
 # 패키지 설치 (최초 1회)
 npm install
 

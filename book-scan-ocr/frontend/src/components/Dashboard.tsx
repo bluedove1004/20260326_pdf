@@ -46,7 +46,8 @@ const Dashboard: React.FC = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto py-8 px-4 space-y-8 animate-fade-in">
+    <div className="h-full overflow-y-auto py-8 px-4 animate-fade-in">
+      <div className="max-w-4xl mx-auto space-y-8">
       {/* Hero */}
       <div className="text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 bg-brand-900/40 border border-brand-800/50 rounded-full text-xs text-brand-300 mb-4">
@@ -72,6 +73,7 @@ const Dashboard: React.FC = () => {
 
       {/* Document list */}
       <DocumentList documents={documents} onRefresh={refreshDocuments} />
+      </div>
     </div>
   );
 };
