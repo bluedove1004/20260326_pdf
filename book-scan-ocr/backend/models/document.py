@@ -49,6 +49,8 @@ class PageResult(BaseModel):
     avg_confidence: float = 0.0
     status: str = "completed"  # "completed" | "failed" | "empty"
     error: Optional[str] = None
+    extracted_at: Optional[datetime] = None
+    extracted_by: Optional[str] = None
 
 
 class DocumentResult(BaseModel):

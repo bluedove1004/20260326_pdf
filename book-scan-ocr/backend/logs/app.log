@@ -278,3 +278,78 @@ AttributeError: module 'cv2' has no attribute 'cvtColor'
 2026-03-27 11:16:27,448 [INFO] main: OCR and LLM services ready
 2026-03-27 11:17:55,818 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2026-03-27 11:17:55,830 [INFO] services.storage_service: Saved result for document a9427835-3230-4273-94e2-ec9079748aee
+2026-03-30 10:43:17,785 [INFO] services.storage_service: Created directories for document cfc7c694-083d-4a00-9888-736dbcea8a26
+2026-03-30 10:43:17,788 [INFO] routers.documents: [cfc7c694-083d-4a00-9888-736dbcea8a26] Converting PDF to images (dpi=300)
+2026-03-30 10:43:17,788 [INFO] services.pdf_service: Converting PDF 'cfc7c694-083d-4a00-9888-736dbcea8a26_방제학-상_1_to_2.pdf' at 300 DPI
+2026-03-30 10:43:21,213 [INFO] services.pdf_service: PDF has 2 pages
+2026-03-30 10:43:22,840 [INFO] routers.documents: [cfc7c694-083d-4a00-9888-736dbcea8a26] OCR page 1/2
+2026-03-30 10:43:22,841 [ERROR] services.llm_service: OpenAI OCR failed on page 1: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2026-03-30 10:43:22,842 [INFO] routers.documents: [cfc7c694-083d-4a00-9888-736dbcea8a26] OCR page 2/2
+2026-03-30 10:43:22,842 [ERROR] services.llm_service: OpenAI OCR failed on page 2: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2026-03-30 10:43:22,843 [INFO] services.storage_service: Saved result for document cfc7c694-083d-4a00-9888-736dbcea8a26
+2026-03-30 10:43:22,843 [INFO] routers.documents: [cfc7c694-083d-4a00-9888-736dbcea8a26] Completed in 5.0s
+2026-03-30 10:44:31,044 [INFO] routers.settings: Settings saved: provider=chatgpt
+2026-03-30 10:44:40,998 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-03-30 10:44:40,999 [ERROR] services.llm_service: Anthropic OCR failed on page 1: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-sonnet-20241022'}, 'request_id': 'req_011CZYRDhvfYJh5C3XqfXVSa'}
+2026-03-30 10:48:39,231 [INFO] main: Shutting down
+2026-03-30 10:49:11,380 [INFO] main: Starting up — initialising OCR service...
+2026-03-30 10:49:11,380 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-30 10:49:16,100 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-30 10:49:17,546 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-30 10:49:17,546 [INFO] main: OCR and LLM services ready
+2026-03-30 10:49:52,597 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-03-30 10:49:52,599 [ERROR] services.llm_service: Anthropic OCR failed on page 1: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-sonnet-20241022'}, 'request_id': 'req_011CZYRcgah5ZPDvo5VEWQap'}
+2026-03-30 10:50:53,993 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-03-30 10:50:53,994 [ERROR] services.llm_service: Anthropic OCR failed on page 1: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-sonnet-20241022'}, 'request_id': 'req_011CZYRhDH1f1rLNrmMq25rt'}
+2026-03-30 10:51:52,065 [INFO] main: Shutting down
+2026-03-30 10:51:53,043 [INFO] main: Starting up — initialising OCR service...
+2026-03-30 10:51:53,044 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-30 10:51:57,861 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-30 10:51:59,357 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-30 10:51:59,358 [INFO] main: OCR and LLM services ready
+2026-03-30 10:52:00,468 [INFO] main: Shutting down
+2026-03-30 10:52:01,511 [INFO] main: Starting up — initialising OCR service...
+2026-03-30 10:52:01,511 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-30 10:52:06,466 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-30 10:52:08,032 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-30 10:52:08,032 [INFO] main: OCR and LLM services ready
+2026-03-30 10:57:52,161 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-03-30 10:57:52,163 [ERROR] services.llm_service: Anthropic OCR failed on page 1: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-sonnet-latest'}, 'request_id': 'req_011CZYSE2rK8YvNpvGLjjJKT'}
+2026-03-30 10:58:01,252 [INFO] routers.settings: Settings saved: provider=claude
+2026-03-30 10:58:08,334 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 404 Not Found"
+2026-03-30 10:58:08,335 [ERROR] services.llm_service: Anthropic OCR failed on page 1: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-3-5-sonnet-latest'}, 'request_id': 'req_011CZYSFDLdM25KTM5c8ZGaF'}
+2026-03-30 11:04:21,568 [INFO] main: Shutting down
+2026-03-30 11:04:22,528 [INFO] main: Starting up — initialising OCR service...
+2026-03-30 11:04:22,529 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-30 11:04:27,262 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-30 11:04:28,669 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-30 11:04:28,670 [INFO] main: OCR and LLM services ready
+2026-03-30 11:04:31,291 [INFO] main: Shutting down
+2026-03-30 11:04:32,234 [INFO] main: Starting up — initialising OCR service...
+2026-03-30 11:04:32,235 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-30 11:04:36,801 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-30 11:04:38,264 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-30 11:04:38,264 [INFO] main: OCR and LLM services ready
+2026-03-30 11:05:42,303 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-30 11:05:42,364 [INFO] services.storage_service: Saved result for document cfc7c694-083d-4a00-9888-736dbcea8a26
+2026-03-30 13:38:24,177 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-30 13:38:24,186 [INFO] services.storage_service: Saved result for document cfc7c694-083d-4a00-9888-736dbcea8a26
+2026-03-30 13:44:18,881 [INFO] main: Shutting down
+2026-03-30 13:44:19,873 [INFO] main: Starting up — initialising OCR service...
+2026-03-30 13:44:19,874 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-30 13:44:24,641 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-30 13:44:26,100 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-30 13:44:26,100 [INFO] main: OCR and LLM services ready
+2026-03-30 13:47:06,337 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-30 13:47:06,344 [INFO] services.storage_service: Saved result for document cfc7c694-083d-4a00-9888-736dbcea8a26
+2026-03-30 13:50:06,850 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-30 13:50:06,910 [INFO] services.storage_service: Saved result for document cfc7c694-083d-4a00-9888-736dbcea8a26
+2026-03-30 16:54:51,378 [INFO] main: Shutting down
+2026-03-30 16:54:52,386 [INFO] main: Starting up — initialising OCR service...
+2026-03-30 16:54:52,386 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-30 16:54:57,054 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-30 16:54:58,483 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-30 16:54:58,483 [INFO] main: OCR and LLM services ready
+2026-03-30 16:55:02,105 [INFO] main: Shutting down
+2026-03-30 16:55:03,043 [INFO] main: Starting up — initialising OCR service...
+2026-03-30 16:55:03,043 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...

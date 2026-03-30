@@ -48,17 +48,17 @@ class LLMService:
                         "role": "system",
                         "content": (
                             "You are a specialized OCR engine. Your task is to extract EVERY SINGLE WORD from the provided image. "
-                            "STRICT RULE: Only extract what you VISUALLY see. Do not use your internal knowledge to 'fix', 'complete', or 'predict' the text. "
-                            "This is especially critical for classic or famous texts (like medical classics or literature); "
-                            "do not substitute the text with a version from your memory. Extract the exact characters as they are printed on this page. "
-                            "Do not summarize or skip any lines. Maintain the original reading order. "
-                            "Output ONLY the raw extracted text without any commentary."
+                            "STRICT RULE 1: Extract text from the very top to the very bottom of the page in original reading order. "
+                            "STRICT RULE 2: Transcribe every character (including Korean and Hanja) exactly as it appears. Do not 'fix', 'correct', or 'modernize' characters. "
+                            "STRICT RULE 3: Do not use your internal knowledge to predict or complete the text. Only extract what you VISUALLY see. "
+                            "STRICT RULE 4: Maintain the visual layout and structure (especially columns). Do not merge blocks if they are separate. "
+                            "Do not summarize. Output ONLY the raw extracted text without any commentary."
                         )
                     },
                     {
                         "role": "user",
                         "content": [
-                            {"type": "text", "text": "Extract all text from this image. Be extremely literal and do not hallucinate text that isn't there."},
+                            {"type": "text", "text": "Extract all text from this image exactly as printed. Ensure high accuracy for Korean and Hanja. Do not skip or hallucinate."},
                             {
                                 "type": "image_url",
                                 "image_url": {
@@ -87,7 +87,7 @@ class LLMService:
         image_path: Path, 
         page_number: int, 
         api_key: str,
-        model: str = "claude-3-5-sonnet-20241022"
+        model: str = "claude-sonnet-4-6"
     ) -> PageResult:
         """Extract text from image using Anthropic Claude 3.5/3.7."""
         try:
@@ -107,10 +107,11 @@ class LLMService:
                 max_tokens=4096,
                 system=(
                     "You are a specialized OCR engine. Your task is to extract EVERY SINGLE WORD from the provided image. "
-                    "Do not summarize. Do not skip any lines, even if they seem unimportant. "
-                    "Extract text from the very top to the very bottom of the page. "
-                    "Maintain the original reading order. "
-                    "Output ONLY the raw extracted text without any additional commentary."
+                    "STRICT RULE 1: Extract text from the very top to the very bottom of the page in original reading order. "
+                    "STRICT RULE 2: Transcribe every character (including Korean and Hanja) exactly as it appears. Do not 'fix', 'correct', or 'modernize' characters. "
+                    "STRICT RULE 3: Do not use your internal knowledge to predict or complete the text. Only extract what you VISUALLY see. "
+                    "STRICT RULE 4: Maintain the visual layout and structure (especially columns). Do not merge blocks if they are separate. "
+                    "Do not summarize. Output ONLY the raw extracted text without any additional commentary."
                 ),
                 messages=[
                     {
@@ -124,7 +125,7 @@ class LLMService:
                                     "data": base64_image,
                                 },
                             },
-                            {"type": "text", "text": "Extract all text from this image. Ensure absolutely nothing is skipped."}
+                            {"type": "text", "text": "Extract all text from this image exactly as printed. Ensure high accuracy for Korean and Hanja. Do not skip or hallucinate."}
                         ],
                     }
                 ],

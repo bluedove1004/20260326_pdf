@@ -314,13 +314,17 @@ async def llm_extract_page(
         )
     elif extract_req.provider == "claude":
         page_result = await llm_service.process_page_with_anthropic(
-            img_path, page_number, extract_req.api_key, extract_req.model or "claude-3-5-sonnet-20241022"
+            img_path, page_number, extract_req.api_key, extract_req.model or "claude-sonnet-4-6"
         )
     else:
         raise HTTPException(status_code=400, detail="Unsupported LLM provider")
 
     if page_result.status == "failed":
         raise HTTPException(status_code=500, detail=page_result.error)
+
+    # Set metadata
+    page_result.extracted_at = datetime.now()
+    page_result.extracted_by = extract_req.model or ("gpt-4o" if extract_req.provider == "chatgpt" else "claude-sonnet-4-6")
 
     # Set original dimensions if we have them
     if width > 0 and height > 0:

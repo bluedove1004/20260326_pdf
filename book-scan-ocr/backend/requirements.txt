@@ -15,7 +15,7 @@ Pillow==10.4.0
 # OCR
 easyocr>=1.7.1
 openai==1.45.0
-anthropic==0.34.2
+anthropic>=0.42.0
 
 # Testing
 pytest==8.3.3

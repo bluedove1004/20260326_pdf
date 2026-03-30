@@ -1,5 +1,5 @@
 {
-  "ocr_provider": "chatgpt",
+  "ocr_provider": "claude",
   "api_key": null,
   "dpi": 300,
   "preprocessing": {
