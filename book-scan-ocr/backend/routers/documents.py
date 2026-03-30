@@ -322,9 +322,11 @@ async def llm_extract_page(
     if page_result.status == "failed":
         raise HTTPException(status_code=500, detail=page_result.error)
 
-    # Set metadata
-    page_result.extracted_at = datetime.now()
-    page_result.extracted_by = extract_req.model or ("gpt-4o" if extract_req.provider == "chatgpt" else "claude-sonnet-4-6")
+    # Set metadata securely using model_copy
+    page_result = page_result.model_copy(update={
+        "extracted_at": datetime.now(timezone.utc),
+        "extracted_by": extract_req.model or ("GPT-4o" if extract_req.provider == "chatgpt" else "Claude 3.5")
+    })
 
     # Set original dimensions if we have them
     if width > 0 and height > 0:
@@ -333,7 +335,7 @@ async def llm_extract_page(
 
     # Save the new result (overwrites the previous PDF/PaddleOCR result for this page)
     # 1. Update per-page JSON
-    _storage.save_page_result(document_id, page_result.model_dump())
+    _storage.save_page_result(document_id, page_result.model_dump(mode='json'))
     
     # 2. Update the full result JSON if it exists
     result = _storage.load_result(document_id)

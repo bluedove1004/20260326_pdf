@@ -25,6 +25,8 @@ export interface PageResult {
   avg_confidence: number;
   status: 'completed' | 'failed' | 'empty';
   error?: string;
+  extracted_at?: string;
+  extracted_by?: string;
 }
 
 export interface DocumentResult {

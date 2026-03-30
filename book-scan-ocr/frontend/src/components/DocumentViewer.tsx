@@ -22,9 +22,14 @@ const DocumentViewer: React.FC = () => {
   const [loadingDoc, setLoadingDoc] = useState(true);
   const [loadingPage, setLoadingPage] = useState(false);
   const [extractingLLM, setExtractingLLM] = useState(false);
+  const [extractProvider, setExtractProvider] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<Tab>('text');
-  const [zoom, setZoom] = useState(1);
+  const [zoom, setZoom] = useState(0.3);
   const [imgError, setImgError] = useState(false);
+  
+  // Resizable split state
+  const [rightPanelWidth, setRightPanelWidth] = useState(50); // percentage
+  const [isResizing, setIsResizing] = useState(false);
 
   const nav = usePageNavigation({ totalPages: document?.total_pages ?? 1 });
 
@@ -47,6 +52,30 @@ const DocumentViewer: React.FC = () => {
     }).finally(() => setLoadingPage(false));
   }, [id, document, nav.currentPage]);
 
+  // Handle resizing
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!isResizing) return;
+      const totalWidth = window.innerWidth - 80; // subtracting sidebar width
+      const mouseX = e.clientX - 80;
+      const newWidthPercent = 100 - (mouseX / totalWidth) * 100;
+      setRightPanelWidth(Math.min(maxRight, Math.max(minRight, newWidthPercent)));
+    };
+
+    const handleMouseUp = () => setIsResizing(false);
+    const minRight = 20;
+    const maxRight = 80;
+
+    if (isResizing) {
+      window.addEventListener('mousemove', handleMouseMove);
+      window.addEventListener('mouseup', handleMouseUp);
+    }
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseup', handleMouseUp);
+    };
+  }, [isResizing]);
+
   const handleLLMExtract = async (provider: 'chatgpt' | 'claude') => {
     if (!id) return;
     const key = sessionStorage.getItem(provider === 'chatgpt' ? 'openai_api_key' : 'anthropic_api_key');
@@ -55,6 +84,7 @@ const DocumentViewer: React.FC = () => {
       return;
     }
     setExtractingLLM(true);
+    setExtractProvider(provider === 'chatgpt' ? 'ChatGPT 4o' : 'Claude 3.5');
     try {
       const result = await llmExtractPage(id, nav.currentPage, {
         provider,
@@ -65,6 +95,7 @@ const DocumentViewer: React.FC = () => {
       alert('LLM 추출 실패: ' + (e.response?.data?.detail || e.message || String(e)));
     } finally {
       setExtractingLLM(false);
+      setExtractProvider(null);
     }
   };
 
@@ -88,9 +119,19 @@ const DocumentViewer: React.FC = () => {
   const imageUrl = id ? getPageImageUrl(id, nav.currentPage) : '';
 
   return (
-    <div className="flex flex-col h-full animate-fade-in">
+    <div className="flex flex-col h-full animate-fade-in relative">
+      {/* Global Loading Top Bar */}
+      {(extractingLLM || loadingPage) && (
+        <div className="absolute top-0 left-0 right-0 z-50 bg-brand-600/90 backdrop-blur-md text-white py-2 px-4 flex items-center justify-center gap-3 shadow-lg animate-slide-down">
+          <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+          <span className="text-sm font-bold">
+            {extractingLLM ? `${extractProvider}가 텍스트를 분석 중입니다…` : '페이지 정보를 불러오고 있습니다…'}
+          </span>
+        </div>
+      )}
+
       {/* Header */}
-      <div className="flex items-center justify-between px-6 py-4 border-b border-gray-800 bg-gray-900/60 backdrop-blur">
+      <div className="flex items-center justify-between px-6 py-4 border-b border-gray-800 bg-gray-900/60 backdrop-blur shrink-0">
         <div className="flex items-center gap-4">
           <Link to="/" className="btn-ghost text-sm" id="back-to-dashboard">
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -119,7 +160,7 @@ const DocumentViewer: React.FC = () => {
 
       {/* 3-panel layout */}
       <div className="flex flex-1 overflow-hidden">
-        {/* Left: page list sidebar */}
+        {/* Left: page list sidebar (Fixed 80px) */}
         <div className="w-20 flex-shrink-0 border-r border-gray-800 bg-gray-900/40 overflow-y-auto">
           {Array.from({ length: document.total_pages }, (_, i) => i + 1).map((pg) => (
             <button
@@ -140,10 +181,13 @@ const DocumentViewer: React.FC = () => {
           ))}
         </div>
 
-        {/* Center: scanned image */}
-        <div className="flex-1 flex flex-col border-r border-gray-800 bg-gray-950/50 min-w-0">
+        {/* Center: scanned image (Resizable) */}
+        <div 
+          className="flex flex-col border-r border-gray-800 bg-gray-950/50 min-w-0"
+          style={{ width: `${100 - rightPanelWidth}%` }}
+        >
           <div className="flex items-center justify-between px-4 py-2 border-b border-gray-800 bg-gray-900/40">
-            <span className="text-xs text-gray-500">원본 이미지</span>
+            <span className="text-xs text-gray-500">원본 이미지 (P{nav.currentPage})</span>
             <div className="flex items-center gap-2">
               <button onClick={() => setZoom((z) => Math.max(0.25, z - 0.25))} className="btn-ghost text-xs px-2 py-1" id="zoom-out-btn">−</button>
               <span className="text-xs text-gray-400 tabular-nums w-12 text-center">{Math.round(zoom * 100)}%</span>
@@ -181,38 +225,68 @@ const DocumentViewer: React.FC = () => {
           />
         </div>
 
-        {/* Right: OCR result tabs */}
-        <div className="w-96 flex-shrink-0 flex flex-col bg-gray-900/30">
-          {/* LLM Extract Buttons */}
-          <div className="px-3 py-2 border-b border-gray-800 bg-brand-950/20 flex flex-col gap-2">
-            <span className="text-[10px] uppercase tracking-wider text-brand-400 font-bold px-1">AI 고품질 추출</span>
+        {/* Resizer Divider */}
+        <div 
+          className={`w-1 cursor-col-resize hover:bg-brand-500 active:bg-brand-600 transition-colors z-20 shrink-0
+            ${isResizing ? 'bg-brand-500' : 'bg-gray-800'}`}
+          onMouseDown={() => setIsResizing(true)}
+        />
+
+        {/* Right: OCR result tabs (Resizable Width) */}
+        <div 
+          className="flex-shrink-0 flex flex-col bg-gray-900/40 relative min-w-0"
+          style={{ width: `${rightPanelWidth}%` }}
+        >
+          {/* LLM Extract Buttons and Metadata */}
+          <div className="px-4 py-3 border-b border-gray-800 bg-brand-950/20 flex flex-col gap-3">
+            <div className="flex items-center justify-between">
+              <span className="text-[10px] uppercase tracking-wider text-brand-400 font-bold">AI 고성능 추출 정보</span>
+              {currentPageData?.extracted_by && (
+                <div className="flex items-center gap-1.5 text-[10px] text-gray-300 bg-gray-800 px-2.5 py-1 rounded-md border border-gray-700 shadow-inner">
+                  <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
+                  <span className="font-bold text-blue-400">{currentPageData.extracted_by}</span>
+                  <span className="text-gray-600">|</span>
+                  <span className="tabular-nums">
+                    {currentPageData.extracted_at ? (
+                      (() => {
+                        try {
+                          return new Date(currentPageData.extracted_at).toLocaleString('ko-KR', { 
+                            month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' 
+                          });
+                        } catch(e) { return '시간 정보 없음'; }
+                      })()
+                    ) : '시간 정보 없음'}
+                  </span>
+                </div>
+              )}
+            </div>
+            
             <div className="flex gap-2">
               <button
                 onClick={() => handleLLMExtract('chatgpt')}
                 disabled={extractingLLM || loadingPage}
-                className="flex-1 btn-primary py-1.5 text-[11px] h-auto bg-emerald-600 hover:bg-emerald-500 border-emerald-500"
+                className="flex-1 btn-primary py-2 text-[11px] h-auto bg-emerald-700 hover:bg-emerald-600 border-emerald-500 shadow-sm"
               >
                 ChatGPT 4o
               </button>
               <button
                 onClick={() => handleLLMExtract('claude')}
                 disabled={extractingLLM || loadingPage}
-                className="flex-1 btn-primary py-1.5 text-[11px] h-auto bg-amber-600 hover:bg-amber-500 border-amber-500"
+                className="flex-1 btn-primary py-2 text-[11px] h-auto bg-amber-700 hover:bg-amber-600 border-amber-600 shadow-sm"
               >
                 Claude 3.5
               </button>
             </div>
-            <p className="text-[10px] text-gray-500 px-1">EasyOCR 품질이 낮을 때 사용하세요.</p>
           </div>
 
           {/* Tab bar */}
-          <div className="flex gap-1 p-3 border-b border-gray-800 bg-gray-900/40">
+          <div className="flex gap-1 p-3 border-b border-gray-800 bg-gray-900/20">
             {(['text', 'json', 'blocks'] as Tab[]).map((tab) => (
               <button
                 key={tab}
                 id={`tab-${tab}`}
                 onClick={() => setActiveTab(tab)}
-                className={`flex-1 py-2 rounded-lg text-xs font-medium transition-all duration-200
+                className={`flex-1 py-1.5 rounded-lg text-xs font-medium transition-all duration-200
                   ${activeTab === tab ? 'tab-active' : 'tab-inactive'}`}
               >
                 {tab === 'text' ? '텍스트' : tab === 'json' ? 'JSON' : '블록'}
@@ -222,21 +296,19 @@ const DocumentViewer: React.FC = () => {
 
           {/* Tab content */}
           <div className="flex-1 overflow-y-auto p-4 relative">
-            {(loadingPage || extractingLLM) ? (
-              <div className="absolute inset-0 z-10 bg-gray-950/60 flex flex-col items-center justify-center gap-3 backdrop-blur-sm">
-                <div className="w-8 h-8 border-2 border-brand-500 border-t-transparent rounded-full animate-spin" />
-                <p className="text-sm font-medium text-brand-300">
-                  {extractingLLM ? 'AI가 텍스트를 분석 중입니다…' : '불러오는 중…'}
-                </p>
-              </div>
-            ) : currentPageData ? (
+            {currentPageData ? (
               <>
                 {activeTab === 'text' && <TextView page={currentPageData} />}
                 {activeTab === 'json' && <JsonView page={currentPageData} />}
                 {activeTab === 'blocks' && <BlockView page={currentPageData} />}
               </>
             ) : (
-              <p className="text-sm text-gray-500 text-center mt-8">페이지 데이터를 불러오는 중…</p>
+              <div className="flex flex-col items-center justify-center h-full text-gray-600 gap-2">
+                <svg className="w-8 h-8 opacity-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <p className="text-sm">데이터를 불러오는 중입니다…</p>
+              </div>
             )}
           </div>
         </div>

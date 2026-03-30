@@ -1,0 +1,1766 @@
+{
+  "page_number": 3,
+  "width": 2486,
+  "height": 3253,
+  "text_blocks": [
+    {
+      "block_id": 1,
+      "text": "第一章 **解表劑** | 第一節 辛溫解表劑",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 1
+    },
+    {
+      "block_id": 3,
+      "text": "라도 發汗力이 강하여 합당하게 사용하면 효과가 제",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 3
+    },
+    {
+      "block_id": 4,
+      "text": "법 신속하다. 사용할 때에 반드시 주의해야 할 것은",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 4
+    },
+    {
+      "block_id": 5,
+      "text": "병에 적중하면 곧 복용을 그치고 지나치게 복용해서는",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 5
+    },
+    {
+      "block_id": 6,
+      "text": "안된다. 그렇지 않으면 發汗이 지나쳐 반드시 사람의",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 6
+    },
+    {
+      "block_id": 7,
+      "text": "正氣를 손상시킨다. 柯琴은 \"此乃純陽之劑, 過於發",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 7
+    },
+    {
+      "block_id": 8,
+      "text": "散, 如單刀直入之將, 投之恰當, 一戰成功, 不當則",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 8
+    },
+    {
+      "block_id": 9,
+      "text": "不戟而召禍, 故用之發表, 可一而不可再, 如汗後不",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 9
+    },
+    {
+      "block_id": 10,
+      "text": "解, 便當以桂枝湯代之; 若汗出不透, 邪氣留連於皮",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 10
+    },
+    {
+      "block_id": 11,
+      "text": "毛骨肉之間, 又有麻桂各半與桂枝二麻黃一之妙用.\"",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 11
+    },
+    {
+      "block_id": 12,
+      "text": "(『傷寒來蘇集』「傷寒附翼」卷上)라고 지적하였다. 이",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 12
+    },
+    {
+      "block_id": 13,
+      "text": "는 체험에서 터득한 말이라고 할 것이다.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 13
+    },
+    {
+      "block_id": 15,
+      "text": "【變遷史】麻黃湯은 發汗解表의 主方이다. 吳謙",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 15
+    },
+    {
+      "block_id": 16,
+      "text": "등은 \"爲仲景開表逐邪發汗第一峻藥.\"(『醫宗金鑑』",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 16
+    },
+    {
+      "block_id": 17,
+      "text": "「訂正傷寒論注」卷2)이라고 하였다. 風寒束表의 病機",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 17
+    },
+    {
+      "block_id": 18,
+      "text": "특징은 腠理가 닫혀 막히고 營陰이 鬱滯되고 肺의 宣",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 18
+    },
+    {
+      "block_id": 19,
+      "text": "發과 肅降이 상실된 것이다. 본 방제는 麻黃에 桂枝",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 19
+    },
+    {
+      "block_id": 20,
+      "text": "및 杏仁을 配伍하여 開腠·暢營·宣肺함으로써 후세",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 20
+    },
+    {
+      "block_id": 21,
+      "text": "사람들에게 發表散寒의 用藥 사고력 및 방제조합 구",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 21
+    },
+    {
+      "block_id": 22,
+      "text": "조의 기초를 놓았다. 역대 의학자들은 이 방제를 기초",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 22
+    },
+    {
+      "block_id": 23,
+      "text": "로하고 加減하여 재단함으로써 적응증의 범위를 확대",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 23
+    },
+    {
+      "block_id": 24,
+      "text": "하였다. 여기에 해당되는 방제는 주로 다음의 다섯 가",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 24
+    },
+    {
+      "block_id": 25,
+      "text": "지로 나눌 수 있다: ① 淸熱의 黃芩 및 知母 등을 配",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 25
+    },
+    {
+      "block_id": 26,
+      "text": "伍하여 解表清裏의 방제를 구성하고 外感風寒에 裏",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 26
+    },
+    {
+      "block_id": 27,
+      "text": "熱을 兼한 자에게 사용한다. 예를 들면『類證活人",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 27
+    },
+    {
+      "block_id": 28,
+      "text": "書』卷20의 麻黃黃芩湯은 본 방제에서 杏仁을 빼고",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 28
+    },
+    {
+      "block_id": 29,
+      "text": "黃芩 및 赤芍藥을 넣은 것이고,『醫學衷中參西錄』上",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 29
+    },
+    {
+      "block_id": 30,
+      "text": "冊의 麻黃加知母湯은 본 방제에서 知母를 넣은 것이",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 30
+    },
+    {
+      "block_id": 31,
+      "text": "다. ② 祛風除濕의 防風·羌活 및 白朮 등을 配伍하",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 31
+    },
+    {
+      "block_id": 32,
+      "text": "여 發汗祛濕의 방제를 조성하고 外感風寒에 濕을 낀",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 32
+    },
+    {
+      "block_id": 33,
+      "text": "자에게 사용한다. 예를 들면『三因極一病證方論』卷3",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 33
+    },
+    {
+      "block_id": 34,
+      "text": "의 麻黃左經湯은 본 방제에서 杏仁을 빼고 防風·防",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 34
+    },
+    {
+      "block_id": 35,
+      "text": "己·羌活·白朮·茯苓·乾葛·細辛·生薑 및 大棗를 넣",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 35
+    },
+    {
+      "block_id": 36,
+      "text": "은 것이고,『症因脈治』卷3의 麻桂朮甘湯은 본 방제에",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 36
+    },
+    {
+      "block_id": 37,
+      "text": "서 杏仁을 빼고 白朮을 넣은 것이다. ③ 宣降肺氣하",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 37
+    },
+    {
+      "block_id": 38,
+      "text": "고 止咳化痰의 蘇子·半夏 및 桑白皮 등과 配伍하여",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 38
+    },
+    {
+      "block_id": 39,
+      "text": "解表宣肺·祛痰止咳의 方劑를 조성하고 外感風寒에",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 39
+    },
+    {
+      "block_id": 41,
+      "text": "喘咳有痰을 兼하여 나타나는 자에게 사용한다. 예를",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 41
+    },
+    {
+      "block_id": 42,
+      "text": "들면『博濟方』卷2의 華蓋散은 본 방제에서 桂枝를 빼",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 42
+    },
+    {
+      "block_id": 43,
+      "text": "고 蘇子·桑白皮·茯苓 및 陳皮를 넣은 것이고,『張氏",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 43
+    },
+    {
+      "block_id": 44,
+      "text": "醫通』卷13의 麻黃定喘湯은 본 방제에서 桂枝를 빼고",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 44
+    },
+    {
+      "block_id": 45,
+      "text": "厚朴·款冬花·桑皮·蘇子·半夏·黃芩 및 銀杏을 넣",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 45
+    },
+    {
+      "block_id": 46,
+      "text": "은 것이다. ④ 活血化瘀의 桃仁 및 紅花 등을 配伍하",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 46
+    },
+    {
+      "block_id": 47,
+      "text": "여 解表活血通絡의 방제를 조성하고 外傷에 風寒을",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 47
+    },
+    {
+      "block_id": 48,
+      "text": "感受한 자에게 사용한다. 예를 들어『傷科補要』卷3의",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 48
+    },
+    {
+      "block_id": 49,
+      "text": "麻桂溫經湯은 본 방제에서 杏仁을 빼고 紅花·桃仁·",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 49
+    },
+    {
+      "block_id": 50,
+      "text": "細辛·白芷·赤芍藥·生薑 및 葱白을 넣은 것이다. ⑤",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 50
+    },
+    {
+      "block_id": 51,
+      "text": "益氣養血의 人蔘·黃芪·當歸 및 地黃 등을 配伍하여",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 51
+    },
+    {
+      "block_id": 52,
+      "text": "扶正解表의 방제를 구성하고 正虛하면서 外感風寒한",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 52
+    },
+    {
+      "block_id": 53,
+      "text": "자에게 사용한다. 예를 들어『脾胃論』卷下의 麻黃人蔘",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 53
+    },
+    {
+      "block_id": 54,
+      "text": "芍藥湯은 본 방제에서 杏仁을 빼고 人蔘·黃芪·麥門",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 54
+    },
+    {
+      "block_id": 55,
+      "text": "冬·當歸·白芍藥 및 五味子를 넣은 것이고,『雲岐子",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 55
+    },
+    {
+      "block_id": 56,
+      "text": "保命集』卷下의 麻黃加生地黃湯은 본 방제에서 四物湯",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 56
+    },
+    {
+      "block_id": 57,
+      "text": "(當歸·熟地黃·白芍藥·川芎)을 合하고 生薑 및 大棗",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 57
+    },
+    {
+      "block_id": 58,
+      "text": "를 넣은 것이다.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 58
+    },
+    {
+      "block_id": 60,
+      "text": "【難題解說】",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 60
+    },
+    {
+      "block_id": 62,
+      "text": "1. 麻黃의 炮製法에 관하여: 古方에서 麻黃을 쓴",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 62
+    },
+    {
+      "block_id": 63,
+      "text": "목적은 發汗平喘에 있고, 節에는 막고 뭉치는 형상이",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 63
+    },
+    {
+      "block_id": 64,
+      "text": "있기 때문에 옛 사람들은 取類比象의 뜻에 근거하여",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 64
+    },
+    {
+      "block_id": 65,
+      "text": "대부분 節을 제거함으로써 發汗의 藥力이 비교적 강",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 65
+    },
+    {
+      "block_id": 66,
+      "text": "한 것을 취하였다. 예를 들면『醫學衷中參西錄』中冊에",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 66
+    },
+    {
+      "block_id": 67,
+      "text": "서 \"麻黃帶節發汗之力稍弱, 去節則發汗之力較強.\"",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 67
+    },
+    {
+      "block_id": 68,
+      "text": "이라고 하였다. 근래에는 麻黃을 쓸 때 대부분 節을",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 68
+    },
+    {
+      "block_id": 69,
+      "text": "제거하지 않는데, 節을 제거할 지의 여부에 의미가 있",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 69
+    },
+    {
+      "block_id": 70,
+      "text": "는가? 현대 한약의 藥理硏究에 의하면 '節'과 '節 사",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 70
+    },
+    {
+      "block_id": 71,
+      "text": "이'에는 매우 큰 차이가 있고, 節 사이 부위의 알칼로",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 71
+    },
+    {
+      "block_id": 72,
+      "text": "이드 총 함량은 節의 3.2배라는 것이 입증되었고, 그",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 72
+    },
+    {
+      "block_id": 73,
+      "text": "밖에 麻黃 부위의 毒性연구에 의하면 節의 毒性은 最",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 73
+    },
+    {
+      "block_id": 74,
+      "text": "大라는 것이 증명되었다. 그러므로 炮製할 때에 節을",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 74
+    },
+    {
+      "block_id": 75,
+      "text": "제거하여 알칼로이드 함량이 낮은 부분을 제거함으로",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 75
+    },
+    {
+      "block_id": 76,
+      "text": "써 藥材의 품질과 임상 치료효과를 향상시키고 毒副",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 76
+    },
+    {
+      "block_id": 77,
+      "text": "作用을 경감시킬 수 있다.1)",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 77
+    },
+    {
+      "block_id": 79,
+      "text": "7",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 79
+    }
+  ],
+  "full_text": "第一章 **解表劑** | 第一節 辛溫解表劑\n\n라도 發汗力이 강하여 합당하게 사용하면 효과가 제\n법 신속하다. 사용할 때에 반드시 주의해야 할 것은\n병에 적중하면 곧 복용을 그치고 지나치게 복용해서는\n안된다. 그렇지 않으면 發汗이 지나쳐 반드시 사람의\n正氣를 손상시킨다. 柯琴은 \"此乃純陽之劑, 過於發\n散, 如單刀直入之將, 投之恰當, 一戰成功, 不當則\n不戟而召禍, 故用之發表, 可一而不可再, 如汗後不\n解, 便當以桂枝湯代之; 若汗出不透, 邪氣留連於皮\n毛骨肉之間, 又有麻桂各半與桂枝二麻黃一之妙用.\"\n(『傷寒來蘇集』「傷寒附翼」卷上)라고 지적하였다. 이\n는 체험에서 터득한 말이라고 할 것이다.\n\n【變遷史】麻黃湯은 發汗解表의 主方이다. 吳謙\n등은 \"爲仲景開表逐邪發汗第一峻藥.\"(『醫宗金鑑』\n「訂正傷寒論注」卷2)이라고 하였다. 風寒束表의 病機\n특징은 腠理가 닫혀 막히고 營陰이 鬱滯되고 肺의 宣\n發과 肅降이 상실된 것이다. 본 방제는 麻黃에 桂枝\n및 杏仁을 配伍하여 開腠·暢營·宣肺함으로써 후세\n사람들에게 發表散寒의 用藥 사고력 및 방제조합 구\n조의 기초를 놓았다. 역대 의학자들은 이 방제를 기초\n로하고 加減하여 재단함으로써 적응증의 범위를 확대\n하였다. 여기에 해당되는 방제는 주로 다음의 다섯 가\n지로 나눌 수 있다: ① 淸熱의 黃芩 및 知母 등을 配\n伍하여 解表清裏의 방제를 구성하고 外感風寒에 裏\n熱을 兼한 자에게 사용한다. 예를 들면『類證活人\n書』卷20의 麻黃黃芩湯은 본 방제에서 杏仁을 빼고\n黃芩 및 赤芍藥을 넣은 것이고,『醫學衷中參西錄』上\n冊의 麻黃加知母湯은 본 방제에서 知母를 넣은 것이\n다. ② 祛風除濕의 防風·羌活 및 白朮 등을 配伍하\n여 發汗祛濕의 방제를 조성하고 外感風寒에 濕을 낀\n자에게 사용한다. 예를 들면『三因極一病證方論』卷3\n의 麻黃左經湯은 본 방제에서 杏仁을 빼고 防風·防\n己·羌活·白朮·茯苓·乾葛·細辛·生薑 및 大棗를 넣\n은 것이고,『症因脈治』卷3의 麻桂朮甘湯은 본 방제에\n서 杏仁을 빼고 白朮을 넣은 것이다. ③ 宣降肺氣하\n고 止咳化痰의 蘇子·半夏 및 桑白皮 등과 配伍하여\n解表宣肺·祛痰止咳의 方劑를 조성하고 外感風寒에\n\n喘咳有痰을 兼하여 나타나는 자에게 사용한다. 예를\n들면『博濟方』卷2의 華蓋散은 본 방제에서 桂枝를 빼\n고 蘇子·桑白皮·茯苓 및 陳皮를 넣은 것이고,『張氏\n醫通』卷13의 麻黃定喘湯은 본 방제에서 桂枝를 빼고\n厚朴·款冬花·桑皮·蘇子·半夏·黃芩 및 銀杏을 넣\n은 것이다. ④ 活血化瘀의 桃仁 및 紅花 등을 配伍하\n여 解表活血通絡의 방제를 조성하고 外傷에 風寒을\n感受한 자에게 사용한다. 예를 들어『傷科補要』卷3의\n麻桂溫經湯은 본 방제에서 杏仁을 빼고 紅花·桃仁·\n細辛·白芷·赤芍藥·生薑 및 葱白을 넣은 것이다. ⑤\n益氣養血의 人蔘·黃芪·當歸 및 地黃 등을 配伍하여\n扶正解表의 방제를 구성하고 正虛하면서 外感風寒한\n자에게 사용한다. 예를 들어『脾胃論』卷下의 麻黃人蔘\n芍藥湯은 본 방제에서 杏仁을 빼고 人蔘·黃芪·麥門\n冬·當歸·白芍藥 및 五味子를 넣은 것이고,『雲岐子\n保命集』卷下의 麻黃加生地黃湯은 본 방제에서 四物湯\n(當歸·熟地黃·白芍藥·川芎)을 合하고 生薑 및 大棗\n를 넣은 것이다.\n\n【難題解說】\n\n1. 麻黃의 炮製法에 관하여: 古方에서 麻黃을 쓴\n목적은 發汗平喘에 있고, 節에는 막고 뭉치는 형상이\n있기 때문에 옛 사람들은 取類比象의 뜻에 근거하여\n대부분 節을 제거함으로써 發汗의 藥力이 비교적 강\n한 것을 취하였다. 예를 들면『醫學衷中參西錄』中冊에\n서 \"麻黃帶節發汗之力稍弱, 去節則發汗之力較強.\"\n이라고 하였다. 근래에는 麻黃을 쓸 때 대부분 節을\n제거하지 않는데, 節을 제거할 지의 여부에 의미가 있\n는가? 현대 한약의 藥理硏究에 의하면 '節'과 '節 사\n이'에는 매우 큰 차이가 있고, 節 사이 부위의 알칼로\n이드 총 함량은 節의 3.2배라는 것이 입증되었고, 그\n밖에 麻黃 부위의 毒性연구에 의하면 節의 毒性은 最\n大라는 것이 증명되었다. 그러므로 炮製할 때에 節을\n제거하여 알칼로이드 함량이 낮은 부분을 제거함으로\n써 藥材의 품질과 임상 치료효과를 향상시키고 毒副\n作用을 경감시킬 수 있다.1)\n\n7",
+  "block_count": 73,
+  "avg_confidence": 1.0,
+  "status": "completed",
+  "error": null,
+  "extracted_at": null,
+  "extracted_by": null
+}

@@ -1,0 +1,1454 @@
+{
+  "page_number": 1,
+  "width": 2493,
+  "height": 3258,
+  "text_blocks": [
+    {
+      "block_id": 1,
+      "text": "第一章 **解表劑** | 第一節 辛溫解表劑",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 1
+    },
+    {
+      "block_id": 3,
+      "text": "② 解表劑는 대부분 辛散輕揚藥을 사용하므로 오래",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 3
+    },
+    {
+      "block_id": 4,
+      "text": "煎湯해서는 안된다. 그 이유는 오래 煎湯하면 藥性이",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 4
+    },
+    {
+      "block_id": 5,
+      "text": "소실되고 작용이 감소하기 때문이다. ③ 대략 解表劑",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 5
+    },
+    {
+      "block_id": 6,
+      "text": "를 복용한 후에는 반드시 風寒을 피하고 혹은 의복과",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 6
+    },
+    {
+      "block_id": 7,
+      "text": "이불을 두텁게 입고 덮으며, 혹은 죽을 먹어 보좌함으",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 7
+    },
+    {
+      "block_id": 8,
+      "text": "로써 땀이 나도록 도와야 한다. 땀을 내는 정도는 온",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 8
+    },
+    {
+      "block_id": 9,
+      "text": "몸에 약간의 땀이 나는 것이 좋은데, 만약 땀이 나는",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 9
+    },
+    {
+      "block_id": 10,
+      "text": "것이 철저하지 못하면 病邪가 풀리지 않고, 땀이 나는",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 10
+    },
+    {
+      "block_id": 11,
+      "text": "것이 지나치면 正氣가 소모되고 津液이 손상된다. 땀",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 11
+    },
+    {
+      "block_id": 12,
+      "text": "이 나면서 병이 나으면 곧 복용을 중지하여 나머지 모",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 12
+    },
+    {
+      "block_id": 13,
+      "text": "든 약제를 다 먹을 필요는 없다. 바로『儒門事親』권2",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 13
+    },
+    {
+      "block_id": 14,
+      "text": "에서 \"凡發汗欲周身熱粱然, 不欲如水淋漓, 欲令手",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 14
+    },
+    {
+      "block_id": 15,
+      "text": "足俱周, 遍汗出一二時爲佳. 若汗暴出, 邪氣多不出,",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 15
+    },
+    {
+      "block_id": 16,
+      "text": "則當重發汗. 則使人亡陽. 凡發汗中病則止, 不必盡",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 16
+    },
+    {
+      "block_id": 17,
+      "text": "劑; 要在劑當, 不過遇也.\"라고 하였다. ④ 解表劑는",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 17
+    },
+    {
+      "block_id": 18,
+      "text": "반드시 식사 후에 溫服하고, 복용한 후에는 날 것, 찬",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 18
+    },
+    {
+      "block_id": 19,
+      "text": "것, 기름지고 느끼한 것(生冷油膩)의 음식물을 禁하",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 19
+    },
+    {
+      "block_id": 20,
+      "text": "는데, 그 이유는 이들 음식물이 약물의 흡수와 藥效의",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 20
+    },
+    {
+      "block_id": 21,
+      "text": "발휘에 영향을 줄 수 있기 때문이다. ⑤ 남쪽 지방 혹",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 21
+    },
+    {
+      "block_id": 22,
+      "text": "은 여름철에는 氣候가 炎熱하기 때문에 인체의 腠理",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 22
+    },
+    {
+      "block_id": 23,
+      "text": "가 이완되어 쉽게 發汗되므로 약물을 선택함에 있어",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 23
+    },
+    {
+      "block_id": 24,
+      "text": "너무 세고 용량이 지나치게 많은 것은 적절하지 않다.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 24
+    },
+    {
+      "block_id": 25,
+      "text": "북쪽 지방 혹은 겨울철에는 氣候가 寒冷하기 때문에",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 25
+    },
+    {
+      "block_id": 26,
+      "text": "인체의 腠理가 치밀해져 쉽게 땀이 나지 않아 약물을",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 26
+    },
+    {
+      "block_id": 27,
+      "text": "사용함에 세지 않으면 안되고 용량도 약간 많은 것이",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 27
+    },
+    {
+      "block_id": 28,
+      "text": "적당하다. ⑥ 만약 表邪가 다 풀리지 않은 상태에서",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 28
+    },
+    {
+      "block_id": 29,
+      "text": "또한 裏證이 나타나는 자는 일반적인 원칙으로는 반",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 29
+    },
+    {
+      "block_id": 30,
+      "text": "드시 먼저 解表한 이후에 裏를 치료해야 한다. 表와",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 30
+    },
+    {
+      "block_id": 31,
+      "text": "裏가 같이 심한 자는 마땅히 表와 裏를 동시에 풀어야",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 31
+    },
+    {
+      "block_id": 32,
+      "text": "한다. 만약 外邪가 이미 裏로 들어가서 혹은 麻疹이",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 32
+    },
+    {
+      "block_id": 33,
+      "text": "이미 빠져 나오고 혹은 瘡瘍이 이미 터져버리고 혹은",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 33
+    },
+    {
+      "block_id": 34,
+      "text": "虛證의 水腫에는 모두 사용해서는 안된다.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 34
+    },
+    {
+      "block_id": 36,
+      "text": "第一節 **辛溫解表劑**",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 36
+    },
+    {
+      "block_id": 38,
+      "text": "# 麻黃湯",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 38
+    },
+    {
+      "block_id": 40,
+      "text": "(『**傷寒論**』)",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 40
+    },
+    {
+      "block_id": 42,
+      "text": "【**異名**】麻黃解肌湯(『深師方』,『外台秘要』卷1에 수",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 42
+    },
+    {
+      "block_id": 43,
+      "text": "재됨).",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 43
+    },
+    {
+      "block_id": 45,
+      "text": "【**組成**】麻黃去節 三兩(9 g) 桂枝 二兩(6 g) 杏仁去皮",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 45
+    },
+    {
+      "block_id": 46,
+      "text": "尖 七十個(6 g) 甘草炙 一兩(3 g)",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 46
+    },
+    {
+      "block_id": 48,
+      "text": "【**用法**】위의 4가지 약재에 물 9되를 넣고 煎湯하는",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 48
+    },
+    {
+      "block_id": 49,
+      "text": "데, 먼저 麻黃을 煎湯하여 2되로 줄어들면 위에 뜬 거",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 49
+    },
+    {
+      "block_id": 50,
+      "text": "품을 없애고, 나머지 3가지 약재를 넣고 2되반이 되도",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 50
+    },
+    {
+      "block_id": 51,
+      "text": "록 전탕하고 찌꺼기는 버리고 8홉을 따뜻하게 복용한",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 51
+    },
+    {
+      "block_id": 52,
+      "text": "다. 이불을 덮고 약간 땀이 나게 하며, 반드시 죽을 먹",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 52
+    },
+    {
+      "block_id": 53,
+      "text": "을 필요는 없다. 나머지는 桂枝湯의 복용법에 따라 몸",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 53
+    },
+    {
+      "block_id": 54,
+      "text": "을 조리한다.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 54
+    },
+    {
+      "block_id": 56,
+      "text": "【**作用**】發汗解表, 宣肺平喘.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 56
+    },
+    {
+      "block_id": 58,
+      "text": "【**適應症**】風寒束表, 肺氣失宣證. 惡寒發熱, 頭疼",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 58
+    },
+    {
+      "block_id": 59,
+      "text": "身痛, 無汗而喘, 舌苔薄白, 脈浮緊.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 59
+    },
+    {
+      "block_id": 61,
+      "text": "【**病機分析**】風寒의 邪氣가 肌表에 침습하면 營衛",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 61
+    },
+    {
+      "block_id": 62,
+      "text": "가 맨 먼저 공격을 받는다. 寒邪는 收引하고 凝滯하",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 62
+    },
+    {
+      "block_id": 63,
+      "text": "는데 衛分을 손상시키면 衛陽이 막혀서 그 '溫分肉'의",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 63
+    },
+    {
+      "block_id": 64,
+      "text": "기능이 조절을 잃게 되고, 肌表는 정상적인 溫煦를 얻",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 64
+    },
+    {
+      "block_id": 65,
+      "text": "지 못하게 되므로 惡寒하고, 衛氣는 바깥을 향하여",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 65
+    },
+    {
+      "block_id": 66,
+      "text": "邪氣에 대항하는데 正氣와 邪氣가 서로 싸우면 發熱",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 66
+    },
+    {
+      "block_id": 67,
+      "text": "하며, 正氣와 邪氣가 頭部에서 싸우고 經氣의 순행이",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 67
+    },
+    {
+      "block_id": 68,
+      "text": "불리해지면 頭疼한다. 寒邪가 表部를 묶으면 腠理가",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 68
+    },
+    {
+      "block_id": 69,
+      "text": "닫히고 막혀서 衛氣의 '司開闔'하는 기능이 조절되지",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 69
+    },
+    {
+      "block_id": 71,
+      "text": "5",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 71
+    }
+  ],
+  "full_text": "第一章 **解表劑** | 第一節 辛溫解表劑\n\n② 解表劑는 대부분 辛散輕揚藥을 사용하므로 오래\n煎湯해서는 안된다. 그 이유는 오래 煎湯하면 藥性이\n소실되고 작용이 감소하기 때문이다. ③ 대략 解表劑\n를 복용한 후에는 반드시 風寒을 피하고 혹은 의복과\n이불을 두텁게 입고 덮으며, 혹은 죽을 먹어 보좌함으\n로써 땀이 나도록 도와야 한다. 땀을 내는 정도는 온\n몸에 약간의 땀이 나는 것이 좋은데, 만약 땀이 나는\n것이 철저하지 못하면 病邪가 풀리지 않고, 땀이 나는\n것이 지나치면 正氣가 소모되고 津液이 손상된다. 땀\n이 나면서 병이 나으면 곧 복용을 중지하여 나머지 모\n든 약제를 다 먹을 필요는 없다. 바로『儒門事親』권2\n에서 \"凡發汗欲周身熱粱然, 不欲如水淋漓, 欲令手\n足俱周, 遍汗出一二時爲佳. 若汗暴出, 邪氣多不出,\n則當重發汗. 則使人亡陽. 凡發汗中病則止, 不必盡\n劑; 要在劑當, 不過遇也.\"라고 하였다. ④ 解表劑는\n반드시 식사 후에 溫服하고, 복용한 후에는 날 것, 찬\n것, 기름지고 느끼한 것(生冷油膩)의 음식물을 禁하\n는데, 그 이유는 이들 음식물이 약물의 흡수와 藥效의\n발휘에 영향을 줄 수 있기 때문이다. ⑤ 남쪽 지방 혹\n은 여름철에는 氣候가 炎熱하기 때문에 인체의 腠理\n가 이완되어 쉽게 發汗되므로 약물을 선택함에 있어\n너무 세고 용량이 지나치게 많은 것은 적절하지 않다.\n북쪽 지방 혹은 겨울철에는 氣候가 寒冷하기 때문에\n인체의 腠理가 치밀해져 쉽게 땀이 나지 않아 약물을\n사용함에 세지 않으면 안되고 용량도 약간 많은 것이\n적당하다. ⑥ 만약 表邪가 다 풀리지 않은 상태에서\n또한 裏證이 나타나는 자는 일반적인 원칙으로는 반\n드시 먼저 解表한 이후에 裏를 치료해야 한다. 表와\n裏가 같이 심한 자는 마땅히 表와 裏를 동시에 풀어야\n한다. 만약 外邪가 이미 裏로 들어가서 혹은 麻疹이\n이미 빠져 나오고 혹은 瘡瘍이 이미 터져버리고 혹은\n虛證의 水腫에는 모두 사용해서는 안된다.\n\n第一節 **辛溫解表劑**\n\n# 麻黃湯\n\n(『**傷寒論**』)\n\n【**異名**】麻黃解肌湯(『深師方』,『外台秘要』卷1에 수\n재됨).\n\n【**組成**】麻黃去節 三兩(9 g) 桂枝 二兩(6 g) 杏仁去皮\n尖 七十個(6 g) 甘草炙 一兩(3 g)\n\n【**用法**】위의 4가지 약재에 물 9되를 넣고 煎湯하는\n데, 먼저 麻黃을 煎湯하여 2되로 줄어들면 위에 뜬 거\n품을 없애고, 나머지 3가지 약재를 넣고 2되반이 되도\n록 전탕하고 찌꺼기는 버리고 8홉을 따뜻하게 복용한\n다. 이불을 덮고 약간 땀이 나게 하며, 반드시 죽을 먹\n을 필요는 없다. 나머지는 桂枝湯의 복용법에 따라 몸\n을 조리한다.\n\n【**作用**】發汗解表, 宣肺平喘.\n\n【**適應症**】風寒束表, 肺氣失宣證. 惡寒發熱, 頭疼\n身痛, 無汗而喘, 舌苔薄白, 脈浮緊.\n\n【**病機分析**】風寒의 邪氣가 肌表에 침습하면 營衛\n가 맨 먼저 공격을 받는다. 寒邪는 收引하고 凝滯하\n는데 衛分을 손상시키면 衛陽이 막혀서 그 '溫分肉'의\n기능이 조절을 잃게 되고, 肌表는 정상적인 溫煦를 얻\n지 못하게 되므로 惡寒하고, 衛氣는 바깥을 향하여\n邪氣에 대항하는데 正氣와 邪氣가 서로 싸우면 發熱\n하며, 正氣와 邪氣가 頭部에서 싸우고 經氣의 순행이\n불리해지면 頭疼한다. 寒邪가 表部를 묶으면 腠理가\n닫히고 막혀서 衛氣의 '司開闔'하는 기능이 조절되지\n\n5",
+  "block_count": 60,
+  "avg_confidence": 1.0,
+  "status": "completed",
+  "error": null,
+  "extracted_at": "2026-03-30T08:32:33.977757Z",
+  "extracted_by": "Claude 3.5"
+}
