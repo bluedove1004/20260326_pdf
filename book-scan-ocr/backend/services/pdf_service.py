@@ -21,6 +21,54 @@ logger = logging.getLogger(__name__)
 class PDFService:
     """Converts PDF pages to PNG images with optional preprocessing."""
 
+    def split_pdf(
+        self,
+        pdf_path: Path,
+        output_dir: Path,
+        chunk_size: int = 200,
+    ) -> List[Tuple[str, Path]]:
+        """
+        Split a PDF into chunks of chunk_size pages.
+        
+        Returns:
+            List of (filename, absolute_path) for the split files.
+        """
+        from pypdf import PdfReader, PdfWriter
+        
+        logger.info("Splitting PDF '%s' into chunks of %d", pdf_path.name, chunk_size)
+        output_dir.mkdir(parents=True, exist_ok=True)
+        
+        reader = PdfReader(str(pdf_path))
+        total_pages = len(reader.pages)
+        base_name = pdf_path.stem # Filename without extension
+        
+        results = []
+        for start in range(0, total_pages, chunk_size):
+            end = min(start + chunk_size, total_pages)
+            writer = PdfWriter()
+            
+            for page_num in range(start, end):
+                writer.add_page(reader.pages[page_num])
+            
+            # Format: Original_1_to_200.pdf
+            # User example: "방제학-상_1_to_200.pdf", "401_to_.pdf" (for the last)
+            # If it's the last chunk and incomplete? 
+            # Request says "401_to_.pdf" for the last one in the example.
+            is_last = (end == total_pages)
+            if is_last and start + 1 != total_pages:
+                 chunk_filename = f"{base_name}_{start+1}_to_.pdf"
+            else:
+                 chunk_filename = f"{base_name}_{start+1}_to_{end}.pdf"
+            
+            output_path = output_dir / chunk_filename
+            with open(output_path, "wb") as f:
+                writer.write(f)
+            
+            results.append((chunk_filename, output_path))
+            logger.info("Created split: %s", chunk_filename)
+        
+        return results
+
     def convert_pdf_to_images(
         self,
         pdf_path: Path,

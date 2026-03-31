@@ -14,6 +14,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from config import settings
 from routers import documents as doc_router
 from routers import settings as settings_router
+from routers import pdf_tools as pdf_router
 from services.ocr_service import OCRService
 from services.llm_service import LLMService
 
@@ -80,6 +81,7 @@ app.add_middleware(
 # Register routers
 app.include_router(doc_router.router)
 app.include_router(settings_router.router)
+app.include_router(pdf_router.router)
 
 
 @app.get("/health")

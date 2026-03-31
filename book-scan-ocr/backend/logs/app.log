@@ -657,3 +657,82 @@ seq_number
 2026-03-31 11:23:11,421 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
 2026-03-31 11:23:11,425 [INFO] services.storage_service: Saved result for document d4976060-8b50-420e-aa43-6817adb1e2aa
 2026-03-31 11:23:11,425 [INFO] routers.documents: [d4976060-8b50-420e-aa43-6817adb1e2aa] Completed in 108.1s
+2026-03-31 13:33:09,294 [INFO] main: Shutting down
+2026-03-31 13:33:10,395 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 13:33:10,395 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 13:33:15,156 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 13:33:16,587 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 13:33:16,587 [INFO] main: OCR and LLM services ready
+2026-03-31 13:33:18,203 [INFO] main: Shutting down
+2026-03-31 13:33:19,169 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 13:33:19,169 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 13:33:23,999 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 13:33:25,483 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 13:33:25,483 [INFO] main: OCR and LLM services ready
+2026-03-31 13:33:32,445 [INFO] main: Shutting down
+2026-03-31 13:33:33,399 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 13:33:33,399 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 13:33:38,139 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 13:33:39,637 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 13:33:39,637 [INFO] main: OCR and LLM services ready
+2026-03-31 13:33:40,647 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 13:33:40,647 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 13:33:45,291 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 13:33:46,726 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 13:33:46,727 [INFO] main: OCR and LLM services ready
+2026-03-31 13:33:47,668 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 13:33:47,668 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 13:33:52,352 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 13:33:53,829 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 13:33:53,830 [INFO] main: OCR and LLM services ready
+2026-03-31 13:36:30,430 [INFO] services.pdf_service: Splitting PDF '방제학-상.pdf' into chunks of 200
+2026-03-31 13:36:31,003 [INFO] services.pdf_service: Created split: 방제학-상_1_to_200.pdf
+2026-03-31 13:36:31,237 [INFO] services.pdf_service: Created split: 방제학-상_201_to_400.pdf
+2026-03-31 13:36:31,587 [INFO] services.pdf_service: Created split: 방제학-상_401_to_600.pdf
+2026-03-31 13:36:31,821 [INFO] services.pdf_service: Created split: 방제학-상_601_to_800.pdf
+2026-03-31 13:36:31,861 [INFO] services.pdf_service: Created split: 방제학-상_801_to_.pdf
+2026-03-31 14:00:12,200 [INFO] services.storage_service: Created directories for document 262d38f5-0f25-4382-a1f7-000cef09230d
+2026-03-31 14:00:12,208 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] Converting PDF to images (dpi=300)
+2026-03-31 14:00:12,208 [INFO] services.pdf_service: Converting PDF '262d38f5-0f25-4382-a1f7-000cef09230d_방제학-상_801_to_.pdf' at 300 DPI
+2026-03-31 14:01:02,549 [INFO] services.pdf_service: PDF has 30 pages
+2026-03-31 14:01:27,610 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 1/30
+2026-03-31 14:02:31,935 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:02:32,019 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 2/30
+2026-03-31 14:03:49,269 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:03:49,275 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 3/30
+2026-03-31 14:04:42,617 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:04:42,622 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 4/30
+2026-03-31 14:05:38,637 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:05:38,641 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 5/30
+2026-03-31 14:06:39,729 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:06:39,734 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 6/30
+2026-03-31 14:07:37,220 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:07:37,224 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 7/30
+2026-03-31 14:08:36,836 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:08:36,870 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 8/30
+2026-03-31 14:09:35,751 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:09:35,756 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 9/30
+2026-03-31 14:10:21,933 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:10:21,937 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 10/30
+2026-03-31 14:11:17,666 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:11:17,669 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 11/30
+2026-03-31 14:12:14,679 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:12:14,683 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 12/30
+2026-03-31 14:13:16,411 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:13:16,413 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 13/30
+2026-03-31 14:14:18,406 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:14:18,409 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 14/30
+2026-03-31 14:15:14,914 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:15:14,917 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 15/30
+2026-03-31 14:16:12,504 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:16:12,507 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 16/30
+2026-03-31 14:17:00,730 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:17:00,736 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 17/30
+2026-03-31 14:17:56,347 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:17:56,352 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 18/30
+2026-03-31 14:18:54,259 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:18:54,262 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 19/30
+2026-03-31 14:19:52,963 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:19:52,965 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 20/30
+2026-03-31 14:20:53,411 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:20:53,414 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 21/30

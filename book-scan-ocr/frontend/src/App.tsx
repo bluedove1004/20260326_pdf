@@ -5,6 +5,7 @@ import { BrowserRouter, Link, Route, Routes, useLocation } from 'react-router-do
 import Dashboard from './components/Dashboard';
 import DocumentViewer from './components/DocumentViewer';
 import SettingsPanel from './components/SettingsPanel';
+import PdfSplitter from './components/PdfSplitter';
 
 const NavBar: React.FC = () => {
   const { pathname } = useLocation();
@@ -44,6 +45,11 @@ const NavBar: React.FC = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
           </svg>
         )}
+        {navLink('/pdf-split', 'PDF Splitter',
+          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758L6 18M6 18l-3-3m3 3h15m-3-15l-3 3m3-3H6m3 3L6 6m0 0l3-3m-3 3v12" />
+          </svg>
+        )}
         {navLink('/settings', 'Settings',
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -62,6 +68,7 @@ const App: React.FC = () => (
       <main className="flex-1 overflow-hidden">
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/pdf-split" element={<PdfSplitter />} />
           <Route path="/documents/:id" element={<DocumentViewer />} />
           <Route path="/settings" element={<SettingsPanel />} />
         </Routes>
