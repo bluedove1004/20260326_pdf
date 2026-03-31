@@ -158,6 +158,35 @@ class OCRService:
             logger.error("Failed to initialize EasyOCR: %s", e)
             self._initialized = False
 
+    def reinitialize(
+        self,
+        lang: str = "korean",
+        use_angle_cls: bool = True,
+        use_gpu: bool = False,
+    ) -> None:
+        """Re-create EasyOCR readers with new settings (e.g. GPU toggle)."""
+        logger.info("Re-initializing EasyOCR readers (gpu=%s)...", use_gpu)
+        import easyocr
+        try:
+            self._reader_ch = easyocr.Reader(
+                ["ch_tra", "en"],
+                gpu=use_gpu,
+                download_enabled=True,
+                verbose=False,
+            )
+            self._reader_ko = easyocr.Reader(
+                ["ko", "en"],
+                gpu=use_gpu,
+                download_enabled=True,
+                verbose=False,
+            )
+            self._initialized = True
+            logger.info("EasyOCR readers re-initialized successfully")
+        except Exception as e:
+            logger.error("Failed to re-initialize EasyOCR: %s", e)
+            # keep old readers if possible? or mark as not initialized
+            self._initialized = False
+
     # ------------------------------------------------------------------
     # Public
     # ------------------------------------------------------------------

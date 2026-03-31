@@ -1,0 +1,1695 @@
+{
+  "page_number": "812",
+  "seq_number": 28,
+  "width": 2480,
+  "height": 3248,
+  "text_blocks": [
+    {
+      "block_id": 1,
+      "text": "韓醫方劑學 各論",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 1
+    },
+    {
+      "block_id": 2,
+      "text": "해질 수도 있었다. 川連(盐水炒)·黃芩·黃柏·阿膠·",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 2
+    },
+    {
+      "block_id": 3,
+      "text": "生地·甘草·鷄子黃을 넣었다. 별도로 大黃3錢을 곱",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 3
+    },
+    {
+      "block_id": 4,
+      "text": "게 갈아, 鷄子 1개에 구멍을 낸 뒤 大黃 3分씩 넣고",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 4
+    },
+    {
+      "block_id": 5,
+      "text": "찜롱에 쪄서 매일 1개씩 복용했다.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 5
+    },
+    {
+      "block_id": 6,
+      "text": "두 번째 진료: 苦鹹寒 약물로 堅陰降火하여 亢陽",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 6
+    },
+    {
+      "block_id": 7,
+      "text": "을 억제한다. 心中의 燔灼하고 舌色이 光紅한 것이",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 7
+    },
+    {
+      "block_id": 8,
+      "text": "모두 3분의 1로 줄어 들었다. 그러나 오전에 몸에서",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 8
+    },
+    {
+      "block_id": 9,
+      "text": "화룻불 같이 열이 나는 증상은 아직 사라지지 않았다.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 9
+    },
+    {
+      "block_id": 10,
+      "text": "다행히 식욕이 크게 증가해 苦寒한 약물을 이어갈 수",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 10
+    },
+    {
+      "block_id": 11,
+      "text": "있었고 호전의 계기가 마련되기를 기대했다. 川黃連·",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 11
+    },
+    {
+      "block_id": 12,
+      "text": "阿膠·生地·元精石·黃芩·甘草·元蔘·蛤殼·鷄子黃",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 12
+    },
+    {
+      "block_id": 13,
+      "text": "을 넣었다.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 13
+    },
+    {
+      "block_id": 14,
+      "text": "세 번째 진료: 혀가 마르고 붉었으며舌乾紅, 배고",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 14
+    },
+    {
+      "block_id": 15,
+      "text": "픔을 느끼고 음식을 잘 먹었다知饑善納. 수분이 훼손",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 15
+    },
+    {
+      "block_id": 16,
+      "text": "되어 양기가 항진되고水虧陽亢, 토의 기운이 몸속에",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 16
+    },
+    {
+      "block_id": 17,
+      "text": "서 바짝 마른 상황이었다土燥于中. 鹹苦堅陰한 방제",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 17
+    },
+    {
+      "block_id": 18,
+      "text": "로 燔亢之勢는 쇠퇴시켰지만 아직 그 열기를 완전히",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 18
+    },
+    {
+      "block_id": 19,
+      "text": "제거하지는 못했다. 당시 날씨가 혹독하게 무더워 濕",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 19
+    },
+    {
+      "block_id": 20,
+      "text": "熱과 相火가 수증기처럼 피어오르고 있었기에 재차",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 20
+    },
+    {
+      "block_id": 21,
+      "text": "清中固下祛濕하는 治法을 사용하기로 했다. 鹹苦의",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 21
+    },
+    {
+      "block_id": 22,
+      "text": "경우에서 벗어나지 않았다. 洋蔘·石膏·知母·甘草·",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 22
+    },
+    {
+      "block_id": 23,
+      "text": "麥冬·川連·阿膠·生地·蛤殼·黃柏. 猪膽汁丸을 매",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 23
+    },
+    {
+      "block_id": 24,
+      "text": "일 아침 3錢씩 복용했다.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 24
+    },
+    {
+      "block_id": 25,
+      "text": "考察: 본 病證은 君相火亢, 腎陰受灼, 精關不固",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 25
+    },
+    {
+      "block_id": 26,
+      "text": "하여 陰精易泄하는 경우이다. 黃連阿膠湯을 운용해",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 26
+    },
+    {
+      "block_id": 27,
+      "text": "苦寒한 약물로 瀉心火하여 堅腎陰하고, 鹹寒한 약물",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 27
+    },
+    {
+      "block_id": 28,
+      "text": "로 滋腎水하여 制亢陽했다. 火清陰復하면 精關自固",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 28
+    },
+    {
+      "block_id": 29,
+      "text": "할 것이니 遺精之患은 절로 낫게 될 것이다.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 29
+    },
+    {
+      "block_id": 30,
+      "text": "3. 失眠「經方應用」: 여자. 여러해 동안 失眠이 있",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 30
+    },
+    {
+      "block_id": 31,
+      "text": "었으며, 증상은 머리는 어지럽고 눈 앞은 아찔하며頭",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 31
+    },
+    {
+      "block_id": 32,
+      "text": "量而眩, 얼굴에 열이 올랐다面部升火. 가슴이 답답한",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 32
+    },
+    {
+      "block_id": 33,
+      "text": "데心煩, 누우면 더 답답해져卧則更煩, 잠자리에 편안",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 33
+    },
+    {
+      "block_id": 34,
+      "text": "히 누워있지 못했다不能安于枕席. 입이 마르고 땀이",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 34
+    },
+    {
+      "block_id": 35,
+      "text": "잘 나며口乾易汗, 귀에서 소리가 울고耳鳴, 허리가",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 35
+    },
+    {
+      "block_id": 36,
+      "text": "쑤셨다腰酸. 혀는 붉고 설태가 조금 있으며舌質紅少",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 36
+    },
+    {
+      "block_id": 37,
+      "text": "苔, 맥박이 가늘고 빠르게 뛰었다脈細數. 腎水不足하",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 37
+    },
+    {
+      "block_id": 38,
+      "text": "여 陰虧于下하고, 心火上炎하여 陽亢于上한 결과,",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 38
+    },
+    {
+      "block_id": 39,
+      "text": "陽不入陰하기 때문이다. 黃連阿膠湯加味 처방을 사",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 39
+    },
+    {
+      "block_id": 40,
+      "text": "용했다. 黃連 6 g, 黃芩 9 g, 白芍 9 g, 上肉桂 1.5 g,",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 40
+    },
+    {
+      "block_id": 41,
+      "text": "甘草·龍骨·牡蠣 각 30 g, 浮小麥 30 g, 阿膠 9 g(녹",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 41
+    },
+    {
+      "block_id": 42,
+      "text": "여서 복용), 鷄子黃 1枚 섞어서 함께 복용한다.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 42
+    },
+    {
+      "block_id": 43,
+      "text": "考察: 이 病證은 陰虛火旺, 心腎不交에 의한 心",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 43
+    },
+    {
+      "block_id": 44,
+      "text": "煩不寐이다. 黃連阿膠湯加味 방제를 사용했다. 목적",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 44
+    },
+    {
+      "block_id": 45,
+      "text": "은 育陰清火하여 이미 휴손된 眞陰으로 하여금 滋補",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 45
+    },
+    {
+      "block_id": 46,
+      "text": "를 얻을 수 있도록 하고, 위쪽으로 치솟고 있는 虛陽",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 46
+    },
+    {
+      "block_id": 47,
+      "text": "으로 하여금 편안하게 자기 자리를 지킬 수 있게 하기",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 47
+    },
+    {
+      "block_id": 48,
+      "text": "위함이다. 이와 같이 하면 心腎交泰하여 절로 잠들 수",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 48
+    },
+    {
+      "block_id": 49,
+      "text": "있을 것이다.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 49
+    },
+    {
+      "block_id": 50,
+      "text": "4. 心悸(風濕性心肌炎)『山東中醫學院學報』",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 50
+    },
+    {
+      "block_id": 51,
+      "text": "(1978, 3:30): 남자, 13세, 학생. 초진: 환자는 心悸不",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 51
+    },
+    {
+      "block_id": 52,
+      "text": "安, 胸悶, 短氣, 乏力盜汗 증상이 있었다. 발열을 수",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 52
+    },
+    {
+      "block_id": 53,
+      "text": "반했으며 양측 膝關節 통증이 20여 일 동안 지속되고,",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 53
+    },
+    {
+      "block_id": 54,
+      "text": "不紅不腫했다. 舌紅·苔薄白而乾, 脈細數較有力했",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 54
+    },
+    {
+      "block_id": 55,
+      "text": "다. 신체 검사: 체온 37.5℃, 심장박동률心率 120회/",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 55
+    },
+    {
+      "block_id": 56,
+      "text": "분, 혈침·적혈구 침강 반응 속도 37 mm/h, 백혈구",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 56
+    },
+    {
+      "block_id": 57,
+      "text": "11×109/L, 中性 78%, 심장 수축기의 심음第一心音",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 57
+    },
+    {
+      "block_id": 58,
+      "text": "은 낮고 둔탁했다. 서양 의학 담당 의사는 風濕性心",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 58
+    },
+    {
+      "block_id": 59,
+      "text": "肌炎(rheumaticmyocarditis)으로 진단했고, 중의학 담",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 59
+    },
+    {
+      "block_id": 60,
+      "text": "당 의사는 陰虛火旺으로 인한 心悸로 진단했다. 滋陰",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 60
+    },
+    {
+      "block_id": 61,
+      "text": "清熱, 養心定驚의 방법으로 치료하는 것이 적절하다.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 61
+    },
+    {
+      "block_id": 62,
+      "text": "처방: 黃連 4.5 g, 黃芩 9 g, 白芍 9 g, 阿膠 9 g(뜨겁",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 62
+    },
+    {
+      "block_id": 63,
+      "text": "게 하여 녹임), 生地 12 g, 麥冬 9 g, 百合 15 g, 五味",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 63
+    },
+    {
+      "block_id": 64,
+      "text": "子 3 g, 子仁 30 g, 淮小麥 30 g. 3제를 물을 달여 복",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 64
+    },
+    {
+      "block_id": 65,
+      "text": "용한다. 두번째 진료: 체온 37.2℃, 심장박동 106회/",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 65
+    },
+    {
+      "block_id": 66,
+      "text": "분, 心慌·胸悶은 조금 줄었고, 舌脈은 전과 같았다.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 66
+    },
+    {
+      "block_id": 67,
+      "text": "위의 방제를 연달아 3제 물에 달여 복용했다. 세 번째",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 67
+    },
+    {
+      "block_id": 68,
+      "text": "진료: 체온36.7℃, 심장박동 92회／분. 관절통 또한",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 68
+    },
+    {
+      "block_id": 69,
+      "text": "감소했다. 食欲이 감퇴하고, 피곤 및 무기력이 두렷해",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 69
+    },
+    {
+      "block_id": 70,
+      "text": "812",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 70
+    }
+  ],
+  "full_text": "韓醫方劑學 各論\n\n해질 수도 있었다. 川連(盐水炒)·黃芩·黃柏·阿膠·\n生地·甘草·鷄子黃을 넣었다. 별도로 大黃3錢을 곱\n게 갈아, 鷄子 1개에 구멍을 낸 뒤 大黃 3分씩 넣고\n찜롱에 쪄서 매일 1개씩 복용했다.\n\n두 번째 진료: 苦鹹寒 약물로 堅陰降火하여 亢陽\n을 억제한다. 心中의 燔灼하고 舌色이 光紅한 것이\n모두 3분의 1로 줄어 들었다. 그러나 오전에 몸에서\n화룻불 같이 열이 나는 증상은 아직 사라지지 않았다.\n다행히 식욕이 크게 증가해 苦寒한 약물을 이어갈 수\n있었고 호전의 계기가 마련되기를 기대했다. 川黃連·\n阿膠·生地·元精石·黃芩·甘草·元蔘·蛤殼·鷄子黃\n을 넣었다.\n\n세 번째 진료: 혀가 마르고 붉었으며舌乾紅, 배고\n픔을 느끼고 음식을 잘 먹었다知饑善納. 수분이 훼손\n되어 양기가 항진되고水虧陽亢, 토의 기운이 몸속에\n서 바짝 마른 상황이었다土燥于中. 鹹苦堅陰한 방제\n로 燔亢之勢는 쇠퇴시켰지만 아직 그 열기를 완전히\n제거하지는 못했다. 당시 날씨가 혹독하게 무더워 濕\n熱과 相火가 수증기처럼 피어오르고 있었기에 재차\n清中固下祛濕하는 治法을 사용하기로 했다. 鹹苦의\n경우에서 벗어나지 않았다. 洋蔘·石膏·知母·甘草·\n麥冬·川連·阿膠·生地·蛤殼·黃柏. 猪膽汁丸을 매\n일 아침 3錢씩 복용했다.\n\n考察: 본 病證은 君相火亢, 腎陰受灼, 精關不固\n하여 陰精易泄하는 경우이다. 黃連阿膠湯을 운용해\n苦寒한 약물로 瀉心火하여 堅腎陰하고, 鹹寒한 약물\n로 滋腎水하여 制亢陽했다. 火清陰復하면 精關自固\n할 것이니 遺精之患은 절로 낫게 될 것이다.\n\n3. 失眠「經方應用」: 여자. 여러해 동안 失眠이 있\n었으며, 증상은 머리는 어지럽고 눈 앞은 아찔하며頭\n量而眩, 얼굴에 열이 올랐다面部升火. 가슴이 답답한\n데心煩, 누우면 더 답답해져卧則更煩, 잠자리에 편안\n히 누워있지 못했다不能安于枕席. 입이 마르고 땀이\n\n잘 나며口乾易汗, 귀에서 소리가 울고耳鳴, 허리가\n쑤셨다腰酸. 혀는 붉고 설태가 조금 있으며舌質紅少\n苔, 맥박이 가늘고 빠르게 뛰었다脈細數. 腎水不足하\n여 陰虧于下하고, 心火上炎하여 陽亢于上한 결과,\n陽不入陰하기 때문이다. 黃連阿膠湯加味 처방을 사\n용했다. 黃連 6 g, 黃芩 9 g, 白芍 9 g, 上肉桂 1.5 g,\n甘草·龍骨·牡蠣 각 30 g, 浮小麥 30 g, 阿膠 9 g(녹\n여서 복용), 鷄子黃 1枚 섞어서 함께 복용한다.\n\n考察: 이 病證은 陰虛火旺, 心腎不交에 의한 心\n煩不寐이다. 黃連阿膠湯加味 방제를 사용했다. 목적\n은 育陰清火하여 이미 휴손된 眞陰으로 하여금 滋補\n를 얻을 수 있도록 하고, 위쪽으로 치솟고 있는 虛陽\n으로 하여금 편안하게 자기 자리를 지킬 수 있게 하기\n위함이다. 이와 같이 하면 心腎交泰하여 절로 잠들 수\n있을 것이다.\n\n4. 心悸(風濕性心肌炎)『山東中醫學院學報』\n(1978, 3:30): 남자, 13세, 학생. 초진: 환자는 心悸不\n安, 胸悶, 短氣, 乏力盜汗 증상이 있었다. 발열을 수\n반했으며 양측 膝關節 통증이 20여 일 동안 지속되고,\n不紅不腫했다. 舌紅·苔薄白而乾, 脈細數較有力했\n다. 신체 검사: 체온 37.5℃, 심장박동률心率 120회/\n분, 혈침·적혈구 침강 반응 속도 37 mm/h, 백혈구\n11×109/L, 中性 78%, 심장 수축기의 심음第一心音\n은 낮고 둔탁했다. 서양 의학 담당 의사는 風濕性心\n肌炎(rheumaticmyocarditis)으로 진단했고, 중의학 담\n당 의사는 陰虛火旺으로 인한 心悸로 진단했다. 滋陰\n清熱, 養心定驚의 방법으로 치료하는 것이 적절하다.\n처방: 黃連 4.5 g, 黃芩 9 g, 白芍 9 g, 阿膠 9 g(뜨겁\n게 하여 녹임), 生地 12 g, 麥冬 9 g, 百合 15 g, 五味\n子 3 g, 子仁 30 g, 淮小麥 30 g. 3제를 물을 달여 복\n용한다. 두번째 진료: 체온 37.2℃, 심장박동 106회/\n분, 心慌·胸悶은 조금 줄었고, 舌脈은 전과 같았다.\n위의 방제를 연달아 3제 물에 달여 복용했다. 세 번째\n진료: 체온36.7℃, 심장박동 92회／분. 관절통 또한\n감소했다. 食欲이 감퇴하고, 피곤 및 무기력이 두렷해\n\n812",
+  "block_count": 70,
+  "avg_confidence": 1.0,
+  "status": "completed",
+  "error": null,
+  "extracted_at": "2026-03-31T05:28:36.092176Z",
+  "extracted_by": "Claude 4.6"
+}

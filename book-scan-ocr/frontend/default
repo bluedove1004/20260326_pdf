@@ -1,0 +1,102 @@
+# -------------------------
+# HTTP → HTTPS REDIRECT
+# -------------------------
+server {
+    listen 80;
+    server_name kmgpt.kiom.re.kr;
+    return 301 https://$host$request_uri;
+}
+
+# -------------------------
+# HTTPS + SSL + Proxy
+# -------------------------
+server {
+    listen 443 ssl http2;
+    server_name kmgpt.kiom.re.kr;
+
+    # SSL certificate files
+    ssl_certificate     /etc/nginx/ssl/kiom.pem;
+    ssl_certificate_key /etc/nginx/ssl/kiom.key;
+
+    # SSL settings
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_prefer_server_ciphers on;
+    ssl_ciphers HIGH:!aNULL:!MD5;
+
+    # /kmgpt-test/api/ 요청 처리
+    location /kmgpt-test/api/ {
+        proxy_pass http://127.0.0.1:8090/api/;
+        
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_redirect off;
+    }
+
+    # trailing slash 없는 API 요청을 자동으로 추가
+    location ~ ^/kmgpt-test/api/(.+[^/])(\?.*)?$ {
+        return 308 /kmgpt-test/api/$1/$is_args$args;
+    }
+
+    # /kmgpt-test 요청 처리 (Next.js with basePath)
+    location /ocr {
+        proxy_pass http://127.0.0.1:5173;
+        
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        
+        # WebSocket support
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        
+        proxy_redirect off;
+    }
+
+
+    # /kmgpt-test 요청 처리 (Next.js with basePath)
+    location /kmgpt-test {
+        proxy_pass http://127.0.0.1:8091;
+        
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        
+        # WebSocket support
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        
+        proxy_redirect off;
+    }
+
+    # /api/ 요청 처리
+    location /api/ {
+        proxy_pass http://127.0.0.1:8080/api/;
+        
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_redirect off;
+    }
+
+    # 나머지 모든 요청
+    location / {
+        proxy_pass http://127.0.0.1:3000;
+        
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        
+        # WebSocket support
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+    }
+}

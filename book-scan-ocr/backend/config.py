@@ -20,12 +20,13 @@ class Settings(BaseSettings):
     logs_dir: Path = Path(__file__).parent / "logs"
 
     # File limits
-    max_file_size_mb: int = 100
+    max_file_size_mb: int = 500
 
     # OCR settings
     default_dpi: int = 300
     ocr_language: str = "korean"
     use_gpu: bool = False
+    cuda_device_index: str = "1"
     use_angle_cls: bool = True
 
     # Preprocessing defaults

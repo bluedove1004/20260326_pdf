@@ -2,6 +2,7 @@
   "ocr_provider": "claude",
   "api_key": null,
   "dpi": 300,
+  "use_gpu": false,
   "preprocessing": {
     "grayscale": true,
     "binarization": false,

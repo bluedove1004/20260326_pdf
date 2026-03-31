@@ -11,6 +11,7 @@ const SettingsPanel: React.FC = () => {
   const [settings, setSettings] = useState<Partial<OCRSettings>>({
     ocr_provider: 'easyocr',
     dpi: 300,
+    use_gpu: false,
     preprocessing: { grayscale: true, binarization: false, denoise: false, deskew: false },
   });
   const [apiKey, setApiKey] = useState('');
@@ -223,6 +224,38 @@ const SettingsPanel: React.FC = () => {
                 );
               })}
             </div>
+          </div>
+        </div>
+
+        {/* Hardware Acceleration */}
+        <div className="bg-white border border-gray-100 rounded-3xl p-7 shadow-sm space-y-6">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <div className="w-1.5 h-1.5 rounded-full bg-indigo-500" />
+              <h2 className="text-sm font-bold text-gray-900 uppercase tracking-wider">하드웨어 가속</h2>
+            </div>
+            <div className="px-3 py-1 bg-indigo-50 text-indigo-600 text-[10px] font-black rounded-full border border-indigo-100 uppercase tracking-widest">
+              High Performance
+            </div>
+          </div>
+          
+          <div className="flex items-center justify-between p-5 bg-gradient-to-r from-gray-50/50 to-white border border-gray-100 rounded-2xl group transition-all hover:border-indigo-200">
+            <div className="space-y-1">
+              <span className="text-sm font-black text-gray-800 block">GPU 가속 사용</span>
+              <p className="text-[10px] text-gray-400 font-bold leading-tight">
+                활성화 시 서버의 <span className="text-indigo-600 font-black">1번 GPU (Index 1)</span>를 사용하여 <br/>
+                추출 속도를 대폭 향상시킵니다.
+              </p>
+            </div>
+            <button
+              id="toggle-gpu"
+              onClick={() => setSettings((p) => ({ ...p, use_gpu: !p.use_gpu }))}
+              className={`w-14 h-7.5 rounded-full transition-all duration-500 relative p-1.5
+              ${settings.use_gpu ? 'bg-indigo-600 shadow-lg shadow-indigo-200' : 'bg-gray-200'}`}
+            >
+              <div className={`w-4.5 h-4.5 bg-white rounded-full shadow-md transition-all duration-500 transform
+              ${settings.use_gpu ? 'translate-x-6.5 scale-110' : 'translate-x-0'}`} />
+            </button>
           </div>
         </div>
 

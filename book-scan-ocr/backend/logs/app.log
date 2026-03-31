@@ -736,3 +736,72 @@ seq_number
 2026-03-31 14:19:52,965 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 20/30
 2026-03-31 14:20:53,411 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
 2026-03-31 14:20:53,414 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 21/30
+2026-03-31 14:21:54,296 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:21:54,299 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 22/30
+2026-03-31 14:22:56,973 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:22:56,979 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 23/30
+2026-03-31 14:24:01,063 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:24:01,069 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 24/30
+2026-03-31 14:24:48,561 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:24:48,566 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 25/30
+2026-03-31 14:25:37,111 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:25:37,113 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 26/30
+2026-03-31 14:26:39,784 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:26:39,787 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 27/30
+2026-03-31 14:27:39,150 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:27:39,153 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 28/30
+2026-03-31 14:28:36,085 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:28:36,094 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 29/30
+2026-03-31 14:29:34,786 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:29:34,788 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] OCR page 30/30
+2026-03-31 14:29:56,118 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 14:29:56,125 [INFO] services.storage_service: Saved result for document 262d38f5-0f25-4382-a1f7-000cef09230d
+2026-03-31 14:29:56,125 [INFO] routers.documents: [262d38f5-0f25-4382-a1f7-000cef09230d] Completed in 1783.9s
+2026-03-31 15:03:59,757 [INFO] main: Shutting down
+2026-03-31 15:04:01,030 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 15:04:01,030 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 15:04:06,328 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 15:04:07,866 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 15:04:07,866 [INFO] main: OCR and LLM services ready
+2026-03-31 15:04:08,818 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 15:04:08,818 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 15:04:13,550 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 15:04:15,050 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 15:04:15,050 [INFO] main: OCR and LLM services ready
+2026-03-31 15:04:22,799 [INFO] main: Shutting down
+2026-03-31 15:04:23,749 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 15:04:23,749 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 15:04:28,595 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 15:04:30,103 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 15:04:30,103 [INFO] main: OCR and LLM services ready
+2026-03-31 15:05:57,573 [INFO] main: Shutting down
+2026-03-31 15:05:58,569 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 15:05:58,569 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 15:06:03,388 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 15:06:04,858 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 15:06:04,858 [INFO] main: OCR and LLM services ready
+2026-03-31 15:06:37,791 [INFO] main: Shutting down
+2026-03-31 15:06:38,788 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 15:06:38,788 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 15:06:43,676 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 15:06:45,146 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 15:06:45,146 [INFO] main: OCR and LLM services ready
+2026-03-31 15:06:55,212 [INFO] main: Shutting down
+2026-03-31 15:06:56,226 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 15:06:56,226 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 15:07:01,046 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 15:07:02,522 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 15:07:02,523 [INFO] main: OCR and LLM services ready
+2026-03-31 15:08:44,988 [INFO] routers.settings: Settings saved: provider=claude, use_gpu=False
+2026-03-31 16:42:34,388 [INFO] main: Shutting down
+2026-03-31 16:42:35,419 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 16:42:35,420 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 16:42:40,250 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 16:42:41,700 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 16:42:41,700 [INFO] main: OCR and LLM services ready
+2026-03-31 17:13:52,376 [INFO] main: Shutting down
+2026-03-31 17:13:53,445 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 17:13:53,446 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 17:13:58,166 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 17:13:59,691 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 17:13:59,691 [INFO] main: OCR and LLM services ready

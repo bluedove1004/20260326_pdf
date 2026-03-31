@@ -78,5 +78,6 @@ export interface OCRSettings {
   openai_api_key?: string;
   anthropic_api_key?: string;
   dpi: 150 | 200 | 300 | 400;
+  use_gpu: boolean;
   preprocessing: PreprocessingOptions;
 }

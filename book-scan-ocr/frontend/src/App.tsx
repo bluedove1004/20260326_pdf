@@ -61,20 +61,27 @@ const NavBar: React.FC = () => {
   );
 };
 
-const App: React.FC = () => (
-  <BrowserRouter>
-    <div className="h-screen bg-white flex flex-col font-sans selection:bg-brand-100 selection:text-brand-900">
-      <NavBar />
-      <main className="flex-1 overflow-hidden">
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/pdf-split" element={<PdfSplitter />} />
-          <Route path="/documents/:id" element={<DocumentViewer />} />
-          <Route path="/settings" element={<SettingsPanel />} />
-        </Routes>
-      </main>
-    </div>
-  </BrowserRouter>
-);
+const App: React.FC = () => {
+  const currentPath = window.location.pathname;
+  const safeBase = currentPath.startsWith('/ocr/') 
+    ? '/ocr/' 
+    : ((import.meta as any).env.BASE_URL || '/');
+
+  return (
+    <BrowserRouter basename={safeBase}>
+      <div className="h-screen bg-white flex flex-col font-sans selection:bg-brand-100 selection:text-brand-900">
+        <NavBar />
+        <main className="flex-1 overflow-hidden">
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/pdf-split" element={<PdfSplitter />} />
+            <Route path="/documents/:id" element={<DocumentViewer />} />
+            <Route path="/settings" element={<SettingsPanel />} />
+          </Routes>
+        </main>
+      </div>
+    </BrowserRouter>
+  );
+};
 
 export default App;

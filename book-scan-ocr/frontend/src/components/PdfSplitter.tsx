@@ -41,7 +41,18 @@ const PdfSplitter: React.FC = () => {
     formData.append('file', file);
 
     try {
-      const response = await fetch('/api/pdf/split', {
+      // Robust handle subpath deployment
+      const currentPath = window.location.pathname;
+      const baseUrl = currentPath.startsWith('/ocr/') 
+        ? '/ocr/' 
+        : ((import.meta as any).env.BASE_URL || '/');
+      
+      const safeBase = baseUrl.endsWith('/') ? baseUrl : baseUrl + '/';
+      const endpoint = `${safeBase}api/pdf/split`;
+      
+      console.log('Split request endpoint:', endpoint);
+
+      const response = await fetch(endpoint, {
         method: 'POST',
         body: formData,
       });

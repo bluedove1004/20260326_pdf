@@ -40,6 +40,7 @@ class OCRSettings(BaseModel):
     ocr_provider: OCRProvider = OCRProvider.easyocr
     api_key: Optional[str] = None
     dpi: DPIOption = DPIOption.high
+    use_gpu: bool = False
     preprocessing: PreprocessingOptions = PreprocessingOptions()
 
 
@@ -49,4 +50,5 @@ class APIKeyRequest(BaseModel):
     ocr_provider: OCRProvider
     api_key: Optional[str] = None
     dpi: Optional[int] = 300
+    use_gpu: Optional[bool] = False
     preprocessing: Optional[PreprocessingOptions] = None

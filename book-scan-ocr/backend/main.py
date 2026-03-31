@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import logging
 import logging.config
+import os
 from contextlib import asynccontextmanager
 from pathlib import Path
 from typing import AsyncGenerator
@@ -31,6 +32,15 @@ logging.basicConfig(
     ],
 )
 logger = logging.getLogger(__name__)
+
+
+# ──────────────────────────────────────────────
+# GPU selection logic
+# ──────────────────────────────────────────────
+
+if settings.use_gpu:
+    os.environ["CUDA_VISIBLE_DEVICES"] = settings.cuda_device_index
+    logger.info("Enforced GPU device index: %s", settings.cuda_device_index)
 
 
 # ──────────────────────────────────────────────
@@ -70,6 +80,8 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "http://127.0.0.1:5173",
+        "http://kmgpt.kiom.re.kr:5173",
+        "http://kmgpt.kiom.re.kr",
         "http://localhost:3000",
         "http://127.0.0.1:3000",
     ],

@@ -6,7 +6,7 @@ import json
 import logging
 from typing import Any, Dict
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Request
 
 from config import settings
 from models.settings import APIKeyRequest, OCRSettings
@@ -16,7 +16,7 @@ router = APIRouter(prefix="/api", tags=["settings"])
 
 
 @router.post("/settings")
-def save_settings(payload: APIKeyRequest) -> Dict[str, str]:
+def save_settings(request: Request, payload: APIKeyRequest) -> Dict[str, str]:
     """
     Persist OCR provider, API key, DPI, and preprocessing settings to disk.
 
@@ -27,6 +27,7 @@ def save_settings(payload: APIKeyRequest) -> Dict[str, str]:
         "ocr_provider": payload.ocr_provider.value,
         "api_key": payload.api_key,
         "dpi": payload.dpi or settings.default_dpi,
+        "use_gpu": payload.use_gpu if payload.use_gpu is not None else False,
         "preprocessing": payload.preprocessing.model_dump() if payload.preprocessing else {
             "grayscale": True,
             "binarization": False,
@@ -39,7 +40,17 @@ def save_settings(payload: APIKeyRequest) -> Dict[str, str]:
         settings.settings_file.write_text(
             json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8"
         )
-        logger.info("Settings saved: provider=%s", payload.ocr_provider.value)
+        
+        # Immediate re-initialization if EasyOCR provider is active
+        if payload.ocr_provider == "easyocr":
+            ocr_service = request.app.state.ocr_service
+            ocr_service.reinitialize(
+                use_gpu=data["use_gpu"],
+                lang=settings.ocr_language
+            )
+
+        logger.info("Settings saved: provider=%s, use_gpu=%s", 
+                    payload.ocr_provider.value, data["use_gpu"])
         return {"status": "ok", "message": "Settings saved successfully"}
     except Exception as e:
         logger.error("Failed to save settings: %s", e)

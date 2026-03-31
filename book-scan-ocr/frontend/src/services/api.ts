@@ -1,7 +1,7 @@
 /**
  * Centralised API client.
  * All HTTP calls go through this module.
- * Vite proxies /api → http://127.0.0.1:8000
+ * Dynamically handles base URL (e.g., /ocr/api if deployed behind /ocr)
  */
 
 import axios from 'axios';
@@ -14,7 +14,15 @@ import type {
   UploadResponse,
 } from '../types';
 
-const api = axios.create({ baseURL: '/api' });
+// Robustly detect base path (handles direct domain vs subpath /ocr/ deployment)
+const currentPath = window.location.pathname;
+const BASE_PATH = currentPath.startsWith('/ocr/') 
+  ? '/ocr/' 
+  : ((import.meta as any).env.BASE_URL || '/');
+
+const api = axios.create({ 
+  baseURL: `${BASE_PATH.endsWith('/') ? BASE_PATH : BASE_PATH + '/'}api` 
+});
 
 // ──────────────────────────────────────────────
 // Documents
@@ -27,7 +35,6 @@ export async function uploadDocument(
   const form = new FormData();
   form.append('file', file);
   
-  // Conditionally add session-stored LLM keys if they exist
   const openaiKey = sessionStorage.getItem('openai_api_key');
   const anthropicKey = sessionStorage.getItem('anthropic_api_key');
   if (openaiKey) form.append('openai_api_key', openaiKey);
@@ -64,7 +71,8 @@ export async function getPage(id: string, page: number): Promise<PageResult> {
 }
 
 export function getPageImageUrl(id: string, page: number): string {
-  return `/api/documents/${id}/pages/${page}/image`;
+  // Manual string concat needs to handle subpath
+  return `${api.defaults.baseURL}/documents/${id}/pages/${page}/image`;
 }
 
 export async function llmExtractPage(
@@ -77,7 +85,7 @@ export async function llmExtractPage(
 }
 
 export function getDownloadUrl(id: string): string {
-  return `/api/documents/${id}/download`;
+  return `${api.defaults.baseURL}/documents/${id}/download`;
 }
 
 // ──────────────────────────────────────────────
