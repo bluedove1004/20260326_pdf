@@ -40,7 +40,8 @@ class TextBlock(BaseModel):
 class PageResult(BaseModel):
     """OCR results for a single page."""
 
-    page_number: int
+    page_number: int | str
+    seq_number: int
     width: int
     height: int
     text_blocks: List[TextBlock] = []

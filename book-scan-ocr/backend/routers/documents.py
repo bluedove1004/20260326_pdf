@@ -99,14 +99,23 @@ async def _run_ocr_pipeline(
                 page_result = await llm_service.process_page_with_openai(
                     img_path, page_num, openai_api_key
                 )
+                model_label = "GPT-4o"
             elif meta.ocr_provider == "claude":
                 page_result = await llm_service.process_page_with_anthropic(
                     img_path, page_num, anthropic_api_key
                 )
+                model_label = "Claude 4.6"
             else:
                 page_result = ocr_service.process_page(img_path, page_num)
+                model_label = "EasyOCR"
             
-            page_dict = page_result.model_dump()
+            # Set metadata
+            page_result = page_result.model_copy(update={
+                "extracted_at": datetime.now(timezone.utc),
+                "extracted_by": model_label
+            })
+
+            page_dict = page_result.model_dump(mode='json')
             _storage.save_page_result(document_id, page_dict)
             page_results.append(page_result)
 
@@ -188,7 +197,7 @@ async def upload_document(
         total_pages=0,
         status=DocumentStatus.pending,
         created_at=datetime.now(tz=timezone.utc),
-        ocr_provider=_load_current_settings().get("ocr_provider", "paddleocr"),
+        ocr_provider=_load_current_settings().get("ocr_provider", "easyocr"),
     )
     _storage.save_meta(meta)
 
@@ -325,7 +334,7 @@ async def llm_extract_page(
     # Set metadata securely using model_copy
     page_result = page_result.model_copy(update={
         "extracted_at": datetime.now(timezone.utc),
-        "extracted_by": extract_req.model or ("GPT-4o" if extract_req.provider == "chatgpt" else "Claude 3.5")
+        "extracted_by": extract_req.model or ("GPT-4o" if extract_req.provider == "chatgpt" else "Claude 4.6")
     })
 
     # Set original dimensions if we have them
@@ -342,7 +351,7 @@ async def llm_extract_page(
     if result:
         # Update the specific page in the list
         for i, page in enumerate(result.pages):
-            if page.page_number == page_number:
+            if page.seq_number == page_number:
                 result.pages[i] = page_result
                 break
         else:

@@ -83,7 +83,7 @@ const DocumentViewer: React.FC = () => {
       return;
     }
     setExtractingLLM(true);
-    setExtractProvider(provider === 'chatgpt' ? 'ChatGPT 4o' : 'Claude 3.5');
+    setExtractProvider(provider === 'chatgpt' ? 'ChatGPT 4o' : 'Claude 4.6');
     try {
       const result = await llmExtractPage(id, nav.currentPage, {
         provider,
@@ -273,7 +273,7 @@ const DocumentViewer: React.FC = () => {
                 disabled={extractingLLM || loadingPage}
                 className="flex-1 btn-primary py-1.5 text-[10px] h-auto bg-amber-600 hover:bg-amber-500 border-amber-600"
               >
-                Claude 3.5
+                Claude 4.6
               </button>
             </div>
           </div>

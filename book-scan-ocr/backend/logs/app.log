@@ -436,3 +436,224 @@ AttributeError: module 'cv2' has no attribute 'cvtColor'
 2026-03-31 10:31:03,093 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
 2026-03-31 10:31:03,094 [INFO] main: OCR and LLM services ready
 2026-03-31 10:31:48,344 [INFO] routers.settings: Settings saved: provider=claude
+2026-03-31 10:57:45,060 [INFO] main: Shutting down
+2026-03-31 10:57:46,042 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 10:57:46,043 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 10:57:50,773 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 10:57:52,280 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 10:57:52,280 [INFO] main: OCR and LLM services ready
+2026-03-31 10:58:00,143 [INFO] main: Shutting down
+2026-03-31 10:58:01,100 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 10:58:01,100 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 10:58:05,844 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 10:58:07,392 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 10:58:07,392 [INFO] main: OCR and LLM services ready
+2026-03-31 10:58:20,395 [INFO] main: Shutting down
+2026-03-31 10:58:21,387 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 10:58:21,387 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 10:58:26,152 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 10:58:27,723 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 10:58:27,724 [INFO] main: OCR and LLM services ready
+2026-03-31 10:58:33,371 [INFO] main: Shutting down
+2026-03-31 10:58:34,310 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 10:58:34,311 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 10:58:38,940 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 10:58:40,495 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 10:58:40,495 [INFO] main: OCR and LLM services ready
+2026-03-31 11:01:03,894 [INFO] main: Shutting down
+2026-03-31 11:01:04,851 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 11:01:04,851 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 11:01:09,526 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 11:01:11,037 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 11:01:11,038 [INFO] main: OCR and LLM services ready
+2026-03-31 11:01:11,962 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 11:01:11,962 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 11:01:16,688 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 11:01:18,133 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 11:01:18,133 [INFO] main: OCR and LLM services ready
+2026-03-31 11:01:19,039 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 11:01:19,039 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 11:01:23,681 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 11:01:25,106 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 11:01:25,106 [INFO] main: OCR and LLM services ready
+2026-03-31 11:01:27,105 [ERROR] services.storage_service: Failed to load result for 2f6b2ac4-8f53-4761-96ce-3ca983b5d20d: 3 validation errors for DocumentResult
+pages.0.seq_number
+  Field required [type=missing, input_value={'page_number': 1, 'width...acted_by': 'Claude 3.5'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+pages.1.seq_number
+  Field required [type=missing, input_value={'page_number': 2, 'width...e, 'extracted_by': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+pages.2.seq_number
+  Field required [type=missing, input_value={'page_number': 3, 'width...e, 'extracted_by': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+2026-03-31 11:01:27,119 [ERROR] services.storage_service: Failed to load result for 2f6b2ac4-8f53-4761-96ce-3ca983b5d20d: 3 validation errors for DocumentResult
+pages.0.seq_number
+  Field required [type=missing, input_value={'page_number': 1, 'width...acted_by': 'Claude 3.5'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+pages.1.seq_number
+  Field required [type=missing, input_value={'page_number': 2, 'width...e, 'extracted_by': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+pages.2.seq_number
+  Field required [type=missing, input_value={'page_number': 3, 'width...e, 'extracted_by': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+2026-03-31 11:01:27,854 [ERROR] services.storage_service: Failed to load result for 0843efb1-b481-408f-8c26-e2338ee31ee7: 2 validation errors for DocumentResult
+pages.0.seq_number
+  Field required [type=missing, input_value={'page_number': 1, 'width...e, 'extracted_by': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+pages.1.seq_number
+  Field required [type=missing, input_value={'page_number': 2, 'width...e, 'extracted_by': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+2026-03-31 11:01:27,858 [ERROR] services.storage_service: Failed to load result for 0843efb1-b481-408f-8c26-e2338ee31ee7: 2 validation errors for DocumentResult
+pages.0.seq_number
+  Field required [type=missing, input_value={'page_number': 1, 'width...e, 'extracted_by': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+pages.1.seq_number
+  Field required [type=missing, input_value={'page_number': 2, 'width...e, 'extracted_by': None}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+2026-03-31 11:03:05,823 [INFO] main: Shutting down
+2026-03-31 11:03:06,784 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 11:03:06,784 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 11:03:11,553 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 11:03:13,095 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 11:03:13,095 [INFO] main: OCR and LLM services ready
+2026-03-31 11:03:14,042 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 11:03:14,042 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 11:03:18,973 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 11:03:20,502 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 11:03:20,502 [INFO] main: OCR and LLM services ready
+2026-03-31 11:03:43,148 [INFO] services.storage_service: Created directories for document e0a7ea3f-a5fb-45a3-ac40-13abe2fda2ad
+2026-03-31 11:03:43,151 [INFO] routers.documents: [e0a7ea3f-a5fb-45a3-ac40-13abe2fda2ad] Converting PDF to images (dpi=300)
+2026-03-31 11:03:43,151 [INFO] services.pdf_service: Converting PDF 'e0a7ea3f-a5fb-45a3-ac40-13abe2fda2ad_방제학_상_5_to_7.pdf' at 300 DPI
+2026-03-31 11:03:48,334 [INFO] services.pdf_service: PDF has 3 pages
+2026-03-31 11:03:50,863 [INFO] routers.documents: [e0a7ea3f-a5fb-45a3-ac40-13abe2fda2ad] OCR page 1/3
+2026-03-31 11:03:51,758 [ERROR] services.llm_service: Anthropic OCR failed on page 1: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+2026-03-31 11:03:51,759 [ERROR] routers.documents: [e0a7ea3f-a5fb-45a3-ac40-13abe2fda2ad] Pipeline failed: 1 validation error for PageResult
+seq_number
+  Field required [type=missing, input_value={'page_number': 1, 'width...be explicitly omitted"'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+Traceback (most recent call last):
+  File "/Users/bluedove/80_claude/20260312_pdf/book-scan-ocr/backend/routers/documents.py", line 103, in _run_ocr_pipeline
+    page_result = await llm_service.process_page_with_anthropic(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bluedove/80_claude/20260312_pdf/book-scan-ocr/backend/services/llm_service.py", line 144, in process_page_with_anthropic
+    return PageResult(
+           ^^^^^^^^^^^
+  File "/Users/bluedove/80_claude/20260312_pdf/book-scan-ocr/backend/venv/lib/python3.12/site-packages/pydantic/main.py", line 193, in __init__
+    self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for PageResult
+seq_number
+  Field required [type=missing, input_value={'page_number': 1, 'width...be explicitly omitted"'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+2026-03-31 11:04:23,024 [INFO] routers.settings: Settings saved: provider=claude
+2026-03-31 11:04:38,422 [INFO] services.storage_service: Created directories for document e8ac320f-8253-436d-87f3-4518a1a36907
+2026-03-31 11:04:38,425 [INFO] routers.documents: [e8ac320f-8253-436d-87f3-4518a1a36907] Converting PDF to images (dpi=300)
+2026-03-31 11:04:38,425 [INFO] services.pdf_service: Converting PDF 'e8ac320f-8253-436d-87f3-4518a1a36907_방제학_상_5_to_7.pdf' at 300 DPI
+2026-03-31 11:04:43,517 [INFO] services.pdf_service: PDF has 3 pages
+2026-03-31 11:04:45,986 [INFO] routers.documents: [e8ac320f-8253-436d-87f3-4518a1a36907] OCR page 1/3
+2026-03-31 11:05:32,325 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 11:05:32,383 [ERROR] services.llm_service: Anthropic OCR failed on page 1: name 're' is not defined
+2026-03-31 11:05:32,383 [ERROR] routers.documents: [e8ac320f-8253-436d-87f3-4518a1a36907] Pipeline failed: 1 validation error for PageResult
+seq_number
+  Field required [type=missing, input_value={'page_number': 1, 'width...me 're' is not defined"}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+Traceback (most recent call last):
+  File "/Users/bluedove/80_claude/20260312_pdf/book-scan-ocr/backend/routers/documents.py", line 103, in _run_ocr_pipeline
+    page_result = await llm_service.process_page_with_anthropic(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bluedove/80_claude/20260312_pdf/book-scan-ocr/backend/services/llm_service.py", line 144, in process_page_with_anthropic
+    return PageResult(
+           ^^^^^^^^^^^
+  File "/Users/bluedove/80_claude/20260312_pdf/book-scan-ocr/backend/venv/lib/python3.12/site-packages/pydantic/main.py", line 193, in __init__
+    self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for PageResult
+seq_number
+  Field required [type=missing, input_value={'page_number': 1, 'width...me 're' is not defined"}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+2026-03-31 11:07:14,563 [INFO] main: Shutting down
+2026-03-31 11:07:15,541 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 11:07:15,541 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 11:07:20,227 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 11:07:21,850 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 11:07:21,850 [INFO] main: OCR and LLM services ready
+2026-03-31 11:07:32,016 [INFO] main: Shutting down
+2026-03-31 11:07:32,998 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 11:07:32,998 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 11:07:37,765 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 11:07:39,218 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 11:07:39,218 [INFO] main: OCR and LLM services ready
+2026-03-31 11:09:20,703 [INFO] services.storage_service: Created directories for document 9ac16d6f-e9b9-4aa2-a3b8-f02fc850f50e
+2026-03-31 11:09:20,707 [INFO] routers.documents: [9ac16d6f-e9b9-4aa2-a3b8-f02fc850f50e] Converting PDF to images (dpi=300)
+2026-03-31 11:09:20,707 [INFO] services.pdf_service: Converting PDF '9ac16d6f-e9b9-4aa2-a3b8-f02fc850f50e_방제학_상_5_to_7.pdf' at 300 DPI
+2026-03-31 11:09:25,752 [INFO] services.pdf_service: PDF has 3 pages
+2026-03-31 11:09:28,217 [INFO] routers.documents: [9ac16d6f-e9b9-4aa2-a3b8-f02fc850f50e] OCR page 1/3
+2026-03-31 11:10:14,485 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 11:10:14,545 [ERROR] services.llm_service: Anthropic OCR failed on page 1: name 're' is not defined
+2026-03-31 11:10:14,545 [ERROR] routers.documents: [9ac16d6f-e9b9-4aa2-a3b8-f02fc850f50e] Pipeline failed: 1 validation error for PageResult
+seq_number
+  Field required [type=missing, input_value={'page_number': 1, 'width...me 're' is not defined"}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+Traceback (most recent call last):
+  File "/Users/bluedove/80_claude/20260312_pdf/book-scan-ocr/backend/routers/documents.py", line 103, in _run_ocr_pipeline
+    page_result = await llm_service.process_page_with_anthropic(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bluedove/80_claude/20260312_pdf/book-scan-ocr/backend/services/llm_service.py", line 144, in process_page_with_anthropic
+    return PageResult(
+           ^^^^^^^^^^^
+  File "/Users/bluedove/80_claude/20260312_pdf/book-scan-ocr/backend/venv/lib/python3.12/site-packages/pydantic/main.py", line 193, in __init__
+    self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for PageResult
+seq_number
+  Field required [type=missing, input_value={'page_number': 1, 'width...me 're' is not defined"}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+2026-03-31 11:11:11,929 [INFO] main: Shutting down
+2026-03-31 11:11:13,167 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 11:11:13,167 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 11:11:18,393 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 11:11:19,976 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 11:11:19,976 [INFO] main: OCR and LLM services ready
+2026-03-31 11:11:20,984 [INFO] main: Shutting down
+2026-03-31 11:11:21,968 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 11:11:21,968 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 11:11:27,003 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 11:11:28,548 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 11:11:28,548 [INFO] main: OCR and LLM services ready
+2026-03-31 11:11:40,025 [INFO] main: Shutting down
+2026-03-31 11:11:41,012 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 11:11:41,012 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 11:11:45,751 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 11:11:47,313 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 11:11:47,314 [INFO] main: OCR and LLM services ready
+2026-03-31 11:12:47,919 [INFO] services.storage_service: Created directories for document a3c5687a-a9b2-487b-8a9c-54b84f924306
+2026-03-31 11:12:47,923 [INFO] routers.documents: [a3c5687a-a9b2-487b-8a9c-54b84f924306] Converting PDF to images (dpi=300)
+2026-03-31 11:12:47,923 [INFO] services.pdf_service: Converting PDF 'a3c5687a-a9b2-487b-8a9c-54b84f924306_방제학_상_5_to_7.pdf' at 300 DPI
+2026-03-31 11:12:52,994 [INFO] services.pdf_service: PDF has 3 pages
+2026-03-31 11:12:55,486 [INFO] routers.documents: [a3c5687a-a9b2-487b-8a9c-54b84f924306] OCR page 1/3
+2026-03-31 11:13:41,989 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 11:13:42,056 [INFO] routers.documents: [a3c5687a-a9b2-487b-8a9c-54b84f924306] OCR page 2/3
+2026-03-31 11:14:37,019 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 11:14:37,023 [INFO] routers.documents: [a3c5687a-a9b2-487b-8a9c-54b84f924306] OCR page 3/3
+2026-03-31 11:15:32,128 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 11:15:32,134 [INFO] services.storage_service: Saved result for document a3c5687a-a9b2-487b-8a9c-54b84f924306
+2026-03-31 11:15:32,135 [INFO] routers.documents: [a3c5687a-a9b2-487b-8a9c-54b84f924306] Completed in 164.2s
+2026-03-31 11:17:32,864 [INFO] main: Shutting down
+2026-03-31 11:17:33,835 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 11:17:33,835 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 11:17:38,541 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 11:17:40,071 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 11:17:40,071 [INFO] main: OCR and LLM services ready
+2026-03-31 11:20:48,653 [INFO] main: Shutting down
+2026-03-31 11:20:49,667 [INFO] main: Starting up — initialising OCR service...
+2026-03-31 11:20:49,668 [INFO] services.ocr_service: Initializing EasyOCR dual-reader (gpu=False)...
+2026-03-31 11:20:54,624 [INFO] services.ocr_service: EasyOCR reader_A [ch_tra, en] ready
+2026-03-31 11:20:56,140 [INFO] services.ocr_service: EasyOCR reader_B [ko, en] ready
+2026-03-31 11:20:56,140 [INFO] main: OCR and LLM services ready
+2026-03-31 11:21:23,323 [INFO] services.storage_service: Created directories for document d4976060-8b50-420e-aa43-6817adb1e2aa
+2026-03-31 11:21:23,326 [INFO] routers.documents: [d4976060-8b50-420e-aa43-6817adb1e2aa] Converting PDF to images (dpi=300)
+2026-03-31 11:21:23,326 [INFO] services.pdf_service: Converting PDF 'd4976060-8b50-420e-aa43-6817adb1e2aa_방제학-상_1_to_2.pdf' at 300 DPI
+2026-03-31 11:21:26,841 [INFO] services.pdf_service: PDF has 2 pages
+2026-03-31 11:21:28,560 [INFO] routers.documents: [d4976060-8b50-420e-aa43-6817adb1e2aa] OCR page 1/2
+2026-03-31 11:22:10,456 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 11:22:10,518 [INFO] routers.documents: [d4976060-8b50-420e-aa43-6817adb1e2aa] OCR page 2/2
+2026-03-31 11:23:11,421 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-31 11:23:11,425 [INFO] services.storage_service: Saved result for document d4976060-8b50-420e-aa43-6817adb1e2aa
+2026-03-31 11:23:11,425 [INFO] routers.documents: [d4976060-8b50-420e-aa43-6817adb1e2aa] Completed in 108.1s

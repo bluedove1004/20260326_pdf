@@ -165,7 +165,7 @@ class OCRService:
     def process_page(self, image_path: Path, page_number: int) -> PageResult:
         if not self._initialized:
             return PageResult(
-                page_number=page_number, width=0, height=0,
+                page_number=page_number, seq_number=page_number, width=0, height=0,
                 status="failed", error="EasyOCR not initialized",
             )
         try:
@@ -184,7 +184,7 @@ class OCRService:
         except Exception as e:
             logger.error("OCR failed on page %d (%s): %s", page_number, image_path, e)
             return PageResult(
-                page_number=page_number, width=0, height=0,
+                page_number=page_number, seq_number=page_number, width=0, height=0,
                 status="failed", error=str(e),
             )
 
@@ -301,6 +301,43 @@ class OCRService:
     # Parse raw EasyOCR output → PageResult
     # ------------------------------------------------------------------
 
+    def _detect_printed_page_number(self, blocks: List[TextBlock], height: int) -> Optional[str]:
+        """Look for a printed page number (top/bottom 12% of the page)."""
+        if not blocks:
+            return None
+
+        candidates = []
+        margin = height * 0.12  # Top/Bottom 12%
+        
+        # Regex for common page number formats: "123", "- 4 -", "Page 5", "iv"
+        # Matches 1-6 digits, or roman numerals, maybe with prefixes/suffixes
+        page_re = re.compile(r"^(?:(?:page|p\.)\s*)?([0-9ivx-]{1,6})(?:\s*[-])?$", re.I)
+
+        for b in blocks:
+            y = b.bbox.top_left[1]
+            # Is it in the header or footer area?
+            if y < margin or y > (height - margin):
+                txt = b.text.strip()
+                match = page_re.search(txt)
+                if match:
+                    val = match.group(1).strip()
+                    if val:
+                        # Weight candidates: prefer ones at the very edge or centered horizontally
+                        # But for now, we'll take the most 'likely' numeric one
+                        candidates.append((y, val, len(val)))
+
+        if not candidates:
+            return None
+
+        # Prefer candidates at the bottom first (more common for books), then top
+        # Sort by distance from nearest horizontal edge
+        candidates.sort(key=lambda x: min(x[0], abs(height - x[0])))
+        return candidates[0][1]
+
+    # ------------------------------------------------------------------
+    # Parse raw EasyOCR output → PageResult
+    # ------------------------------------------------------------------
+
     def _parse_result(
         self,
         raw_results: List[Any],
@@ -331,6 +368,11 @@ class OCRService:
             except Exception as e:
                 logger.warning("Skipping malformed OCR line on page %d: %s", page_number, e)
 
+        # Detect printed page number from detected blocks
+        printed_page_val = self._detect_printed_page_number(all_blocks, height)
+        # Use detected value if it seems like a number/roman, else use "n/a"
+        effective_page_num = printed_page_val if printed_page_val else "n/a"
+
         sorted_blocks = self._sort_blocks(all_blocks, width)
         for idx, block in enumerate(sorted_blocks, start=1):
             block.line_number = idx
@@ -342,7 +384,8 @@ class OCRService:
         )
 
         return PageResult(
-            page_number=page_number,
+            page_number=effective_page_num,
+            seq_number=page_number,
             width=width,
             height=height,
             text_blocks=sorted_blocks,

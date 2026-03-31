@@ -100,13 +100,13 @@ class StorageService:
 
     def save_page_result(self, document_id: str, page_data: dict) -> None:
         """Save a single page's OCR result as JSON."""
-        page_number = page_data["page_number"]
-        path = self._pages_dir(document_id) / f"page_{page_number:04d}.json"
+        seq_number = page_data["seq_number"]
+        path = self._pages_dir(document_id) / f"page_{seq_number:04d}.json"
         path.write_text(json.dumps(page_data, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    def load_page_result(self, document_id: str, page_number: int) -> Optional[dict]:
-        """Load a specific page's OCR result."""
-        path = self._pages_dir(document_id) / f"page_{page_number:04d}.json"
+    def load_page_result(self, document_id: str, seq_number: int) -> Optional[dict]:
+        """Load a specific page's OCR result using its physical sequence number."""
+        path = self._pages_dir(document_id) / f"page_{seq_number:04d}.json"
         if not path.exists():
             return None
         try:
@@ -119,9 +119,9 @@ class StorageService:
     # Images
     # ------------------------------------------------------------------
 
-    def get_image_path(self, document_id: str, page_number: int) -> Optional[Path]:
+    def get_image_path(self, document_id: str, seq_number: int) -> Optional[Path]:
         """Return the path to the page image file if it exists."""
-        path = self._images_dir(document_id) / f"page_{page_number:04d}.png"
+        path = self._images_dir(document_id) / f"page_{seq_number:04d}.png"
         return path if path.exists() else None
 
     def images_dir(self, document_id: str) -> Path:

@@ -4,8 +4,9 @@ from __future__ import annotations
 
 import base64
 import logging
+import re
 from pathlib import Path
-from typing import Optional, List
+from typing import Optional, List, Union
 
 from models.document import BBoxCoords, PageResult, TextBlock
 
@@ -24,7 +25,7 @@ class LLMService:
     async def process_page_with_openai(
         self, 
         image_path: Path, 
-        page_number: int, 
+        page_number: int | str, 
         api_key: str,
         model: str = "gpt-4o"
     ) -> PageResult:
@@ -48,7 +49,7 @@ class LLMService:
                         "role": "system",
                         "content": (
                             "You are a specialized OCR engine. Your task is to extract EVERY SINGLE WORD from the provided image. "
-                            "STRICT RULE 1: Extract text from the very top to the very bottom of the page in original reading order. "
+                            "STRICT RULE 1: Extract text from the very top to the very bottom of the page, INCLUDING PAGE NUMBERS, HEADERS, AND FOOTERS. "
                             "STRICT RULE 2: Transcribe every character (including Korean and Hanja) exactly as it appears. Do not 'fix', 'correct', or 'modernize' characters. "
                             "STRICT RULE 3: Do not use your internal knowledge to predict or complete the text. Only extract what you VISUALLY see. "
                             "STRICT RULE 4: Maintain the visual layout and structure (especially columns). Do not merge blocks if they are separate. "
@@ -76,16 +77,16 @@ class LLMService:
             return self._create_page_result(page_number, full_text, model, width, height)
             
         except Exception as e:
-            logger.error("OpenAI OCR failed on page %d: %s", page_number, e)
+            logger.error("OpenAI OCR failed on page %s: %s", page_number, e)
             return PageResult(
-                page_number=page_number, width=0, height=0,
+                page_number=page_number, seq_number=page_number, width=0, height=0,
                 status="failed", error=str(e),
             )
 
     async def process_page_with_anthropic(
         self, 
         image_path: Path, 
-        page_number: int, 
+        page_number: int | str, 
         api_key: str,
         model: str = "claude-sonnet-4-6"
     ) -> PageResult:
@@ -107,7 +108,7 @@ class LLMService:
                 max_tokens=4096,
                 system=(
                     "You are a specialized OCR engine. Your task is to extract EVERY SINGLE WORD from the provided image. "
-                    "STRICT RULE 1: Extract text from the very top to the very bottom of the page in original reading order. "
+                    "STRICT RULE 1: Extract text from the very top to the very bottom of the page, INCLUDING PAGE NUMBERS, HEADERS, AND FOOTERS. "
                     "STRICT RULE 2: Transcribe every character (including Korean and Hanja) exactly as it appears. Do not 'fix', 'correct', or 'modernize' characters. "
                     "STRICT RULE 3: Do not use your internal knowledge to predict or complete the text. Only extract what you VISUALLY see. "
                     "STRICT RULE 4: Maintain the visual layout and structure (especially columns). Do not merge blocks if they are separate. "
@@ -140,26 +141,47 @@ class LLMService:
             return self._create_page_result(page_number, full_text.strip(), model, width, height)
             
         except Exception as e:
-            logger.error("Anthropic OCR failed on page %d: %s", page_number, e)
+            logger.error("Anthropic OCR failed on page %s: %s", page_number, e)
             return PageResult(
-                page_number=page_number, width=0, height=0,
+                page_number=page_number, seq_number=page_number, width=0, height=0,
                 status="failed", error=str(e),
             )
 
-    def _create_page_result(self, page_number: int, full_text: str, model_name: str, width: int = 0, height: int = 0) -> PageResult:
-        """Create a PageResult from LLM extracted text. 
-        Note: LLMs usually don't give precise bounding boxes for every word unless specifically prompted and parsed.
-        For now, we just return the full text as one block or split by lines.
-        """
+    def _detect_page_number_from_text(self, lines: List[str], fallback: int | str) -> int | str:
+        """Analyze the first/last few lines for a page number pattern."""
+        if not lines:
+            return fallback
+
+        # Check first 2 and last 2 lines
+        candidates = lines[:2] + lines[-2:]
+        page_re = re.compile(r"^(?:(?:page|p\.)\s*)?([0-9ivx-]{1,6})(?:\s*[-])?$", re.I)
+
+        for line in candidates:
+            txt = line.strip()
+            # If line is short and matches page number pattern
+            if 0 < len(txt) <= 12:
+                match = page_re.search(txt)
+                if match:
+                    val = match.group(1).strip()
+                    if val:
+                        return val
+        
+        return fallback
+
+    def _create_page_result(self, page_number: int | str, full_text: str, model_name: str, width: int = 0, height: int = 0) -> PageResult:
+        """Create a PageResult from LLM extracted text."""
         lines = full_text.split('\n')
+        clean_lines = [l.strip() for l in lines if l.strip()]
+        
+        # Try to detect actual printed page number from the text, otherwise use "n/a"
+        detected_page = self._detect_page_number_from_text(clean_lines, "n/a")
+        
         text_blocks = []
-        for i, line in enumerate(lines):
-            if not line.strip():
-                continue
+        for i, line in enumerate(clean_lines):
             text_blocks.append(TextBlock(
                 block_id=i+1,
-                text=line.strip(),
-                confidence=1.0, # LLM results don't give confidence scores in this way
+                text=line,
+                confidence=1.0,
                 bbox=BBoxCoords(
                     top_left=[0,0], top_right=[0,0], bottom_right=[0,0], bottom_left=[0,0]
                 ),
@@ -167,7 +189,8 @@ class LLMService:
             ))
             
         return PageResult(
-            page_number=page_number,
+            page_number=detected_page,
+            seq_number=page_number,
             width=width,
             height=height,
             text_blocks=text_blocks,

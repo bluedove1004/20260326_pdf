@@ -91,10 +91,7 @@ const SettingsPanel: React.FC = () => {
                     ? 'border-brand-500 bg-brand-50 text-brand-600 shadow-md shadow-brand-100/50'
                     : 'border-gray-100 bg-gray-50/50 text-gray-400 hover:border-gray-200 hover:text-gray-600'}`}
               >
-                {provider === 'easyocr' ? 'EasyOCR' :
-                  provider === 'google_vision' ? 'Google Vision' :
-                    provider === 'azure' ? 'Azure OCR' :
-                      provider === 'chatgpt' ? 'ChatGPT 4o' : 'Claude 3.5'}
+                {provider === 'easyocr' ? 'EasyOCR' : provider === 'google_vision' ? 'Google Vision' : provider === 'azure' ? 'Azure AI' : provider === 'chatgpt' ? 'ChatGPT 4o' : 'Claude 4.6'}
               </button>
             ))}
           </div>

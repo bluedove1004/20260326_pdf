@@ -16,7 +16,8 @@ export interface TextBlock {
 }
 
 export interface PageResult {
-  page_number: number;
+  page_number: number | string;
+  seq_number: number;
   width: number;
   height: number;
   text_blocks: TextBlock[];
