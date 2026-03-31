@@ -4,3 +4,7 @@ __pycache__/
 venv/lib/python3.12/site-packages/cv2/cv2.abi3.so
 node_modules/
 *.pdf
+logs/
+*.log
+.DS_Store
+.env
