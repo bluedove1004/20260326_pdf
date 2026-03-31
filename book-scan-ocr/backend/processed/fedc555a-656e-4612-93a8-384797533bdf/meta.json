@@ -2,11 +2,11 @@
   "document_id": "fedc555a-656e-4612-93a8-384797533bdf",
   "filename": "방제학-상_1_to_2.pdf",
   "total_pages": 2,
-  "status": "processing",
-  "processed_pages": 1,
-  "progress_percent": 50.0,
+  "status": "completed",
+  "processed_pages": 2,
+  "progress_percent": 100.0,
   "created_at": "2026-03-31T12:22:06.071249Z",
-  "completed_at": null,
+  "completed_at": "2026-03-31T12:23:50.727579Z",
   "error": null,
   "ocr_provider": "claude"
 }
