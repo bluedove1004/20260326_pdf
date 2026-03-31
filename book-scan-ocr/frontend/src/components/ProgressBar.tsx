@@ -14,35 +14,38 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ status, filename }) => {
   const isFailed = status.status === 'failed';
 
   return (
-    <div className="glass-card p-6 animate-fade-in">
-      <div className="flex items-center justify-between mb-3">
+    <div className="bg-white/80 border border-gray-100 rounded-2xl p-6 shadow-sm animate-fade-in backdrop-blur-sm">
+      <div className="flex items-center justify-between mb-4">
         <div>
-          <p className="text-sm font-medium text-gray-300">
-            {isDone ? '처리 완료' : isFailed ? '처리 실패' : 'OCR 처리 중…'}
-          </p>
-          {filename && <p className="text-xs text-gray-500 mt-0.5 truncate max-w-xs">{filename}</p>}
+          <h3 className="text-sm font-bold text-gray-900">
+            {isDone ? '처리 완료' : isFailed ? '처리 실패' : 'OCR 분석 진행 중…'}
+          </h3>
+          {filename && <p className="text-[10px] text-gray-400 font-bold uppercase tracking-wider mt-1 truncate max-w-[200px]">{filename}</p>}
         </div>
-        <span className={`text-2xl font-bold tabular-nums ${isDone ? 'text-emerald-400' : isFailed ? 'text-red-400' : 'text-brand-400'}`}>
+        <span className={`text-2xl font-black tabular-nums ${isDone ? 'text-emerald-600' : isFailed ? 'text-red-500' : 'text-brand-600'}`}>
           {pct}%
         </span>
       </div>
 
       {/* Progress track */}
-      <div className="relative h-2 bg-gray-800 rounded-full overflow-hidden">
+      <div className="relative h-3 bg-gray-100 rounded-full overflow-hidden shadow-inner border border-gray-50">
         <div
-          className={`h-full rounded-full transition-all duration-500 ${
+          className={`h-full rounded-full transition-all duration-700 ease-out shadow-sm ${
             isDone ? 'bg-emerald-500' : isFailed ? 'bg-red-500' : 'bg-brand-500'
           }`}
           style={{ width: `${pct}%` }}
         />
         {!isDone && !isFailed && (
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-[shimmer_1.5s_infinite]" />
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-[shimmer_1.5s_infinite]" />
         )}
       </div>
 
-      <p className="text-xs text-gray-500 mt-2 text-right tabular-nums">
-        {status.processed_pages} / {status.total_pages} 페이지
-      </p>
+      <div className="flex items-center justify-between mt-3">
+        <span className="text-[10px] text-gray-400 font-bold uppercase">Processing Status</span>
+        <p className="text-[11px] font-bold text-gray-600 tabular-nums bg-gray-50 px-2 py-0.5 rounded-md border border-gray-100">
+          {status.processed_pages} / {status.total_pages} Pages
+        </p>
+      </div>
     </div>
   );
 };

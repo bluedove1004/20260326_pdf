@@ -33,14 +33,14 @@ const TextView: React.FC<TextViewProps> = ({ page }) => {
   return (
     <div className="animate-fade-in">
       {/* Stats row */}
-      <div className="flex gap-4 mb-4 text-xs text-gray-500">
-        <span><span className="text-gray-300 font-medium">{page.block_count}</span> 블록</span>
-        <span>평균 신뢰도 <span className={`font-medium ${page.avg_confidence >= 0.9 ? 'text-emerald-400' : page.avg_confidence >= 0.7 ? 'text-yellow-400' : 'text-red-400'}`}>{(page.avg_confidence * 100).toFixed(1)}%</span></span>
-        <span>크기 <span className="text-gray-300 font-medium">{page.width}×{page.height}</span></span>
+      <div className="flex gap-4 mb-4 text-[11px] text-gray-500 uppercase tracking-wider font-bold">
+        <span>단어 블록 <span className="text-gray-900 ml-1">{page.block_count}</span></span>
+        <span>평균 신뢰도 <span className={`ml-1 ${page.avg_confidence >= 0.9 ? 'text-emerald-600' : page.avg_confidence >= 0.7 ? 'text-amber-600' : 'text-red-600'}`}>{(page.avg_confidence * 100).toFixed(1)}%</span></span>
+        <span>크기 <span className="text-gray-900 ml-1">{page.width}×{page.height}</span></span>
       </div>
 
       {/* Full text */}
-      <div className="bg-gray-950/50 rounded-xl border border-gray-800 p-5 leading-relaxed text-gray-200 text-[15px] whitespace-pre-wrap font-sans">
+      <div className="bg-gray-50 border border-gray-100 rounded-xl p-6 leading-relaxed text-gray-900 text-[15px] whitespace-pre-wrap font-sans shadow-inner min-h-[300px]">
         {page.full_text}
       </div>
     </div>

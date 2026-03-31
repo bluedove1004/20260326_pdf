@@ -27,7 +27,6 @@ const DocumentViewer: React.FC = () => {
   const [zoom, setZoom] = useState(0.3);
   const [imgError, setImgError] = useState(false);
 
-
   // Resizable split state
   const [rightPanelWidth, setRightPanelWidth] = useState(50); // percentage
   const [isResizing, setIsResizing] = useState(false);
@@ -57,16 +56,15 @@ const DocumentViewer: React.FC = () => {
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       if (!isResizing) return;
-      const totalWidth = window.innerWidth - 80; // subtracting sidebar width
+      const totalWidth = window.innerWidth - 80;
       const mouseX = e.clientX - 80;
       const newWidthPercent = 100 - (mouseX / totalWidth) * 100;
+      const minRight = 20;
+      const maxRight = 80;
       setRightPanelWidth(Math.min(maxRight, Math.max(minRight, newWidthPercent)));
     };
 
     const handleMouseUp = () => setIsResizing(false);
-    const minRight = 20;
-    const maxRight = 80;
-
     if (isResizing) {
       window.addEventListener('mousemove', handleMouseMove);
       window.addEventListener('mouseup', handleMouseUp);
@@ -120,10 +118,10 @@ const DocumentViewer: React.FC = () => {
   const imageUrl = id ? getPageImageUrl(id, nav.currentPage) : '';
 
   return (
-    <div className="flex flex-col h-full animate-fade-in relative">
+    <div className="flex flex-col h-full animate-fade-in relative bg-white">
       {/* Global Loading Top Bar */}
       {(extractingLLM || loadingPage) && (
-        <div className="absolute top-0 left-0 right-0 z-50 bg-brand-600/90 backdrop-blur-md text-white py-2 px-4 flex items-center justify-center gap-3 shadow-lg animate-slide-down">
+        <div className="absolute top-0 left-0 right-0 z-50 bg-brand-600 text-white py-2 px-4 flex items-center justify-center gap-3 shadow-md animate-slide-down">
           <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
           <span className="text-sm font-bold">
             {extractingLLM ? `${extractProvider}가 텍스트를 분석 중입니다…` : '페이지 정보를 불러오고 있습니다…'}
@@ -132,7 +130,7 @@ const DocumentViewer: React.FC = () => {
       )}
 
       {/* Header */}
-      <div className="flex items-center justify-between px-6 py-2.5 border-b border-gray-800 bg-gray-900/60 backdrop-blur shrink-0">
+      <div className="flex items-center justify-between px-6 py-2.5 border-b border-gray-100 bg-white/90 backdrop-blur shrink-0">
         <div className="flex items-center gap-4">
           <Link to="/" className="btn-ghost text-xs px-2 py-1" id="back-to-dashboard">
             <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -140,16 +138,16 @@ const DocumentViewer: React.FC = () => {
             </svg>
             목록
           </Link>
-          <div className="h-4 w-px bg-gray-700" />
+          <div className="h-4 w-px bg-gray-200" />
           <div>
-            <h1 className="text-sm font-semibold text-gray-200 truncate max-w-sm">{document.filename}</h1>
-            <p className="text-xs text-gray-500">{document.total_pages}페이지 · {document.ocr_engine}</p>
+            <h1 className="text-sm font-bold text-gray-900 truncate max-w-sm">{document.filename}</h1>
+            <p className="text-xs text-gray-400">{document.total_pages}페이지 · {document.ocr_engine}</p>
           </div>
         </div>
         <a
           href={id ? getDownloadUrl(id) : '#'}
           download
-          className="btn-secondary text-xs"
+          className="btn-secondary text-xs shadow-none border-gray-200"
           id="download-json-btn"
         >
           <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -162,16 +160,16 @@ const DocumentViewer: React.FC = () => {
       {/* 3-panel layout */}
       <div className="flex flex-1 overflow-hidden">
         {/* Left: page list sidebar (Fixed 80px) */}
-        <div className="w-20 flex-shrink-0 border-r border-gray-800 bg-gray-900/40 overflow-y-auto">
+        <div className="w-20 flex-shrink-0 border-r border-gray-100 bg-gray-50/50 overflow-y-auto">
           {Array.from({ length: document.total_pages }, (_, i) => i + 1).map((pg) => (
             <button
               key={pg}
               id={`page-thumb-${pg}`}
               onClick={() => nav.goToPage(pg)}
-              className={`w-full py-3 flex flex-col items-center gap-1 text-xs transition-colors duration-150
+              className={`w-full py-3 flex flex-col items-center gap-1 text-[11px] transition-colors duration-150 font-medium
                 ${nav.currentPage === pg
-                  ? 'bg-brand-600/30 text-brand-300 border-r-2 border-brand-500'
-                  : 'text-gray-500 hover:bg-gray-800 hover:text-gray-300'}`}
+                  ? 'bg-brand-50 text-brand-600 border-r-2 border-brand-600'
+                  : 'text-gray-400 hover:bg-gray-100 hover:text-gray-600'}`}
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
@@ -184,22 +182,22 @@ const DocumentViewer: React.FC = () => {
 
         {/* Center: scanned image (Resizable) */}
         <div
-          className="flex flex-col border-r border-gray-800 bg-gray-950/50 min-w-0"
+          className="flex flex-col border-r border-gray-100 bg-gray-50/30 min-w-0"
           style={{ width: `${100 - rightPanelWidth}%` }}
         >
-          <div className="flex items-center justify-between px-4 py-2 border-b border-gray-800 bg-gray-900/40">
-            <span className="text-xs text-gray-500">원본 이미지 (P{nav.currentPage})</span>
+          <div className="flex items-center justify-between px-4 py-2 border-b border-gray-100 bg-gray-50/50">
+            <span className="text-[11px] font-bold text-gray-500 uppercase tracking-tight">원본 이미지 (P{nav.currentPage})</span>
             <div className="flex items-center gap-2">
-              <button onClick={() => setZoom((z) => Math.max(0.25, z - 0.25))} className="btn-ghost text-xs px-2 py-1" id="zoom-out-btn">−</button>
-              <span className="text-xs text-gray-400 tabular-nums w-12 text-center">{Math.round(zoom * 100)}%</span>
-              <button onClick={() => setZoom((z) => Math.min(3, z + 0.25))} className="btn-ghost text-xs px-2 py-1" id="zoom-in-btn">+</button>
-              <button onClick={() => setZoom(1)} className="btn-ghost text-xs px-2 py-1" id="zoom-reset-btn">리셋</button>
+              <button onClick={() => setZoom((z) => Math.max(0.1, z - 0.1))} className="btn-ghost text-xs px-2 py-1 hover:bg-white">−</button>
+              <span className="text-xs text-gray-600 tabular-nums w-12 text-center font-bold">{Math.round(zoom * 100)}%</span>
+              <button onClick={() => setZoom((z) => Math.min(3, z + 0.1))} className="btn-ghost text-xs px-2 py-1 hover:bg-white">+</button>
+              <button onClick={() => setZoom(0.3)} className="btn-ghost text-xs px-2 py-1 hover:bg-white">30%</button>
             </div>
           </div>
           <div className="flex-1 overflow-auto flex items-start justify-center p-4">
             {imgError ? (
-              <div className="text-gray-600 text-sm text-center mt-20">
-                <svg className="w-10 h-10 mx-auto mb-2 opacity-40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="text-gray-400 text-sm text-center mt-20">
+                <svg className="w-10 h-10 mx-auto mb-2 opacity-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
                 이미지를 불러올 수 없습니다
@@ -209,7 +207,7 @@ const DocumentViewer: React.FC = () => {
                 src={imageUrl}
                 alt={`페이지 ${nav.currentPage}`}
                 id={`scanned-image-p${nav.currentPage}`}
-                className="rounded-lg shadow-2xl object-contain transition-transform duration-200"
+                className="rounded-lg shadow-xl border border-gray-200 object-contain transition-transform duration-200"
                 style={{ transform: `scale(${zoom})`, transformOrigin: 'top center', maxWidth: 'none' }}
                 onError={() => setImgError(true)}
               />
@@ -229,24 +227,24 @@ const DocumentViewer: React.FC = () => {
         {/* Resizer Divider */}
         <div
           className={`w-1 cursor-col-resize hover:bg-brand-500 active:bg-brand-600 transition-colors z-20 shrink-0
-            ${isResizing ? 'bg-brand-500' : 'bg-gray-800'}`}
+            ${isResizing ? 'bg-brand-500 shadow-lg' : 'bg-gray-100'}`}
           onMouseDown={() => setIsResizing(true)}
         />
 
         {/* Right: OCR result tabs (Resizable Width) */}
         <div
-          className="flex-shrink-0 flex flex-col bg-gray-900/40 relative min-w-0"
+          className="flex-shrink-0 flex flex-col bg-white relative min-w-0"
           style={{ width: `${rightPanelWidth}%` }}
         >
           {/* LLM Extract Buttons and Metadata */}
-          <div className="px-4 py-2 border-b border-gray-800 bg-brand-950/20 flex flex-col gap-2">
+          <div className="px-4 py-2 border-b border-gray-100 bg-brand-50/50 flex flex-col gap-2">
             <div className="flex items-center justify-between">
-              <span className="text-[9px] uppercase tracking-wider text-brand-400 font-bold">AI 고성능 추출 정보</span>
+              <span className="text-[10px] uppercase tracking-wider text-brand-600 font-bold">AI 고성능 추출 정보</span>
               {currentPageData?.extracted_by && (
-                <div className="flex items-center gap-1.5 text-[9px] text-gray-300 bg-gray-800 px-2 py-0.5 rounded-md border border-gray-700 shadow-inner">
+                <div className="flex items-center gap-1.5 text-[10px] text-gray-500 bg-white px-2 py-0.5 rounded-md border border-gray-200 shadow-sm">
                   <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
-                  <span className="font-bold text-blue-400">{currentPageData.extracted_by}</span>
-                  <span className="text-gray-600">|</span>
+                  <span className="font-bold text-blue-600">{currentPageData.extracted_by}</span>
+                  <span className="text-gray-300">|</span>
                   <span className="tabular-nums">
                     {currentPageData.extracted_at ? (
                       (() => {
@@ -266,14 +264,14 @@ const DocumentViewer: React.FC = () => {
               <button
                 onClick={() => handleLLMExtract('chatgpt')}
                 disabled={extractingLLM || loadingPage}
-                className="flex-1 btn-primary py-1.5 text-[10px] h-auto bg-emerald-700 hover:bg-emerald-600 border-emerald-500 shadow-sm"
+                className="flex-1 btn-primary py-1.5 text-[10px] h-auto bg-emerald-600 hover:bg-emerald-500 border-emerald-600"
               >
                 ChatGPT 4o
               </button>
               <button
                 onClick={() => handleLLMExtract('claude')}
                 disabled={extractingLLM || loadingPage}
-                className="flex-1 btn-primary py-1.5 text-[10px] h-auto bg-amber-700 hover:bg-amber-600 border-amber-600 shadow-sm"
+                className="flex-1 btn-primary py-1.5 text-[10px] h-auto bg-amber-600 hover:bg-amber-500 border-amber-600"
               >
                 Claude 3.5
               </button>
@@ -281,14 +279,14 @@ const DocumentViewer: React.FC = () => {
           </div>
 
           {/* Tab bar */}
-          <div className="flex gap-1 p-3 border-b border-gray-800 bg-gray-900/20">
+          <div className="flex gap-1 p-3 border-b border-gray-100 bg-gray-50/30">
             {(['text', 'json', 'blocks'] as Tab[]).map((tab) => (
               <button
                 key={tab}
                 id={`tab-${tab}`}
                 onClick={() => setActiveTab(tab)}
-                className={`flex-1 py-1.5 rounded-lg text-xs font-medium transition-all duration-200
-                  ${activeTab === tab ? 'tab-active' : 'tab-inactive'}`}
+                className={`flex-1 py-1.5 rounded-lg text-xs font-bold transition-all duration-200
+                  ${activeTab === tab ? 'tab-active shadow-sm' : 'tab-inactive'}`}
               >
                 {tab === 'text' ? '텍스트' : tab === 'json' ? 'JSON' : '블록'}
               </button>
@@ -296,7 +294,7 @@ const DocumentViewer: React.FC = () => {
           </div>
 
           {/* Tab content */}
-          <div className="flex-1 overflow-y-auto p-4 relative">
+          <div className="flex-1 overflow-y-auto p-4 relative bg-white">
             {currentPageData ? (
               <>
                 {activeTab === 'text' && <TextView page={currentPageData} />}
@@ -304,8 +302,8 @@ const DocumentViewer: React.FC = () => {
                 {activeTab === 'blocks' && <BlockView page={currentPageData} />}
               </>
             ) : (
-              <div className="flex flex-col items-center justify-center h-full text-gray-600 gap-2">
-                <svg className="w-8 h-8 opacity-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="flex flex-col items-center justify-center h-full text-gray-300 gap-2 font-medium">
+                <svg className="w-8 h-8 opacity-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
                 <p className="text-sm">데이터를 불러오는 중입니다…</p>

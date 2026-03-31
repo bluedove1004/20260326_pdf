@@ -53,10 +53,10 @@ const DocumentList: React.FC<DocumentListProps> = ({ documents, onRefresh }) => 
   }
 
   return (
-    <div className="glass-card overflow-hidden animate-slide-up">
-      <div className="flex items-center justify-between px-5 py-4 border-b border-gray-800">
-        <h2 className="text-base font-semibold text-gray-200">문서 목록</h2>
-        <button onClick={onRefresh} className="btn-ghost text-xs gap-1.5" id="refresh-documents-btn">
+    <div className="glass-card overflow-hidden animate-slide-up shadow-lg">
+      <div className="flex items-center justify-between px-5 py-4 border-b border-gray-100 bg-white/50">
+        <h2 className="text-base font-bold text-gray-800">문서 목록</h2>
+        <button onClick={onRefresh} className="btn-ghost text-xs gap-1.5 hover:bg-gray-50" id="refresh-documents-btn">
           <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
               d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -68,35 +68,35 @@ const DocumentList: React.FC<DocumentListProps> = ({ documents, onRefresh }) => 
       <div className="overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
-            <tr className="text-xs text-gray-500 border-b border-gray-800">
-              <th className="text-left px-5 py-3 font-medium">파일명</th>
-              <th className="text-center px-4 py-3 font-medium">페이지</th>
-              <th className="text-center px-4 py-3 font-medium">상태</th>
-              <th className="text-right px-5 py-3 font-medium">생성일</th>
+            <tr className="text-xs text-gray-500 border-b border-gray-100 bg-gray-50/50">
+              <th className="text-left px-5 py-3 font-semibold">파일명</th>
+              <th className="text-center px-4 py-3 font-semibold">페이지</th>
+              <th className="text-center px-4 py-3 font-semibold">상태</th>
+              <th className="text-right px-5 py-3 font-semibold">생성일</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-gray-800/60">
+          <tbody className="divide-y divide-gray-100">
             {documents.map((doc) => (
               <tr
                 key={doc.document_id}
                 onClick={() => doc.status === 'completed' && navigate(`/documents/${doc.document_id}`)}
                 className={`transition-colors duration-150
-                  ${doc.status === 'completed' ? 'hover:bg-gray-800/50 cursor-pointer' : 'cursor-default'}`}
+                  ${doc.status === 'completed' ? 'hover:bg-gray-50 cursor-pointer' : 'cursor-default'}`}
                 id={`doc-row-${doc.document_id}`}
               >
                 <td className="px-5 py-3.5">
                   <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <svg className="w-4 h-4 text-red-400" fill="currentColor" viewBox="0 0 24 24">
+                    <div className="w-8 h-8 bg-gray-50 border border-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <svg className="w-4 h-4 text-red-500" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM8 17h8v-1H8v1zm0-3h8v-1H8v1zm0-3h5v-1H8v1z" />
                       </svg>
                     </div>
-                    <span className="text-gray-200 truncate max-w-[200px] font-medium">{doc.filename}</span>
+                    <span className="text-gray-800 truncate max-w-[200px] font-semibold">{doc.filename}</span>
                   </div>
                 </td>
-                <td className="px-4 py-3.5 text-center text-gray-400 tabular-nums">{doc.total_pages || '—'}</td>
+                <td className="px-4 py-3.5 text-center text-gray-600 tabular-nums">{doc.total_pages || '—'}</td>
                 <td className="px-4 py-3.5 text-center"><StatusBadge status={doc.status} /></td>
-                <td className="px-5 py-3.5 text-right text-gray-500 text-xs tabular-nums">{formatDate(doc.created_at)}</td>
+                <td className="px-5 py-3.5 text-right text-gray-400 text-xs tabular-nums">{formatDate(doc.created_at)}</td>
               </tr>
             ))}
           </tbody>

@@ -10,14 +10,14 @@ interface JsonViewProps {
 
 const JsonView: React.FC<JsonViewProps> = ({ page }) => {
   return (
-    <div className="animate-fade-in">
-      <div className="text-xs text-gray-500 mb-3">
-        JSON 뷰 — 클릭하여 접기/펼치기
+    <div className="animate-fade-in space-y-3 pb-10">
+      <div className="text-[10px] text-gray-400 uppercase font-bold tracking-wider px-1">
+        JSON 원본 데이터 — 노드를 클릭하여 하위 항목을 접거나 펼칠 수 있습니다
       </div>
-      <div className="bg-gray-950/70 rounded-xl border border-gray-800 p-4 overflow-auto max-h-[60vh]">
+      <div className="bg-gray-50/50 rounded-2xl border border-gray-100 p-6 overflow-auto max-h-[65vh] shadow-inner">
         <ReactJson
           src={page as unknown as Record<string, unknown>}
-          theme="tomorrow"
+          theme="shapeshifter"
           collapsed={2}
           displayDataTypes={false}
           displayObjectSize
@@ -25,7 +25,7 @@ const JsonView: React.FC<JsonViewProps> = ({ page }) => {
           style={{
             background: 'transparent',
             fontFamily: "'JetBrains Mono', monospace",
-            fontSize: 12,
+            fontSize: 13,
           }}
         />
       </div>

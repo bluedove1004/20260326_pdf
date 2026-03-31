@@ -59,7 +59,7 @@ class DocumentResult(BaseModel):
     document_id: str
     filename: str
     total_pages: int
-    ocr_engine: str = "paddleocr"
+    ocr_engine: str = "easyocr"
     language: str = "korean"
     created_at: datetime
     processing_time_seconds: Optional[float] = None
@@ -78,7 +78,7 @@ class DocumentMeta(BaseModel):
     created_at: datetime
     completed_at: Optional[datetime] = None
     error: Optional[str] = None
-    ocr_provider: str = "paddleocr"
+    ocr_provider: str = "easyocr"
 
 
 class DocumentStatusResponse(BaseModel):

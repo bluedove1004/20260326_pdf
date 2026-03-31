@@ -58,9 +58,12 @@ const FileUploader: React.FC<FileUploaderProps> = ({ onUploaded }) => {
         onDragLeave={() => setIsDragging(false)}
         onDrop={handleDrop}
         onClick={() => !uploading && inputRef.current?.click()}
-        className={`relative border-2 border-dashed rounded-2xl p-10 text-center cursor-pointer transition-all duration-200
-          ${isDragging ? 'border-brand-500 bg-brand-950/30' : 'border-gray-700 hover:border-gray-600 hover:bg-gray-800/30'}
-          ${uploading ? 'cursor-not-allowed' : ''}`}
+        className={`relative border-2 border-dashed rounded-3xl p-12 text-center cursor-pointer transition-all duration-300 group
+          ${isDragging 
+            ? 'border-brand-500 bg-brand-50 shadow-xl shadow-brand-100/50 scale-[1.01]' 
+            : 'border-gray-200 bg-white hover:border-brand-300 hover:bg-gray-50/50 hover:shadow-lg'
+          }
+          ${uploading ? 'cursor-not-allowed opacity-70' : ''}`}
         role="button"
         aria-label="PDF 파일 업로드 영역"
         id="file-upload-zone"
@@ -76,36 +79,40 @@ const FileUploader: React.FC<FileUploaderProps> = ({ onUploaded }) => {
         />
 
         {uploading ? (
-          <div className="flex flex-col items-center gap-4">
-            <div className="w-12 h-12 border-4 border-brand-600 border-t-transparent rounded-full animate-spin" />
-            <div className="w-full max-w-xs">
-              <div className="h-1.5 bg-gray-800 rounded-full overflow-hidden">
+          <div className="flex flex-col items-center gap-6 py-4 animate-pulse">
+            <div className="w-14 h-14 border-4 border-brand-600 border-t-transparent rounded-full animate-spin" />
+            <div className="w-full max-w-sm">
+              <div className="h-2 bg-gray-100 rounded-full overflow-hidden shadow-inner">
                 <div
-                  className="h-full bg-brand-500 rounded-full transition-all duration-300"
+                  className="h-full bg-brand-500 rounded-full transition-all duration-500 ease-out shadow-[0_0_10px_rgba(37,99,235,0.4)]"
                   style={{ width: `${uploadProgress}%` }}
                 />
               </div>
-              <p className="text-sm text-gray-400 mt-2">업로드 중… {uploadProgress}%</p>
+              <p className="text-sm font-bold text-gray-900 mt-3 tabular-nums">파일 업로드 중… {uploadProgress}%</p>
+              <p className="text-xs text-gray-400">네트워크 상태에 따라 시간이 걸릴 수 있습니다.</p>
             </div>
           </div>
         ) : (
-          <div className="flex flex-col items-center gap-4">
-            <div className={`w-16 h-16 rounded-2xl flex items-center justify-center transition-colors duration-200
-              ${isDragging ? 'bg-brand-600/30' : 'bg-gray-800'}`}>
-              <svg className="w-8 h-8 text-brand-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div className="flex flex-col items-center gap-5">
+            <div className={`w-20 h-20 rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 shadow-lg
+              ${isDragging ? 'bg-brand-500 text-white' : 'bg-brand-50 text-brand-500'}`}>
+              <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
                   d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
               </svg>
             </div>
             <div>
-              <p className="text-gray-200 font-medium text-base">
-                {isDragging ? '여기에 놓으세요' : 'PDF를 드래그하거나 클릭하여 선택'}
+              <h3 className="text-xl font-bold text-gray-950 mb-2 leading-snug">
+                {isDragging ? '여기에 놓으세요' : '새 PDF 파일 업로드'}
+              </h3>
+              <p className="text-sm text-gray-500 font-medium">
+                드래그 앤 드롭하거나 <span className="text-brand-600 font-bold underline decoration-brand-200 underline-offset-4">클릭하여 선택</span>
               </p>
-              <p className="text-gray-500 text-sm mt-1">최대 100MB · PDF 파일만 지원</p>
             </div>
-            <button type="button" className="btn-primary pointer-events-none" id="upload-select-btn">
-              파일 선택
-            </button>
+            <div className="flex items-center gap-3 mt-2">
+              <span className="badge-secondary bg-gray-50 text-gray-400 border-gray-100 font-bold uppercase tracking-widest text-[9px]">PDF Only</span>
+              <span className="badge-secondary bg-gray-50 text-gray-400 border-gray-100 font-bold uppercase tracking-widest text-[9px]">Max 100MB</span>
+            </div>
           </div>
         )}
       </div>

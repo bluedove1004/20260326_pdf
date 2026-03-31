@@ -9,7 +9,7 @@ from pydantic import BaseModel
 class OCRProvider(str, Enum):
     """Supported OCR providers."""
 
-    paddleocr = "paddleocr"
+    easyocr = "easyocr"
     google_vision = "google_vision"
     azure = "azure"
     chatgpt = "chatgpt"
@@ -37,7 +37,7 @@ class DPIOption(int, Enum):
 class OCRSettings(BaseModel):
     """Full OCR settings persisted to disk."""
 
-    ocr_provider: OCRProvider = OCRProvider.paddleocr
+    ocr_provider: OCRProvider = OCRProvider.easyocr
     api_key: Optional[str] = None
     dpi: DPIOption = DPIOption.high
     preprocessing: PreprocessingOptions = PreprocessingOptions()

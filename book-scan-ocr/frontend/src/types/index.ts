@@ -72,7 +72,7 @@ export interface PreprocessingOptions {
 }
 
 export interface OCRSettings {
-  ocr_provider: 'paddleocr' | 'google_vision' | 'azure' | 'chatgpt' | 'claude';
+  ocr_provider: 'easyocr' | 'google_vision' | 'azure' | 'chatgpt' | 'claude';
   api_key?: string;
   openai_api_key?: string;
   anthropic_api_key?: string;
