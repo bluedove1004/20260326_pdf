@@ -78,6 +78,13 @@ const PdfSplitter: React.FC = () => {
     if (fileInputRef.current) fileInputRef.current.value = '';
   };
 
+  // Robustly detect base path
+  const currentPath = window.location.pathname;
+  const BASE_PATH = currentPath.startsWith('/ocr/') 
+    ? '/ocr/' 
+    : ((import.meta as any).env.BASE_URL || '/');
+  const SAFE_BASE = BASE_PATH.endsWith('/') ? BASE_PATH : BASE_PATH + '/';
+
   return (
     <div className="h-full overflow-y-auto bg-gray-50/50 p-8 flex flex-col items-center">
       <div className="max-w-4xl w-full space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
@@ -94,7 +101,7 @@ const PdfSplitter: React.FC = () => {
             PDF <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-indigo-600">Smart Splitter</span>
           </h1>
           <p className="text-gray-500 text-sm font-medium max-w-md mx-auto leading-relaxed">
-            대용량 PDF 파일을 200페이지 단위로 신속하게 분기합니다.<br/>
+            대용량 PDF 파일을 200페이지 단위로 신속하게 분할합니다.<br/>
             원본 품질 그대로 안전하게 처리됩니다.
           </p>
         </div>
@@ -210,7 +217,7 @@ const PdfSplitter: React.FC = () => {
                       <p className="text-[10px] text-gray-400 font-bold uppercase tracking-widest leading-none">Segment {idx + 1}</p>
                     </div>
                     <a 
-                      href={splitFile.download_url} 
+                      href={`${SAFE_BASE}${splitFile.download_url.startsWith('/') ? splitFile.download_url.substring(1) : splitFile.download_url}`} 
                       download
                       className="w-10 h-10 bg-white border border-gray-100 text-gray-400 rounded-xl flex items-center justify-center hover:bg-brand-500 hover:text-white hover:border-brand-500 shadow-sm transition-all active:scale-95"
                     >
