@@ -1,0 +1,1768 @@
+{
+  "page_number": "n/a",
+  "page_title": null,
+  "seq_number": 1,
+  "width": 2196,
+  "height": 3035,
+  "text_blocks": [
+    {
+      "block_id": 1,
+      "text": "제1-1장 서 론 5",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 1
+    },
+    {
+      "block_id": 2,
+      "text": "에서 정신의학과 밀접한 연관을 맺는다. 『東醫寶鑑』",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 2
+    },
+    {
+      "block_id": 3,
+      "text": "앞부분에 있는「內景篇」에서는 한의학의 기본개념인",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 3
+    },
+    {
+      "block_id": 4,
+      "text": "양생과 精, 氣, 神, 血을 다루고 있는데, 이곳에서는",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 4
+    },
+    {
+      "block_id": 5,
+      "text": "다양한 심리적, 정신적인 문제로 인하여 유발되는 병",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 5
+    },
+    {
+      "block_id": 6,
+      "text": "증을 다루고 있다. 예를 들면, 七氣나 九氣, 中氣, 氣",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 6
+    },
+    {
+      "block_id": 7,
+      "text": "鬱 등은 氣門에서 소개하고 있으며, 怔忡, 驚悸, 癲",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 7
+    },
+    {
+      "block_id": 8,
+      "text": "癎, 癲狂은 神門에서, 수면장애는 夢에서 다루고 있",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 8
+    },
+    {
+      "block_id": 9,
+      "text": "다. 또한 오장육부에서는 각 장기의 대소나 위치에",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 9
+    },
+    {
+      "block_id": 10,
+      "text": "따라 다양한 심리적 상태를 다루고 있다.「外形篇」에",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 10
+    },
+    {
+      "block_id": 11,
+      "text": "는 외부적으로 관찰 가능한 부위에서 나타나는 각종",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 11
+    },
+    {
+      "block_id": 12,
+      "text": "병증을 소개하면서 각각 七情으로 유발되어 발생하는",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 12
+    },
+    {
+      "block_id": 13,
+      "text": "병증을 기술하고 있다.「雜病篇」에서는 한의학에서",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 13
+    },
+    {
+      "block_id": 14,
+      "text": "질병으로 분류되는 다양한 병증을 소개하고 있는데,",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 14
+    },
+    {
+      "block_id": 15,
+      "text": "일반적인 병증 안에 심리적인 유발인자로 인하여 발",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 15
+    },
+    {
+      "block_id": 16,
+      "text": "생하는 내용을 각각 기술하고 있는 것을 볼 수 있다.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 16
+    },
+    {
+      "block_id": 17,
+      "text": "사상의학은 한국의 고유한 의학으로 신경정신과학",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 17
+    },
+    {
+      "block_id": 18,
+      "text": "적인 관점에서도 매우 중요한 특징을 가지고 있다.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 18
+    },
+    {
+      "block_id": 19,
+      "text": "먼저, 사상의학은 黃老學派의 배경에서 출발한 五行",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 19
+    },
+    {
+      "block_id": 20,
+      "text": "과 天人相應關係를 병리이론의 근간으로 삼은 기존",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 20
+    },
+    {
+      "block_id": 21,
+      "text": "의 內經의학과는 다른 儒學的인 배경에서 나온 인간",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 21
+    },
+    {
+      "block_id": 22,
+      "text": "중심의 사고에서 출발하였으며, 또한 인간을 자연에",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 22
+    },
+    {
+      "block_id": 23,
+      "text": "순응하는 수동적 자세가 아니라, 능동적 자세로 대치",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 23
+    },
+    {
+      "block_id": 24,
+      "text": "해 나가는 자율적인 조절능력이 있는 존재로 파악하",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 24
+    },
+    {
+      "block_id": 25,
+      "text": "는 인간중심적 인식론을 취하고 있다. 둘째, 사상의학",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 25
+    },
+    {
+      "block_id": 26,
+      "text": "은 각 인간은 각기 특수한 심리상태에 따라 특징적인",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 26
+    },
+    {
+      "block_id": 27,
+      "text": "질병이 발생됨을 강조하고 있으며, 또한 치료에 있어",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 27
+    },
+    {
+      "block_id": 28,
+      "text": "서도 각 체질에 고유한 正氣를 중심으로 順氣, 調氣",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 28
+    },
+    {
+      "block_id": 29,
+      "text": "하는 차원에서 음양의 升降緩急을 조절하는 치료원칙",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 29
+    },
+    {
+      "block_id": 30,
+      "text": "을 세우고 체질병리약리를 정립하여 체질의 편차에",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 30
+    },
+    {
+      "block_id": 31,
+      "text": "따라 방법을 달리 적용하고 있다. 셋째, 사상의학은",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 31
+    },
+    {
+      "block_id": 32,
+      "text": "기존의 약물과 침구의 수단으로 모든 병을 치료하려",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 32
+    },
+    {
+      "block_id": 33,
+      "text": "는 古典的 방법 이외에 性情의 升降緩急의 조절을",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 33
+    },
+    {
+      "block_id": 34,
+      "text": "통하여 정신적 안정을 주 치료수단으로 함으로써 심",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 34
+    },
+    {
+      "block_id": 35,
+      "text": "신균형적 치료 정신을 추구하고 있다. 넷째, 사상의학",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 35
+    },
+    {
+      "block_id": 36,
+      "text": "은 평소의 체질적 건강관리를 추구하는 양생의학이고",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 36
+    },
+    {
+      "block_id": 37,
+      "text": "생활 속에서 심신의 수양을 통한 예방의학이며, 윤리",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 37
+    },
+    {
+      "block_id": 38,
+      "text": "적 의학이다. 또한 환경과 사회에의 적응에 필요한",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 38
+    },
+    {
+      "block_id": 39,
+      "text": "지혜와 인격수양의 방법을 제시하여 사회의학적인 측",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 39
+    },
+    {
+      "block_id": 40,
+      "text": "면이 있다. 따라서 사상의학의 여러 특징 가운데 인",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 40
+    },
+    {
+      "block_id": 41,
+      "text": "간중심적, 심신균형적, 사회의학적인 측면은 한방신경",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 41
+    },
+    {
+      "block_id": 42,
+      "text": "정신과학의 미래 추진 방향과 기본적으로 일치한다고",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 42
+    },
+    {
+      "block_id": 43,
+      "text": "볼 수 있다.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 43
+    },
+    {
+      "block_id": 44,
+      "text": "그러므로, 한방신경정신과학은 『東醫寶鑑』으로부",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 44
+    },
+    {
+      "block_id": 45,
+      "text": "터 그동안 중국에서 이어 내려온 醫家의 藥餌鍼灸",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 45
+    },
+    {
+      "block_id": 46,
+      "text": "치료법과 함께 道家의 淸靜修養을 근본으로 삼아 양",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 46
+    },
+    {
+      "block_id": 47,
+      "text": "생과 수양을 도모하는 의학을 이어 받았고, 사상의학",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 47
+    },
+    {
+      "block_id": 48,
+      "text": "으로부터 性情 中心의 體質正氣 의학을 새롭게 전수",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 48
+    },
+    {
+      "block_id": 49,
+      "text": "받음으로써 인간 중심의 의학으로서의 특성이 있다고",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 49
+    },
+    {
+      "block_id": 50,
+      "text": "할 수 있다.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 50
+    },
+    {
+      "block_id": 51,
+      "text": "● 참고문헌",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 51
+    },
+    {
+      "block_id": 52,
+      "text": "1. 권학철, 박찬국. 東醫寶鑑을 통한 허준의 의학사상에",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 52
+    },
+    {
+      "block_id": 53,
+      "text": "관한 고찰. 대한원전의사학회지. 1992; 6: 89-130.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 53
+    },
+    {
+      "block_id": 54,
+      "text": "2. 박찬국. 東醫學의 成立에 對한 硏究－許浚의『東醫",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 54
+    },
+    {
+      "block_id": 55,
+      "text": "寶鑑』을 통하여－. 대한원전의사학회지. 1991; 5:",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 55
+    },
+    {
+      "block_id": 56,
+      "text": "137-50.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 56
+    },
+    {
+      "block_id": 57,
+      "text": "3. 송일병.『동의보감』과『동의수세보원』에 나타난 우",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 57
+    },
+    {
+      "block_id": 58,
+      "text": "리 민족의 의학정신. 사상체질의학회지. 2004;",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 58
+    },
+    {
+      "block_id": 59,
+      "text": "16(3): 1-7",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 59
+    },
+    {
+      "block_id": 60,
+      "text": "4. 이광준. 漢方心理學. 학문사. 2002.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 60
+    },
+    {
+      "block_id": 61,
+      "text": "5. 이부영. 의학개론 I. 서울대학교 출판부. 1994: 3-18.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 61
+    },
+    {
+      "block_id": 62,
+      "text": "6. 전국한의과대학 사상의학교실. 사상의학. 집문당. 1997.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 62
+    },
+    {
+      "block_id": 63,
+      "text": "7. 許浚. 東醫寶鑑. 南山堂. 1991.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 63
+    },
+    {
+      "block_id": 64,
+      "text": "8. 홍원식. 한의학에서 본 정신과 육체. 대한원전의사학",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 64
+    },
+    {
+      "block_id": 65,
+      "text": "회지. 1993; 7: 9-18.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 65
+    },
+    {
+      "block_id": 66,
+      "text": "9. 黃義完, 金知赫. 東醫精神醫學. 現代醫學出版社. 1987.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 66
+    },
+    {
+      "block_id": 67,
+      "text": "10. 王克勤. 中醫神主學說. 中醫古籍出版社. 1986.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 67
+    },
+    {
+      "block_id": 68,
+      "text": "11. 王彦恒. 實用中醫精神醫學. 人民衛生出版社. 2000.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 68
+    },
+    {
+      "block_id": 69,
+      "text": "12. 張登本. 中醫神經精神科學. 中國醫藥科技出版社. 2000.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 69
+    },
+    {
+      "block_id": 70,
+      "text": "13. 焦樹德, 路志正. 實用中醫心病學. 人民衛生出版社.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 70
+    },
+    {
+      "block_id": 71,
+      "text": "2000.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 71
+    },
+    {
+      "block_id": 72,
+      "text": "14. 許沛虎. 中醫腦病學. 中國醫藥科技出版社. 1998.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 72
+    },
+    {
+      "block_id": 73,
+      "text": "15. 黃泰康. 中醫神經精神病學. 中國醫藥科技出版社. 2000.",
+      "confidence": 1.0,
+      "bbox": {
+        "top_left": [
+          0.0,
+          0.0
+        ],
+        "top_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_right": [
+          0.0,
+          0.0
+        ],
+        "bottom_left": [
+          0.0,
+          0.0
+        ]
+      },
+      "line_number": 73
+    }
+  ],
+  "full_text": "제1-1장 서 론 5\n\n에서 정신의학과 밀접한 연관을 맺는다. 『東醫寶鑑』\n앞부분에 있는「內景篇」에서는 한의학의 기본개념인\n양생과 精, 氣, 神, 血을 다루고 있는데, 이곳에서는\n다양한 심리적, 정신적인 문제로 인하여 유발되는 병\n증을 다루고 있다. 예를 들면, 七氣나 九氣, 中氣, 氣\n鬱 등은 氣門에서 소개하고 있으며, 怔忡, 驚悸, 癲\n癎, 癲狂은 神門에서, 수면장애는 夢에서 다루고 있\n다. 또한 오장육부에서는 각 장기의 대소나 위치에\n따라 다양한 심리적 상태를 다루고 있다.「外形篇」에\n는 외부적으로 관찰 가능한 부위에서 나타나는 각종\n병증을 소개하면서 각각 七情으로 유발되어 발생하는\n병증을 기술하고 있다.「雜病篇」에서는 한의학에서\n질병으로 분류되는 다양한 병증을 소개하고 있는데,\n일반적인 병증 안에 심리적인 유발인자로 인하여 발\n생하는 내용을 각각 기술하고 있는 것을 볼 수 있다.\n　사상의학은 한국의 고유한 의학으로 신경정신과학\n적인 관점에서도 매우 중요한 특징을 가지고 있다.\n먼저, 사상의학은 黃老學派의 배경에서 출발한 五行\n과 天人相應關係를 병리이론의 근간으로 삼은 기존\n의 內經의학과는 다른 儒學的인 배경에서 나온 인간\n중심의 사고에서 출발하였으며, 또한 인간을 자연에\n순응하는 수동적 자세가 아니라, 능동적 자세로 대치\n해 나가는 자율적인 조절능력이 있는 존재로 파악하\n는 인간중심적 인식론을 취하고 있다. 둘째, 사상의학\n은 각 인간은 각기 특수한 심리상태에 따라 특징적인\n질병이 발생됨을 강조하고 있으며, 또한 치료에 있어\n서도 각 체질에 고유한 正氣를 중심으로 順氣, 調氣\n하는 차원에서 음양의 升降緩急을 조절하는 치료원칙\n을 세우고 체질병리약리를 정립하여 체질의 편차에\n따라 방법을 달리 적용하고 있다. 셋째, 사상의학은\n기존의 약물과 침구의 수단으로 모든 병을 치료하려\n는 古典的 방법 이외에 性情의 升降緩急의 조절을\n통하여 정신적 안정을 주 치료수단으로 함으로써 심\n신균형적 치료 정신을 추구하고 있다. 넷째, 사상의학\n은 평소의 체질적 건강관리를 추구하는 양생의학이고\n생활 속에서 심신의 수양을 통한 예방의학이며, 윤리\n적 의학이다. 또한 환경과 사회에의 적응에 필요한\n지혜와 인격수양의 방법을 제시하여 사회의학적인 측\n\n면이 있다. 따라서 사상의학의 여러 특징 가운데 인\n간중심적, 심신균형적, 사회의학적인 측면은 한방신경\n정신과학의 미래 추진 방향과 기본적으로 일치한다고\n볼 수 있다.\n　그러므로, 한방신경정신과학은 『東醫寶鑑』으로부\n터 그동안 중국에서 이어 내려온 醫家의 藥餌鍼灸\n치료법과 함께 道家의 淸靜修養을 근본으로 삼아 양\n생과 수양을 도모하는 의학을 이어 받았고, 사상의학\n으로부터 性情 中心의 體質正氣 의학을 새롭게 전수\n받음으로써 인간 중심의 의학으로서의 특성이 있다고\n할 수 있다.\n\n● 참고문헌\n\n1. 권학철, 박찬국. 東醫寶鑑을 통한 허준의 의학사상에\n　관한 고찰. 대한원전의사학회지. 1992; 6: 89-130.\n2. 박찬국. 東醫學의 成立에 對한 硏究－許浚의『東醫\n　寶鑑』을 통하여－. 대한원전의사학회지. 1991; 5:\n　137-50.\n3. 송일병.『동의보감』과『동의수세보원』에 나타난 우\n　리 민족의 의학정신. 사상체질의학회지. 2004;\n　16(3): 1-7\n4. 이광준. 漢方心理學. 학문사. 2002.\n5. 이부영. 의학개론 I. 서울대학교 출판부. 1994: 3-18.\n6. 전국한의과대학 사상의학교실. 사상의학. 집문당. 1997.\n7. 許浚. 東醫寶鑑. 南山堂. 1991.\n8. 홍원식. 한의학에서 본 정신과 육체. 대한원전의사학\n　회지. 1993; 7: 9-18.\n9. 黃義完, 金知赫. 東醫精神醫學. 現代醫學出版社. 1987.\n10. 王克勤. 中醫神主學說. 中醫古籍出版社. 1986.\n11. 王彦恒. 實用中醫精神醫學. 人民衛生出版社. 2000.\n12. 張登本. 中醫神經精神科學. 中國醫藥科技出版社. 2000.\n13. 焦樹德, 路志正. 實用中醫心病學. 人民衛生出版社.\n　2000.\n14. 許沛虎. 中醫腦病學. 中國醫藥科技出版社. 1998.\n15. 黃泰康. 中醫神經精神病學. 中國醫藥科技出版社. 2000.",
+  "block_count": 73,
+  "avg_confidence": 1.0,
+  "status": "completed",
+  "error": null,
+  "extracted_at": "2026-04-02T05:57:49.159968Z",
+  "extracted_by": "Claude 4.6"
+}

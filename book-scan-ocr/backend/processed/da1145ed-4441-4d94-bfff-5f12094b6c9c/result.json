@@ -1,0 +1,2323 @@
+{
+  "document_id": "da1145ed-4441-4d94-bfff-5f12094b6c9c",
+  "filename": "한의신경정신과학_6_7.pdf",
+  "total_pages": 2,
+  "ocr_engine": "easyocr",
+  "language": "korean",
+  "created_at": "2026-04-02T06:45:51.300025Z",
+  "processing_time_seconds": 87.55,
+  "pages": [
+    {
+      "page_number": "n/a",
+      "page_title": null,
+      "seq_number": 1,
+      "width": 2202,
+      "height": 3039,
+      "text_blocks": [
+        {
+          "block_id": 1,
+          "text": "6 제1편 총 론",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 1
+        },
+        {
+          "block_id": 2,
+          "text": "【附】『東醫寶鑑』에서 다루고 있는 신경정신과 분야",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 2
+        },
+        {
+          "block_id": 3,
+          "text": "「內景篇」",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 3
+        },
+        {
+          "block_id": 4,
+          "text": "● 身形門",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 4
+        },
+        {
+          "block_id": 5,
+          "text": "• 保養精氣神: \"精者身之本, 氣者神之主, 形者神之宅\"이라 하여 精氣神을 보양해야 함을 서술",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 5
+        },
+        {
+          "block_id": 6,
+          "text": "• 以道療病: \"欲治其疾, 先治其心, 必正其心, 乃資於道\"의 정신요법을 서술",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 6
+        },
+        {
+          "block_id": 7,
+          "text": "• 虛心合道: \"忘形以養氣, 忘氣以養神, 忘神以養虛\"의 정신요법을 서술",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 7
+        },
+        {
+          "block_id": 8,
+          "text": "• 搬運服食, 按摩導引, 攝養要訣, 還丹內煉法, 四時節宣, 先賢格言: 각종 양생법을 소개",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 8
+        },
+        {
+          "block_id": 9,
+          "text": "● 精門",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 9
+        },
+        {
+          "block_id": 10,
+          "text": "• 精爲身本: \"兩神相搏, 合而成形, 常先身生, 是謂精, 精者, 身之本也\"라 하여 精이 근본임을 설명",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 10
+        },
+        {
+          "block_id": 11,
+          "text": "• 遺泄, 夢泄: 遺泄, 夢泄을 心, 鬱로 인한 병증으로 설명",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 11
+        },
+        {
+          "block_id": 12,
+          "text": "● 氣門",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 12
+        },
+        {
+          "block_id": 13,
+          "text": "• 氣爲精神之根蒂: \"氣者神之祖, 精乃神之子, 氣者精神之根蒂也\"라 하여 기가 정신의 근본이 됨을 설명",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 13
+        },
+        {
+          "block_id": 14,
+          "text": "• 氣爲諸病: \"諸病皆生於氣, 諸痛皆因於氣\"라 하여 기가 병의 주요 원인임을 설명",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 14
+        },
+        {
+          "block_id": 15,
+          "text": "• 氣逸, 七氣, 九氣, 中氣, 上氣, 下氣, 短氣, 少氣, 氣痛, 氣逆, 氣鬱, 氣不足, 氣絶候: 氣와 연관된 병증이 소개",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 15
+        },
+        {
+          "block_id": 16,
+          "text": "● 神門",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 16
+        },
+        {
+          "block_id": 17,
+          "text": "• 神爲一身之主: \"心者君主之官, 神明出焉\"이라 하여 心이 인체에서 군주의 역할을 하면서 정신을 담당하고 있음을 설명",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 17
+        },
+        {
+          "block_id": 18,
+          "text": "• 心藏神: \"心藏神, 神有餘卽笑不休, 神不足卽悲\"라 하여 心과 神의 관계를 설명",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 18
+        },
+        {
+          "block_id": 19,
+          "text": "• 五臟藏七神: \"心藏神, 肺藏魄, 肝藏魂, 脾藏意, 腎藏志 又曰 脾藏意與智 腎藏精與志\"라 하여 각 臟이 神을 간직하고 있음을 설명",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 19
+        },
+        {
+          "block_id": 20,
+          "text": "• 神統七情傷卽爲病: \"心藏神, 爲一身君主, 統攝七情, 酣酢萬機\"라 하고 七情傷을 설명하였고 喜, 怒, 憂, 思, 悲, 驚, 恐을 기술",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 20
+        },
+        {
+          "block_id": 21,
+          "text": "• 驚悸: \"驚悸, 因事有所大驚而成者\" \"驚者, 心卒動而不寧也, 悸者, 心跳動而怕驚也\"",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 21
+        },
+        {
+          "block_id": 22,
+          "text": "• 怔忡: \"怔忡, 因驚悸久而成也\", \"怔忡者, 心中跳動不安, 惕惕然如人將捕者\"",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 22
+        },
+        {
+          "block_id": 23,
+          "text": "• 健忘: \"健忘者, 陡然而忘其事, 盡心力思量不來也\"",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 23
+        },
+        {
+          "block_id": 24,
+          "text": "• 心澹澹大動: \"心澹澹動者, 因疾動也\"라고 하면서 怕驚으로 인한 것과 그렇지 않은 경우가 모두 있다고 설명",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 24
+        },
+        {
+          "block_id": 25,
+          "text": "• 癲癎: \"痰在膈間卽, 眩微不仆, 痰溢膈上卽, 眩甚仆倒於地而不知人, 名之曰癲癎\"",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 25
+        },
+        {
+          "block_id": 26,
+          "text": "• 癲狂: \"癲者異常也, 精神痴呆, 言語失倫, 狂者囚狂也\"",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 26
+        },
+        {
+          "block_id": 27,
+          "text": "• 脫營失精誌: \"嘗貴後賤, 名曰脫營, 嘗富後貧, 名曰失精\"",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 27
+        },
+        {
+          "block_id": 28,
+          "text": "• 五志相勝爲治: 怒, 喜, 思, 憂, 悲, 恐의 정서를 이용한 역동적인 정신치료를 소개",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 28
+        },
+        {
+          "block_id": 29,
+          "text": "● 血門",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 29
+        },
+        {
+          "block_id": 30,
+          "text": "• 七情動血: \"內傷七情者, 暴喜動心, 不能生血…\"이라 하여 각 정서가 血에 영향을 주는 것을 설명",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 30
+        },
+        {
+          "block_id": 31,
+          "text": "● 夢門",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 31
+        },
+        {
+          "block_id": 32,
+          "text": "• 魂魄爲夢: \"凡夢, 皆緣魂魄役物. 又曰, 形接而爲",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 32
+        }
+      ],
+      "full_text": "6 제1편 총 론\n\n【附】『東醫寶鑑』에서 다루고 있는 신경정신과 분야\n\n「內景篇」\n\n● 身形門\n• 保養精氣神: \"精者身之本, 氣者神之主, 形者神之宅\"이라 하여 精氣神을 보양해야 함을 서술\n• 以道療病: \"欲治其疾, 先治其心, 必正其心, 乃資於道\"의 정신요법을 서술\n• 虛心合道: \"忘形以養氣, 忘氣以養神, 忘神以養虛\"의 정신요법을 서술\n• 搬運服食, 按摩導引, 攝養要訣, 還丹內煉法, 四時節宣, 先賢格言: 각종 양생법을 소개\n\n● 精門\n• 精爲身本: \"兩神相搏, 合而成形, 常先身生, 是謂精, 精者, 身之本也\"라 하여 精이 근본임을 설명\n• 遺泄, 夢泄: 遺泄, 夢泄을 心, 鬱로 인한 병증으로 설명\n\n● 氣門\n• 氣爲精神之根蒂: \"氣者神之祖, 精乃神之子, 氣者精神之根蒂也\"라 하여 기가 정신의 근본이 됨을 설명\n• 氣爲諸病: \"諸病皆生於氣, 諸痛皆因於氣\"라 하여 기가 병의 주요 원인임을 설명\n• 氣逸, 七氣, 九氣, 中氣, 上氣, 下氣, 短氣, 少氣, 氣痛, 氣逆, 氣鬱, 氣不足, 氣絶候: 氣와 연관된 병증이 소개\n\n● 神門\n• 神爲一身之主: \"心者君主之官, 神明出焉\"이라 하여 心이 인체에서 군주의 역할을 하면서 정신을 담당하고 있음을 설명\n\n• 心藏神: \"心藏神, 神有餘卽笑不休, 神不足卽悲\"라 하여 心과 神의 관계를 설명\n• 五臟藏七神: \"心藏神, 肺藏魄, 肝藏魂, 脾藏意, 腎藏志 又曰 脾藏意與智 腎藏精與志\"라 하여 각 臟이 神을 간직하고 있음을 설명\n• 神統七情傷卽爲病: \"心藏神, 爲一身君主, 統攝七情, 酣酢萬機\"라 하고 七情傷을 설명하였고 喜, 怒, 憂, 思, 悲, 驚, 恐을 기술\n• 驚悸: \"驚悸, 因事有所大驚而成者\" \"驚者, 心卒動而不寧也, 悸者, 心跳動而怕驚也\"\n• 怔忡: \"怔忡, 因驚悸久而成也\", \"怔忡者, 心中跳動不安, 惕惕然如人將捕者\"\n• 健忘: \"健忘者, 陡然而忘其事, 盡心力思量不來也\"\n• 心澹澹大動: \"心澹澹動者, 因疾動也\"라고 하면서 怕驚으로 인한 것과 그렇지 않은 경우가 모두 있다고 설명\n• 癲癎: \"痰在膈間卽, 眩微不仆, 痰溢膈上卽, 眩甚仆倒於地而不知人, 名之曰癲癎\"\n• 癲狂: \"癲者異常也, 精神痴呆, 言語失倫, 狂者囚狂也\"\n• 脫營失精誌: \"嘗貴後賤, 名曰脫營, 嘗富後貧, 名曰失精\"\n• 五志相勝爲治: 怒, 喜, 思, 憂, 悲, 恐의 정서를 이용한 역동적인 정신치료를 소개\n\n● 血門\n• 七情動血: \"內傷七情者, 暴喜動心, 不能生血…\"이라 하여 각 정서가 血에 영향을 주는 것을 설명\n\n● 夢門\n• 魂魄爲夢: \"凡夢, 皆緣魂魄役物. 又曰, 形接而爲",
+      "block_count": 32,
+      "avg_confidence": 1.0,
+      "status": "completed",
+      "error": null,
+      "extracted_at": "2026-04-02T06:46:33.748229Z",
+      "extracted_by": "Claude 4.6"
+    },
+    {
+      "page_number": "n/a",
+      "page_title": null,
+      "seq_number": 2,
+      "width": 2202,
+      "height": 3039,
+      "text_blocks": [
+        {
+          "block_id": 1,
+          "text": "제1-1장 서 론 7",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 1
+        },
+        {
+          "block_id": 2,
+          "text": "事, 神遇而爲夢\"",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 2
+        },
+        {
+          "block_id": 3,
+          "text": "• 淫邪發夢, 五臟虛實爲夢, 陽氣之出入爲瘖寐: 夢",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 3
+        },
+        {
+          "block_id": 4,
+          "text": "에 대한 기전의 설명",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 4
+        },
+        {
+          "block_id": 5,
+          "text": "• 昏沈多睡, 虛煩不睡, 臥不安, 身重嗜臥: 수면장애",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 5
+        },
+        {
+          "block_id": 6,
+          "text": "에 대한 병증, 寢睡法, 辟惡夢의 설명",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 6
+        },
+        {
+          "block_id": 7,
+          "text": "• **言語門**",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 7
+        },
+        {
+          "block_id": 8,
+          "text": "• 言語謇妄, 瘖不得言, 鄭聲, 笑, 歌, 大驚不語: 언",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 8
+        },
+        {
+          "block_id": 9,
+          "text": "어기능과 관련된 병증",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 9
+        },
+        {
+          "block_id": 10,
+          "text": "• **津液門**",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 10
+        },
+        {
+          "block_id": 11,
+          "text": "• 心汗: \"思慮過度, 以致心孔, 獨有汗出\"",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 11
+        },
+        {
+          "block_id": 12,
+          "text": "• **痰飮門**",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 12
+        },
+        {
+          "block_id": 13,
+          "text": "• 熱痰(火痰): \"多煩熱燥結, 頭面烘熱, 或爲眼爛喉",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 13
+        },
+        {
+          "block_id": 14,
+          "text": "閉, 癲狂嘈雜, 懊憹征忡\"",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 14
+        },
+        {
+          "block_id": 15,
+          "text": "• 氣痰: \"七情鬱結, 痰滯咽喉, 形如敗絮, 或如梅核,",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 15
+        },
+        {
+          "block_id": 16,
+          "text": "咯不出, 嚥不下, 胸膈痞悶\"",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 16
+        },
+        {
+          "block_id": 17,
+          "text": "• 驚痰: \"因驚痰結成塊, 在胸腹, 發卽跳動, 痛不可",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 17
+        },
+        {
+          "block_id": 18,
+          "text": "忍, 或成癲癎, 婦人多有之\"",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 18
+        },
+        {
+          "block_id": 19,
+          "text": "• 痰病有似邪崇",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 19
+        },
+        {
+          "block_id": 20,
+          "text": "• **五臟六腑門**",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 20
+        },
+        {
+          "block_id": 21,
+          "text": "• 각 臟의 특징과 함께 修養法과 導引法이 기술",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 21
+        },
+        {
+          "block_id": 22,
+          "text": "「外形篇」",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 22
+        },
+        {
+          "block_id": 23,
+          "text": "• **頭門**",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 23
+        },
+        {
+          "block_id": 24,
+          "text": "• 頭爲天谷以藏神: \"天谷元宮也, 乃元神之室, 靈性",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 24
+        },
+        {
+          "block_id": 25,
+          "text": "之所存, 是神之要也\"라 하여 머리 부위가 정신",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 25
+        },
+        {
+          "block_id": 26,
+          "text": "을 저장하는 곳임을 설명",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 26
+        },
+        {
+          "block_id": 27,
+          "text": "• 頭有九宮: \"頭有九宮, 中曰泥丸, 九宮羅列, 七竅",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 27
+        },
+        {
+          "block_id": 28,
+          "text": "應透, 泥丸之宮, 魂魄之穴也\"라 하여 머리를 몇",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 28
+        },
+        {
+          "block_id": 29,
+          "text": "부위로 나누고 그중 泥丸에 대하여 혼백이 관련",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 29
+        },
+        {
+          "block_id": 30,
+          "text": "된 부위임을 설명",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 30
+        },
+        {
+          "block_id": 31,
+          "text": "• 腦爲髓海: \"腦者髓之海, 諸髓皆屬於腦, 故上至腦",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 31
+        },
+        {
+          "block_id": 32,
+          "text": "下至尾骶, 皆精髓升降之道路也\"라 하여 腦를",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 32
+        },
+        {
+          "block_id": 33,
+          "text": "髓까지 연계하여 설명",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 33
+        },
+        {
+          "block_id": 34,
+          "text": "• 頭風外候: \"頭者, 精明之府, 頭傾視深, 精神將奪",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 34
+        },
+        {
+          "block_id": 35,
+          "text": "矣\"라 하여 頭의 병증에 대한 전반적 인식",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 35
+        },
+        {
+          "block_id": 36,
+          "text": "• 頭風證, 眩暈, 頭目不清利, 頭痛, 腦風證, 首風",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 36
+        },
+        {
+          "block_id": 37,
+          "text": "證, 眉稜骨痛: 頭의 병증",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 37
+        },
+        {
+          "block_id": 38,
+          "text": "• **眼門**",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 38
+        },
+        {
+          "block_id": 39,
+          "text": "• 眼爲臟腑之精: \"目者, 五臟六府之精也, 榮衛魂魄",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 39
+        },
+        {
+          "block_id": 40,
+          "text": "之所常營也, 神氣之所生也, 故神勞則, 魂魄散",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 40
+        },
+        {
+          "block_id": 41,
+          "text": "志意亂\"이라 하여 정신기능을 눈에서 관찰할 수",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 41
+        },
+        {
+          "block_id": 42,
+          "text": "있음을 설명",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 42
+        },
+        {
+          "block_id": 43,
+          "text": "• **鼻門**",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 43
+        },
+        {
+          "block_id": 44,
+          "text": "• 鼻日神盧: \"神盧之中, 當修治呼吸, 盧間入丹田,",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 44
+        },
+        {
+          "block_id": 45,
+          "text": "神盧者, 鼻也, 乃神氣出入之門也\"라 하여 神氣",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 45
+        },
+        {
+          "block_id": 46,
+          "text": "가 호흡을 통하여 출입함을 설명",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 46
+        },
+        {
+          "block_id": 47,
+          "text": "• **口舌門**",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 47
+        },
+        {
+          "block_id": 48,
+          "text": "• 舌屬心: \"心氣通於舌, 心和則, 舌能知五味矣\"",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 48
+        },
+        {
+          "block_id": 49,
+          "text": "\"七情氣鬱則, 舌腫不能語\"라 하여 정신과 정서",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 49
+        },
+        {
+          "block_id": 50,
+          "text": "가 혀의 기능을 담당함을 설명",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 50
+        },
+        {
+          "block_id": 51,
+          "text": "• **咽喉門**",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 51
+        },
+        {
+          "block_id": 52,
+          "text": "• 梅核氣: \"七情氣鬱, 結成痰涎, 隨氣積聚, 堅大如",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 52
+        },
+        {
+          "block_id": 53,
+          "text": "塊, 在心腹間, 或塞咽喉, 如梅核粉絮樣, 咯不出",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 53
+        },
+        {
+          "block_id": 54,
+          "text": "嚥不下, 每發欲絶, 逆害飮食\"이라 하여 七情과",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 54
+        },
+        {
+          "block_id": 55,
+          "text": "연관된 병증으로 소개",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 55
+        },
+        {
+          "block_id": 56,
+          "text": "• **胸門**",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 56
+        },
+        {
+          "block_id": 57,
+          "text": "• 心痛: \"心痛, 因傷思慮, 脾胃痛, 因傷飮食, 或痰",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 57
+        },
+        {
+          "block_id": 58,
+          "text": "飮故也\"라 하여 심통을 설명하고 정신적인 요인",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 58
+        },
+        {
+          "block_id": 59,
+          "text": "과 연관하여 疰心痛, 悸心痛, 七情心痛을 설명함",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 59
+        },
+        {
+          "block_id": 60,
+          "text": "• **腰門**",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 60
+        },
+        {
+          "block_id": 61,
+          "text": "• 氣腰痛: \"凡人失志, 則心血不旺, 不養筋脈, 氣滯",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 61
+        },
+        {
+          "block_id": 62,
+          "text": "腰痛, 不能久立遠行\"이라 하여 정서적인 문제로",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 62
+        },
+        {
+          "block_id": 63,
+          "text": "발생하는 요통에 대하여 기술",
+          "confidence": 1.0,
+          "bbox": {
+            "top_left": [
+              0.0,
+              0.0
+            ],
+            "top_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_right": [
+              0.0,
+              0.0
+            ],
+            "bottom_left": [
+              0.0,
+              0.0
+            ]
+          },
+          "line_number": 63
+        }
+      ],
+      "full_text": "제1-1장 서 론 7\n\n事, 神遇而爲夢\"\n• 淫邪發夢, 五臟虛實爲夢, 陽氣之出入爲瘖寐: 夢\n　에 대한 기전의 설명\n• 昏沈多睡, 虛煩不睡, 臥不安, 身重嗜臥: 수면장애\n　에 대한 병증, 寢睡法, 辟惡夢의 설명\n\n• **言語門**\n• 言語謇妄, 瘖不得言, 鄭聲, 笑, 歌, 大驚不語: 언\n　어기능과 관련된 병증\n\n• **津液門**\n• 心汗: \"思慮過度, 以致心孔, 獨有汗出\"\n\n• **痰飮門**\n• 熱痰(火痰): \"多煩熱燥結, 頭面烘熱, 或爲眼爛喉\n　閉, 癲狂嘈雜, 懊憹征忡\"\n• 氣痰: \"七情鬱結, 痰滯咽喉, 形如敗絮, 或如梅核,\n　咯不出, 嚥不下, 胸膈痞悶\"\n• 驚痰: \"因驚痰結成塊, 在胸腹, 發卽跳動, 痛不可\n　忍, 或成癲癎, 婦人多有之\"\n• 痰病有似邪崇\n\n• **五臟六腑門**\n• 각 臟의 특징과 함께 修養法과 導引法이 기술\n\n「外形篇」\n\n• **頭門**\n• 頭爲天谷以藏神: \"天谷元宮也, 乃元神之室, 靈性\n　之所存, 是神之要也\"라 하여 머리 부위가 정신\n　을 저장하는 곳임을 설명\n• 頭有九宮: \"頭有九宮, 中曰泥丸, 九宮羅列, 七竅\n　應透, 泥丸之宮, 魂魄之穴也\"라 하여 머리를 몇\n　부위로 나누고 그중 泥丸에 대하여 혼백이 관련\n　된 부위임을 설명\n• 腦爲髓海: \"腦者髓之海, 諸髓皆屬於腦, 故上至腦\n　下至尾骶, 皆精髓升降之道路也\"라 하여 腦를\n\n髓까지 연계하여 설명\n• 頭風外候: \"頭者, 精明之府, 頭傾視深, 精神將奪\n　矣\"라 하여 頭의 병증에 대한 전반적 인식\n• 頭風證, 眩暈, 頭目不清利, 頭痛, 腦風證, 首風\n　證, 眉稜骨痛: 頭의 병증\n\n• **眼門**\n• 眼爲臟腑之精: \"目者, 五臟六府之精也, 榮衛魂魄\n　之所常營也, 神氣之所生也, 故神勞則, 魂魄散\n　志意亂\"이라 하여 정신기능을 눈에서 관찰할 수\n　있음을 설명\n\n• **鼻門**\n• 鼻日神盧: \"神盧之中, 當修治呼吸, 盧間入丹田,\n　神盧者, 鼻也, 乃神氣出入之門也\"라 하여 神氣\n　가 호흡을 통하여 출입함을 설명\n\n• **口舌門**\n• 舌屬心: \"心氣通於舌, 心和則, 舌能知五味矣\"\n　\"七情氣鬱則, 舌腫不能語\"라 하여 정신과 정서\n　가 혀의 기능을 담당함을 설명\n\n• **咽喉門**\n• 梅核氣: \"七情氣鬱, 結成痰涎, 隨氣積聚, 堅大如\n　塊, 在心腹間, 或塞咽喉, 如梅核粉絮樣, 咯不出\n　嚥不下, 每發欲絶, 逆害飮食\"이라 하여 七情과\n　연관된 병증으로 소개\n\n• **胸門**\n• 心痛: \"心痛, 因傷思慮, 脾胃痛, 因傷飮食, 或痰\n　飮故也\"라 하여 심통을 설명하고 정신적인 요인\n　과 연관하여 疰心痛, 悸心痛, 七情心痛을 설명함\n\n• **腰門**\n• 氣腰痛: \"凡人失志, 則心血不旺, 不養筋脈, 氣滯\n　腰痛, 不能久立遠行\"이라 하여 정서적인 문제로\n　발생하는 요통에 대하여 기술",
+      "block_count": 63,
+      "avg_confidence": 1.0,
+      "status": "completed",
+      "error": null,
+      "extracted_at": "2026-04-02T06:47:18.849798Z",
+      "extracted_by": "Claude 4.6"
+    }
+  ]
+}

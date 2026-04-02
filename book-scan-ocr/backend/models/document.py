@@ -41,6 +41,7 @@ class PageResult(BaseModel):
     """OCR results for a single page."""
 
     page_number: int | str
+    page_title: Optional[str] = None
     seq_number: int
     width: int
     height: int

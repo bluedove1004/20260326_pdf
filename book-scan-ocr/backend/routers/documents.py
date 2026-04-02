@@ -245,6 +245,72 @@ def get_document_status(document_id: str) -> DocumentStatusResponse:
     )
 
 
+def _clean_page_full_text(page: dict) -> dict:
+    """Remove the detected page_number from the end of full_text (on-the-fly post-processing).
+    Also detects header-style page numbers at the top when page_number is 'n/a'.
+    """
+    import re
+    full_text = page.get("full_text", "")
+    page_num = str(page.get("page_number", ""))
+
+    # ── Header detection for existing docs where page_number was not extracted ──
+    if (not full_text) or page_num in ("n/a", ""):
+        if full_text:
+            first_line = full_text.split('\n')[0].strip()
+            matched_num = None
+            matched_title = None
+
+            # Pattern A: "title text <number>"  e.g. "제1-1장 서 론 7"
+            m = re.search(r'^(.+?)\s+([0-9]{1,6})\s*$', first_line, re.UNICODE)
+            if m and not m.group(1).strip().isdigit() and len(m.group(1).strip()) > 2:
+                matched_title = m.group(1).strip()
+                matched_num   = m.group(2)
+
+            # Pattern B: "<number> title text"  e.g. "6 제1편 총 론"
+            if not matched_num:
+                m2 = re.match(r'^([0-9]{1,6})\s+(.+)$', first_line, re.UNICODE)
+                if m2 and not m2.group(2).strip().isdigit() and len(m2.group(2).strip()) > 2:
+                    matched_num   = m2.group(1)
+                    matched_title = m2.group(2).strip()
+
+            if matched_num:
+                page["page_number"] = matched_num
+                page["page_title"]  = matched_title
+                rest = '\n'.join(full_text.split('\n')[1:]).strip()
+                full_text = rest
+                page_num = matched_num
+        if not full_text:
+            return page
+
+    # ── Trailing page number removal (footer / bottom-of-page) ──
+    if page_num in ("n/a", ""):
+        return page
+
+    # Step A: Line-by-line removal from the bottom
+    ft_lines = full_text.split("\n")
+    noise = ' \t\r\u00a0()[]{}"\'.,-\u2018\u2019\u201c\u201d\u300d\u300f\uff02'
+    while ft_lines:
+        bare = ft_lines[-1].strip(noise)
+        if bare == page_num:
+            ft_lines.pop()
+        else:
+            break
+    full_text = "\n".join(ft_lines).strip()
+
+    # Step B: Remove page number appended inline at the end of the last line
+    num_pat = re.escape(page_num)
+    noise_pat = '[\s\u00a0\"\u2018\u2019\u201c\u201d\u300d\u300f\uff02\'()\[\]\.\-]*'
+    full_text = re.sub(
+        '[\s\u00a0]+' + num_pat + noise_pat + '$',
+        "",
+        full_text,
+        flags=re.UNICODE,
+    ).rstrip()
+
+    page["full_text"] = full_text
+    return page
+
+
 @router.get("/documents/{document_id}")
 def get_document(document_id: str) -> Any:
     """Return the full OCR result JSON for a completed document."""
@@ -256,6 +322,9 @@ def get_document(document_id: str) -> Any:
     result = _storage.load_result(document_id)
     if result is None:
         raise HTTPException(status_code=500, detail="Result file missing")
+    # Clean full_text on-the-fly for all pages
+    if isinstance(result, dict) and "pages" in result:
+        result["pages"] = [_clean_page_full_text(p) for p in result["pages"]]
     return result
 
 
@@ -268,6 +337,9 @@ def get_page(document_id: str, page_number: int) -> Any:
     page_data = _storage.load_page_result(document_id, page_number)
     if page_data is None:
         raise HTTPException(status_code=404, detail=f"Page {page_number} not found")
+    # Clean full_text on-the-fly
+    if isinstance(page_data, dict):
+        page_data = _clean_page_full_text(page_data)
     return page_data
 
 

@@ -330,38 +330,119 @@ class OCRService:
     # Parse raw EasyOCR output → PageResult
     # ------------------------------------------------------------------
 
-    def _detect_printed_page_number(self, blocks: List[TextBlock], height: int) -> Optional[str]:
-        """Look for a printed page number (top/bottom 12% of the page)."""
+    def _detect_printed_page_number(self, blocks: List[TextBlock], height: int, width: int) -> Tuple[Optional[str], Optional[str], Optional[int], Set[int]]:
+        """Look for a printed page number (top 15% / bottom 25% of the page).
+        Returns: (detected_number, surrounding_title, best_block_id, set_of_used_block_ids)
+        """
         if not blocks:
-            return None
+            return None, None, None, set()
 
         candidates = []
-        margin = height * 0.12  # Top/Bottom 12%
+        v_margin_top = height * 0.15
+        v_margin_bottom = height * 0.25 # Aggressive footer check
+        h_edge_zone = width * 0.30
         
-        # Regex for common page number formats: "123", "- 4 -", "Page 5", "iv"
-        # Matches 1-6 digits, or roman numerals, maybe with prefixes/suffixes
-        page_re = re.compile(r"^(?:(?:page|p\.)\s*)?([0-9ivx-]{1,6})(?:\s*[-])?$", re.I)
+        pure_re = re.compile(r"^(?:(?:page|p\.)\s*)?[\(\[\-\s]*([0-9ivx]{1,6})[\)\s\]\-]*$", re.I)
+        trailing_number_re = re.compile(r"(?:\s|[\(\[\-\.])[0-9]{1,6}$")
+        leading_number_re  = re.compile(r"^[0-9]{1,6}(?:\s|[\(\[\-\.])")
+
+        used_ids = set()
 
         for b in blocks:
-            y = b.bbox.top_left[1]
-            # Is it in the header or footer area?
-            if y < margin or y > (height - margin):
-                txt = b.text.strip()
-                match = page_re.search(txt)
-                if match:
-                    val = match.group(1).strip()
-                    if val:
-                        # Weight candidates: prefer ones at the very edge or centered horizontally
-                        # But for now, we'll take the most 'likely' numeric one
-                        candidates.append((y, val, len(val)))
+            y_top = b.bbox.top_left[1]
+            y_bottom = b.bbox.bottom_right[1]
+            x_left = b.bbox.top_left[0]
+            x_right = b.bbox.bottom_right[0]
+            
+            txt = b.text.strip()
+            if not txt:
+                continue
+
+            in_header = y_top < v_margin_top
+            in_footer = y_bottom > (height - v_margin_bottom)
+
+            if in_header or in_footer:
+                detected_val = None
+                remaining_title = None
+                is_pure = False
+                strip_first_line = False   # True when number was found in first line only
+                
+                match_pure = pure_re.search(txt)
+                if match_pure:
+                    detected_val = match_pure.group(1).strip()
+                    remaining_title = None
+                    is_pure = True
+                else:
+                    match_trailing = trailing_number_re.search(txt)
+                    if match_trailing:
+                        full_match = match_trailing.group(0)
+                        detected_val = full_match.strip(" ([-.])\t\n\r")
+                        remaining_title = txt[:match_trailing.start()].strip(" ([-.])\t\n\r")
+                    else:
+                        match_leading = leading_number_re.search(txt)
+                        if match_leading:
+                            full_match = match_leading.group(0)
+                            detected_val = full_match.strip(" ([-.])\t\n\r")
+                            remaining_title = txt[match_leading.end():].strip(" ([-.])\t\n\r")
+
+                # NEW: For header blocks, also try matching just the first line
+                # This handles OCR-merged blocks like "제1-1장 서 론 5\n에서 정신의학과..."
+                if in_header and not detected_val:
+                    first_line = txt.split('\n')[0].strip()
+                    if first_line and first_line != txt:
+                        m = trailing_number_re.search(first_line)
+                        if m:
+                            detected_val = m.group(0).strip(" ([-.])\t\n\r")
+                            remaining_title = first_line[:m.start()].strip(" ([-.])\t\n\r")
+                            strip_first_line = True
+                        else:
+                            m2 = leading_number_re.search(first_line)
+                            if m2:
+                                detected_val = m2.group(0).strip(" ([-.])\t\n\r")
+                                remaining_title = first_line[m2.end():].strip(" ([-.])\t\n\r")
+                                strip_first_line = True
+
+                # If purely numeric in footer area, always exclude from text even if not high score
+                if in_footer and txt.isdigit() and 1 <= len(txt) <= 5:
+                    used_ids.add(b.block_id)
+
+                if detected_val and detected_val.isdigit():
+                    score = 0
+                    if is_pure: score += 10
+                    if is_pure and (x_left > width * 0.4 and x_right < width * 0.6): score += 5
+                    
+                    is_far_left = x_left < h_edge_zone
+                    is_far_right = x_right > (width - h_edge_zone)
+                    if is_far_left or is_far_right: score += 5
+                    if x_left < width * 0.1 or x_right > width * 0.9: score += 5
+                    
+                    if y_top < height * 0.05 or y_bottom > height * 0.95: score += 3
+                    # Bonus for first-line header detection (title-style header)
+                    if strip_first_line and remaining_title and len(remaining_title) > 3: score += 8
+                    
+                    if remaining_title:
+                        remaining_title = re.sub(r'^(?:Page|P\.|p\.)\s*', '', remaining_title).strip()
+                    
+                    candidates.append({
+                        'val': detected_val,
+                        'title': remaining_title,
+                        'score': score,
+                        'used_id': b.block_id,
+                        'strip_first_line': strip_first_line,
+                        'y_top': y_top,
+                        'x_left': x_left
+                    })
 
         if not candidates:
-            return None
+            return None, None, None, None, used_ids
 
-        # Prefer candidates at the bottom first (more common for books), then top
-        # Sort by distance from nearest horizontal edge
-        candidates.sort(key=lambda x: min(x[0], abs(height - x[0])))
-        return candidates[0][1]
+        candidates.sort(key=lambda x: (x['score'], -min(x['y_top'], abs(height - x['y_top']))), reverse=True)
+        best = candidates[0]
+        for c in candidates:
+            if c['score'] >= 5:
+                used_ids.add(c['used_id'])
+        
+        return best['val'], best['title'], best['used_id'], best.get('strip_first_line', False), used_ids
 
     # ------------------------------------------------------------------
     # Parse raw EasyOCR output → PageResult
@@ -397,8 +478,9 @@ class OCRService:
             except Exception as e:
                 logger.warning("Skipping malformed OCR line on page %d: %s", page_number, e)
 
-        # Detect printed page number from detected blocks
-        printed_page_val = self._detect_printed_page_number(all_blocks, height)
+        # Detect printed page number and title from detected blocks
+        printed_page_val, detected_title, best_block_id, best_strip_first_line, used_block_ids = self._detect_printed_page_number(all_blocks, height, width)
+        
         # Use detected value if it seems like a number/roman, else use "n/a"
         effective_page_num = printed_page_val if printed_page_val else "n/a"
 
@@ -406,7 +488,53 @@ class OCRService:
         for idx, block in enumerate(sorted_blocks, start=1):
             block.line_number = idx
 
-        full_text = "\n".join(b.text for b in sorted_blocks)
+        # 1. Assembly and Primary Filter
+        text_lines = []
+        for b in sorted_blocks:
+            if b.block_id == best_block_id:
+                if best_strip_first_line:
+                    # Header was in first line only — keep remaining lines (body content)
+                    remaining_lines = b.text.split('\n')[1:]
+                    body = '\n'.join(remaining_lines).strip()
+                    if body:
+                        text_lines.append(body)
+                # In ALL other cases, skip the header block entirely from full_text
+                # (page_title is stored in the dedicated field, not in full_text)
+            elif b.block_id not in used_block_ids:
+                text_lines.append(b.text)
+        
+        full_text = "\n".join(text_lines).strip()
+
+        # 2. Secondary Filter: Remove trailing page number from full_text (MATCH ONLY)
+        if effective_page_num != "n/a":
+            # Log what we see at the tail for diagnosis
+            tail = full_text[-100:] if len(full_text) > 100 else full_text
+            logger.debug("[page_clean] effective_page=%s  tail repr=%r", effective_page_num, tail)
+
+            # Step A: Line-by-line removal from the bottom
+            ft_lines = full_text.split("\n")
+            while ft_lines:
+                # Strip only safe whitespace and common noise symbols — NO backslash
+                bare = ft_lines[-1].strip(' \t\r\u00a0()[]{}"\'.,-\u2018\u2019\u201c\u201d\u300d\u300f\uff02')
+                if bare == str(effective_page_num):
+                    logger.debug("[page_clean] Popping trailing line: %r", ft_lines[-1])
+                    ft_lines.pop()
+                else:
+                    break
+            full_text = "\n".join(ft_lines).strip()
+
+            # Step B: Inline removal — number appended to last content line
+            # e.g. "... 扶正解表의 2" or '... 扶正解表의 2"'
+            # NOTE: noise_pat must NOT be a raw string so \uXXXX escapes work correctly
+            num_pat = re.escape(str(effective_page_num))
+            noise_pat = '[\s\u00a0\"\u2018\u2019\u201c\u201d\u300d\u300f\uff02\'()\[\]\.\-]*'
+            full_text = re.sub(
+                '[\s\u00a0]+' + num_pat + noise_pat + '$',
+                "",
+                full_text,
+                flags=re.UNICODE,
+            ).rstrip()
+        
         confidences = [b.confidence for b in sorted_blocks]
         avg_confidence = (
             round(sum(confidences) / len(confidences), 4) if confidences else 0.0
@@ -414,6 +542,7 @@ class OCRService:
 
         return PageResult(
             page_number=effective_page_num,
+            page_title=detected_title,
             seq_number=page_number,
             width=width,
             height=height,

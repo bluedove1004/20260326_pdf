@@ -186,7 +186,14 @@ const DocumentViewer: React.FC = () => {
           style={{ width: `${100 - rightPanelWidth}%` }}
         >
           <div className="flex items-center justify-between px-4 py-2 border-b border-gray-100 bg-gray-50/50">
-            <span className="text-[11px] font-bold text-gray-500 uppercase tracking-tight">원본 이미지 (P{nav.currentPage})</span>
+            <span className="text-[11px] font-bold text-gray-500 uppercase tracking-tight">
+              원본 이미지 (P{nav.currentPage})
+              {currentPageData?.page_title && (
+                <span className="ml-2 text-brand-600 border-l border-gray-300 pl-2">
+                  {currentPageData.page_title}
+                </span>
+              )}
+            </span>
             <div className="flex items-center gap-2">
               <button onClick={() => setZoom((z) => Math.max(0.1, z - 0.1))} className="btn-ghost text-xs px-2 py-1 hover:bg-white">−</button>
               <span className="text-xs text-gray-600 tabular-nums w-12 text-center font-bold">{Math.round(zoom * 100)}%</span>
