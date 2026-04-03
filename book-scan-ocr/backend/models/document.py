@@ -101,3 +101,12 @@ class DocumentListItem(BaseModel):
     total_pages: int
     status: DocumentStatus
     created_at: datetime
+
+
+class PaginatedDocumentList(BaseModel):
+    """Paginated response for the documents list endpoint."""
+
+    items: List[DocumentListItem]
+    total: int
+    page: int
+    size: int

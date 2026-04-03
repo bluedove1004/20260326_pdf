@@ -15,6 +15,12 @@ import { useDocumentPolling } from '../hooks/useDocumentPolling';
 const Dashboard: React.FC = () => {
   const navigate = useNavigate();
   const [documents, setDocuments] = useState<DocumentListItem[]>([]);
+  const [total, setTotal] = useState<number>(0);
+  const [page, setPage] = useState<number>(1);
+  const [pageSize] = useState<number>(10);
+  const [searchTerm, setSearchTerm] = useState<string>(''); // Immediate input state
+  const [search, setSearch] = useState<string>(''); // Debounced state
+  const [notification, setNotification] = useState<string | null>(null);
   const [processingId, setProcessingId] = useState<string | null>(null);
   const [processingFilename, setProcessingFilename] = useState<string>('');
 
@@ -33,15 +39,49 @@ const Dashboard: React.FC = () => {
     },
   });
 
+  // Debounce search input
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setSearch(searchTerm);
+      setPage(1); // Jump to page 1 on search change
+    }, 500);
+    return () => clearTimeout(timer);
+  }, [searchTerm]);
+
+  // Auto-clear notification after 3 seconds
+  useEffect(() => {
+    if (notification) {
+      const timer = setTimeout(() => setNotification(null), 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [notification]);
+
   const refreshDocuments = useCallback(() => {
-    listDocuments().then(setDocuments).catch(console.error);
-  }, []);
+    listDocuments(page, pageSize, search)
+      .then((data) => {
+        // If current page exists but has no items (e.g. after deletion), 
+        // move to previous page automatically
+        if (data.items.length === 0 && page > 1) {
+          setPage(page - 1);
+          return;
+        }
+        setDocuments(data.items);
+        setTotal(data.total);
+        
+        // Show notification if no results for a specific search
+        if (search && data.total === 0) {
+          setNotification(`'${search}'에 대한 검색 결과가 없습니다.`);
+        }
+      })
+      .catch(console.error);
+  }, [page, pageSize, search]);
 
   useEffect(() => { refreshDocuments(); }, [refreshDocuments]);
 
   const handleUploaded = (documentId: string, filename: string) => {
     setProcessingId(documentId);
     setProcessingFilename(filename);
+    setPage(1); // Reset to first page on new upload
     refreshDocuments();
   };
 
@@ -71,8 +111,29 @@ const Dashboard: React.FC = () => {
           <ProgressBar status={pollStatus} filename={processingFilename} />
         )}
 
+        {/* Floating Notification */}
+        {notification && (
+          <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 animate-bounce-in">
+            <div className="bg-gray-800 text-white px-6 py-3 rounded-2xl shadow-2xl flex items-center gap-3 border border-gray-700">
+              <svg className="w-5 h-5 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+              <span className="text-sm font-medium">{notification}</span>
+            </div>
+          </div>
+        )}
+
         {/* Document list */}
-        <DocumentList documents={documents} onRefresh={refreshDocuments} />
+        <DocumentList 
+          documents={documents} 
+          total={total}
+          page={page}
+          pageSize={pageSize}
+          search={searchTerm}
+          onPageChange={setPage}
+          onSearchChange={setSearchTerm}
+          onRefresh={refreshDocuments} 
+        />
       </div>
     </div>
   );

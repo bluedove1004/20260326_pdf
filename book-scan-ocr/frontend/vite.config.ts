@@ -17,6 +17,9 @@ export default defineConfig({
         target: 'http://127.0.0.1:8000',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/ocr\/api/, '/api'),
+        // Allow large file uploads (10 min timeout)
+        timeout: 600000,
+        proxyTimeout: 600000,
       },
     },
   },

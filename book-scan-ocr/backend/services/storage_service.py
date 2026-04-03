@@ -4,9 +4,10 @@ from __future__ import annotations
 
 import json
 import logging
+import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import List, Optional
+from typing import List, Optional, Tuple
 
 from config import settings
 from models.document import DocumentMeta, DocumentResult, DocumentStatus, DocumentListItem, PageResult
@@ -131,17 +132,30 @@ class StorageService:
     # Document listing
     # ------------------------------------------------------------------
 
-    def list_documents(self) -> List[DocumentListItem]:
-        """Return a list of all documents with their metadata, sorted by creation time."""
+    def list_documents(
+        self, skip: int = 0, limit: int = 20, search: Optional[str] = None
+    ) -> tuple[List[DocumentListItem], int]:
+        """Return a paginated and optionally filtered list of all documents."""
         items: List[DocumentListItem] = []
         if not settings.processed_dir.exists():
-            return items
+            return [], 0
+        
+        search_lower = unicodedata.normalize("NFC", search.lower()) if search else None
+
         for doc_dir in settings.processed_dir.iterdir():
             if not doc_dir.is_dir():
                 continue
             meta = self.load_meta(doc_dir.name)
             if meta is None:
                 continue
+            
+            # Normalize filename to NFC for consistent comparison
+            filename_nfc = unicodedata.normalize("NFC", meta.filename.lower())
+            
+            # Apply search filter
+            if search_lower and search_lower not in filename_nfc:
+                continue
+
             items.append(
                 DocumentListItem(
                     document_id=meta.document_id,
@@ -151,13 +165,43 @@ class StorageService:
                     created_at=meta.created_at,
                 )
             )
+        
         # Sort by creation time descending (newest first)
-        return sorted(items, key=lambda x: x.created_at, reverse=True)
+        sorted_items = sorted(items, key=lambda x: x.created_at, reverse=True)
+        total = len(sorted_items)
+        
+        # Apply slice
+        return sorted_items[skip : skip + limit], total
 
     # ------------------------------------------------------------------
-    # Upload directory helpers
+    # Storage helpers
     # ------------------------------------------------------------------
 
     def upload_path(self, document_id: str, filename: str) -> Path:
         """Return a path for a newly uploaded PDF."""
         return settings.upload_dir / f"{document_id}_{filename}"
+
+    # ------------------------------------------------------------------
+    # Delete Logic
+    # ------------------------------------------------------------------
+
+    def delete_document(self, document_id: str) -> bool:
+        """Fully remove a document's directories and uploaded files."""
+        import shutil
+        try:
+            # 1. Remove processed directory (and all its subdirs/files)
+            doc_dir = self._doc_dir(document_id)
+            if doc_dir.exists():
+                shutil.rmtree(doc_dir)
+            
+            # 2. Remove any matching files in the upload directory
+            # Based on upload_path: settings.upload_dir / f"{document_id}_{filename}"
+            if settings.upload_dir.exists():
+                for upload_file in settings.upload_dir.glob(f"{document_id}_*"):
+                    upload_file.unlink()
+            
+            logger.info("Deleted all files for document %s", document_id)
+            return True
+        except Exception as e:
+            logger.error("Failed to delete document %s: %s", document_id, e)
+            return False

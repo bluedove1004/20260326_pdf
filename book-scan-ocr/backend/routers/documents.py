@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 import aiofiles
+from urllib.parse import quote
 from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException, Request, UploadFile, File, Form
 from pydantic import BaseModel
 from fastapi.responses import FileResponse, JSONResponse
@@ -22,6 +23,7 @@ from models.document import (
     DocumentResult,
     DocumentStatus,
     DocumentStatusResponse,
+    PaginatedDocumentList,
 )
 from models.settings import PreprocessingOptions
 from services.ocr_service import OCRService
@@ -169,28 +171,33 @@ async def upload_document(
 
     Returns: document_id, total_pages (0 until processing starts), status.
     """
-    # Validate content type
+    # Validate file type
     if not file.filename or not file.filename.lower().endswith(".pdf"):
         raise HTTPException(status_code=400, detail="Only PDF files are accepted")
-
-    # Read and size-check
-    content = await file.read()
-    if len(content) > settings.max_file_size_bytes:
-        raise HTTPException(
-            status_code=413,
-            detail=f"File exceeds maximum size of {settings.max_file_size_mb} MB",
-        )
 
     document_id = str(uuid.uuid4())
     safe_name = Path(file.filename).name
     pdf_path = _storage.upload_path(document_id, safe_name)
 
-    # Save uploaded file
-    async with aiofiles.open(pdf_path, "wb") as f:
-        await f.write(content)
-
-    # Create document directories and initial metadata
+    # Stream upload directly to disk (avoids loading large PDF into memory)
     _storage.create_document_dirs(document_id)
+    file_size = 0
+    async with aiofiles.open(pdf_path, "wb") as f:
+        while True:
+            chunk = await file.read(1024 * 1024)  # 1 MB chunks
+            if not chunk:
+                break
+            file_size += len(chunk)
+            if file_size > settings.max_file_size_bytes:
+                await f.close()
+                pdf_path.unlink(missing_ok=True)
+                raise HTTPException(
+                    status_code=413,
+                    detail=f"File exceeds maximum size of {settings.max_file_size_mb} MB",
+                )
+            await f.write(chunk)
+
+    # Create initial metadata
     meta = DocumentMeta(
         document_id=document_id,
         filename=safe_name,
@@ -224,10 +231,23 @@ async def upload_document(
     return {"document_id": document_id, "total_pages": 0, "status": "pending"}
 
 
-@router.get("/documents", response_model=List[DocumentListItem])
-def list_documents() -> List[DocumentListItem]:
-    """Return all uploaded documents with summary metadata."""
-    return _storage.list_documents()
+@router.get("/documents", response_model=PaginatedDocumentList)
+def list_documents(
+    page: int = 1, size: int = 10, q: Optional[str] = None
+) -> PaginatedDocumentList:
+    """Return a paginated list of all documents with summary metadata."""
+    skip = (page - 1) * size
+    items, total = _storage.list_documents(skip=skip, limit=size, search=q)
+    return PaginatedDocumentList(items=items, total=total, page=page, size=size)
+
+
+@router.delete("/documents/{document_id}")
+def delete_document(document_id: str) -> dict:
+    """Delete a document and all its associated files."""
+    success = _storage.delete_document(document_id)
+    if not success:
+        raise HTTPException(status_code=500, detail="Failed to delete document")
+    return {"message": "Document deleted successfully", "document_id": document_id}
 
 
 @router.get("/documents/{document_id}/status", response_model=DocumentStatusResponse)
@@ -365,6 +385,40 @@ def download_document(document_id: str) -> FileResponse:
         str(result_path),
         media_type="application/json",
         filename=f"{document_id}_result.json",
+    )
+
+
+@router.get("/documents/{document_id}/download-minimal")
+def download_minimal(document_id: str) -> JSONResponse:
+    """Return OCR result JSON excluding the large text_blocks field for each page."""
+    result = _storage.load_result(document_id)
+    if result is None:
+        raise HTTPException(status_code=404, detail="Result not available yet")
+    
+    # Convert Pydantic model to dict for manipulation
+    data = result.model_dump(mode="json")
+    
+    # Strip text_blocks from every page to reduce size
+    for page in data.get("pages", []):
+        page.pop("text_blocks", None)
+        # Also recalculate or clear block_count if needed, but per user request, we just exclude the content
+        page["block_count"] = 0 
+            
+    # Safely encode filename for header
+    safe_filename = Path(result.filename).stem
+    filename = f"{safe_filename}_minimal.json"
+    encoded_filename = quote(filename)
+    
+    # Pretty print the JSON for readability
+    json_str = json.dumps(data, indent=2, ensure_ascii=False)
+    
+    from fastapi import Response
+    return Response(
+        content=json_str,
+        media_type="application/json",
+        headers={
+            "Content-Disposition": f"attachment; filename*=UTF-8''{encoded_filename}"
+        },
     )
 
 

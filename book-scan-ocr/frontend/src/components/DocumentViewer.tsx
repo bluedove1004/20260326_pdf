@@ -5,7 +5,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { getDocument, getDownloadUrl, getPage, getPageImageUrl, llmExtractPage } from '../services/api';
+import { getDocument, getDownloadUrl, getMinimalDownloadUrl, getPage, getPageImageUrl, llmExtractPage } from '../services/api';
 import type { DocumentResult, PageResult } from '../types';
 import BlockView from './BlockView';
 import JsonView from './JsonView';
@@ -144,17 +144,31 @@ const DocumentViewer: React.FC = () => {
             <p className="text-xs text-gray-400">{document.total_pages}페이지 · {document.ocr_engine}</p>
           </div>
         </div>
-        <a
-          href={id ? getDownloadUrl(id) : '#'}
-          download
-          className="btn-secondary text-xs shadow-none border-gray-200"
-          id="download-json-btn"
-        >
-          <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-          </svg>
-          JSON 다운로드
-        </a>
+        <div className="flex items-center gap-2">
+          <a
+            href={id ? getDownloadUrl(id) : '#'}
+            download
+            className="btn-secondary text-[11px] h-8 px-3 shadow-none border-gray-200 font-bold"
+            id="download-json-btn"
+          >
+            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            JSON 다운로드
+          </a>
+          <a
+            href={id ? getMinimalDownloadUrl(id) : '#'}
+            download
+            className="btn-secondary text-[10px] h-8 px-3 shadow-none border-brand-100 bg-brand-50/50 text-brand-700 hover:bg-brand-100 font-bold"
+            id="download-minimal-json-btn"
+            title="상세 좌표 정보(text_blocks)를 제외하여 용량을 줄인 버전입니다"
+          >
+            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            JSON 다운로드 (textblock 제외)
+          </a>
+        </div>
       </div>
 
       {/* 3-panel layout */}

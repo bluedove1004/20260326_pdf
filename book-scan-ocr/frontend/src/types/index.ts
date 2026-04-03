@@ -52,6 +52,13 @@ export interface DocumentListItem {
   created_at: string;
 }
 
+export interface PaginatedDocuments {
+  items: DocumentListItem[];
+  total: number;
+  page: number;
+  size: number;
+}
+
 export interface DocumentStatusResponse {
   document_id: string;
   status: DocumentStatus;

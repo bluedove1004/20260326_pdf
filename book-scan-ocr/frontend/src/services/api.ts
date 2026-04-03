@@ -12,6 +12,7 @@ import type {
   OCRSettings,
   PageResult,
   UploadResponse,
+  PaginatedDocuments,
 } from '../types';
 
 // Robustly detect base path (handles direct domain vs subpath /ocr/ deployment)
@@ -50,14 +51,20 @@ export async function uploadDocument(
   return data;
 }
 
-export async function listDocuments(): Promise<DocumentListItem[]> {
-  const { data } = await api.get<DocumentListItem[]>('/documents');
+export async function listDocuments(page = 1, size = 10, search?: string): Promise<PaginatedDocuments> {
+  const { data } = await api.get<PaginatedDocuments>('/documents', {
+    params: { page, size, q: search },
+  });
   return data;
 }
 
 export async function getDocumentStatus(id: string): Promise<DocumentStatusResponse> {
   const { data } = await api.get<DocumentStatusResponse>(`/documents/${id}/status`);
   return data;
+}
+
+export async function deleteDocument(id: string): Promise<void> {
+  await api.delete(`/documents/${id}`);
 }
 
 export async function getDocument(id: string): Promise<DocumentResult> {
@@ -86,6 +93,10 @@ export async function llmExtractPage(
 
 export function getDownloadUrl(id: string): string {
   return `${api.defaults.baseURL}/documents/${id}/download`;
+}
+
+export function getMinimalDownloadUrl(id: string): string {
+  return `${api.defaults.baseURL}/documents/${id}/download-minimal`;
 }
 
 // ──────────────────────────────────────────────
