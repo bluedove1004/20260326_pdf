@@ -38,6 +38,19 @@ class Settings(BaseSettings):
     # Settings file
     settings_file: Path = Path(__file__).parent / "processed" / "settings.json"
 
+    # MySQL Database
+    mysql_user: str = "ocr_user"
+    mysql_password: str = "ocr_pass"
+    mysql_host: str = "localhost"
+    mysql_port: int = 3306
+    mysql_db: str = "ocr_db"
+
+    @property
+    def database_url(self) -> str:
+        """Construct the SQL Alchemy connection string."""
+        # Switching to SQLite for simpler setup; override via environment variable if MySQL is needed.
+        return os.getenv("DATABASE_URL", f"sqlite:///{self.base_dir}/ocr_data.db")
+
     model_config = {
         "env_file": ".env",
         "env_file_encoding": "utf-8",

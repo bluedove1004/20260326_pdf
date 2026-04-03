@@ -28,8 +28,10 @@ from models.document import (
 from models.settings import PreprocessingOptions
 from services.ocr_service import OCRService
 from services.llm_service import LLMService
-from services.pdf_service import PDFService
 from services.storage_service import StorageService
+from services.pdf_service import PDFService
+from database import get_db, SessionLocal
+from sqlalchemy.orm import Session
 
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/api", tags=["documents"])
@@ -53,11 +55,7 @@ class LLMExtractRequest(BaseModel):
     model: Optional[str] = None
 
 
-# ──────────────────────────────────────────────
-# Background processing
-# ──────────────────────────────────────────────
-
-
+# ----------------------------------------------
 async def _run_ocr_pipeline(
     document_id: str,
     pdf_path: Path,
@@ -69,67 +67,47 @@ async def _run_ocr_pipeline(
     openai_api_key: Optional[str] = None,
     anthropic_api_key: Optional[str] = None,
 ) -> None:
-    """
-    Full OCR pipeline executed in background:
-      1. Convert PDF pages to images
-      2. Run OCR on each page
-      3. Assemble and save the final result JSON
-    """
-    meta = _storage.load_meta(document_id)
-    if meta is None:
-        logger.error("Meta not found for document %s – aborting pipeline", document_id)
-        return
-
-    start_time = time.time()
-    images_dir = _storage.images_dir(document_id)
-
+    db = SessionLocal()
     try:
-        # Step 1 – PDF → images
+        meta = _storage.load_meta(db, document_id)
+        if meta is None:
+            logger.error("Meta not found for document %s - aborting pipeline", document_id)
+            return
+
+        start_time = time.time()
+        images_dir = _storage._images_dir(document_id)
+
+        # Step 1 - PDF -> images
         logger.info("[%s] Converting PDF to images (dpi=%d)", document_id, dpi)
         total_pages = _pdf.convert_pdf_to_images(pdf_path, images_dir, dpi=dpi, preprocessing=preprocessing)
 
-        _storage.update_meta(document_id, total_pages=total_pages, status=DocumentStatus.processing)
-        meta = _storage.load_meta(document_id)
+        meta.total_pages = total_pages
+        meta.status = DocumentStatus.processing
+        _storage.save_meta(db, meta)
 
-        # Step 2 – OCR each page
+        # Step 2 - OCR each page
         page_results = []
         for page_num in range(1, total_pages + 1):
             img_path = images_dir / f"page_{page_num:04d}.png"
-            logger.info("[%s] OCR page %d/%d", document_id, page_num, total_pages)
-
-            if meta.ocr_provider == "chatgpt":
-                page_result = await llm_service.process_page_with_openai(
-                    img_path, page_num, openai_api_key
-                )
-                model_label = "GPT-4o"
-            elif meta.ocr_provider == "claude":
-                page_result = await llm_service.process_page_with_anthropic(
-                    img_path, page_num, anthropic_api_key
-                )
-                model_label = "Claude 4.6"
-            else:
-                page_result = ocr_service.process_page(img_path, page_num)
-                model_label = "EasyOCR"
+            page_result = ocr_service.process_page(img_path, page_num)
             
             # Set metadata
             page_result = page_result.model_copy(update={
                 "extracted_at": datetime.now(timezone.utc),
-                "extracted_by": model_label
+                "extracted_by": "EasyOCR"
             })
 
-            page_dict = page_result.model_dump(mode='json')
-            _storage.save_page_result(document_id, page_dict)
+            _storage.save_page_result(document_id, page_result.model_dump(mode='json'))
             page_results.append(page_result)
 
             # Update progress
-            progress = round((page_num / total_pages) * 100, 1)
-            _storage.update_meta(
-                document_id,
-                processed_pages=page_num,
-                progress_percent=progress,
-            )
+            meta.processed_pages = page_num
+            meta.progress_percent = round((page_num / total_pages) * 100, 1)
+            # We don't save DB on every page to avoid overhead, maybe every 5 pages
+            if page_num % 5 == 0 or page_num == total_pages:
+                _storage.save_meta(db, meta)
 
-        # Step 3 – Assemble full result
+        # Step 3 - Assemble full result
         elapsed = round(time.time() - start_time, 2)
         result = DocumentResult(
             document_id=document_id,
@@ -140,22 +118,27 @@ async def _run_ocr_pipeline(
             pages=page_results,
         )
         _storage.save_result(result)
-        _storage.update_meta(
-            document_id,
-            status=DocumentStatus.completed,
-            progress_percent=100.0,
-            completed_at=datetime.now(tz=timezone.utc),
-        )
+        
+        meta.status = DocumentStatus.completed
+        meta.completed_at = datetime.now(tz=timezone.utc)
+        _storage.save_meta(db, meta)
         logger.info("[%s] Completed in %.1fs", document_id, elapsed)
 
     except Exception as e:
         logger.exception("[%s] Pipeline failed: %s", document_id, e)
-        _storage.update_meta(document_id, status=DocumentStatus.failed, error=str(e))
+        # Reload meta to ensure we have a fresh copy
+        meta = _storage.load_meta(db, document_id)
+        if meta:
+            meta.status = DocumentStatus.failed
+            meta.error = str(e)
+            _storage.save_meta(db, meta)
+    finally:
+        db.close()
 
 
-# ──────────────────────────────────────────────
+# ----------------------------------------------
 # Endpoints
-# ──────────────────────────────────────────────
+# ----------------------------------------------
 
 
 @router.post("/upload")
@@ -233,27 +216,30 @@ async def upload_document(
 
 @router.get("/documents", response_model=PaginatedDocumentList)
 def list_documents(
-    page: int = 1, size: int = 10, q: Optional[str] = None
+    page: int = 1,
+    size: int = 10,
+    q: Optional[str] = None,
+    db: Session = Depends(get_db)
 ) -> PaginatedDocumentList:
     """Return a paginated list of all documents with summary metadata."""
     skip = (page - 1) * size
-    items, total = _storage.list_documents(skip=skip, limit=size, search=q)
+    items, total = _storage.list_documents(db, skip=skip, limit=size, search=q)
     return PaginatedDocumentList(items=items, total=total, page=page, size=size)
 
 
 @router.delete("/documents/{document_id}")
-def delete_document(document_id: str) -> dict:
+def delete_document(document_id: str, db: Session = Depends(get_db)) -> dict:
     """Delete a document and all its associated files."""
-    success = _storage.delete_document(document_id)
+    success = _storage.delete_document(db, document_id)
     if not success:
         raise HTTPException(status_code=500, detail="Failed to delete document")
     return {"message": "Document deleted successfully", "document_id": document_id}
 
 
 @router.get("/documents/{document_id}/status", response_model=DocumentStatusResponse)
-def get_document_status(document_id: str) -> DocumentStatusResponse:
+def get_document_status(document_id: str, db: Session = Depends(get_db)) -> DocumentStatusResponse:
     """Return the current OCR processing status for a document."""
-    meta = _storage.load_meta(document_id)
+    meta = _storage.load_meta(db, document_id)
     if meta is None:
         raise HTTPException(status_code=404, detail="Document not found")
     return DocumentStatusResponse(
@@ -273,7 +259,7 @@ def _clean_page_full_text(page: dict) -> dict:
     full_text = page.get("full_text", "")
     page_num = str(page.get("page_number", ""))
 
-    # ── Header detection for existing docs where page_number was not extracted ──
+    # -- Header detection for existing docs where page_number was not extracted --
     if (not full_text) or page_num in ("n/a", ""):
         if full_text:
             first_line = full_text.split('\n')[0].strip()
@@ -302,7 +288,7 @@ def _clean_page_full_text(page: dict) -> dict:
         if not full_text:
             return page
 
-    # ── Trailing page number removal (footer / bottom-of-page) ──
+    # -- Trailing page number removal (footer / bottom-of-page) --
     if page_num in ("n/a", ""):
         return page
 
@@ -332,9 +318,9 @@ def _clean_page_full_text(page: dict) -> dict:
 
 
 @router.get("/documents/{document_id}")
-def get_document(document_id: str) -> Any:
+def get_document(document_id: str, db: Session = Depends(get_db)) -> Any:
     """Return the full OCR result JSON for a completed document."""
-    meta = _storage.load_meta(document_id)
+    meta = _storage.load_meta(db, document_id)
     if meta is None:
         raise HTTPException(status_code=404, detail="Document not found")
     if meta.status != DocumentStatus.completed:
@@ -349,9 +335,9 @@ def get_document(document_id: str) -> Any:
 
 
 @router.get("/documents/{document_id}/pages/{page_number}")
-def get_page(document_id: str, page_number: int) -> Any:
+def get_page(document_id: str, page_number: int, db: Session = Depends(get_db)) -> Any:
     """Return the OCR result for a single page."""
-    meta = _storage.load_meta(document_id)
+    meta = _storage.load_meta(db, document_id)
     if meta is None:
         raise HTTPException(status_code=404, detail="Document not found")
     page_data = _storage.load_page_result(document_id, page_number)
@@ -373,9 +359,9 @@ def get_page_image(document_id: str, page_number: int) -> FileResponse:
 
 
 @router.get("/documents/{document_id}/download")
-def download_document(document_id: str) -> FileResponse:
+def download_document(document_id: str, db: Session = Depends(get_db)) -> FileResponse:
     """Download the full result JSON file."""
-    meta = _storage.load_meta(document_id)
+    meta = _storage.load_meta(db, document_id)
     if meta is None:
         raise HTTPException(status_code=404, detail="Document not found")
     result_path = _storage._result_path(document_id)
@@ -427,10 +413,11 @@ async def llm_extract_page(
     document_id: str,
     page_number: int,
     extract_req: LLMExtractRequest,
-    llm_service: LLMService = Depends(get_llm_service)
+    llm_service: LLMService = Depends(get_llm_service),
+    db: Session = Depends(get_db)
 ) -> Any:
     """Re-extract text from a specific page using LLM (ChatGPT/Claude)."""
-    meta = _storage.load_meta(document_id)
+    meta = _storage.load_meta(db, document_id)
     if meta is None:
         raise HTTPException(status_code=404, detail="Document not found")
     
@@ -490,9 +477,9 @@ async def llm_extract_page(
     return page_result
 
 
-# ──────────────────────────────────────────────
+# ----------------------------------------------
 # Helpers
-# ──────────────────────────────────────────────
+# ----------------------------------------------
 
 
 def _load_current_settings() -> dict:

@@ -19,6 +19,10 @@ from routers import pdf_tools as pdf_router
 from services.ocr_service import OCRService
 from services.llm_service import LLMService
 
+# Database
+from database import engine, Base
+from models import orm
+
 # ──────────────────────────────────────────────
 # Logging setup
 # ──────────────────────────────────────────────
@@ -58,7 +62,12 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
         use_gpu=settings.use_gpu,
     )
     app.state.llm_service = LLMService()
-    logger.info("OCR and LLM services ready")
+
+    # Create tables
+    logger.info("Syncing database schema (creating tables)...")
+    Base.metadata.create_all(bind=engine)
+
+    logger.info("OCR and LLM services ready with MySQL")
     yield
     logger.info("Shutting down")
 
