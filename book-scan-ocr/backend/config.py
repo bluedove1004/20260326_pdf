@@ -42,14 +42,17 @@ class Settings(BaseSettings):
     mysql_user: str = "ocr_user"
     mysql_password: str = "ocr_pass"
     mysql_host: str = "localhost"
-    mysql_port: int = 3306
+    mysql_port: int = 3309
     mysql_db: str = "ocr_db"
 
     @property
     def database_url(self) -> str:
         """Construct the SQL Alchemy connection string."""
-        # Switching to SQLite for simpler setup; override via environment variable if MySQL is needed.
-        return os.getenv("DATABASE_URL", f"sqlite:///{self.base_dir}/ocr_data.db")
+        return os.getenv(
+            "DATABASE_URL",
+            f"mysql+pymysql://{self.mysql_user}:{self.mysql_password}@"
+            f"{self.mysql_host}:{self.mysql_port}/{self.mysql_db}?charset=utf8mb4"
+        )
 
     model_config = {
         "env_file": ".env",

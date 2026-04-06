@@ -148,6 +148,7 @@ async def upload_document(
     file: UploadFile = File(...),
     openai_api_key: Optional[str] = Form(None),
     anthropic_api_key: Optional[str] = Form(None),
+    db: Session = Depends(get_db)
 ) -> Dict[str, Any]:
     """
     Accept a PDF upload, persist it, and start OCR in the background.
@@ -189,7 +190,7 @@ async def upload_document(
         created_at=datetime.now(tz=timezone.utc),
         ocr_provider=_load_current_settings().get("ocr_provider", "easyocr"),
     )
-    _storage.save_meta(meta)
+    _storage.save_meta(db, meta)
 
     # Load current settings for preprocessing/DPI
     ocr_service: OCRService = get_ocr_service(request)

@@ -41,6 +41,9 @@ class StorageService:
     # Directory management
     # ------------------------------------------------------------------
 
+    def upload_path(self, document_id: str, filename: str) -> Path:
+        return settings.upload_dir / f"{document_id}_{filename}"
+
     def create_document_dirs(self, document_id: str) -> None:
         """Create all subdirectories for a new document."""
         for d in [self._doc_dir(document_id), self._images_dir(document_id), self._pages_dir(document_id)]:
@@ -153,9 +156,13 @@ class StorageService:
         query = db.query(sql_models.Document)
         
         if search:
-            # Using simple LIKE for filename search
-            search_clean = unicodedata.normalize("NFC", search.lower())
-            query = query.filter(sql_models.Document.filename.ilike(f"%{search_clean}%"))
+            # Match both NFC (composed) and NFD (decomposed) for Korean filename search
+            search_nfc = unicodedata.normalize("NFC", search.lower())
+            search_nfd = unicodedata.normalize("NFD", search.lower())
+            query = query.filter(
+                sql_models.Document.filename.ilike(f"%{search_nfc}%") |
+                sql_models.Document.filename.ilike(f"%{search_nfd}%")
+            )
         
         total = query.count()
         docs = query.order_by(sql_models.Document.created_at.desc()).offset(skip).limit(limit).all()
