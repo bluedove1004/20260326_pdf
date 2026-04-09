@@ -87,14 +87,34 @@ async def _run_ocr_pipeline(
 
         # Step 2 - OCR each page
         page_results = []
+        ocr_provider = getattr(meta, 'ocr_provider', 'easyocr').lower()
+        
         for page_num in range(1, total_pages + 1):
             img_path = images_dir / f"page_{page_num:04d}.png"
-            page_result = ocr_service.process_page(img_path, page_num)
+            
+            if ocr_provider in ["claude", "anthropic", "gpt", "openai", "chatgpt"]:
+                # Use LLM (Claude or ChatGPT)
+                if ocr_provider in ["claude", "anthropic"]:
+                    model = "claude-sonnet-4-6" # Keeping the stable model ID for actual API, updating display label
+                    provider_label = "Claude 4.6 Sonnet"
+                    page_result = await llm_service.process_page_with_anthropic(
+                        img_path, anthropic_api_key, page_num, model=model
+                    )
+                else:
+                    model = "gpt-4o"
+                    provider_label = "ChatGPT-4o"
+                    page_result = await llm_service.process_page_with_openai(
+                        img_path, openai_api_key, page_num, model=model
+                    )
+            else:
+                # Default to local EasyOCR
+                provider_label = "EasyOCR"
+                page_result = ocr_service.process_page(img_path, page_num)
             
             # Set metadata
             page_result = page_result.model_copy(update={
                 "extracted_at": datetime.now(timezone.utc),
-                "extracted_by": "EasyOCR"
+                "extracted_by": provider_label
             })
 
             _storage.save_page_result(document_id, page_result.model_dump(mode='json'))

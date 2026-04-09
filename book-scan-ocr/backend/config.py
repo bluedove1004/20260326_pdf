@@ -42,7 +42,7 @@ class Settings(BaseSettings):
     mysql_user: str = "ocr_user"
     mysql_password: str = "ocr_pass"
     mysql_host: str = "localhost"
-    mysql_port: int = 3309
+    mysql_port: int = 3306
     mysql_db: str = "ocr_db"
 
     @property
