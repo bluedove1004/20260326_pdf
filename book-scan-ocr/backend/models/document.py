@@ -100,6 +100,7 @@ class DocumentListItem(BaseModel):
     filename: str
     total_pages: int
     status: DocumentStatus
+    progress: int = 0
     created_at: datetime
 
 

@@ -79,10 +79,15 @@ async def _run_ocr_pipeline(
 
         # Step 1 - PDF -> images
         logger.info("[%s] Converting PDF to images (dpi=%d)", document_id, dpi)
-        total_pages = _pdf.convert_pdf_to_images(pdf_path, images_dir, dpi=dpi, preprocessing=preprocessing)
+        # Show immediate activity
+        meta.status = DocumentStatus.processing
+        meta.progress_percent = 5.0
+        _storage.save_meta(db, meta)
+
+        total_pages = _pdf.convert_to_images(pdf_path, images_dir, dpi=dpi, preprocessing=preprocessing)
 
         meta.total_pages = total_pages
-        meta.status = DocumentStatus.processing
+        meta.progress_percent = 10.0
         _storage.save_meta(db, meta)
 
         # Step 2 - OCR each page
@@ -122,10 +127,11 @@ async def _run_ocr_pipeline(
 
             # Update progress
             meta.processed_pages = page_num
-            meta.progress_percent = round((page_num / total_pages) * 100, 1)
-            # We don't save DB on every page to avoid overhead, maybe every 5 pages
-            if page_num % 5 == 0 or page_num == total_pages:
-                _storage.save_meta(db, meta)
+            # Starting from 10%, distribute the remaining 90% across pages
+            meta.progress_percent = round(10.0 + (page_num / total_pages) * 90.0, 1)
+            
+            # Save on every page for better UI feedback, overhead is minimal with 1 query
+            _storage.save_meta(db, meta)
 
         # Step 3 - Assemble full result
         elapsed = round(time.time() - start_time, 2)

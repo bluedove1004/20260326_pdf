@@ -1,0 +1,15 @@
+{
+  "page_number": 21,
+  "page_title": null,
+  "seq_number": 21,
+  "width": 0,
+  "height": 0,
+  "text_blocks": [],
+  "full_text": "",
+  "block_count": 0,
+  "avg_confidence": 0.0,
+  "status": "failed",
+  "error": "\"Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted\"",
+  "extracted_at": "2026-04-13T06:21:36.340376Z",
+  "extracted_by": "Claude 4.6 Sonnet"
+}

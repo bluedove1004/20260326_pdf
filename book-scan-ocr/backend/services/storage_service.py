@@ -73,6 +73,7 @@ class StorageService:
         
         doc.filename = meta.filename
         doc.total_pages = meta.total_pages
+        doc.progress = int(getattr(meta, 'progress_percent', 0))
         doc.status = meta.status
         doc.created_at = meta.created_at
         doc.completed_at = meta.completed_at
@@ -91,13 +92,21 @@ class StorageService:
         if not doc:
             return None
         
+        # Use stored progress or compute from status
+        progress = float(doc.progress or 0)
+        if doc.status == "completed":
+            progress = 100.0
+            processed = doc.total_pages
+        else:
+            processed = int((progress / 100) * doc.total_pages) if doc.total_pages > 0 else 0
+
         return DocumentMeta(
             document_id=doc.document_id,
             filename=doc.filename,
             total_pages=doc.total_pages,
             status=DocumentStatus(doc.status),
-            processed_pages=doc.total_pages if doc.status == "completed" else 0,
-            progress_percent=100.0 if doc.status == "completed" else 0.0,
+            processed_pages=processed,
+            progress_percent=progress,
             created_at=doc.created_at,
             completed_at=doc.completed_at,
             ocr_provider=doc.ocr_provider or "easyocr"
@@ -173,6 +182,7 @@ class StorageService:
                 filename=d.filename,
                 total_pages=d.total_pages,
                 status=DocumentStatus(d.status),
+                progress=d.progress or 0,
                 created_at=d.created_at
             )
             for d in docs

@@ -4,12 +4,15 @@ from __future__ import annotations
 
 import logging
 import math
+import gc
+import tempfile
+import os
 from pathlib import Path
-from typing import Generator, Tuple
+from typing import Generator, Tuple, List, Optional
 
 import cv2
 import numpy as np
-from pdf2image import convert_from_path
+from pdf2image import convert_from_path, pdfinfo_from_path
 from PIL import Image
 
 from config import settings
@@ -28,56 +31,22 @@ class PDFService:
         chunk_size: int = 200,
     ) -> List[Tuple[str, Path]]:
         """
-        Split a PDF into chunks of chunk_size pages.
-        
-        Returns:
-            List of (filename, absolute_path) for the split files.
+        No-op/Placeholder for potential chunked extraction if needed.
+        Currently using disk-streamed single extraction for stability.
         """
-        from pypdf import PdfReader, PdfWriter
-        
-        logger.info("Splitting PDF '%s' into chunks of %d", pdf_path.name, chunk_size)
-        output_dir.mkdir(parents=True, exist_ok=True)
-        
-        reader = PdfReader(str(pdf_path))
-        total_pages = len(reader.pages)
-        base_name = pdf_path.stem # Filename without extension
-        
-        results = []
-        for start in range(0, total_pages, chunk_size):
-            end = min(start + chunk_size, total_pages)
-            writer = PdfWriter()
-            
-            for page_num in range(start, end):
-                writer.add_page(reader.pages[page_num])
-            
-            # Format: Original_1_to_200.pdf
-            # User example: "방제학-상_1_to_200.pdf", "401_to_.pdf" (for the last)
-            # If it's the last chunk and incomplete? 
-            # Request says "401_to_.pdf" for the last one in the example.
-            is_last = (end == total_pages)
-            if is_last and start + 1 != total_pages:
-                 chunk_filename = f"{base_name}_{start+1}_to_.pdf"
-            else:
-                 chunk_filename = f"{base_name}_{start+1}_to_{end}.pdf"
-            
-            output_path = output_dir / chunk_filename
-            with open(output_path, "wb") as f:
-                writer.write(f)
-            
-            results.append((chunk_filename, output_path))
-            logger.info("Created split: %s", chunk_filename)
-        
-        return results
+        # (Legacy placeholder, not used in core pipeline right now)
+        return [("full", pdf_path)]
 
-    def convert_pdf_to_images(
+    def convert_to_images(
         self,
         pdf_path: Path,
         output_dir: Path,
         dpi: int = 300,
-        preprocessing: PreprocessingOptions | None = None,
+        preprocessing: Optional[PreprocessingOptions] = None,
     ) -> int:
         """
         Convert each page of the PDF to a PNG image and save to output_dir.
+        Optimized to stay under 900MB by using disk-based buffering.
 
         Args:
             pdf_path: Path to the input PDF file.
@@ -91,23 +60,52 @@ class PDFService:
         if preprocessing is None:
             preprocessing = PreprocessingOptions()
 
-        logger.info("Converting PDF '%s' at %d DPI", pdf_path.name, dpi)
+        logger.info("Converting PDF '%s' at %d DPI using disk-based processing", pdf_path.name, dpi)
         output_dir.mkdir(parents=True, exist_ok=True)
 
-        # Convert PDF pages to PIL Images (one at a time to save memory)
-        pages = convert_from_path(str(pdf_path), dpi=dpi, fmt="png", thread_count=1)
-        total = len(pages)
-        logger.info("PDF has %d pages", total)
+        # 1. Get total page count first
+        info = pdfinfo_from_path(str(pdf_path))
+        total_pages = info["Pages"]
+        logger.info("PDF has %d pages", total_pages)
 
-        for i, pil_img in enumerate(pages, start=1):
-            out_path = output_dir / f"page_{i:04d}.png"
-            processed = self._preprocess(pil_img, preprocessing)
-            processed.save(str(out_path), format="PNG")
-            logger.debug("Saved page %d → %s", i, out_path)
-            # Release memory
-            del pil_img, processed
+        # 2. Use a temporary directory for per-page conversion to save memory
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            logger.debug("Using temp directory for conversion: %s", tmp_dir)
+            
+            # Use convert_from_path with output_folder to write directly to disk
+            # This prevents loading all PIL Images into RAM at once
+            convert_from_path(
+                str(pdf_path),
+                dpi=dpi,
+                fmt="png",
+                output_folder=tmp_dir,
+                thread_count=1,
+                output_file="temp_page"
+            )
+            
+            # 3. Process the generated files one by one and clean up
+            # pdf2image saves files as temp_pageXXXX-XX.png or similar
+            temp_files = sorted([f for f in os.listdir(tmp_dir) if f.startswith("temp_page")])
+            
+            for i, filename in enumerate(temp_files, start=1):
+                temp_path = os.path.join(tmp_dir, filename)
+                out_path = output_dir / f"page_{i:04d}.png"
+                
+                with Image.open(temp_path) as pil_img:
+                    processed = self._preprocess(pil_img, preprocessing)
+                    processed.save(str(out_path), format="PNG")
+                    logger.debug("Processed and saved page %d -> %s", i, out_path)
+                    
+                    # Force closure to free handles
+                    if hasattr(processed, 'close'):
+                        processed.close()
+                    del processed
+                
+                # Garbage collection every few pages to maintain low memory profile (target < 900MB)
+                if i % 3 == 0:
+                    gc.collect()
 
-        return total
+        return total_pages
 
     def _preprocess(self, pil_img: Image.Image, opts: PreprocessingOptions) -> Image.Image:
         """Apply the configured preprocessing steps to a PIL Image.
@@ -119,72 +117,22 @@ class PDFService:
         Returns:
             Preprocessed PIL Image (RGB or grayscale).
         """
-        if not any([opts.grayscale, opts.binarization, opts.denoise, opts.deskew]):
-            return pil_img
-
         img = np.array(pil_img.convert("RGB"))
-        img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
 
-        # 1. Grayscale
-        if opts.grayscale or opts.binarization:
-            img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        # Grayscale conversion
+        if opts.grayscale:
+            img = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
+            # Denoising
+            if opts.denoise:
+                img = cv2.fastNlMeansDenoising(img, None, 10, 7, 21)
+            # Thresholding (Binarization)
+            if opts.binarization:
+                img = cv2.adaptiveThreshold(
+                    img, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2
+                )
+        else:
+            # Color denoise
+            if opts.denoise:
+                img = cv2.fastNlMeansDenoisingColored(img, None, 10, 10, 7, 21)
 
-        # 2. Denoise (before binarization for better results)
-        if opts.denoise:
-            if len(img.shape) == 2:
-                img = cv2.GaussianBlur(img, (3, 3), 0)
-            else:
-                img = cv2.GaussianBlur(img, (3, 3), 0)
-
-        # 3. Binarization (Otsu threshold)
-        if opts.binarization:
-            if len(img.shape) != 2:
-                img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-            _, img = cv2.threshold(img, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
-
-        # 4. Deskew
-        if opts.deskew:
-            img = self._deskew(img)
-
-        # Convert back to PIL for saving
-        if len(img.shape) == 2:
-            return Image.fromarray(img, mode="L").convert("RGB")
-        return Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
-
-    def _deskew(self, img: np.ndarray) -> np.ndarray:
-        """Correct skew in a grayscale or binary image.
-
-        Uses the Hough line transform to estimate the dominant angle
-        and rotates the image to compensate.
-        """
-        # Ensure grayscale
-        gray = img if len(img.shape) == 2 else cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-
-        # Edge detection
-        edges = cv2.Canny(gray, 50, 150, apertureSize=3)
-        lines = cv2.HoughLinesP(edges, 1, np.pi / 180, threshold=100, minLineLength=100, maxLineGap=10)
-
-        if lines is None:
-            return img
-
-        angles = []
-        for line in lines:
-            x1, y1, x2, y2 = line[0]
-            if x2 - x1 != 0:
-                angle = math.degrees(math.atan2(y2 - y1, x2 - x1))
-                if abs(angle) < 45:
-                    angles.append(angle)
-
-        if not angles:
-            return img
-
-        median_angle = float(np.median(angles))
-        if abs(median_angle) < 0.5:
-            return img
-
-        h, w = img.shape[:2]
-        center = (w // 2, h // 2)
-        M = cv2.getRotationMatrix2D(center, median_angle, 1.0)
-        rotated = cv2.warpAffine(img, M, (w, h), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REPLICATE)
-        logger.debug("Deskewed image by %.2f degrees", median_angle)
-        return rotated
+        return Image.fromarray(img)

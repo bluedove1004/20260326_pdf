@@ -1,0 +1,12 @@
+{
+  "document_id": "0c6204eb-579f-469a-819e-f14b70dcb3a9",
+  "filename": "방제학-상_1_to_2.pdf",
+  "total_pages": 0,
+  "status": "failed",
+  "processed_pages": 0,
+  "progress_percent": 0.0,
+  "created_at": "2026-04-13T06:03:59",
+  "completed_at": null,
+  "error": "'PDFService' object has no attribute 'convert_pdf_to_images'",
+  "ocr_provider": "claude"
+}

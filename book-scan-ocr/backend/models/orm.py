@@ -24,6 +24,7 @@ class Document(Base):
     document_id = Column(String(36), unique=True, index=True, nullable=False)
     filename = Column(String(255), nullable=False)
     total_pages = Column(Integer, default=0)
+    progress = Column(Integer, default=0)
     status = Column(String(30), default="pending")
     ocr_provider = Column(String(50), default="easyocr")
     language = Column(String(30), default="korean")

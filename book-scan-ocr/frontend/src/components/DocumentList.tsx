@@ -1,6 +1,6 @@
 /** Document list component: table of uploaded PDFs with status badges. */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { deleteDocument } from '../services/api';
 import type { DocumentListItem } from '../types';
@@ -23,21 +23,55 @@ const STATUS_LABELS: Record<string, string> = {
   failed: '실패',
 };
 
-const StatusBadge: React.FC<{ status: string }> = ({ status }) => (
-  <span className={`status-badge status-${status}`}>
-    {status === 'processing' && (
-      <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
-    )}
-    {STATUS_LABELS[status] ?? status}
-  </span>
-);
+const StatusBadge: React.FC<{ status: string; progress?: number }> = ({ status, progress = 0 }) => {
+  const styles = {
+    pending: 'bg-amber-50 text-amber-600 border-amber-100',
+    processing: 'bg-blue-50 text-blue-600 border-blue-100',
+    completed: 'bg-emerald-50 text-emerald-600 border-emerald-100',
+    failed: 'bg-rose-50 text-rose-600 border-rose-100',
+  }[status] || 'bg-gray-50 text-gray-600 border-gray-100';
+
+  const labels = {
+    pending: '대기 중',
+    processing: `추출 중 (${progress}%)`,
+    completed: '완료',
+    failed: '실패',
+  }[status] || status;
+
+  return (
+    <div className="flex flex-col items-center gap-1.5 min-w-[100px]">
+      <span className={`px-2.5 py-0.5 rounded-full text-[11px] font-bold border ${styles} uppercase tracking-wider`}>
+        {labels}
+      </span>
+      {status === 'processing' && (
+        <div className="w-full h-1 bg-blue-100 rounded-full overflow-hidden">
+          <div 
+            className="h-full bg-blue-500 transition-all duration-500 ease-out"
+            style={{ width: `${progress}%` }}
+          />
+        </div>
+      )}
+    </div>
+  );
+};
+
+
 
 function formatDate(iso: string): string {
   try {
-    return new Date(iso).toLocaleString('ko-KR', {
-      year: 'numeric', month: '2-digit', day: '2-digit',
-      hour: '2-digit', minute: '2-digit',
-    });
+    // If string doesn't have timezone info, assume UTC by appending Z
+    const normalized = iso.endsWith('Z') || iso.includes('+') ? iso : `${iso}Z`;
+    const date = new Date(normalized);
+    
+    return new Intl.DateTimeFormat('ko-KR', {
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false,
+      timeZone: 'Asia/Seoul'
+    }).format(date).replace(/\. /g, '.').replace(/\.$/, '');
   } catch {
     return iso;
   }
@@ -47,6 +81,19 @@ const DocumentList: React.FC<DocumentListProps> = ({
   documents, total, page, pageSize, search, onPageChange, onSearchChange, onRefresh 
 }) => {
   const navigate = useNavigate();
+
+  // Auto-refresh the list if any document is in 'processing' status
+  useEffect(() => {
+    const hasProcessing = documents.some(doc => doc.status === 'processing');
+    
+    if (hasProcessing) {
+      const intervalId = setInterval(() => {
+        onRefresh();
+      }, 5000); // Poll every 5 seconds
+      
+      return () => clearInterval(intervalId);
+    }
+  }, [documents, onRefresh]);
 
   const handleDelete = async (e: React.MouseEvent, id: string) => {
     e.stopPropagation();
@@ -161,7 +208,9 @@ const DocumentList: React.FC<DocumentListProps> = ({
                   </div>
                 </td>
                 <td className="px-4 py-3.5 text-center text-gray-600 tabular-nums">{doc.total_pages || '—'}</td>
-                <td className="px-4 py-3.5 text-center"><StatusBadge status={doc.status} /></td>
+                <td className="px-4 py-3.5 text-center">
+                  <StatusBadge status={doc.status} progress={doc.progress} />
+                </td>
                 <td className="px-4 py-3.5 text-center text-gray-400 text-xs tabular-nums">{formatDate(doc.created_at)}</td>
                 <td className="px-5 py-3.5 text-right">
                   <button

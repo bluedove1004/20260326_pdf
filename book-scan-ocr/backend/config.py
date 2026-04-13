@@ -20,7 +20,7 @@ class Settings(BaseSettings):
     logs_dir: Path = Path(__file__).parent / "logs"
 
     # File limits
-    max_file_size_mb: int = 500
+    max_file_size_mb: int = 1700
 
     # OCR settings
     default_dpi: int = 300

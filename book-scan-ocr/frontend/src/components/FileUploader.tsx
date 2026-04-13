@@ -19,8 +19,8 @@ const FileUploader: React.FC<FileUploaderProps> = ({ onUploaded }) => {
       setError('PDF 파일만 업로드 가능합니다');
       return;
     }
-    if (file.size > 100 * 1024 * 1024) {
-      setError('파일 크기가 100MB를 초과합니다');
+    if (file.size > 1700 * 1024 * 1024) {
+      setError('파일 크기가 1700MB를 초과할 수 없습니다');
       return;
     }
     setError(null);

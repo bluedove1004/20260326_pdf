@@ -49,6 +49,7 @@ export interface DocumentListItem {
   filename: string;
   total_pages: number;
   status: DocumentStatus;
+  progress: number;
   created_at: string;
 }
 
