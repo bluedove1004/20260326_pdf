@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const getApiBaseUrl = () => {
+  const meta = (import.meta as any).env;
+  return meta.VITE_API_URL || 'http://localhost:8000';
+};
+const API_BASE_URL = getApiBaseUrl();
 
 const Login: React.FC = () => {
   const [username, setUsername] = useState('');
@@ -26,8 +30,12 @@ const Login: React.FC = () => {
         localStorage.setItem('ocr_auth_token', response.data.access_token);
         navigate('/');
       }
-    } catch (err: any) {
-      setError(err.response?.data?.detail || '로그인 정보가 올바르지 않습니다.');
+    } catch (err: unknown) {
+      if (axios.isAxiosError(err)) {
+        setError(err.response?.data?.detail || '로그인 정보가 올바르지 않습니다.');
+      } else {
+        setError('로그인 중 알 수 없는 오류가 발생했습니다.');
+      }
     } finally {
       setIsLoading(false);
     }

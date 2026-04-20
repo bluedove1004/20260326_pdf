@@ -29,7 +29,11 @@ const NavBar: React.FC = () => {
 
   const handleLogout = () => {
     localStorage.removeItem('ocr_auth_token');
-    window.location.href = '/login';
+    
+    // Respect subpath deployment (e.g., /ocr/)
+    const currentPath = window.location.pathname;
+    const base = currentPath.startsWith('/ocr/') ? '/ocr/' : '/';
+    window.location.href = `${base.endsWith('/') ? base : base + '/'}login`;
   };
 
   const navLink = (to: string, label: string, icon: React.ReactNode) => (
