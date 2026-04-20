@@ -25,6 +25,15 @@ const api = axios.create({
   baseURL: `${BASE_PATH.endsWith('/') ? BASE_PATH : BASE_PATH + '/'}api` 
 });
 
+// Automatically inject auth token from localStorage if present
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem('ocr_auth_token');
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+});
+
 // ──────────────────────────────────────────────
 // Documents
 // ──────────────────────────────────────────────

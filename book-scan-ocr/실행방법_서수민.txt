@@ -6,6 +6,10 @@ source venv/bin/activate
 # (A) 일반 실행 (터미널 종료 시 중단됨)
 uvicorn main:app --reload --port 8000
 
+# 또는 work수를 2~4...CPU 코어 수에 맞게 워커를 2~4개로 설정
+uvicorn main:app --host 0.0.0.0 --port 8000 --workers 4
+
+
 # (B) nohup 방식 (간이 백그라운드)
 nohup uvicorn main:app --port 8000 > backend.log 2>&1 &
 

@@ -1,14 +1,36 @@
 /** Application root with React Router and persistent navigation bar. */
 
-import React from 'react';
-import { BrowserRouter, Link, Route, Routes, useLocation } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter, Link, Route, Routes, useLocation, Navigate } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import DocumentViewer from './components/DocumentViewer';
 import SettingsPanel from './components/SettingsPanel';
 import PdfSplitter from './components/PdfSplitter';
+import Login from './components/Login';
+
+// Higher-order component to protect routes
+const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const token = localStorage.getItem('ocr_auth_token');
+  const location = useLocation();
+
+  if (!token) {
+    return <Navigate to="/login" state={{ from: location }} replace />;
+  }
+
+  return <>{children}</>;
+};
 
 const NavBar: React.FC = () => {
   const { pathname } = useLocation();
+  const navigate = useNavigateProxy();
+
+  // Hide Navbar on Login page
+  if (pathname === '/login') return null;
+
+  const handleLogout = () => {
+    localStorage.removeItem('ocr_auth_token');
+    window.location.href = '/login';
+  };
 
   const navLink = (to: string, label: string, icon: React.ReactNode) => (
     <Link
@@ -56,10 +78,29 @@ const NavBar: React.FC = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
           </svg>
         )}
+        
+        <button 
+          onClick={handleLogout}
+          className="ml-2 p-2 text-gray-400 hover:text-red-500 hover:bg-red-50 rounded-xl transition-all"
+          title="로그아웃"
+        >
+          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+          </svg>
+        </button>
       </div>
     </nav>
   );
 };
+
+// Simple proxy because hooks cannot be used in same component level as Router sometimes
+const useNavigateProxy = () => {
+    try {
+        return useLocation(); 
+    } catch {
+        return null;
+    }
+}
 
 const App: React.FC = () => {
   const currentPath = window.location.pathname;
@@ -73,10 +114,31 @@ const App: React.FC = () => {
         <NavBar />
         <main className="flex-1 overflow-hidden">
           <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/pdf-split" element={<PdfSplitter />} />
-            <Route path="/documents/:id" element={<DocumentViewer />} />
-            <Route path="/settings" element={<SettingsPanel />} />
+            <Route path="/login" element={<Login />} />
+            
+            <Route path="/" element={
+              <ProtectedRoute>
+                <Dashboard />
+              </ProtectedRoute>
+            } />
+            
+            <Route path="/pdf-split" element={
+              <ProtectedRoute>
+                <PdfSplitter />
+              </ProtectedRoute>
+            } />
+            
+            <Route path="/documents/:id" element={
+              <ProtectedRoute>
+                <DocumentViewer />
+              </ProtectedRoute>
+            } />
+            
+            <Route path="/settings" element={
+              <ProtectedRoute>
+                <SettingsPanel />
+              </ProtectedRoute>
+            } />
           </Routes>
         </main>
       </div>

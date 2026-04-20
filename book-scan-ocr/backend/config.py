@@ -12,6 +12,10 @@ class Settings(BaseSettings):
     host: str = "0.0.0.0"
     port: int = 8000
     debug: bool = True
+    
+    # Auth
+    admin_username: str = "admin_opt"
+    admin_password: str = "RnZnPanda0607!"
 
     # File storage
     base_dir: Path = Path(__file__).parent
