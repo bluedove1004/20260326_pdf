@@ -4,7 +4,14 @@ import axios from 'axios';
 
 const getApiBaseUrl = () => {
   const meta = (import.meta as any).env;
-  return meta.VITE_API_URL || 'http://localhost:8000';
+  if (meta.VITE_API_URL) return meta.VITE_API_URL;
+  
+  const origin = window.location.origin;
+  const base = meta.BASE_URL || '/';
+  
+  // Combine origin with base path (e.g., /ocr/)
+  const normalizedBase = base.endsWith('/') ? base.slice(0, -1) : base;
+  return `${origin}${normalizedBase}`;
 };
 const API_BASE_URL = getApiBaseUrl();
 
