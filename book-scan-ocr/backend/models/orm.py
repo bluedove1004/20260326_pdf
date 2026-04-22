@@ -10,11 +10,35 @@ class User(Base):
     __tablename__ = "users"
 
     id = Column(Integer, primary_key=True, index=True)
+    user_key = Column(String(20), unique=True, index=True, nullable=False)
     username = Column(String(50), unique=True, index=True, nullable=False)
-    email = Column(String(100), unique=True, index=True, nullable=True)
+    email_encrypted = Column(String(255), unique=True, index=True, nullable=True)
     hashed_password = Column(String(255), nullable=False)
-    is_active = Column(Integer, default=1) # 1 for True, 0 for False
+    role = Column(String(20), default="user")  # "superadmin", "user"
+    status = Column(String(20), default="pending")  # "pending", "approved"
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    approved_at = Column(DateTime, nullable=True)
+
+class Token(Base):
+    """Database model for tracking issued auth tokens."""
+    __tablename__ = "tokens"
+    
+    id = Column(Integer, primary_key=True, index=True)
+    access_token = Column(String(500), unique=True, index=True, nullable=False)
+    user_key = Column(String(20), index=True, nullable=False)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    expires_at = Column(DateTime, nullable=False)
+    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+
+class SystemLog(Base):
+    """Activity logging for security and auditing."""
+    __tablename__ = "system_logs"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_key = Column(String(20), index=True, nullable=False)
+    action = Column(String(100), nullable=False) # LOGIN, VIEW_DOC, DOWNLOAD_DOC, NAVIGATE
+    details = Column(String(255), nullable=True)
+    timestamp = Column(DateTime, default=datetime.datetime.utcnow)
 
 class Document(Base):
     """Database model for OCR document metadata."""

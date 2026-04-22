@@ -28,6 +28,10 @@ from models.document import (
 from models.settings import PreprocessingOptions
 from services.ocr_service import OCRService
 from services.llm_service import LLMService
+from services.log_service import LogService
+from database import get_db, SessionLocal
+from models import orm
+from sqlalchemy.orm import Session
 from services.storage_service import StorageService
 from services.pdf_service import PDFService
 from database import get_db, SessionLocal
@@ -243,6 +247,7 @@ async def upload_document(
 
 @router.get("/documents", response_model=PaginatedDocumentList)
 def list_documents(
+    request: Request,
     page: int = 1,
     size: int = 10,
     q: Optional[str] = None,
@@ -251,6 +256,14 @@ def list_documents(
     """Return a paginated list of all documents with summary metadata."""
     skip = (page - 1) * size
     items, total = _storage.list_documents(db, skip=skip, limit=size, search=q)
+    # Record log
+    user_key = getattr(request.state, "user_key", "UNKNOWN")
+    db_session = SessionLocal() # Use fresh session for logging
+    try:
+        LogService.log(db_session, user_key, "LIST_DOCUMENTS", f"Viewed document list (page={page}, q={q})")
+    finally:
+        db_session.close()
+        
     return PaginatedDocumentList(items=items, total=total, page=page, size=size)
 
 
@@ -386,7 +399,7 @@ def get_page_image(document_id: str, page_number: int) -> FileResponse:
 
 
 @router.get("/documents/{document_id}/download")
-def download_document(document_id: str, db: Session = Depends(get_db)) -> FileResponse:
+def download_document(request: Request, document_id: str, db: Session = Depends(get_db)) -> FileResponse:
     """Download the full result JSON file."""
     meta = _storage.load_meta(db, document_id)
     if meta is None:
@@ -394,6 +407,14 @@ def download_document(document_id: str, db: Session = Depends(get_db)) -> FileRe
     result_path = _storage._result_path(document_id)
     if not result_path.exists():
         raise HTTPException(status_code=404, detail="Result not available yet")
+    # Record download log
+    user_key = getattr(request.state, "user_key", "UNKNOWN")
+    db_session = SessionLocal()
+    try:
+        LogService.log(db_session, user_key, "DOWNLOAD_JSON", f"Downloaded results for {document_id}")
+    finally:
+        db_session.close()
+
     return FileResponse(
         str(result_path),
         media_type="application/json",

@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
 
 const getApiBaseUrl = () => {
   const meta = (import.meta as any).env;
   if (meta.VITE_API_URL) return meta.VITE_API_URL;
-  
+
   const origin = window.location.origin;
   const base = meta.BASE_URL || '/';
-  
+
   // Combine origin with base path (e.g., /ocr/)
   const normalizedBase = base.endsWith('/') ? base.slice(0, -1) : base;
   return `${origin}${normalizedBase}`;
@@ -35,7 +35,12 @@ const Login: React.FC = () => {
 
       if (response.data.status === 'success') {
         localStorage.setItem('ocr_auth_token', response.data.access_token);
-        navigate('/');
+        localStorage.setItem('ocr_user_role', response.data.role);
+        localStorage.setItem('ocr_username', response.data.username);
+        
+        // Full reload to home to ensure fresh state/permissions
+        const base = window.location.pathname.startsWith('/ocr/') ? '/ocr/' : '/';
+        window.location.href = base;
       }
     } catch (err: unknown) {
       if (axios.isAxiosError(err)) {
@@ -64,7 +69,6 @@ const Login: React.FC = () => {
               </svg>
             </div>
             <h1 className="text-3xl font-black text-gray-900 tracking-tight mb-1">TextLens <span className="text-brand-600">OCR</span></h1>
-            <p className="text-xs font-bold text-brand-500 uppercase tracking-[0.2em] opacity-80">Administrator Portal</p>
           </div>
 
           <form onSubmit={handleLogin} className="space-y-6">
@@ -118,6 +122,16 @@ const Login: React.FC = () => {
               )}
             </button>
           </form>
+
+          <div className="mt-8 text-center bg-gray-50/50 py-4 rounded-2xl border border-gray-100">
+            <p className="text-xs text-gray-400 font-bold mb-2">아직 회원이 아니신가요?</p>
+            <Link
+              to="/register"
+              className="text-sm font-black text-brand-600 hover:text-brand-700 transition-colors uppercase tracking-tight"
+            >
+              회원가입하기
+            </Link>
+          </div>
 
           <p className="mt-10 text-center text-gray-400 text-[10px] font-bold uppercase tracking-widest">
             &copy; 2026 KIOM &bull; AI Powered OCR

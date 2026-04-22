@@ -1,12 +1,71 @@
 /** Application root with React Router and persistent navigation bar. */
 
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter, Link, Route, Routes, useLocation, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route, Routes, useLocation, Navigate } from 'react-router-dom';
+import axios from 'axios';
 import Dashboard from './components/Dashboard';
 import DocumentViewer from './components/DocumentViewer';
 import SettingsPanel from './components/SettingsPanel';
 import PdfSplitter from './components/PdfSplitter';
 import Login from './components/Login';
+import SignUp from './components/SignUp';
+import UserManagement from './components/UserManagement';
+import SystemLogViewer from './components/SystemLogViewer';
+
+// Logger component to track navigation
+const NavigationLogger: React.FC = () => {
+    const location = useLocation();
+    
+    useEffect(() => {
+        const logNavigation = async () => {
+            try {
+                const token = localStorage.getItem('ocr_auth_token');
+                if (!token) return;
+                
+                const meta = (import.meta as any).env;
+                const origin = window.location.origin;
+                const base = meta.BASE_URL || '/';
+                const apiBase = `${origin}${base.endsWith('/') ? base.slice(0, -1) : base}`;
+                
+                await axios.post(`${apiBase}/api/logs`, {
+                    action: 'NAVIGATE',
+                    details: `Moved to ${location.pathname}`
+                }, {
+                    headers: { Authorization: `Bearer ${token}` }
+                });
+            } catch (err) {
+                // Silently fail to not interrupt UX
+                console.debug('Log fail', err);
+            }
+        };
+        logNavigation();
+    }, [location.pathname]);
+    
+    return null;
+};
+
+// Helper to parse JWT without external library
+const parseJwt = (token: string) => {
+    try {
+        const base64Url = token.split('.')[1];
+        const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+        const jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+            return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+        }).join(''));
+        return JSON.parse(jsonPayload);
+    } catch (e) {
+        console.error('JWT Parse Error:', e);
+        return null;
+    }
+};
+
+const isAdmin = () => {
+    const token = localStorage.getItem('ocr_auth_token');
+    if (!token) return false;
+    const payload = parseJwt(token);
+    // console.debug('Current Role from Token:', payload?.role);
+    return payload?.role === 'superadmin';
+};
 
 // Higher-order component to protect routes
 const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -24,15 +83,16 @@ const NavBar: React.FC = () => {
   const { pathname } = useLocation();
   const navigate = useNavigateProxy();
 
-  // Hide Navbar on Login page
-  if (pathname === '/login') return null;
+  // Hide Navbar on Login and Register pages
+  if (pathname === '/login' || pathname === '/register') return null;
 
   const handleLogout = () => {
     localStorage.removeItem('ocr_auth_token');
+    localStorage.removeItem('ocr_user_role');
+    localStorage.removeItem('ocr_username');
     
-    // Respect subpath deployment (e.g., /ocr/)
-    const currentPath = window.location.pathname;
-    const base = currentPath.startsWith('/ocr/') ? '/ocr/' : '/';
+    // Hard reload to clean up all React states
+    const base = window.location.pathname.startsWith('/ocr/') ? '/ocr/' : '/';
     window.location.href = `${base.endsWith('/') ? base : base + '/'}login`;
   };
 
@@ -82,6 +142,28 @@ const NavBar: React.FC = () => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
           </svg>
         )}
+
+        {isAdmin() && (
+          <>
+            <Link to="/user-mgmt" className="w-9 h-9 flex items-center justify-center text-gray-400 hover:text-brand-600 hover:bg-brand-50 rounded-xl transition-all" title="사용자 관리">
+               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+               </svg>
+            </Link>
+            <Link to="/system-log" className="w-9 h-9 flex items-center justify-center text-gray-400 hover:text-brand-600 hover:bg-brand-50 rounded-xl transition-all" title="시스템 로그">
+               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+               </svg>
+            </Link>
+          </>
+        )}
+        
+        <div className="h-4 w-[1px] bg-gray-200 mx-2" />
+        
+        <div className="flex items-center gap-2 px-3 py-1.5 bg-gray-50 rounded-xl border border-gray-100">
+           <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+           <span className="text-xs font-bold text-gray-600">{localStorage.getItem('ocr_username')}</span>
+        </div>
         
         <button 
           onClick={handleLogout}
@@ -113,17 +195,35 @@ const App: React.FC = () => {
     : ((import.meta as any).env.BASE_URL || '/');
 
   return (
-    <BrowserRouter basename={safeBase}>
+    <Router basename={safeBase}>
+      <NavigationLogger />
       <div className="h-screen bg-white flex flex-col font-sans selection:bg-brand-100 selection:text-brand-900">
         <NavBar />
         <main className="flex-1 overflow-hidden">
           <Routes>
             <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<SignUp />} />
             
             <Route path="/" element={
               <ProtectedRoute>
                 <Dashboard />
               </ProtectedRoute>
+            } />
+            
+            <Route path="/user-mgmt" element={
+              isAdmin() ? (
+                <ProtectedRoute><UserManagement /></ProtectedRoute>
+              ) : (
+                <Navigate to="." replace />
+              )
+            } />
+
+            <Route path="/system-log" element={
+              isAdmin() ? (
+                <ProtectedRoute><SystemLogViewer /></ProtectedRoute>
+              ) : (
+                <Navigate to="." replace />
+              )
             } />
             
             <Route path="/pdf-split" element={
@@ -146,7 +246,7 @@ const App: React.FC = () => {
           </Routes>
         </main>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 };
 

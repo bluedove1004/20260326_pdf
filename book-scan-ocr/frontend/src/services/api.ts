@@ -87,8 +87,8 @@ export async function getPage(id: string, page: number): Promise<PageResult> {
 }
 
 export function getPageImageUrl(id: string, page: number): string {
-  // Manual string concat needs to handle subpath
-  return `${api.defaults.baseURL}/documents/${id}/pages/${page}/image`;
+  const token = localStorage.getItem('ocr_auth_token');
+  return `${api.defaults.baseURL}/documents/${id}/pages/${page}/image?token=${token}`;
 }
 
 export async function llmExtractPage(
@@ -101,11 +101,13 @@ export async function llmExtractPage(
 }
 
 export function getDownloadUrl(id: string): string {
-  return `${api.defaults.baseURL}/documents/${id}/download`;
+  const token = localStorage.getItem('ocr_auth_token');
+  return `${api.defaults.baseURL}/documents/${id}/download?token=${token}`;
 }
 
 export function getMinimalDownloadUrl(id: string): string {
-  return `${api.defaults.baseURL}/documents/${id}/download-minimal`;
+  const token = localStorage.getItem('ocr_auth_token');
+  return `${api.defaults.baseURL}/documents/${id}/download-minimal?token=${token}`;
 }
 
 // ──────────────────────────────────────────────
