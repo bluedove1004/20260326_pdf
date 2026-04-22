@@ -220,7 +220,7 @@ const App: React.FC = () => {
               isAdmin() ? (
                 <ProtectedRoute><UserManagement /></ProtectedRoute>
               ) : (
-                <Navigate to="." replace />
+                <Navigate to="/" replace />
               )
             } />
 
@@ -228,7 +228,7 @@ const App: React.FC = () => {
               isAdmin() ? (
                 <ProtectedRoute><SystemLogViewer /></ProtectedRoute>
               ) : (
-                <Navigate to="." replace />
+                <Navigate to="/" replace />
               )
             } />
 
@@ -236,7 +236,7 @@ const App: React.FC = () => {
               isAdmin() ? (
                 <ProtectedRoute><EditLogViewer /></ProtectedRoute>
               ) : (
-                <Navigate to="." replace />
+                <Navigate to="/" replace />
               )
             } />
             
