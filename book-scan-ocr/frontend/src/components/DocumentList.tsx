@@ -185,6 +185,7 @@ const DocumentList: React.FC<DocumentListProps> = ({
               <th className="text-center px-4 py-3 font-semibold">페이지</th>
               <th className="text-center px-4 py-3 font-semibold">상태</th>
               <th className="text-center px-4 py-3 font-semibold">생성일</th>
+              <th className="text-center px-4 py-3 font-semibold">수정 정보</th>
               <th className="text-right px-5 py-3 font-semibold w-10">삭제</th>
             </tr>
           </thead>
@@ -212,6 +213,16 @@ const DocumentList: React.FC<DocumentListProps> = ({
                   <StatusBadge status={doc.status} progress={doc.progress} />
                 </td>
                 <td className="px-4 py-3.5 text-center text-gray-400 text-xs tabular-nums">{formatDate(doc.created_at)}</td>
+                <td className="px-4 py-3.5 text-center">
+                  {doc.last_edited_at ? (
+                    <div className="flex flex-col items-center">
+                      <span className="text-[10px] text-gray-400 tabular-nums">{formatDate(doc.last_edited_at)}</span>
+                      <span className="text-[10px] text-brand-600 font-bold">{doc.last_edited_by}</span>
+                    </div>
+                  ) : (
+                    <span className="text-gray-300 text-[10px]">—</span>
+                  )}
+                </td>
                 <td className="px-5 py-3.5 text-right">
                   <button
                     onClick={(e) => handleDelete(e, doc.document_id)}

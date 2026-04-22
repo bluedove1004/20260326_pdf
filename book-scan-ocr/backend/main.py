@@ -338,6 +338,39 @@ def get_system_logs(
         } for log, username in logs]
     }
 
+@app.get("/api/admin/edit-logs")
+def get_edit_logs(
+    page: int = 1, 
+    size: int = 50, 
+    db: Session = Depends(get_db), 
+    _=Depends(check_superadmin)
+):
+    skip = (page - 1) * size
+    query = db.query(orm.EditLog, orm.User.username, orm.Document.filename).outerjoin(
+        orm.User, orm.EditLog.user_key == orm.User.user_key
+    ).outerjoin(
+        orm.Document, orm.EditLog.document_id == orm.Document.document_id
+    )
+    
+    total = query.count()
+    logs = query.order_by(orm.EditLog.created_at.desc()).offset(skip).limit(size).all()
+    
+    return {
+        "total": total,
+        "page": page,
+        "size": size,
+        "items": [{
+            "id": log.id,
+            "user_key": log.user_key,
+            "username": username or "UNKNOWN",
+            "document_id": log.document_id,
+            "filename": filename or "Deleted Document",
+            "seq_number": log.seq_number,
+            "edit_type": log.edit_type,
+            "created_at": log.created_at
+        } for log, username, filename in logs]
+    }
+
 @app.post("/api/admin/approve/{user_id}")
 def approve_user(user_id: int, db: Session = Depends(get_db), _=Depends(check_superadmin)):
     user = db.query(orm.User).filter(orm.User.id == user_id).first()

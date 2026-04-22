@@ -39,6 +39,8 @@ export interface DocumentResult {
   language: string;
   created_at: string;
   processing_time_seconds?: number;
+  last_edited_by?: string;
+  last_edited_at?: string;
   pages: PageResult[];
 }
 
@@ -51,6 +53,8 @@ export interface DocumentListItem {
   status: DocumentStatus;
   progress: number;
   created_at: string;
+  last_edited_by?: string;
+  last_edited_at?: string;
 }
 
 export interface PaginatedDocuments {

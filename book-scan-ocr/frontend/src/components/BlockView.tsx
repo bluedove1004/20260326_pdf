@@ -5,6 +5,8 @@ import type { PageResult, TextBlock } from '../types';
 
 interface BlockViewProps {
   page: PageResult;
+  onUpdateBlock?: (blockId: number, newText: string) => void;
+  onDeleteBlock?: (blockId: number) => void;
 }
 
 type Tab = 'text' | 'json' | 'blocks';
@@ -21,22 +23,50 @@ function confidenceBadgeClass(confidence: number): string {
   return 'text-red-700 bg-red-100 border border-red-200';
 }
 
-const BlockCard: React.FC<{ block: TextBlock; warn: boolean }> = ({ block, warn }) => (
-  <div className={`rounded-xl border p-4 transition-all duration-200 hover:shadow-md ${confidenceClass(block.confidence)} ${warn ? 'ring-2 ring-red-500/10' : ''}`}>
+const BlockCard: React.FC<{ 
+  block: TextBlock; 
+  warn: boolean; 
+  onUpdate?: (newText: string) => void;
+  onDelete?: () => void;
+}> = ({ block, warn, onUpdate, onDelete }) => (
+  <div className={`rounded-xl border p-4 transition-all duration-200 hover:shadow-md ${confidenceClass(block.confidence)} ${warn ? 'ring-2 ring-red-500/10' : ''} group`}>
     <div className="flex items-start justify-between gap-3 mb-2">
-      <span className="text-[10px] text-gray-400 tabular-nums uppercase font-bold tracking-wider">#{block.block_id} Line {block.line_number}</span>
-      <span className={`text-[10px] font-bold px-2 py-0.5 rounded-md ${confidenceBadgeClass(block.confidence)}`}>
-        {(block.confidence * 100).toFixed(1)}%
-      </span>
+      <div className="flex items-center gap-2">
+        <span className="text-[10px] text-gray-400 tabular-nums uppercase font-bold tracking-wider">#{block.block_id} Line {block.line_number}</span>
+      </div>
+      <div className="flex items-center gap-2">
+        <button 
+          onClick={(e) => { e.stopPropagation(); onDelete?.(); }}
+          className="opacity-0 group-hover:opacity-100 p-1 text-gray-400 hover:text-red-500 transition-all"
+          title="삭제"
+        >
+          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+          </svg>
+        </button>
+        <span className={`text-[10px] font-bold px-2 py-0.5 rounded-md ${confidenceBadgeClass(block.confidence)}`}>
+          {(block.confidence * 100).toFixed(1)}%
+        </span>
+      </div>
     </div>
-    <p className="text-sm text-gray-900 font-semibold leading-relaxed mb-2">{block.text}</p>
+    <textarea
+      value={block.text}
+      onChange={(e) => onUpdate?.(e.target.value)}
+      rows={1}
+      className="w-full text-sm text-gray-900 font-semibold leading-relaxed mb-2 bg-transparent border-none focus:ring-1 focus:ring-brand-500 rounded p-1 resize-none overflow-hidden"
+      onInput={(e) => {
+        const target = e.target as HTMLTextAreaElement;
+        target.style.height = 'auto';
+        target.style.height = target.scrollHeight + 'px';
+      }}
+    />
     <p className="text-[9px] text-gray-400 font-mono flex gap-2">
       <span className="bg-white/50 px-1 rounded">BOX: [{block.bbox.top_left[0].toFixed(0)}, {block.bbox.top_left[1].toFixed(0)}] → [{block.bbox.bottom_right[0].toFixed(0)}, {block.bbox.bottom_right[1].toFixed(0)}]</span>
     </p>
   </div>
 );
 
-const BlockView: React.FC<BlockViewProps> = ({ page }) => {
+const BlockView: React.FC<BlockViewProps> = ({ page, onUpdateBlock, onDeleteBlock }) => {
   const lowConfidenceCount = page.text_blocks.filter((b) => b.confidence < 0.7).length;
 
   return (
@@ -55,7 +85,13 @@ const BlockView: React.FC<BlockViewProps> = ({ page }) => {
       ) : (
         <div className="grid gap-3 pr-1">
           {page.text_blocks.map((block) => (
-            <BlockCard key={block.block_id} block={block} warn={block.confidence < 0.7} />
+            <BlockCard 
+              key={block.block_id} 
+              block={block} 
+              warn={block.confidence < 0.7} 
+              onUpdate={(newText) => onUpdateBlock?.(block.block_id, newText)}
+              onDelete={() => onDeleteBlock?.(block.block_id)}
+            />
           ))}
         </div>
       )}

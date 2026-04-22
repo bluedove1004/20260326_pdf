@@ -100,6 +100,20 @@ export async function llmExtractPage(
   return data;
 }
 
+export async function editPage(
+  id: string,
+  page: number,
+  params: { page_title?: string; page_number?: string | number; text_blocks: any[] }
+): Promise<{ status: string; message: string }> {
+  const { data } = await api.post(`/documents/${id}/pages/${page}/edit`, params);
+  return data;
+}
+
+export async function getEditLogs(page = 1, size = 50): Promise<{ items: any[]; total: number }> {
+  const { data } = await api.get(`/admin/edit-logs?page=${page}&size=${size}`);
+  return data;
+}
+
 export function getDownloadUrl(id: string): string {
   const token = localStorage.getItem('ocr_auth_token');
   return `${api.defaults.baseURL}/documents/${id}/download?token=${token}`;

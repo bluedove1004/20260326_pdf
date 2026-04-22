@@ -21,3 +21,8 @@ class LogService:
             # Fallback for logging if DB fails
             print(f"FAILED TO WRITE LOG: {e}")
             db.rollback()
+
+    @staticmethod
+    def get_edit_logs(db: Session, skip: int = 0, limit: int = 50):
+        """Retrieve recent edit logs from the database."""
+        return db.query(orm.EditLog).order_by(orm.EditLog.created_at.desc()).offset(skip).limit(limit).all()

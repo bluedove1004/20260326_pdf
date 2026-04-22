@@ -31,6 +31,9 @@ class StorageService:
     def _result_path(self, document_id: str) -> Path:
         return self._doc_dir(document_id) / "result.json"
 
+    def _original_result_path(self, document_id: str) -> Path:
+        return self._doc_dir(document_id) / "result_original.json"
+
     def _images_dir(self, document_id: str) -> Path:
         return self._doc_dir(document_id) / "images"
 
@@ -78,6 +81,8 @@ class StorageService:
         doc.created_at = meta.created_at
         doc.completed_at = meta.completed_at
         doc.ocr_provider = meta.ocr_provider
+        doc.last_edited_by = meta.last_edited_by
+        doc.last_edited_at = meta.last_edited_at
         
         db.commit()
         db.refresh(doc)
@@ -109,6 +114,8 @@ class StorageService:
             progress_percent=progress,
             created_at=doc.created_at,
             completed_at=doc.completed_at,
+            last_edited_by=doc.last_edited_by,
+            last_edited_at=doc.last_edited_at,
             ocr_provider=doc.ocr_provider or "easyocr"
         )
 
@@ -143,6 +150,86 @@ class StorageService:
         path = self._pages_dir(document_id) / f"page_{seq_number:04d}.json"
         path.write_text(json.dumps(page_data, ensure_ascii=False, indent=2), encoding="utf-8")
 
+    def save_edit(
+        self, db: Session, document_id: str, page_number: int, 
+        updated_data: dict, user_key: str
+    ) -> bool:
+        """
+        Apply edits to a specific page.
+        1. Back up original result if not already done.
+        2. Update pages/page_XXXX.json.
+        3. Update main result.json.
+        4. Update DB metadata (last_edited).
+        """
+        try:
+            # 1. Backup original result.json on first edit
+            master_path = self._result_path(document_id)
+            orig_path = self._original_result_path(document_id)
+            if master_path.exists() and not orig_path.exists():
+                shutil.copy2(master_path, orig_path)
+                logger.info("Backed up original OCR result for %s", document_id)
+
+            # 2. Re-calculate full_text for the page based on text_blocks
+            blocks = updated_data.get("text_blocks", [])
+            # Sort by top/left for a natural flow if needed, but usually kept as is from OCR
+            full_text = "\n".join([b.get("text", "") for b in blocks])
+            updated_data["full_text"] = full_text
+
+            # 3. Save individual page file
+            self.save_page_result(document_id, updated_data)
+
+            # 4. Rebuild the master result.json (for downloads)
+            # Find total pages from DB or files
+            pages_dir = self._pages_dir(document_id)
+            total_pages = len(list(pages_dir.glob("page_*.json")))
+            all_pages_data = []
+            for i in range(1, total_pages + 1):
+                p_path = pages_dir / f"page_{i:04d}.json"
+                if p_path.exists():
+                    p_content = json.loads(p_path.read_text(encoding="utf-8"))
+                    all_pages_data.append(p_content)
+
+            # Retrieve full metadata from DB for correct DocumentResult model construction
+            doc = db.query(sql_models.Document).filter(
+                sql_models.Document.document_id == document_id
+            ).first()
+            
+            if not doc:
+                logger.error("Document meta not found in DB for %s", document_id)
+                return False
+
+            # Build full DocumentResult
+            doc_result = DocumentResult(
+                document_id=document_id,
+                filename=doc.filename,
+                total_pages=total_pages,
+                ocr_engine=doc.ocr_provider,
+                pages=all_pages_data,
+                created_at=doc.created_at or datetime.utcnow(),
+                metadata={}
+            )
+            self.save_result(doc_result)
+
+            # 5. Update DB metadata (last edited info)
+            doc.last_edited_by = user_key
+            doc.last_edited_at = datetime.utcnow()
+            
+            # 6. Create EditLog entry
+            edit_log = sql_models.EditLog(
+                user_key=user_key,
+                document_id=document_id,
+                seq_number=page_number,
+                edit_type="manual"
+            )
+            db.add(edit_log)
+            db.commit()
+
+            return True
+        except Exception as e:
+            logger.error("Failed to save edit for %s: %s", document_id, e)
+            db.rollback()
+            return False
+
     def load_page_result(self, document_id: str, seq_number: int) -> Optional[dict]:
         """Load a specific page's OCR result using its sequence number."""
         path = self._pages_dir(document_id) / f"page_{seq_number:04d}.json"
@@ -162,7 +249,9 @@ class StorageService:
         self, db: Session, skip: int = 0, limit: int = 10, search: Optional[str] = None
     ) -> tuple[List[DocumentListItem], int]:
         """Return a filtered, paginated list of documents from the database (high performance)."""
-        query = db.query(sql_models.Document)
+        query = db.query(sql_models.Document, sql_models.User.username).outerjoin(
+            sql_models.User, sql_models.Document.last_edited_by == sql_models.User.user_key
+        )
         
         if search:
             # Match both NFC (composed) and NFD (decomposed) for Korean filename search
@@ -174,7 +263,7 @@ class StorageService:
             )
         
         total = query.count()
-        docs = query.order_by(sql_models.Document.created_at.desc()).offset(skip).limit(limit).all()
+        results = query.order_by(sql_models.Document.created_at.desc()).offset(skip).limit(limit).all()
 
         items = [
             DocumentListItem(
@@ -183,9 +272,11 @@ class StorageService:
                 total_pages=d.total_pages,
                 status=DocumentStatus(d.status),
                 progress=d.progress or 0,
-                created_at=d.created_at
+                created_at=d.created_at,
+                last_edited_by=username or d.last_edited_by, # Use name if available
+                last_edited_at=d.last_edited_at
             )
-            for d in docs
+            for d, username in results
         ]
         return items, total
 

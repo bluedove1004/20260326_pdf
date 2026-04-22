@@ -260,7 +260,7 @@ class LLMService:
             ))
             
         return PageResult(
-            page_number=extracted_page,
+            page_number=str(extracted_page),
             page_title=extracted_title,
             seq_number=page_number,
             width=width,

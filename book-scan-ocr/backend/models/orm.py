@@ -36,9 +36,20 @@ class SystemLog(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     user_key = Column(String(20), index=True, nullable=False)
-    action = Column(String(100), nullable=False) # LOGIN, VIEW_DOC, DOWNLOAD_DOC, NAVIGATE
+    action = Column(String(100), nullable=False) # LOGIN, VIEW_DOC, DOWNLOAD_DOC, NAVIGATE, EDIT_DOCUMENT
     details = Column(String(255), nullable=True)
     timestamp = Column(DateTime, default=datetime.datetime.utcnow)
+
+class EditLog(Base):
+    """Specific logs for document content modifications."""
+    __tablename__ = "edit_logs"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_key = Column(String(20), index=True, nullable=False)
+    document_id = Column(String(36), index=True, nullable=False)
+    seq_number = Column(Integer, nullable=False)
+    edit_type = Column(String(50), nullable=False, default="manual")
+    created_at = Column(DateTime, default=datetime.datetime.utcnow)
 
 class Document(Base):
     """Database model for OCR document metadata."""
@@ -56,6 +67,10 @@ class Document(Base):
     # Metadata for sorting / performance
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
     completed_at = Column(DateTime, nullable=True)
+    
+    # Editing tracking
+    last_edited_by = Column(String(50), nullable=True) # stores user_key
+    last_edited_at = Column(DateTime, nullable=True)
     processing_time_seconds = Column(Float, nullable=True)
 
     # Ownership

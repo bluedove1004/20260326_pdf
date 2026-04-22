@@ -6,7 +6,7 @@ from datetime import datetime
 from enum import Enum
 from typing import List, Optional
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 
 class DocumentStatus(str, Enum):
@@ -40,7 +40,13 @@ class TextBlock(BaseModel):
 class PageResult(BaseModel):
     """OCR results for a single page."""
 
-    page_number: int | str
+    page_number: str
+
+    @field_validator('page_number', mode='before')
+    @classmethod
+    def ensure_string(cls, v):
+        if v is None: return ""
+        return str(v)
     page_title: Optional[str] = None
     seq_number: int
     width: int
@@ -66,6 +72,7 @@ class DocumentResult(BaseModel):
     created_at: datetime
     processing_time_seconds: Optional[float] = None
     pages: List[PageResult] = []
+    full_text: str = ""
 
 
 class DocumentMeta(BaseModel):
@@ -79,6 +86,8 @@ class DocumentMeta(BaseModel):
     progress_percent: float = 0.0
     created_at: datetime
     completed_at: Optional[datetime] = None
+    last_edited_by: Optional[str] = None
+    last_edited_at: Optional[datetime] = None
     error: Optional[str] = None
     ocr_provider: str = "easyocr"
 
@@ -102,6 +111,8 @@ class DocumentListItem(BaseModel):
     status: DocumentStatus
     progress: int = 0
     created_at: datetime
+    last_edited_by: Optional[str] = None
+    last_edited_at: Optional[datetime] = None
 
 
 class PaginatedDocumentList(BaseModel):

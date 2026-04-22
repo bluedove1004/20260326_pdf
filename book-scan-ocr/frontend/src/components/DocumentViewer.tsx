@@ -5,7 +5,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { getDocument, getDownloadUrl, getMinimalDownloadUrl, getPage, getPageImageUrl, llmExtractPage } from '../services/api';
+import { editPage, getDocument, getDownloadUrl, getMinimalDownloadUrl, getPage, getPageImageUrl, llmExtractPage } from '../services/api';
 import type { DocumentResult, PageResult } from '../types';
 import BlockView from './BlockView';
 import JsonView from './JsonView';
@@ -26,6 +26,7 @@ const DocumentViewer: React.FC = () => {
   const [activeTab, setActiveTab] = useState<Tab>('text');
   const [zoom, setZoom] = useState(0.3);
   const [imgError, setImgError] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
 
   // Resizable split state
   const [rightPanelWidth, setRightPanelWidth] = useState(50); // percentage
@@ -33,13 +34,17 @@ const DocumentViewer: React.FC = () => {
 
   const nav = usePageNavigation({ totalPages: document?.total_pages ?? 1 });
 
-  // Load document metadata
-  useEffect(() => {
+  const loadDocument = () => {
     if (!id) return;
     getDocument(id).then((doc) => {
       setDocument(doc);
       setLoadingDoc(false);
     }).catch(() => setLoadingDoc(false));
+  };
+
+  // Load document metadata
+  useEffect(() => {
+    loadDocument();
   }, [id]);
 
   // Load page data when page changes
@@ -85,16 +90,57 @@ const DocumentViewer: React.FC = () => {
     setExtractingLLM(true);
     setExtractProvider(provider === 'chatgpt' ? 'ChatGPT 4o' : 'Claude 4.6');
     try {
-      const result = await llmExtractPage(id, nav.currentPage, {
+      const data = await llmExtractPage(id, nav.currentPage, {
         provider,
         api_key: key
       });
-      setCurrentPageData(result);
+      setCurrentPageData(data);
+      // Wait a tiny bit for server file I/O to settle before reloading metadata
+      setTimeout(() => {
+        loadDocument();
+        alert('AI 추출 및 저장이 완료되었습니다.');
+      }, 500);
     } catch (e: any) {
       alert('LLM 추출 실패: ' + (e.response?.data?.detail || e.message || String(e)));
     } finally {
       setExtractingLLM(false);
       setExtractProvider(null);
+    }
+  };
+
+  const handleUpdateBlock = (blockId: number, newText: string) => {
+    if (!currentPageData) return;
+    const updatedBlocks = currentPageData.text_blocks.map(b =>
+      b.block_id === blockId ? { ...b, text: newText } : b
+    );
+    setCurrentPageData({ ...currentPageData, text_blocks: updatedBlocks });
+  };
+
+  const handleDeleteBlock = (blockId: number) => {
+    if (!currentPageData) return;
+    if (!window.confirm('이 블록을 삭제하시겠습니까?')) return;
+    const updatedBlocks = currentPageData.text_blocks.filter(b => b.block_id !== blockId);
+    setCurrentPageData({ ...currentPageData, text_blocks: updatedBlocks });
+  };
+
+  const handleSaveEdit = async () => {
+    if (!id || !currentPageData) return;
+    setIsSaving(true);
+    try {
+      await editPage(id, nav.currentPage, {
+        page_title: currentPageData.page_title,
+        page_number: String(currentPageData.page_number),
+        text_blocks: currentPageData.text_blocks
+      });
+
+      // Refresh document metadata to show latest last_edited info
+      loadDocument();
+
+      alert('변경사항이 저장되었습니다.');
+    } catch (e: any) {
+      alert('저장 실패: ' + (e.response?.data?.detail || e.message));
+    } finally {
+      setIsSaving(false);
     }
   };
 
@@ -144,17 +190,29 @@ const DocumentViewer: React.FC = () => {
             <p className="text-xs text-gray-400">{document.total_pages}페이지 · {document.ocr_engine}</p>
           </div>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
+          <div className="bg-white px-1 py-1 rounded-xl shadow-sm border border-gray-100 scale-90 origin-right transition-all hover:scale-100 hover:shadow-md">
+            <PageNavigation
+              currentPage={nav.currentPage}
+              totalPages={document.total_pages}
+              canGoPrev={nav.canGoPrev}
+              canGoNext={nav.canGoNext}
+              onGoPrev={nav.goPrev}
+              onGoNext={nav.goNext}
+              onGoToPage={nav.goToPage}
+            />
+          </div>
+
           <a
             href={id ? getDownloadUrl(id) : '#'}
             download
-            className="btn-secondary text-[11px] h-8 px-3 shadow-none border-gray-200 font-bold"
-            id="download-json-btn"
+            className="btn-secondary text-[10px] h-8 px-3 shadow-none border-brand-100 bg-brand-50/50 text-brand-700 hover:bg-brand-100 font-bold"
+            id="download-full-json-btn"
           >
             <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
             </svg>
-            JSON 다운로드
+            원본 JSON 다운로드
           </a>
           <a
             href={id ? getMinimalDownloadUrl(id) : '#'}
@@ -258,43 +316,109 @@ const DocumentViewer: React.FC = () => {
           style={{ width: `${rightPanelWidth}%` }}
         >
           {/* LLM Extract Buttons and Metadata */}
-          <div className="px-4 py-2 border-b border-gray-100 bg-brand-50/50 flex flex-col gap-2">
+          <div className="px-4 py-2 border-b border-gray-100 bg-brand-50/50 flex flex-col gap-2 shrink-0">
             <div className="flex items-center justify-between">
-              <span className="text-[10px] uppercase tracking-wider text-brand-600 font-bold">AI 고성능 추출 정보</span>
-              {currentPageData?.extracted_by && (
-                <div className="flex items-center gap-1.5 text-[10px] text-gray-500 bg-white px-2 py-0.5 rounded-md border border-gray-200 shadow-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
-                  <span className="font-bold text-blue-600">{currentPageData.extracted_by}</span>
-                  <span className="text-gray-300">|</span>
-                  <span className="tabular-nums">
-                    {currentPageData.extracted_at ? (
-                      (() => {
-                        try {
-                          return new Date(currentPageData.extracted_at).toLocaleString('ko-KR', {
-                            month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'
-                          });
-                        } catch (e) { return '시간 정보 없음'; }
-                      })()
-                    ) : '시간 정보 없음'}
-                  </span>
-                </div>
-              )}
+              <span className="text-[12px] uppercase tracking-wider text-brand-600 font-bold">AI 고성능 추출 정보</span>
+              <div className="flex items-center gap-2">
+                {currentPageData?.extracted_by && (
+                  <div className="flex items-center gap-1.5 text-[10px] text-gray-500 bg-white px-2 py-0.5 rounded-md border border-gray-200 shadow-sm">
+                    <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
+                    <span className="font-bold text-blue-600">{currentPageData.extracted_by}</span>
+                    <span className="text-gray-300">|</span>
+                    <span className="tabular-nums">
+                      {currentPageData.extracted_at ? (
+                        (() => {
+                          try {
+                            const iso = currentPageData.extracted_at;
+                            const normalized = iso.endsWith('Z') || iso.includes('+') ? iso : `${iso}Z`;
+                            return new Date(normalized).toLocaleString('ko-KR', {
+                              year: 'numeric', month: '2-digit', day: '2-digit',
+                              hour: '2-digit', minute: '2-digit', hour12: true,
+                              timeZone: 'Asia/Seoul'
+                            });
+                          } catch (e) { return '-'; }
+                        })()
+                      ) : '-'}
+                    </span>
+                  </div>
+                )}
+                {document?.last_edited_by && (
+                  <div className="flex items-center gap-1.5 text-[10px] text-brand-700 bg-brand-50 px-2 py-0.5 rounded-md border border-brand-100 shadow-sm">
+                    <span className="font-bold">최종수정:</span>
+                    <span className="font-medium">{document.last_edited_by}</span>
+                    <span className="text-gray-300">|</span>
+                    <span className="tabular-nums">
+                      {document.last_edited_at ? (
+                        (() => {
+                          try {
+                            const iso = document.last_edited_at;
+                            const normalized = iso.endsWith('Z') || iso.includes('+') ? iso : `${iso}Z`;
+                            return new Date(normalized).toLocaleString('ko-KR', {
+                              year: 'numeric', month: '2-digit', day: '2-digit',
+                              hour: '2-digit', minute: '2-digit', hour12: true,
+                              timeZone: 'Asia/Seoul'
+                            });
+                          } catch (e) { return '-'; }
+                        })()
+                      ) : '-'}
+                    </span>
+                  </div>
+                )}
+              </div>
             </div>
 
             <div className="flex gap-2">
               <button
                 onClick={() => handleLLMExtract('chatgpt')}
                 disabled={extractingLLM || loadingPage}
-                className="flex-1 btn-primary py-1.5 text-[10px] h-auto bg-emerald-600 hover:bg-emerald-500 border-emerald-600"
+                className="flex-1 btn-primary py-1.5 text-[10px] h-auto bg-emerald-600 hover:bg-emerald-500 border-emerald-600 shadow-none"
               >
-                ChatGPT 4o
+                ChatGPT 4o 추출
               </button>
               <button
                 onClick={() => handleLLMExtract('claude')}
                 disabled={extractingLLM || loadingPage}
-                className="flex-1 btn-primary py-1.5 text-[10px] h-auto bg-amber-600 hover:bg-amber-500 border-amber-600"
+                className="flex-1 btn-primary py-1.5 text-[10px] h-auto bg-amber-600 hover:bg-amber-500 border-amber-600 shadow-none"
               >
                 Claude 4.6
+              </button>
+            </div>
+
+            <div className="flex items-center gap-2 mt-1">
+              <div className="flex items-center gap-1 bg-white border border-gray-200 rounded-lg px-2 py-1 focus-within:ring-1 focus-within:ring-brand-500 overflow-hidden shrink-0">
+                <span className="text-[10px] text-gray-400 font-bold uppercase transition-colors">P.</span>
+                <input
+                  type="text"
+                  value={currentPageData?.page_number || ''}
+                  onChange={(e) => {
+                    const val = e.target.value;
+                    setCurrentPageData(prev => prev ? { ...prev, page_number: val } : null);
+                  }}
+                  className="w-10 text-xs outline-none font-bold tabular-nums bg-transparent"
+                />
+              </div>
+              <input
+                type="text"
+                placeholder="페이지 제목 수정..."
+                value={currentPageData?.page_title || ''}
+                onChange={(e) => setCurrentPageData(prev => prev ? { ...prev, page_title: e.target.value } : null)}
+                className="flex-1 bg-white border border-gray-200 rounded-lg px-2 py-1 text-xs focus:ring-1 focus:ring-brand-500 outline-none font-medium h-8"
+              />
+              <button
+                onClick={handleSaveEdit}
+                disabled={isSaving || loadingPage}
+                className={`btn-primary text-[10px] h-8 px-4 flex items-center gap-1 shadow-sm transition-all
+                  ${isSaving ? 'opacity-50' : 'hover:scale-[1.02] active:scale-[0.98]'}`}
+                id="save-edit-btn"
+              >
+                {isSaving ? (
+                  <span className="w-3 h-3 border-2 border-white/20 border-t-white rounded-full animate-spin" />
+                ) : (
+                  <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                )}
+                저장
               </button>
             </div>
           </div>
@@ -320,7 +444,13 @@ const DocumentViewer: React.FC = () => {
               <>
                 {activeTab === 'text' && <TextView page={currentPageData} />}
                 {activeTab === 'json' && <JsonView page={currentPageData} />}
-                {activeTab === 'blocks' && <BlockView page={currentPageData} />}
+                {activeTab === 'blocks' && (
+                  <BlockView
+                    page={currentPageData}
+                    onUpdateBlock={handleUpdateBlock}
+                    onDeleteBlock={handleDeleteBlock}
+                  />
+                )}
               </>
             ) : (
               <div className="flex flex-col items-center justify-center h-full text-gray-300 gap-2 font-medium">
