@@ -55,6 +55,7 @@ export interface DocumentListItem {
   created_at: string;
   last_edited_by?: string;
   last_edited_at?: string;
+  is_archived?: boolean;
 }
 
 export interface PaginatedDocuments {

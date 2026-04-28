@@ -72,6 +72,7 @@ class Document(Base):
     last_edited_by = Column(String(50), nullable=True) # stores user_key
     last_edited_at = Column(DateTime, nullable=True)
     processing_time_seconds = Column(Float, nullable=True)
+    is_archived = Column(Integer, default=0) # 0: private, 1: published to archive
 
     # Ownership
     user_id = Column(Integer, ForeignKey("users.id"), nullable=True)

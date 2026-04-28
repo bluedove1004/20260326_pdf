@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { deleteDocument } from '../services/api';
+import { deleteDocument, toggleArchive } from '../services/api';
 import type { DocumentListItem } from '../types';
 
 interface DocumentListProps {
@@ -14,6 +14,8 @@ interface DocumentListProps {
   onPageChange: (page: number) => void;
   onSearchChange: (search: string) => void;
   onRefresh: () => void;
+  detailPathPrefix?: string;
+  hideDelete?: boolean;
 }
 
 const STATUS_LABELS: Record<string, string> = {
@@ -78,7 +80,9 @@ function formatDate(iso: string): string {
 }
 
 const DocumentList: React.FC<DocumentListProps> = ({ 
-  documents, total, page, pageSize, search, onPageChange, onSearchChange, onRefresh 
+  documents, total, page, pageSize, search, onPageChange, onSearchChange, onRefresh,
+  detailPathPrefix = '/documents',
+  hideDelete = false
 }) => {
   const navigate = useNavigate();
 
@@ -105,6 +109,17 @@ const DocumentList: React.FC<DocumentListProps> = ({
         console.error('Failed to delete document:', err);
         alert('문서 삭제에 실패했습니다.');
       }
+    }
+  };
+
+  const handleToggleArchive = async (e: React.MouseEvent, id: string, currentStatus: boolean) => {
+    e.stopPropagation();
+    try {
+      await toggleArchive(id, !currentStatus);
+      onRefresh();
+    } catch (err) {
+      console.error('Failed to toggle archive status:', err);
+      alert('보관함 상태 변경에 실패했습니다.');
     }
   };
 
@@ -186,14 +201,17 @@ const DocumentList: React.FC<DocumentListProps> = ({
               <th className="text-center px-4 py-3 font-semibold">상태</th>
               <th className="text-center px-4 py-3 font-semibold">생성일</th>
               <th className="text-center px-4 py-3 font-semibold">수정 정보</th>
-              <th className="text-right px-5 py-3 font-semibold w-10">삭제</th>
+              {localStorage.getItem('ocr_user_role') === 'superadmin' && !hideDelete && (
+                <th className="text-center px-4 py-3 font-semibold w-24">보관함 노출</th>
+              )}
+              {!hideDelete && <th className="text-right px-5 py-3 font-semibold w-10">삭제</th>}
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100">
             {documents.map((doc) => (
               <tr
                 key={doc.document_id}
-                onClick={() => doc.status === 'completed' && navigate(`/documents/${doc.document_id}`)}
+                onClick={() => doc.status === 'completed' && navigate(`${detailPathPrefix}/${doc.document_id}`)}
                 className={`transition-colors duration-150
                   ${doc.status === 'completed' ? 'hover:bg-gray-50 cursor-pointer' : 'cursor-default'}`}
                 id={`doc-row-${doc.document_id}`}
@@ -223,19 +241,38 @@ const DocumentList: React.FC<DocumentListProps> = ({
                     <span className="text-gray-300 text-[10px]">—</span>
                   )}
                 </td>
-                <td className="px-5 py-3.5 text-right">
-                  <button
-                    onClick={(e) => handleDelete(e, doc.document_id)}
-                    className="p-2 text-gray-400 hover:text-red-500 hover:bg-red-50 rounded-lg transition-all"
-                    title="문서 삭제"
-                    id={`delete-btn-${doc.document_id}`}
-                  >
-                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                    </svg>
-                  </button>
-                </td>
+                {localStorage.getItem('ocr_user_role') === 'superadmin' && !hideDelete && (
+                  <td className="px-4 py-3.5 text-center">
+                    <button
+                      onClick={(e) => handleToggleArchive(e, doc.document_id, !!doc.is_archived)}
+                      className={`px-3 py-1 rounded-full text-[10px] font-bold border transition-all ${
+                        doc.is_archived 
+                          ? 'bg-indigo-50 text-indigo-600 border-indigo-100' 
+                          : 'bg-gray-50 text-gray-400 border-gray-100 hover:border-gray-200'
+                      }`}
+                      title={doc.is_archived ? "보관함에서 숨기기" : "보관함에 보이기"}
+                    >
+                      {doc.is_archived ? '보임 (공개)' : '숨김 (비공개)'}
+                    </button>
+                  </td>
+                )}
+                {!hideDelete && (
+                  <td className="px-5 py-3.5 text-right w-10">
+                    {localStorage.getItem('ocr_user_role') === 'superadmin' && (
+                      <button
+                        onClick={(e) => handleDelete(e, doc.document_id)}
+                        className="p-2 text-gray-400 hover:text-red-500 hover:bg-red-50 rounded-lg transition-all"
+                        title="문서 삭제"
+                        id={`delete-btn-${doc.document_id}`}
+                      >
+                        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                        </svg>
+                      </button>
+                    )}
+                  </td>
+                )}
               </tr>
             ))}
           </tbody>

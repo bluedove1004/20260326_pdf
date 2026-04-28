@@ -60,9 +60,9 @@ export async function uploadDocument(
   return data;
 }
 
-export async function listDocuments(page = 1, size = 10, search?: string): Promise<PaginatedDocuments> {
+export async function listDocuments(page = 1, size = 10, search?: string, archived = false): Promise<PaginatedDocuments> {
   const { data } = await api.get<PaginatedDocuments>('/documents', {
-    params: { page, size, q: search },
+    params: { page, size, q: search, archived },
   });
   return data;
 }
@@ -74,6 +74,10 @@ export async function getDocumentStatus(id: string): Promise<DocumentStatusRespo
 
 export async function deleteDocument(id: string): Promise<void> {
   await api.delete(`/documents/${id}`);
+}
+
+export async function toggleArchive(id: string, archived: boolean): Promise<void> {
+  await api.post(`/documents/${id}/archive`, { archived });
 }
 
 export async function getDocument(id: string): Promise<DocumentResult> {

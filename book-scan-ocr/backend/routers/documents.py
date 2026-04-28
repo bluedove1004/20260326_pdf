@@ -28,6 +28,7 @@ from models.document import (
 from models.settings import PreprocessingOptions
 from services.ocr_service import OCRService
 from services.llm_service import LLMService
+from dependencies import check_superadmin
 from services.log_service import LogService
 from database import get_db, SessionLocal
 from models import orm
@@ -269,11 +270,12 @@ def list_documents(
     page: int = 1,
     size: int = 10,
     q: Optional[str] = None,
+    archived: bool = False,
     db: Session = Depends(get_db)
 ) -> PaginatedDocumentList:
     """Return a paginated list of all documents with summary metadata."""
     skip = (page - 1) * size
-    items, total = _storage.list_documents(db, skip=skip, limit=size, search=q)
+    items, total = _storage.list_documents(db, skip=skip, limit=size, search=q, only_archived=archived)
     # Record log
     user_key = getattr(request.state, "user_key", "UNKNOWN")
     db_session = SessionLocal() # Use fresh session for logging
@@ -286,12 +288,37 @@ def list_documents(
 
 
 @router.delete("/documents/{document_id}")
-def delete_document(document_id: str, db: Session = Depends(get_db)) -> dict:
+def delete_document(
+    document_id: str, 
+    db: Session = Depends(get_db),
+    admin: str = Depends(check_superadmin) # Restricted to superadmins
+) -> dict:
     """Delete a document and all its associated files."""
     success = _storage.delete_document(db, document_id)
     if not success:
         raise HTTPException(status_code=500, detail="Failed to delete document")
     return {"message": "Document deleted successfully", "document_id": document_id}
+
+class ArchiveToggleRequest(BaseModel):
+    archived: bool
+
+@router.post("/documents/{document_id}/archive")
+def toggle_archive_status(
+    document_id: str,
+    req: ArchiveToggleRequest,
+    db: Session = Depends(get_db),
+    admin: str = Depends(check_superadmin)
+) -> dict:
+    """Toggle whether a document is visible in the public archive."""
+    doc = db.query(orm.Document).filter(orm.Document.document_id == document_id).first()
+    if not doc:
+        raise HTTPException(status_code=404, detail="Document not found")
+    
+    doc.is_archived = 1 if req.archived else 0
+    db.commit()
+    
+    status = "archived" if req.archived else "private"
+    return {"status": "success", "is_archived": req.archived, "message": f"Document is now {status}"}
 
 
 @router.get("/documents/{document_id}/status", response_model=DocumentStatusResponse)

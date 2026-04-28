@@ -23,6 +23,7 @@ from routers import pdf_tools as pdf_router
 from services.ocr_service import OCRService
 from services.llm_service import LLMService
 from services.auth_service import AuthService, SECRET_KEY, ALGORITHM
+from dependencies import check_superadmin, get_current_user_role
 from services.log_service import LogService
 
 # Database
@@ -138,19 +139,21 @@ class AuthMiddleware(BaseHTTPMiddleware):
                     status_code=401, 
                     media_type="application/json"
                 )
-            db = next(get_db())
-            
-            # Check if token exists in DB and is not expired
-            db_token = db.query(orm.Token).filter(orm.Token.access_token == token_str).first()
-            if not db_token or db_token.expires_at < datetime.datetime.utcnow():
-                return Response(
-                    content='{"detail": "Token expired or invalid. Please login again."}', 
-                    status_code=401, 
-                    media_type="application/json"
-                )
-            
-            # Store user_key in request state for downstream use
-            request.state.user_key = db_token.user_key
+            db = SessionLocal()
+            try:
+                # Check if token exists in DB and is not expired
+                db_token = db.query(orm.Token).filter(orm.Token.access_token == token_str).first()
+                if not db_token or db_token.expires_at < datetime.datetime.utcnow():
+                    return Response(
+                        content='{"detail": "Token expired or invalid. Please login again."}', 
+                        status_code=401, 
+                        media_type="application/json"
+                    )
+                
+                # Store user_key in request state for downstream use
+                request.state.user_key = db_token.user_key
+            finally:
+                db.close()
         
         return await call_next(request)
 
@@ -190,24 +193,7 @@ def health() -> dict:
 # Authentication Helpers
 # ──────────────────────────────────────────────
 
-def get_current_user_role(request: Request) -> str:
-    """Extract role from JWT token in the Authorization header."""
-    auth_header = request.headers.get("Authorization")
-    if not auth_header or not auth_header.startswith("Bearer "):
-        raise HTTPException(status_code=401, detail="Unauthorized")
-    
-    token = auth_header.split(" ")[1]
-    try:
-        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        return payload.get("role", "user")
-    except JWTError:
-        raise HTTPException(status_code=401, detail="Invalid token")
-
-def check_superadmin(role: str = Depends(get_current_user_role)):
-    """Dependency to ensure the user is a superadmin."""
-    if role != "superadmin":
-        raise HTTPException(status_code=403, detail="슈퍼관리자 권한이 필요합니다.")
-    return role
+# Auth helpers moved to dependencies.py
 
 # ──────────────────────────────────────────────
 # Authentication & User Management
@@ -381,6 +367,35 @@ def approve_user(user_id: int, db: Session = Depends(get_db), _=Depends(check_su
     user.approved_at = datetime.datetime.utcnow()
     db.commit()
     return {"message": f"User {user.username} has been approved."}
+
+@app.get("/api/admin/users")
+def get_all_users(db: Session = Depends(get_db), _=Depends(check_superadmin)):
+    """List all registered users for role management."""
+    users = db.query(orm.User).order_by(orm.User.created_at.desc()).all()
+    return [{
+        "id": u.id,
+        "username": u.username,
+        "role": u.role or "user", # Default to user if empty
+        "status": u.status,
+        "created_at": u.created_at
+    } for u in users]
+
+class UserRoleUpdate(BaseModel):
+    role: str
+
+@app.post("/api/admin/users/{user_id}/role")
+def update_user_role(user_id: int, req: UserRoleUpdate, db: Session = Depends(get_db), _=Depends(check_superadmin)):
+    """Update a user's role."""
+    user = db.query(orm.User).filter(orm.User.id == user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    
+    if req.role not in ["superadmin", "admin", "user"]:
+        raise HTTPException(status_code=400, detail="Invalid role")
+        
+    user.role = req.role
+    db.commit()
+    return {"message": f"User {user.username}'s role updated to {req.role}."}
 
 if __name__ == "__main__":
     import uvicorn

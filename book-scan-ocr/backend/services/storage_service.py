@@ -116,7 +116,8 @@ class StorageService:
             completed_at=doc.completed_at,
             last_edited_by=doc.last_edited_by,
             last_edited_at=doc.last_edited_at,
-            ocr_provider=doc.ocr_provider or "easyocr"
+            ocr_provider=doc.ocr_provider or "easyocr",
+            is_archived=bool(doc.is_archived)
         )
 
     # ------------------------------------------------------------------
@@ -246,13 +247,17 @@ class StorageService:
     # ------------------------------------------------------------------
 
     def list_documents(
-        self, db: Session, skip: int = 0, limit: int = 10, search: Optional[str] = None
+        self, db: Session, skip: int = 0, limit: int = 10, search: Optional[str] = None, 
+        only_archived: bool = False
     ) -> tuple[List[DocumentListItem], int]:
         """Return a filtered, paginated list of documents from the database (high performance)."""
         query = db.query(sql_models.Document, sql_models.User.username).outerjoin(
             sql_models.User, sql_models.Document.last_edited_by == sql_models.User.user_key
         )
         
+        if only_archived:
+            query = query.filter(sql_models.Document.is_archived == 1)
+
         if search:
             # Match both NFC (composed) and NFD (decomposed) for Korean filename search
             search_nfc = unicodedata.normalize("NFC", search.lower())
@@ -274,7 +279,8 @@ class StorageService:
                 progress=d.progress or 0,
                 created_at=d.created_at,
                 last_edited_by=username or d.last_edited_by, # Use name if available
-                last_edited_at=d.last_edited_at
+                last_edited_at=d.last_edited_at,
+                is_archived=bool(d.is_archived)
             )
             for d, username in results
         ]

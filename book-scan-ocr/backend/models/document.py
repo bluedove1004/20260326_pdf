@@ -90,6 +90,7 @@ class DocumentMeta(BaseModel):
     last_edited_at: Optional[datetime] = None
     error: Optional[str] = None
     ocr_provider: str = "easyocr"
+    is_archived: bool = False
 
 
 class DocumentStatusResponse(BaseModel):
@@ -113,6 +114,7 @@ class DocumentListItem(BaseModel):
     created_at: datetime
     last_edited_by: Optional[str] = None
     last_edited_at: Optional[datetime] = None
+    is_archived: bool = False
 
 
 class PaginatedDocumentList(BaseModel):
